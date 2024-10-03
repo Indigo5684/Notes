@@ -41,7 +41,7 @@ Note that some books impose the condition that $1 \neq 0$. If $1 = 0$, we can sh
 
 **Theorem**. 16.16: Every finite integral domain is a field.
 
-**Definition**. For any non-negative integer $n \in \mathbb{N}$ and $r \in R$, we say that $nr = r + ... + r \text{(n times)}$.
+**Definition**. For any non-negative integer $n \in \mathbb{N}$ and $r \in R$, we say that $nr = r + \ldots + r \text{(n times)}$.
 
 **Definition**. The *charactaristic* of a ring is the leat possible $n \in \mathbb{N}$ such that $nr = 0$ for all $r \in R$.
 
@@ -103,16 +103,16 @@ $$
 
 **Theorem**. 16.31, *First Isomorphism Theorem*. Let $\psi: R \leftarrow S$. Then, $\ker \psi$ is an ideal of $R$. Consider the isomorphism $\phi: R \leftarrow R/\ker \psi$. There exists an isomorphism $\eta: R / \ker \psi \leftarrow \psi(R)$ such that $\psi = \eta \phi$.
 
-**Theorem**. 16.32, *Second Isomorphism Theorem*. Let $I$ be a subring of $R$ and $J$ be an ideal of $R$. Then, $I \union J$ is an ideal of $I$ and
+**Theorem**. 16.32, *Second Isomorphism Theorem*. Let $I$ be a subring of $R$ and $J$ be an ideal of $R$. Then, $I \cap J$ is an ideal of $I$ and
 
 $$
-I/I \union J \congruent (I + J) / J
+I/I \cap J \cong (I + J) / J
 $$
 
 **Theorem**. 16.33, *Third Isomorphism Theorem*. Let $R$ be a ring and $I, J$ be ideals of J. If $J \subsetneq I$, then
 
 $$
-R/I \\congruent \frac{R/J}{I/J}
+R/I \cong \frac{R/J}{I/J}
 $$
 
 **Theorem**. 16.34, *Correspondence Theorem*. Let $I$ be an ideal of $R$. Then, $S \mapsto S/I$ is a one-to-one correspeondence between the set of subrings $S$ containing $I$ (that is, $I \in S$) and the set of subrings of $R/I$. Furthermore, the ideals of $R$ containing $I$ correspond to the ideals of $R/I$.
