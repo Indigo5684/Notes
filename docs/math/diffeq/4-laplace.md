@@ -62,7 +62,7 @@ This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/
 **Theorum**. Given a function $f(t)$ with $C^n$ continuity, then
 
 $$
-\mathcal{L} \{ f^{(n)} (t) \} = s^n F(s) - s^{n-1} f(0) - s^{n-2} f'(0) - ... - s f^{(n-2)} (0) - f^{(n-1)} (0)
+\mathcal{L} \{ f^{(n)} (t) \} = s^n F(s) - s^{n-1} f(0) - s^{n-2} f'(0) - \ldots - s f^{(n-2)} (0) - f^{(n-1)} (0)
 $$
 
 For $n=1, 2$ we see that
