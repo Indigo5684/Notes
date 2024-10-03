@@ -38,7 +38,7 @@ $$
 W = -q_m \frac{Q_m}{4 \pi \mu_0} \int_{\infty}^0 \frac{\vu{r'}}{r'^2} \vdot (\vu{r'}) \dd{r'} = -q_m \frac{Q_m}{4 \pi \mu_0} [\frac{-1}{r'}]_{\infty}^{r'} = q_m \frac{Q_m}{4 \pi \mu_0} \frac{1}{r}
 $$
 
-Letting the potential as $\vb{r} \leftarrow \infty$ equal $0$ be our reference and dividing out $q$, we find that the voltage for arrangement is the following:
+Letting the potential as $\vb{r} \rightarrow \infty$ equal $0$ be our reference and dividing out $q$, we find that the voltage for arrangement is the following:
 
 $$
 V_e(\vb{r}) = \frac{Q_e}{4 \pi \epsilon_0 r} \text{ and } V_m(\vb{r}) = \frac{Q_m}{4 \pi \mu_0 r}

@@ -53,7 +53,7 @@ Note that some books impose the condition that $1 \neq 0$. If $1 = 0$, we can sh
 
 ## Section 16.3 - Ring Homomorphisms and Ideals
 
-**Definition** Given rins $R$ and $S$, and a mapping $\phi: R \leftarrow S$, we say that $\phi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
+**Definition** Given rins $R$ and $S$, and a mapping $\phi: R \rightarrow S$, we say that $\phi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
 
 $$
 \begin{align}
@@ -70,7 +70,7 @@ $$
 \ker \phi = \{ r \in R | \phi(r) = 0 \}
 $$
 
-**Definition**. Proposition 16.22: Let $\phi: R \leftarrow S$ be a ring homomorphism. Then,
+**Definition**. Proposition 16.22: Let $\phi: R \rightarrow S$ be a ring homomorphism. Then,
 
 1. If $R$ is a commutative ring, then $\phi(R) \subset S$ is a commutative ring.
 2. $\phi(0_R) = 0_S$
@@ -89,7 +89,7 @@ is an ideal in $R$. Specifically, $<a>$ is a *principal ideal*.
 
 **Example**. Theorem 16.25. Every ideal in $\mathbb{Z}$ is a principal ideal.
 
-**Examplee**. With $\phi: R \leftarrow S$, $\ker \phi$ is an ideal of $R$.
+**Examplee**. With $\phi: R \rightarrow S$, $\ker \phi$ is an ideal of $R$.
 
 **Remark**. 16.28: We are working with *two-sided ideals*. If rings are not commutative, we may deal with *left ideals* and *right ideals*.
 
@@ -99,9 +99,9 @@ $$
 (r + I)(s + I) = rs + I
 $$
 
-**Theorem**. 16.30: Let $I$ be an ideal of $R$. Then, the map $\phi: R \leftarrow R/I$ defined by $\phi(r) = r + I$ is a ring homomorphism of $R$ onto $R/I$ with $\ker \phi = I$.
+**Theorem**. 16.30: Let $I$ be an ideal of $R$. Then, the map $\phi: R \rightarrow R/I$ defined by $\phi(r) = r + I$ is a ring homomorphism of $R$ onto $R/I$ with $\ker \phi = I$.
 
-**Theorem**. 16.31, *First Isomorphism Theorem*. Let $\psi: R \leftarrow S$. Then, $\ker \psi$ is an ideal of $R$. Consider the isomorphism $\phi: R \leftarrow R/\ker \psi$. There exists an isomorphism $\eta: R / \ker \psi \leftarrow \psi(R)$ such that $\psi = \eta \phi$.
+**Theorem**. 16.31, *First Isomorphism Theorem*. Let $\psi: R \rightarrow S$. Then, $\ker \psi$ is an ideal of $R$. Consider the isomorphism $\phi: R \rightarrow R/\ker \psi$. There exists an isomorphism $\eta: R / \ker \psi \rightarrow \psi(R)$ such that $\psi = \eta \phi$.
 
 **Theorem**. 16.32, *Second Isomorphism Theorem*. Let $I$ be a subring of $R$ and $J$ be an ideal of $R$. Then, $I \cap J$ is an ideal of $I$ and
 
@@ -116,3 +116,27 @@ R/I \cong \frac{R/J}{I/J}
 $$
 
 **Theorem**. 16.34, *Correspondence Theorem*. Let $I$ be an ideal of $R$. Then, $S \mapsto S/I$ is a one-to-one correspeondence between the set of subrings $S$ containing $I$ (that is, $I \in S$) and the set of subrings of $R/I$. Furthermore, the ideals of $R$ containing $I$ correspond to the ideals of $R/I$.
+
+## Section 16.4 - Maximal and Prime Ideals
+
+**Definition**. Consider ring $R$ and proper ideal $M \subset R$. Then, $M$ is a *maximal ideal* of $R$ if the ideal $M$ is not a subset of any ideal except $R$ itself. That is, given any ideal $I$ properly containing $M$, $I = R$.
+
+**Theorem**. 16.35: Given a commutative ring with identity $R$, $M$ is a maximal ideal if and only if $R/M$ is a field.
+
+**Definition**. Consider ring $R$ and proper ideal $P \subset R$. Then, $P$ is a *prime ideal* if given $ab \in P$, either $a \in P$ or $b \in P$.
+
+**Theorem**. 16.38: Let $R$ be a commutative ring with identity $1$. Then, $P \subset R$ is a prime ideal of $R$ if and only if $R/P$ is a field.
+
+Let us assume that $P$ is an ideal in $R$ and $R/P$ is an integral domain. Take two elements $ab \in P$. Now, consider $a + P$ and $b + P$ in $R/P$ such that $(a+P)(b+P) = 0+P = P$. As $R/P$ is a field, either $a + P = 0 + P = P$ or $b + P = 0 + P = P$, meaning either $a \in P$ or $b \in P$. Thus, $P$ is as prime ideal.
+
+Now, assume the opposite. Let $P$ be prime. Now, we want to show that $R/P$ is an integral domain.
+
+Consider two elements $a + P$, $b + P$ in $R/P$. We know that
+
+$$
+(a + P)(b + P) = ab + P = 0 + P = P
+$$
+
+Thus, $ab \in P$. By symnetry, assume $a \notin P$. Thus, $b \in P$ by the  devinition of a prime ideal, so $b + P = 0 + P$, meaning $R/P$ is an integral domain.
+
+**Theorem**. 16.40: In a commutative ring with identity, every maximal ideal is also a prime ideal.
