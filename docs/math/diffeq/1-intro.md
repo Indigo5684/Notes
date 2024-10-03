@@ -14,7 +14,7 @@ This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/
 
 **Definition**. A *linear* differential equation is any differential equation that cn be written in the following form:
 
-\[ a_n(t)y^{(n)}(t) + a_{n-1}(t)+y^{n-1}(t) + . . . + a_1(t)y'(t) + a_0(t)y(t) = g(t) \]
+\[ a_n(t)y^{(n)}(t) + a_{n-1}(t)+y^{n-1}(t) + \ldots + a_1(t)y'(t) + a_0(t)y(t) = g(t) \]
 
 Note that $a_n(t)$ does not depeond on any derivative of $y$, so the presence of terms such as $e^y$ or $\sqrt{y'}$ signal that the equation is *nonlinear*.
 
