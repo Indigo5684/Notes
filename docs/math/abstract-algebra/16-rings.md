@@ -82,10 +82,10 @@ $$
 **Definition**. Given a commutative ring $R$ with identity, and $r \in R$, the set
 
 $$
-<a> = (r)R = \{ ar : r \in R \}
+\langle a \rangle = (r)R = \{ ar : r \in R \}
 $$
 
-is an ideal in $R$. Specifically, $<a>$ is a *principal ideal*.
+is an ideal in $R$. Specifically, $\langle a \rangle$ is a *principal ideal*.
 
 **Example**. Theorem 16.25. Every ideal in $\mathbb{Z}$ is a principal ideal.
 
