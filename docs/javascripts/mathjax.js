@@ -1,11 +1,11 @@
 window.MathJax = {
-    loader: {load: ['[tex]/physics']},
+    loader: {load: ['[tex]/physics', '[tex]/gensymb']},
     tex: {
         inlineMath: [["\\(", "\\)"], ["\\$", "\\$"]],
         displayMath: [["\\[", "\\]"]],
         processEscapes: true,
         processEnvironments: true,
-        packages: {'[+]': ['physics']}
+        packages: {'[+]': ['physics', 'gensymb']}
     },
     options: {
         ignoreHtmlClass: ".*|",
