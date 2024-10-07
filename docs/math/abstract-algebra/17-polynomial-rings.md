@@ -49,7 +49,7 @@ where either $\deg r(x) < \deg g(x)$ or $r(x)$ is the zero polynomial.
 
 **Lemma**. Let $p(x) \in \mathbb{Q}[x]$. Then, with $r, s \in \mathbb{Z}, a(x) \in \mathbb{N}[x]$, we can write $p(x) = \frac{r}{s} a(x)$.
 
-**Lemma**. Gauss's Lemma. Let $p(x) \in \mathbb{Z}[x]$ be monic such that $p(x)$ factors into two polynomials $\alpha(x), \beta{x} \in \mathbb{Q}[x]$, with the degrees of both strictly less than the degree of $p(x)$. Then, ther exist two polynomials $a(x), b(x) \in \mathbb{Z}[x]$ such that $p(x) = a(x)b(x)$, and $\deg \alpha(x) = \deg a(x)$ and $\deg \beta(x) = \deg b(x)$.
+**Lemma**. Gauss's Lemma. Let $p(x) \in \mathbb{Z}[x]$ be monic such that $p(x)$ factors into two polynomials $\alpha(x), \beta{x} \in \mathbb{Q}[x]$, with the degrees of both strictly less than the degree of $p(x)$. Then, there exists two polynomials $a(x), b(x) \in \mathbb{Z}[x]$ such that $p(x) = a(x)b(x)$, and $\deg \alpha(x) = \deg a(x)$ and $\deg \beta(x) = \deg b(x)$.
 
 **Collary**. Let $p(x) \in \mathbb{Z}[x]$ be monic with constant term $a_0$. Then, if $p(x)$ has a zero in $\mathbb{Q}$, then it also has a zero $\alpha$ in $\mathbb[Z]$. Furthermore, $\alpha$ divides $a_0$.
 

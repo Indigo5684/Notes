@@ -98,4 +98,4 @@ As a direct consequence, we see the following.
 
 1. Given a field $F$, since $F$ is a PID, it is also a UFD. Thus, $F[x]$ is a UFD.
 2. The ring of polynomials over integers, $\mathbb{Z}[x]$ is a UFD.
-3. Given $D$ is a UFD, $D[x]$ is a UFD. Thus, $D[x_1, x_2]$ is a UFD, and by induction, $D[x_1, \ldots, \x_n]$ is a UFD.
+3. Given $D$ is a UFD, $D[x]$ is a UFD. Thus, $D[x_1, x_2]$ is a UFD, and by induction, $D[x_1, \ldots, x_n]$ is a UFD.
