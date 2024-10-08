@@ -7,7 +7,7 @@
 - In a separate bowl, combine $\frac{1}{4}$ cup butter, $\frac{3}{4}$ cup sugar, $\frac{1}{4}$ cup vegetable oil, $\frac{1}{4}$ tsp. vaninna
 - Add 2 eggs.
 - Combine with half of the dry mixture. Add 6 tbsp. milk, 1 lemon of zest and juce. Stir. Add the rest of the dry ingredients.
-- Fake for 15-18 minutes at $350 \degree$ F.
+- Bake for 15-18 minutes at $350 \degree$ F.
 
 ### Frosting
 
