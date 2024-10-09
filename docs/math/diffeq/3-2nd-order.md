@@ -32,7 +32,7 @@ Thus, we allow the *charactaristic equation* of the differential equation to be 
 
 $$ ar^2 + br + c = 0 $$
 
-# Section 3.2 - Real & Distinct Roots
+## Section 3.2 - Real & Distinct Roots
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/RealRoots.aspx).
 
@@ -42,11 +42,11 @@ $$ y_1(t) = e^{r_1 t} $$
 
 $$ y_2(t) = e^{r_2 t} $$
 
-Thus, 
+Thus,
 
 $$ y(t) = c_1 e^{r_1 t} + c_2 e^{r_2 t} $$
 
-# Section 3.3 - Complex Roots
+## Section 3.3 - Complex Roots
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/ComplexRoots.aspx).
 
@@ -120,7 +120,7 @@ Assume we have the differential equation as follows:
 
 $$ y'' + p(t) y' + q(t) y = g(t) $$
 
-The equivilent homogenous differential equation is 
+The equivilent homogenous differential equation is
 
 $$ y'' + p(t) y' + q(t) y = 0 $$
 
@@ -156,7 +156,7 @@ Assume we have the differential equation as follows:
 
 $$ y'' + p(t) y' + q(t) y = g(t) $$
 
-The equivilent homogenous differential equation is 
+The equivilent homogenous differential equation is
 
 $$ y'' + p(t) y' + q(t) y = 0 $$
 

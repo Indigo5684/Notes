@@ -43,7 +43,7 @@ From: [Link](https://www.allrecipes.com/recipe/234374/apple-hand-pies/)
 - Mix in apples, add sugar mixture.
 - Wait until apples are softened (approx. 5 minutes).
 
-### Pies
+### Hand Pies
 
 - Preheat oven to $400 \degree$ F.
 - Split pie crust into 4. Place fillin in crust, fold.

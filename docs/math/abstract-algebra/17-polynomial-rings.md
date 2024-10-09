@@ -1,4 +1,5 @@
 # Chapter 17 - Polynomial Rings
+
 ## Section 17.1 - Polynomial Rings
 
 Throughout this chapter, we will assume that $R$ is a commutative ring with identity.

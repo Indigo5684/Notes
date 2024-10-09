@@ -81,7 +81,6 @@ $$
 
 The curl of an electrostatic or magnetostatic is relatively simple.
 
-
 $$
 \begin{align}
     \curl{E(\vb{r})} &= \frac{1}{4 \pi \epsilon_0} \int_V \rho_e(\vb{r'}) \curl{(\frac{\vb{r}-\vb{r'}}{\abs{\vb{r}-\vb{r'}}^3})} \dd V' \\

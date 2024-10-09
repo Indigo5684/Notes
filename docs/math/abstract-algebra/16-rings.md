@@ -1,4 +1,5 @@
 # Chapter 16 - Rings
+
 ## Section 16.1 - Rings
 
 **Definition**. A nonempty set $S$ is a *ring* if, with two binary operations called addition and multipllication, the following are satisfied:

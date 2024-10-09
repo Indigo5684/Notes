@@ -1,4 +1,5 @@
 # Chapter 1 - Mathematics
+
 ## 1.5 - Dyads and Tensors
 
 **Definition**. A *dyadic* is a representation of two-ish vectors.

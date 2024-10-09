@@ -1,6 +1,6 @@
 # Breads
 
-# Pumpkin Bread
+## Pumpkin Bread
 
 - Preheat oven to $350 \degree$ F.
 - Combine $1 \frac{2}{3}$ cups flour, $1 \frac{1}{2}$ cups sugar, 1 tsp. baking soda, 1 tsp cinnamon, $\frac{3}{4}$ tsp. salt, $\frac{1}{2}$ tsp. baking powder, $\frac{1}{2}$ tsp. nutmeg, $\frac{1}{4}$ tsp cloves.

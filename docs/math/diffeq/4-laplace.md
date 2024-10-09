@@ -1,4 +1,5 @@
 # Section 4 - Laplace Transformations
+
 ## Section 4.1 - Definition
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/LaplaceDefinition.aspx).

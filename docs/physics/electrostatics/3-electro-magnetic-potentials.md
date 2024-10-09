@@ -25,7 +25,7 @@ The units of magnetostatic potential is Joule/Weber, also known as an Ampere. Th
 With this, we can calculate work. Moving a charge $q$ from $A$ to $B$, we see that
 
 $$
-\delta W = \int_A^B \vb{F} \vdot \dd{\vb{l}} = q_e \int_A^B \vb{E} \vdot \dd{\vb{l}} = -q_e \int_A^B \grad{\vb{V}} \vdot \dd{\vb{l}} = -q_e \delta V_e 
+\delta W = \int_A^B \vb{F} \vdot \dd{\vb{l}} = q_e \int_A^B \vb{E} \vdot \dd{\vb{l}} = -q_e \int_A^B \grad{\vb{V}} \vdot \dd{\vb{l}} = -q_e \delta V_e
 $$
 
 Strictly speaking, this is a potential difference. To find the absolute potential, assume a point charge $Q$ at the origin, and a charge $q$. We take the work as $q$ moves from $\vb{r'} = \vb{\infty}$ to $\vb{r'} = \vb{r}$. Thus,
@@ -62,7 +62,6 @@ $$
 V_e(\vb{r}) = \frac{1}{4 \pi \epsilon_0} \int_{V'} \frac{\rho_e(\vb{r'})}{\abs{\vb{r}-\vb{r'}}} \dd{V'}
 $$
 
-
 $$
 V_m(\vb{r}) = \frac{1}{4 \pi \mu_0} \int_{V'} \frac{\rho_m(\vb{r'})}{\abs{\vb{r}-\vb{r'}}} \dd{V'}
 $$
@@ -75,7 +74,7 @@ $$
 W_2 = W_{21} = \frac{1}{4 \pi \epsilon_0} \frac{Q_{e1} Q_{e2}}{\abs{\vb{r_2} - \vb{r_1}}}
 $$
 
-Superposition applies here. The energy to create $N$ charges is 
+Superposition applies here. The energy to create $N$ charges is
 
 $$
 W_n = \frac{1}{2} \frac{4 \pi \epsilon_0} \sum_{i = 1}^{N} \sum_{j > i}^{N} \frac{Q_{ei}Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
@@ -177,7 +176,7 @@ $$
 Taking the divergence, we find that
 
 $$
-- \laplacian{V(\vb{r})} = G(\vb{r}, \vb{r'}) \frac{Q_e}{\epsilon_0} = \frac{Q_e}{\epsilon_0} \laplacian({\frac{-1}{4\pi \abs{\vb{r} - \vb{r'}}}}) 
+- \laplacian{V(\vb{r})} = G(\vb{r}, \vb{r'}) \frac{Q_e}{\epsilon_0} = \frac{Q_e}{\epsilon_0} \laplacian({\frac{-1}{4\pi \abs{\vb{r} - \vb{r'}}}})
 =  \frac{Q_e}{\epsilon_0} \div \frac{\vb{r} - \vb{r'}}{\abs{\vb{r} - \vb{r'}}^3} = \frac{Q_e}{\epsilon_0} \delta(\vb{r} - \vb{r'})
 $$
 
