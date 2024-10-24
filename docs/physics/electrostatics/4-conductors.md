@@ -22,7 +22,7 @@ Consider the surface of a conductor with surface charge density $\sigma_e$. A cy
 
 Consider a square with left and right potentials $V(0, y) = V(l, y) = V_1$ and $V(x, 0) = V(x, l) = V_2$. Since we are uniform in $z$, we can say that $V(x, y) = X(x)Y(y)$ and apply separation of variables.
 
-In spherical polar coordinates, we see that with azimuthal symnetry, $V(r, \theta) = \sun_{l=0}^\infty a_l r^l P_l(cos\theta)$ where $P_l(x)$ are Legendre polynomials.
+In spherical polar coordinates, we see that with azimuthal symnetry, $V(r, \theta) = \sum_{l=0}^\infty a_l r^l P_l(cos\theta)$ where $P_l(x)$ are Legendre polynomials.
 
 **Theorem**. 4.3.3: A Laplace equation's solution must be unique inside a volume $\Omega$ if $\int_{\dd{\Omega}}[\Phi(\vb{r})\grad{\Phi{\vb{r}}} \vdot \vu{n} \dd{S} = 0]$. With this, consider a surface $\dd{\Omega}$ that surrounds conductors. The integral vanishes if a) the potential is specified on each conductor or b) the total charge on each conductor is specified.
 

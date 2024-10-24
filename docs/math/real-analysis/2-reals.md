@@ -1,4 +1,4 @@
-# Chapter 2
+# Chapter 2 - The Real Number Line
 
 ## Section 2.1 - The Algebraic and Order Properties of Real Numbers
 
@@ -18,7 +18,7 @@
 **Theorem**. In any ordered field $F$, the following hold
 
 1. $1 \in F^+$
-2. $\mathbb{N} \subset F^+$
+2. $\mathbb{N} \subseteq F^+$
 3. If $a \in F^+$, then $\frac{1}{a} \in F^+$
 
 **Definition** The order relation $a > b$ and $b < a$ is defined by $a - b \in F^+$.
@@ -40,9 +40,9 @@
 
 **Definition**. Let $S$ be a nonempty subset of ordered field $F$. Then, $S$ is *bounded* if it is bounded both above and below.
 
-**Definition**. Given field $F$ and nonempty subset $S \subset F$, an element $u \in F$ is a *supremum* or *least upper bound* of $S$ if $u$ is an upper bound of $S$, and given any other upper bound $v$, then $u < v$
+**Definition**. Given field $F$ and nonempty subset $S \subseteq F$, an element $u \in F$ is a *supremum* or *least upper bound* of $S$ if $u$ is an upper bound of $S$, and given any other upper bound $v$, then $u < v$
 
-**Definition**. Given field $F$ and nonempty subset $S \subset F$, an element $u \in F$ is an *infimum* or *greatest lower bound* of $S$ if $u$ is a lower bound of $S$, and given any other lower bound $v$, then $u > v$
+**Definition**. Given field $F$ and nonempty subset $S \subseteq F$, an element $u \in F$ is an *infimum* or *greatest lower bound* of $S$ if $u$ is a lower bound of $S$, and given any other lower bound $v$, then $u > v$
 
 **Definition**. Given an ordered field $F$, the field has the *supremum/infimum property* if given any nonempty subset $S$, if $S$ is bounded above/below, $S$ has a supremum/infimum.
 
@@ -62,6 +62,46 @@
 
 **Theorem**. In an ordered field $F$, for any $r > 0$, we know that
 
-1. $\abs x = r$ if and only if $x = r$ or $x = -r$
-2. $\abs x < r$ if and only if $-r < x < r$
-3. $\abs x > r$ if either $x > r$ or $x < -r$
+1. $\abs{x = r}$ if and only if $x = r$ or $x = -r$
+2. $\abs{x < r}$ if and only if $-r < x < r$
+3. $\abs{x > r}$ if either $x > r$ or $x < -r$
+
+---
+
+**Definition**. The *standard distance function* or *metric* on the real numbers $\mathbb{R}$ given $a, b$ is $\abs{a - b}$.
+
+**Theorem**. For any real numbers $a, b, c$,
+
+1. $\abs{a - b} > 0$ if and only if $a \neq b$ and $\abs{a - b} = 0$ if and only if $a = b$
+2. $\abs{a - b} = \abs{b - a}$
+3. $\abs{a - c} \leq \abs{a - b} + \abs{b + c}$
+
+**Definition** A set together with a function satisfying these three properties is known as a *metric space*.
+
+**Definition** The $\epsilon$-neighborhood of $a \in \mathbb{R}$, denoted $V_\epsilon(a)$ is the set of all real numbers $x \in \mathbb{R}$ such that $\abs{x - a} < \epsilon$. That is,
+
+$$
+V_\epsilon(a) = (a - \epsilon, a + \epsilon)
+$$
+
+---
+
+**Decimals**. Let $x \in \mathbb{R}$ such that $x > 0$. By the archimedian property, there exists some $b_0 \in \mathbb{N} \cup {0}$ such that $b_0 < x < b_0 + 1$. We can repeat this to see
+
+$$
+x = b_0 + \frac{b_1}{10} + \frac{b_2}{100} + \ldots + \frac{b_n}{100^n} + \ldots
+$$
+
+**Definition**. The *decimal expansion* of $x$ is denoted $b_0.b_1 b_2 b_3 \ldots$.
+
+## Section 2.5 - Intervals
+
+**Definition**. A subset $I$ is an *interval* if and only if, given $a, b \in I$, then $[a, b] \subseteq I$.
+
+**Definition**. Intervals $I_1, I_2, \ldots, I_n, \ldots$ are *nested* if and only if $I_1 \subseteq I_2 \subseteq \ldots \subseteq I_n \subseteq \ldots$.
+
+**Theorem**. Nested Intervals Property. If $I_n = [a_n, b_n]$ is a set of nested intervals that are closed and bound, then there exists some number $z \in \mathbb{R}$ such that $z \in I_n$ for all $n$.
+
+**Theorem**. If $a < b$, then the interval $[a, b]$ is an uncountable set.
+
+**Collary**. $\mathbb{R}$ is uncountable.

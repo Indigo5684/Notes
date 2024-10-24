@@ -43,7 +43,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 **Lemma**. 18.11: Let $D$ be an integral domain and $a, b \in D$. Then,
 
-1. $a | b$ if and only if $\langle b \rangle \subset \langle a \rangle$
+1. $a | b$ if and only if $\langle b \rangle \subseteq \langle a \rangle$
 2. $a$ and $b$ are associates if and only if $\langle b \rangle = \langle a \rangle$
 3. $a$ is a unit in $D$ if and only if $\langle a \rangle = D$.
 
@@ -51,7 +51,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 **Collary**. 18.13: Let $D$ be a PID. For any $p \in D$, if $p$ is irreducible, then $p$ is prime.
 
-**Lemma**. 18.14: Let $D$ be a PID. Let $I_1 \subset I_2 \subset \ldots$. Then, there exists some integer $N$ such that $I_n = I_N$ for all $n > N$. That is, any chain of ideals converges.
+**Lemma**. 18.14: Let $D$ be a PID. Let $I_1 \subseteq I_2 \subseteq \ldots$. Then, there exists some integer $N$ such that $I_n = I_N$ for all $n > N$. That is, any chain of ideals converges.
 
 **Definition**. Any commutative ring that satisfies the above condition (the *ascending chain condition*), even if it's not a PID, is called a *Noetherien ring*.
 

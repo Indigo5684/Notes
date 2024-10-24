@@ -73,12 +73,12 @@ $$
 
 **Definition**. Proposition 16.22: Let $\phi: R \rightarrow S$ be a ring homomorphism. Then,
 
-1. If $R$ is a commutative ring, then $\phi(R) \subset S$ is a commutative ring.
+1. If $R$ is a commutative ring, then $\phi(R) \subseteq S$ is a commutative ring.
 2. $\phi(0_R) = 0_S$
 3. Let $1_R$ and $1_S$ be the identities in $R$ and $S$. If $\phi$ is onto, then $\phi(1_R) = 1_S$
-4. If $R$ is a field an $\phi(R) \neq \{0\}$, then $\phi(R) \subset S$ is a field.
+4. If $R$ is a field an $\phi(R) \neq \{0\}$, then $\phi(R) \subseteq S$ is a field.
 
-**Definition**. A subring $I \subset R$ is asn *ideal* of $R$ if, when given $a \in I, r \in R$, then $ar$ and $ra$ are both in $I$. That is, $rI \subset I$ and $Ir \subset I$.
+**Definition**. A subring $I \subseteq R$ is asn *ideal* of $R$ if, when given $a \in I, r \in R$, then $ar$ and $ra$ are both in $I$. That is, $rI \subseteq I$ and $Ir \subseteq I$.
 
 **Definition**. Given a commutative ring $R$ with identity, and $r \in R$, the set
 
@@ -120,13 +120,13 @@ $$
 
 ## Section 16.4 - Maximal and Prime Ideals
 
-**Definition**. Consider ring $R$ and proper ideal $M \subset R$. Then, $M$ is a *maximal ideal* of $R$ if the ideal $M$ is not a subset of any ideal except $R$ itself. That is, given any ideal $I$ properly containing $M$, $I = R$.
+**Definition**. Consider ring $R$ and proper ideal $M \subseteq R$. Then, $M$ is a *maximal ideal* of $R$ if the ideal $M$ is not a subset of any ideal except $R$ itself. That is, given any ideal $I$ properly containing $M$, $I = R$.
 
 **Theorem**. 16.35: Given a commutative ring with identity $R$, $M$ is a maximal ideal if and only if $R/M$ is a field.
 
-**Definition**. Consider ring $R$ and proper ideal $P \subset R$. Then, $P$ is a *prime ideal* if given $ab \in P$, either $a \in P$ or $b \in P$.
+**Definition**. Consider ring $R$ and proper ideal $P \subseteq R$. Then, $P$ is a *prime ideal* if given $ab \in P$, either $a \in P$ or $b \in P$.
 
-**Theorem**. 16.38: Let $R$ be a commutative ring with identity $1$. Then, $P \subset R$ is a prime ideal of $R$ if and only if $R/P$ is a field.
+**Theorem**. 16.38: Let $R$ be a commutative ring with identity $1$. Then, $P \subseteq R$ is a prime ideal of $R$ if and only if $R/P$ is a field.
 
 Let us assume that $P$ is an ideal in $R$ and $R/P$ is an integral domain. Take two elements $ab \in P$. Now, consider $a + P$ and $b + P$ in $R/P$ such that $(a+P)(b+P) = 0+P = P$. As $R/P$ is a field, either $a + P = 0 + P = P$ or $b + P = 0 + P = P$, meaning either $a \in P$ or $b \in P$. Thus, $P$ is as prime ideal.
 
