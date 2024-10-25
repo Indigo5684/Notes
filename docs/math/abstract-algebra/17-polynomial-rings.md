@@ -24,7 +24,7 @@ Two polynomials are equal if and only if their corresponding coefficients are eq
 
 **Definition**. The *ring of polynomials with $n$ indeterminates and coefficients in $R$* is defined as $R[x_1][x_2][\ldots][x_n] = R[x_1, x_2, \ldots, x_n]$.
 
-**Definition**. The *evaluation homomorphism* is the homomorphism $\phi: R[x] \rightarrow R$ defined as $\phi(p(x)) = p(\alpha)$ for some $\alpha \in R$.
+**Definition**. The *evaluation homomorphism* is the homomorphism $\varphi: R[x] \rightarrow R$ defined as $\varphi(p(x)) = p(\alpha)$ for some $\alpha \in R$.
 
 ## Section 17.2 - The Division Algorithm
 

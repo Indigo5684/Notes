@@ -54,29 +54,29 @@ Note that some books impose the condition that $1 \neq 0$. If $1 = 0$, we can sh
 
 ## Section 16.3 - Ring Homomorphisms and Ideals
 
-**Definition** Given rins $R$ and $S$, and a mapping $\phi: R \rightarrow S$, we say that $\phi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
+**Definition** Given rins $R$ and $S$, and a mapping $\varphi: R \rightarrow S$, we say that $\varphi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
 
 $$
 \begin{align}
-    \phi(a + b) &= \phi(a) + \phi(b) \\
-    \phi(ab) &= \phi(a) \phi(b)
+    \varphi(a + b) &= \varphi(a) + \varphi(b) \\
+    \varphi(ab) &= \varphi(a) \varphi(b)
 \end{align}
 $$
 
-**Definition**. If $\phi$ is one-to-one and onto, it is an *isomorphism*.
+**Definition**. If $\varphi$ is one-to-one and onto, it is an *isomorphism*.
 
-**Definition**. For any ring homomorphism $\phi$, the *kernel* of $\phi$ is the set
+**Definition**. For any ring homomorphism $\varphi$, the *kernel* of $\varphi$ is the set
 
 $$
-\ker \phi = \{ r \in R | \phi(r) = 0 \}
+\ker \varphi = \{ r \in R | \varphi(r) = 0 \}
 $$
 
-**Definition**. Proposition 16.22: Let $\phi: R \rightarrow S$ be a ring homomorphism. Then,
+**Definition**. Proposition 16.22: Let $\varphi: R \rightarrow S$ be a ring homomorphism. Then,
 
-1. If $R$ is a commutative ring, then $\phi(R) \subseteq S$ is a commutative ring.
-2. $\phi(0_R) = 0_S$
-3. Let $1_R$ and $1_S$ be the identities in $R$ and $S$. If $\phi$ is onto, then $\phi(1_R) = 1_S$
-4. If $R$ is a field an $\phi(R) \neq \{0\}$, then $\phi(R) \subseteq S$ is a field.
+1. If $R$ is a commutative ring, then $\varphi(R) \subseteq S$ is a commutative ring.
+2. $\varphi(0_R) = 0_S$
+3. Let $1_R$ and $1_S$ be the identities in $R$ and $S$. If $\varphi$ is onto, then $\varphi(1_R) = 1_S$
+4. If $R$ is a field an $\varphi(R) \neq \{0\}$, then $\varphi(R) \subseteq S$ is a field.
 
 **Definition**. A subring $I \subseteq R$ is asn *ideal* of $R$ if, when given $a \in I, r \in R$, then $ar$ and $ra$ are both in $I$. That is, $rI \subseteq I$ and $Ir \subseteq I$.
 
@@ -90,7 +90,7 @@ is an ideal in $R$. Specifically, $\langle a \rangle$ is a *principal ideal*.
 
 **Example**. Theorem 16.25. Every ideal in $\mathbb{Z}$ is a principal ideal.
 
-**Examplee**. With $\phi: R \rightarrow S$, $\ker \phi$ is an ideal of $R$.
+**Examplee**. With $\varphi: R \rightarrow S$, $\ker \varphi$ is an ideal of $R$.
 
 **Remark**. 16.28: We are working with *two-sided ideals*. If rings are not commutative, we may deal with *left ideals* and *right ideals*.
 
@@ -100,9 +100,9 @@ $$
 (r + I)(s + I) = rs + I
 $$
 
-**Theorem**. 16.30: Let $I$ be an ideal of $R$. Then, the map $\phi: R \rightarrow R/I$ defined by $\phi(r) = r + I$ is a ring homomorphism of $R$ onto $R/I$ with $\ker \phi = I$.
+**Theorem**. 16.30: Let $I$ be an ideal of $R$. Then, the map $\varphi: R \rightarrow R/I$ defined by $\varphi(r) = r + I$ is a ring homomorphism of $R$ onto $R/I$ with $\ker \varphi = I$.
 
-**Theorem**. 16.31, *First Isomorphism Theorem*. Let $\psi: R \rightarrow S$. Then, $\ker \psi$ is an ideal of $R$. Consider the isomorphism $\phi: R \rightarrow R/\ker \psi$. There exists an isomorphism $\eta: R / \ker \psi \rightarrow \psi(R)$ such that $\psi = \eta \phi$.
+**Theorem**. 16.31, *First Isomorphism Theorem*. Let $\psi: R \rightarrow S$. Then, $\ker \psi$ is an ideal of $R$. Consider the isomorphism $\varphi: R \rightarrow R/\ker \psi$. There exists an isomorphism $\eta: R / \ker \psi \rightarrow \psi(R)$ such that $\psi = \eta \varphi$.
 
 **Theorem**. 16.32, *Second Isomorphism Theorem*. Let $I$ be a subring of $R$ and $J$ be an ideal of $R$. Then, $I \cap J$ is an ideal of $I$ and
 
