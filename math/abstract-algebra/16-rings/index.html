@@ -622,7 +622,28 @@
         
   
   <span class="md-ellipsis">
-    Chapter 2
+    Chapter 2 - The Real Number Line
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../real-analysis/3-sequences-series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3 - Sequences and Series
   </span>
   
 
@@ -1111,40 +1132,40 @@ a(b+c) = ab+bc \\
 <p><strong>Lemma</strong>. 16.18: Given <span class="arithmatex">\(R\)</span> is a ring with identity, the charactaristic of <span class="arithmatex">\(1\)</span> is the charactartistic of the field.</p>
 <p><strong>Theorem</strong>. 16.19: The charactaristic of an integral domain is prime or zero.</p>
 <h2 id="section-163-ring-homomorphisms-and-ideals">Section 16.3 - Ring Homomorphisms and Ideals</h2>
-<p><strong>Definition</strong> Given rins <span class="arithmatex">\(R\)</span> and <span class="arithmatex">\(S\)</span>, and a mapping <span class="arithmatex">\(\phi: R \rightarrow S\)</span>, we say that <span class="arithmatex">\(\phi\)</span> is a <em>ring homomorphism</em> if the following are satisfied for all elements of <span class="arithmatex">\(R\)</span>:</p>
+<p><strong>Definition</strong> Given rins <span class="arithmatex">\(R\)</span> and <span class="arithmatex">\(S\)</span>, and a mapping <span class="arithmatex">\(\varphi: R \rightarrow S\)</span>, we say that <span class="arithmatex">\(\varphi\)</span> is a <em>ring homomorphism</em> if the following are satisfied for all elements of <span class="arithmatex">\(R\)</span>:</p>
 <div class="arithmatex">\[
 \begin{align}
-    \phi(a + b) &amp;= \phi(a) + \phi(b) \\
-    \phi(ab) &amp;= \phi(a) \phi(b)
+    \varphi(a + b) &amp;= \varphi(a) + \varphi(b) \\
+    \varphi(ab) &amp;= \varphi(a) \varphi(b)
 \end{align}
 \]</div>
-<p><strong>Definition</strong>. If <span class="arithmatex">\(\phi\)</span> is one-to-one and onto, it is an <em>isomorphism</em>.</p>
-<p><strong>Definition</strong>. For any ring homomorphism <span class="arithmatex">\(\phi\)</span>, the <em>kernel</em> of <span class="arithmatex">\(\phi\)</span> is the set</p>
+<p><strong>Definition</strong>. If <span class="arithmatex">\(\varphi\)</span> is one-to-one and onto, it is an <em>isomorphism</em>.</p>
+<p><strong>Definition</strong>. For any ring homomorphism <span class="arithmatex">\(\varphi\)</span>, the <em>kernel</em> of <span class="arithmatex">\(\varphi\)</span> is the set</p>
 <div class="arithmatex">\[
-\ker \phi = \{ r \in R | \phi(r) = 0 \}
+\ker \varphi = \{ r \in R | \varphi(r) = 0 \}
 \]</div>
-<p><strong>Definition</strong>. Proposition 16.22: Let <span class="arithmatex">\(\phi: R \rightarrow S\)</span> be a ring homomorphism. Then,</p>
+<p><strong>Definition</strong>. Proposition 16.22: Let <span class="arithmatex">\(\varphi: R \rightarrow S\)</span> be a ring homomorphism. Then,</p>
 <ol>
-<li>If <span class="arithmatex">\(R\)</span> is a commutative ring, then <span class="arithmatex">\(\phi(R) \subset S\)</span> is a commutative ring.</li>
-<li><span class="arithmatex">\(\phi(0_R) = 0_S\)</span></li>
-<li>Let <span class="arithmatex">\(1_R\)</span> and <span class="arithmatex">\(1_S\)</span> be the identities in <span class="arithmatex">\(R\)</span> and <span class="arithmatex">\(S\)</span>. If <span class="arithmatex">\(\phi\)</span> is onto, then <span class="arithmatex">\(\phi(1_R) = 1_S\)</span></li>
-<li>If <span class="arithmatex">\(R\)</span> is a field an <span class="arithmatex">\(\phi(R) \neq \{0\}\)</span>, then <span class="arithmatex">\(\phi(R) \subset S\)</span> is a field.</li>
+<li>If <span class="arithmatex">\(R\)</span> is a commutative ring, then <span class="arithmatex">\(\varphi(R) \subseteq S\)</span> is a commutative ring.</li>
+<li><span class="arithmatex">\(\varphi(0_R) = 0_S\)</span></li>
+<li>Let <span class="arithmatex">\(1_R\)</span> and <span class="arithmatex">\(1_S\)</span> be the identities in <span class="arithmatex">\(R\)</span> and <span class="arithmatex">\(S\)</span>. If <span class="arithmatex">\(\varphi\)</span> is onto, then <span class="arithmatex">\(\varphi(1_R) = 1_S\)</span></li>
+<li>If <span class="arithmatex">\(R\)</span> is a field an <span class="arithmatex">\(\varphi(R) \neq \{0\}\)</span>, then <span class="arithmatex">\(\varphi(R) \subseteq S\)</span> is a field.</li>
 </ol>
-<p><strong>Definition</strong>. A subring <span class="arithmatex">\(I \subset R\)</span> is asn <em>ideal</em> of <span class="arithmatex">\(R\)</span> if, when given <span class="arithmatex">\(a \in I, r \in R\)</span>, then <span class="arithmatex">\(ar\)</span> and <span class="arithmatex">\(ra\)</span> are both in <span class="arithmatex">\(I\)</span>. That is, <span class="arithmatex">\(rI \subset I\)</span> and <span class="arithmatex">\(Ir \subset I\)</span>.</p>
+<p><strong>Definition</strong>. A subring <span class="arithmatex">\(I \subseteq R\)</span> is asn <em>ideal</em> of <span class="arithmatex">\(R\)</span> if, when given <span class="arithmatex">\(a \in I, r \in R\)</span>, then <span class="arithmatex">\(ar\)</span> and <span class="arithmatex">\(ra\)</span> are both in <span class="arithmatex">\(I\)</span>. That is, <span class="arithmatex">\(rI \subseteq I\)</span> and <span class="arithmatex">\(Ir \subseteq I\)</span>.</p>
 <p><strong>Definition</strong>. Given a commutative ring <span class="arithmatex">\(R\)</span> with identity, and <span class="arithmatex">\(r \in R\)</span>, the set</p>
 <div class="arithmatex">\[
 \langle a \rangle = (r)R = \{ ar : r \in R \}
 \]</div>
 <p>is an ideal in <span class="arithmatex">\(R\)</span>. Specifically, <span class="arithmatex">\(\langle a \rangle\)</span> is a <em>principal ideal</em>.</p>
 <p><strong>Example</strong>. Theorem 16.25. Every ideal in <span class="arithmatex">\(\mathbb{Z}\)</span> is a principal ideal.</p>
-<p><strong>Examplee</strong>. With <span class="arithmatex">\(\phi: R \rightarrow S\)</span>, <span class="arithmatex">\(\ker \phi\)</span> is an ideal of <span class="arithmatex">\(R\)</span>.</p>
+<p><strong>Examplee</strong>. With <span class="arithmatex">\(\varphi: R \rightarrow S\)</span>, <span class="arithmatex">\(\ker \varphi\)</span> is an ideal of <span class="arithmatex">\(R\)</span>.</p>
 <p><strong>Remark</strong>. 16.28: We are working with <em>two-sided ideals</em>. If rings are not commutative, we may deal with <em>left ideals</em> and <em>right ideals</em>.</p>
 <p><strong>Theorem</strong>. 16.29: Let  <span class="arithmatex">\(I\)</span> be an ideal of <span class="arithmatex">\(R\)</span>. Then, the factor/quotient ring <span class="arithmatex">\(R/I\)</span> is a ring with multiplication defined by</p>
 <div class="arithmatex">\[
 (r + I)(s + I) = rs + I
 \]</div>
-<p><strong>Theorem</strong>. 16.30: Let <span class="arithmatex">\(I\)</span> be an ideal of <span class="arithmatex">\(R\)</span>. Then, the map <span class="arithmatex">\(\phi: R \rightarrow R/I\)</span> defined by <span class="arithmatex">\(\phi(r) = r + I\)</span> is a ring homomorphism of <span class="arithmatex">\(R\)</span> onto <span class="arithmatex">\(R/I\)</span> with <span class="arithmatex">\(\ker \phi = I\)</span>.</p>
-<p><strong>Theorem</strong>. 16.31, <em>First Isomorphism Theorem</em>. Let <span class="arithmatex">\(\psi: R \rightarrow S\)</span>. Then, <span class="arithmatex">\(\ker \psi\)</span> is an ideal of <span class="arithmatex">\(R\)</span>. Consider the isomorphism <span class="arithmatex">\(\phi: R \rightarrow R/\ker \psi\)</span>. There exists an isomorphism <span class="arithmatex">\(\eta: R / \ker \psi \rightarrow \psi(R)\)</span> such that <span class="arithmatex">\(\psi = \eta \phi\)</span>.</p>
+<p><strong>Theorem</strong>. 16.30: Let <span class="arithmatex">\(I\)</span> be an ideal of <span class="arithmatex">\(R\)</span>. Then, the map <span class="arithmatex">\(\varphi: R \rightarrow R/I\)</span> defined by <span class="arithmatex">\(\varphi(r) = r + I\)</span> is a ring homomorphism of <span class="arithmatex">\(R\)</span> onto <span class="arithmatex">\(R/I\)</span> with <span class="arithmatex">\(\ker \varphi = I\)</span>.</p>
+<p><strong>Theorem</strong>. 16.31, <em>First Isomorphism Theorem</em>. Let <span class="arithmatex">\(\psi: R \rightarrow S\)</span>. Then, <span class="arithmatex">\(\ker \psi\)</span> is an ideal of <span class="arithmatex">\(R\)</span>. Consider the isomorphism <span class="arithmatex">\(\varphi: R \rightarrow R/\ker \psi\)</span>. There exists an isomorphism <span class="arithmatex">\(\eta: R / \ker \psi \rightarrow \psi(R)\)</span> such that <span class="arithmatex">\(\psi = \eta \varphi\)</span>.</p>
 <p><strong>Theorem</strong>. 16.32, <em>Second Isomorphism Theorem</em>. Let <span class="arithmatex">\(I\)</span> be a subring of <span class="arithmatex">\(R\)</span> and <span class="arithmatex">\(J\)</span> be an ideal of <span class="arithmatex">\(R\)</span>. Then, <span class="arithmatex">\(I \cap J\)</span> is an ideal of <span class="arithmatex">\(I\)</span> and</p>
 <div class="arithmatex">\[
 I/I \cap J \cong (I + J) / J
@@ -1155,10 +1176,10 @@ R/I \cong \frac{R/J}{I/J}
 \]</div>
 <p><strong>Theorem</strong>. 16.34, <em>Correspondence Theorem</em>. Let <span class="arithmatex">\(I\)</span> be an ideal of <span class="arithmatex">\(R\)</span>. Then, <span class="arithmatex">\(S \mapsto S/I\)</span> is a one-to-one correspeondence between the set of subrings <span class="arithmatex">\(S\)</span> containing <span class="arithmatex">\(I\)</span> (that is, <span class="arithmatex">\(I \in S\)</span>) and the set of subrings of <span class="arithmatex">\(R/I\)</span>. Furthermore, the ideals of <span class="arithmatex">\(R\)</span> containing <span class="arithmatex">\(I\)</span> correspond to the ideals of <span class="arithmatex">\(R/I\)</span>.</p>
 <h2 id="section-164-maximal-and-prime-ideals">Section 16.4 - Maximal and Prime Ideals</h2>
-<p><strong>Definition</strong>. Consider ring <span class="arithmatex">\(R\)</span> and proper ideal <span class="arithmatex">\(M \subset R\)</span>. Then, <span class="arithmatex">\(M\)</span> is a <em>maximal ideal</em> of <span class="arithmatex">\(R\)</span> if the ideal <span class="arithmatex">\(M\)</span> is not a subset of any ideal except <span class="arithmatex">\(R\)</span> itself. That is, given any ideal <span class="arithmatex">\(I\)</span> properly containing <span class="arithmatex">\(M\)</span>, <span class="arithmatex">\(I = R\)</span>.</p>
+<p><strong>Definition</strong>. Consider ring <span class="arithmatex">\(R\)</span> and proper ideal <span class="arithmatex">\(M \subseteq R\)</span>. Then, <span class="arithmatex">\(M\)</span> is a <em>maximal ideal</em> of <span class="arithmatex">\(R\)</span> if the ideal <span class="arithmatex">\(M\)</span> is not a subset of any ideal except <span class="arithmatex">\(R\)</span> itself. That is, given any ideal <span class="arithmatex">\(I\)</span> properly containing <span class="arithmatex">\(M\)</span>, <span class="arithmatex">\(I = R\)</span>.</p>
 <p><strong>Theorem</strong>. 16.35: Given a commutative ring with identity <span class="arithmatex">\(R\)</span>, <span class="arithmatex">\(M\)</span> is a maximal ideal if and only if <span class="arithmatex">\(R/M\)</span> is a field.</p>
-<p><strong>Definition</strong>. Consider ring <span class="arithmatex">\(R\)</span> and proper ideal <span class="arithmatex">\(P \subset R\)</span>. Then, <span class="arithmatex">\(P\)</span> is a <em>prime ideal</em> if given <span class="arithmatex">\(ab \in P\)</span>, either <span class="arithmatex">\(a \in P\)</span> or <span class="arithmatex">\(b \in P\)</span>.</p>
-<p><strong>Theorem</strong>. 16.38: Let <span class="arithmatex">\(R\)</span> be a commutative ring with identity <span class="arithmatex">\(1\)</span>. Then, <span class="arithmatex">\(P \subset R\)</span> is a prime ideal of <span class="arithmatex">\(R\)</span> if and only if <span class="arithmatex">\(R/P\)</span> is a field.</p>
+<p><strong>Definition</strong>. Consider ring <span class="arithmatex">\(R\)</span> and proper ideal <span class="arithmatex">\(P \subseteq R\)</span>. Then, <span class="arithmatex">\(P\)</span> is a <em>prime ideal</em> if given <span class="arithmatex">\(ab \in P\)</span>, either <span class="arithmatex">\(a \in P\)</span> or <span class="arithmatex">\(b \in P\)</span>.</p>
+<p><strong>Theorem</strong>. 16.38: Let <span class="arithmatex">\(R\)</span> be a commutative ring with identity <span class="arithmatex">\(1\)</span>. Then, <span class="arithmatex">\(P \subseteq R\)</span> is a prime ideal of <span class="arithmatex">\(R\)</span> if and only if <span class="arithmatex">\(R/P\)</span> is a field.</p>
 <p>Let us assume that <span class="arithmatex">\(P\)</span> is an ideal in <span class="arithmatex">\(R\)</span> and <span class="arithmatex">\(R/P\)</span> is an integral domain. Take two elements <span class="arithmatex">\(ab \in P\)</span>. Now, consider <span class="arithmatex">\(a + P\)</span> and <span class="arithmatex">\(b + P\)</span> in <span class="arithmatex">\(R/P\)</span> such that <span class="arithmatex">\((a+P)(b+P) = 0+P = P\)</span>. As <span class="arithmatex">\(R/P\)</span> is a field, either <span class="arithmatex">\(a + P = 0 + P = P\)</span> or <span class="arithmatex">\(b + P = 0 + P = P\)</span>, meaning either <span class="arithmatex">\(a \in P\)</span> or <span class="arithmatex">\(b \in P\)</span>. Thus, <span class="arithmatex">\(P\)</span> is as prime ideal.</p>
 <p>Now, assume the opposite. Let <span class="arithmatex">\(P\)</span> be prime. Now, we want to show that <span class="arithmatex">\(R/P\)</span> is an integral domain.</p>
 <p>Consider two elements <span class="arithmatex">\(a + P\)</span>, <span class="arithmatex">\(b + P\)</span> in <span class="arithmatex">\(R/P\)</span>. We know that</p>
@@ -1189,7 +1210,7 @@ R/I \cong \frac{R/J}{I/J}
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 9, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 25, 2024</span>
   </span>
 
     

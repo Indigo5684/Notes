@@ -12,7 +12,7 @@
         <link rel="prev" href="../../diffeq/4-laplace/">
       
       
-        <link rel="next" href="../../../physics/electrostatics/1-math/">
+        <link rel="next" href="../3-sequences-series/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -20,7 +20,7 @@
     
     
       
-        <title>Chapter 2 - Notes</title>
+        <title>Chapter 2 - The Real Number Line - Notes</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#chapter-2" class="md-skip">
+        <a href="#chapter-2-the-real-number-line" class="md-skip">
           Skip to content
         </a>
       
@@ -98,7 +98,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Chapter 2
+              Chapter 2 - The Real Number Line
             
           </span>
         </div>
@@ -555,7 +555,7 @@
           
   
   <span class="md-ellipsis">
-    Chapter 2
+    Chapter 2 - The Real Number Line
   </span>
   
 
@@ -566,7 +566,7 @@
         
   
   <span class="md-ellipsis">
-    Chapter 2
+    Chapter 2 - The Real Number Line
   </span>
   
 
@@ -605,10 +605,40 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-25-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.5 - Intervals
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../3-sequences-series/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3 - Sequences and Series
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1010,6 +1040,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-25-intervals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.5 - Intervals
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1041,7 +1080,7 @@
   
 
 
-<h1 id="chapter-2">Chapter 2</h1>
+<h1 id="chapter-2-the-real-number-line">Chapter 2 - The Real Number Line</h1>
 <h2 id="section-21-the-algebraic-and-order-properties-of-real-numbers">Section 2.1 - The Algebraic and Order Properties of Real Numbers</h2>
 <p><strong>Proposition</strong>. 2.1.1: <span class="arithmatex">\(\mathbb{R}\)</span> is a field, with zero element <span class="arithmatex">\(0\)</span> and identity <span class="arithmatex">\(1\)</span>.</p>
 <p><strong>Definition</strong>. The rational numbers <span class="arithmatex">\(\mathbb{Q}\)</span> is the field of fractions of the natural numbers <span class="arithmatex">\(\mathbb{N}\)</span>.</p>
@@ -1055,7 +1094,7 @@
 <p><strong>Theorem</strong>. In any ordered field <span class="arithmatex">\(F\)</span>, the following hold</p>
 <ol>
 <li><span class="arithmatex">\(1 \in F^+\)</span></li>
-<li><span class="arithmatex">\(\mathbb{N} \subset F^+\)</span></li>
+<li><span class="arithmatex">\(\mathbb{N} \subseteq F^+\)</span></li>
 <li>If <span class="arithmatex">\(a \in F^+\)</span>, then <span class="arithmatex">\(\frac{1}{a} \in F^+\)</span></li>
 </ol>
 <p><strong>Definition</strong> The order relation <span class="arithmatex">\(a &gt; b\)</span> and <span class="arithmatex">\(b &lt; a\)</span> is defined by <span class="arithmatex">\(a - b \in F^+\)</span>.</p>
@@ -1072,8 +1111,8 @@
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(S\)</span> be a nonempty subset of ordered field <span class="arithmatex">\(F\)</span>. Then, <span class="arithmatex">\(S\)</span> is <em>bounded above</em> if there exists some <span class="arithmatex">\(u \in F\)</span> such that <span class="arithmatex">\(s \leq u\)</span> for all <span class="arithmatex">\(s \in S\)</span>. Then, said element <span class="arithmatex">\(u\)</span> is an <em>upper bound</em> of <span class="arithmatex">\(S\)</span>.</p>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(S\)</span> be a nonempty subset of ordered field <span class="arithmatex">\(F\)</span>. Then, <span class="arithmatex">\(S\)</span> is <em>bounded below</em> if there exists some <span class="arithmatex">\(u \in F\)</span> such that <span class="arithmatex">\(s \geq u\)</span> for all <span class="arithmatex">\(s \in S\)</span>. Then, said element <span class="arithmatex">\(u\)</span> is a <em>lower bound</em> of <span class="arithmatex">\(S\)</span>.</p>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(S\)</span> be a nonempty subset of ordered field <span class="arithmatex">\(F\)</span>. Then, <span class="arithmatex">\(S\)</span> is <em>bounded</em> if it is bounded both above and below.</p>
-<p><strong>Definition</strong>. Given field <span class="arithmatex">\(F\)</span> and nonempty subset <span class="arithmatex">\(S \subset F\)</span>, an element <span class="arithmatex">\(u \in F\)</span> is a <em>supremum</em> or <em>least upper bound</em> of <span class="arithmatex">\(S\)</span> if <span class="arithmatex">\(u\)</span> is an upper bound of <span class="arithmatex">\(S\)</span>, and given any other upper bound <span class="arithmatex">\(v\)</span>, then <span class="arithmatex">\(u &lt; v\)</span></p>
-<p><strong>Definition</strong>. Given field <span class="arithmatex">\(F\)</span> and nonempty subset <span class="arithmatex">\(S \subset F\)</span>, an element <span class="arithmatex">\(u \in F\)</span> is an <em>infimum</em> or <em>greatest lower bound</em> of <span class="arithmatex">\(S\)</span> if <span class="arithmatex">\(u\)</span> is a lower bound of <span class="arithmatex">\(S\)</span>, and given any other lower bound <span class="arithmatex">\(v\)</span>, then <span class="arithmatex">\(u &gt; v\)</span></p>
+<p><strong>Definition</strong>. Given field <span class="arithmatex">\(F\)</span> and nonempty subset <span class="arithmatex">\(S \subseteq F\)</span>, an element <span class="arithmatex">\(u \in F\)</span> is a <em>supremum</em> or <em>least upper bound</em> of <span class="arithmatex">\(S\)</span> if <span class="arithmatex">\(u\)</span> is an upper bound of <span class="arithmatex">\(S\)</span>, and given any other upper bound <span class="arithmatex">\(v\)</span>, then <span class="arithmatex">\(u &lt; v\)</span></p>
+<p><strong>Definition</strong>. Given field <span class="arithmatex">\(F\)</span> and nonempty subset <span class="arithmatex">\(S \subseteq F\)</span>, an element <span class="arithmatex">\(u \in F\)</span> is an <em>infimum</em> or <em>greatest lower bound</em> of <span class="arithmatex">\(S\)</span> if <span class="arithmatex">\(u\)</span> is a lower bound of <span class="arithmatex">\(S\)</span>, and given any other lower bound <span class="arithmatex">\(v\)</span>, then <span class="arithmatex">\(u &gt; v\)</span></p>
 <p><strong>Definition</strong>. Given an ordered field <span class="arithmatex">\(F\)</span>, the field has the <em>supremum/infimum property</em> if given any nonempty subset <span class="arithmatex">\(S\)</span>, if <span class="arithmatex">\(S\)</span> is bounded above/below, <span class="arithmatex">\(S\)</span> has a supremum/infimum.</p>
 <h2 id="section-22-absolute-value-and-the-real-line">Section 2.2 - Absolute Value and the Real Line</h2>
 <p><strong>Definition</strong>. Absolute value is defined as normal (piecewise). Multiline function in LaTeX are hard.</p>
@@ -1087,10 +1126,35 @@
 <p><strong>Remark</strong>. Every field has at least one absolute value function.</p>
 <p><strong>Theorem</strong>. In an ordered field <span class="arithmatex">\(F\)</span>, for any <span class="arithmatex">\(r &gt; 0\)</span>, we know that</p>
 <ol>
-<li><span class="arithmatex">\(\abs x = r\)</span> if and only if <span class="arithmatex">\(x = r\)</span> or <span class="arithmatex">\(x = -r\)</span></li>
-<li><span class="arithmatex">\(\abs x &lt; r\)</span> if and only if <span class="arithmatex">\(-r &lt; x &lt; r\)</span></li>
-<li><span class="arithmatex">\(\abs x &gt; r\)</span> if either <span class="arithmatex">\(x &gt; r\)</span> or <span class="arithmatex">\(x &lt; -r\)</span></li>
+<li><span class="arithmatex">\(\abs{x = r}\)</span> if and only if <span class="arithmatex">\(x = r\)</span> or <span class="arithmatex">\(x = -r\)</span></li>
+<li><span class="arithmatex">\(\abs{x &lt; r}\)</span> if and only if <span class="arithmatex">\(-r &lt; x &lt; r\)</span></li>
+<li><span class="arithmatex">\(\abs{x &gt; r}\)</span> if either <span class="arithmatex">\(x &gt; r\)</span> or <span class="arithmatex">\(x &lt; -r\)</span></li>
 </ol>
+<hr />
+<p><strong>Definition</strong>. The <em>standard distance function</em> or <em>metric</em> on the real numbers <span class="arithmatex">\(\mathbb{R}\)</span> given <span class="arithmatex">\(a, b\)</span> is <span class="arithmatex">\(\abs{a - b}\)</span>.</p>
+<p><strong>Theorem</strong>. For any real numbers <span class="arithmatex">\(a, b, c\)</span>,</p>
+<ol>
+<li><span class="arithmatex">\(\abs{a - b} &gt; 0\)</span> if and only if <span class="arithmatex">\(a \neq b\)</span> and <span class="arithmatex">\(\abs{a - b} = 0\)</span> if and only if <span class="arithmatex">\(a = b\)</span></li>
+<li><span class="arithmatex">\(\abs{a - b} = \abs{b - a}\)</span></li>
+<li><span class="arithmatex">\(\abs{a - c} \leq \abs{a - b} + \abs{b + c}\)</span></li>
+</ol>
+<p><strong>Definition</strong> A set together with a function satisfying these three properties is known as a <em>metric space</em>.</p>
+<p><strong>Definition</strong> The <span class="arithmatex">\(\epsilon\)</span>-neighborhood of <span class="arithmatex">\(a \in \mathbb{R}\)</span>, denoted <span class="arithmatex">\(V_\epsilon(a)\)</span> is the set of all real numbers <span class="arithmatex">\(x \in \mathbb{R}\)</span> such that <span class="arithmatex">\(\abs{x - a} &lt; \epsilon\)</span>. That is,</p>
+<div class="arithmatex">\[
+V_\epsilon(a) = (a - \epsilon, a + \epsilon)
+\]</div>
+<hr />
+<p><strong>Decimals</strong>. Let <span class="arithmatex">\(x \in \mathbb{R}\)</span> such that <span class="arithmatex">\(x &gt; 0\)</span>. By the archimedian property, there exists some <span class="arithmatex">\(b_0 \in \mathbb{N} \cup {0}\)</span> such that <span class="arithmatex">\(b_0 &lt; x &lt; b_0 + 1\)</span>. We can repeat this to see</p>
+<div class="arithmatex">\[
+x = b_0 + \frac{b_1}{10} + \frac{b_2}{100} + \ldots + \frac{b_n}{100^n} + \ldots
+\]</div>
+<p><strong>Definition</strong>. The <em>decimal expansion</em> of <span class="arithmatex">\(x\)</span> is denoted <span class="arithmatex">\(b_0.b_1 b_2 b_3 \ldots\)</span>.</p>
+<h2 id="section-25-intervals">Section 2.5 - Intervals</h2>
+<p><strong>Definition</strong>. A subset <span class="arithmatex">\(I\)</span> is an <em>interval</em> if and only if, given <span class="arithmatex">\(a, b \in I\)</span>, then <span class="arithmatex">\([a, b] \subseteq I\)</span>.</p>
+<p><strong>Definition</strong>. Intervals <span class="arithmatex">\(I_1, I_2, \ldots, I_n, \ldots\)</span> are <em>nested</em> if and only if <span class="arithmatex">\(I_1 \subseteq I_2 \subseteq \ldots \subseteq I_n \subseteq \ldots\)</span>.</p>
+<p><strong>Theorem</strong>. Nested Intervals Property. If <span class="arithmatex">\(I_n = [a_n, b_n]\)</span> is a set of nested intervals that are closed and bound, then there exists some number <span class="arithmatex">\(z \in \mathbb{R}\)</span> such that <span class="arithmatex">\(z \in I_n\)</span> for all <span class="arithmatex">\(n\)</span>.</p>
+<p><strong>Theorem</strong>. If <span class="arithmatex">\(a &lt; b\)</span>, then the interval <span class="arithmatex">\([a, b]\)</span> is an uncountable set.</p>
+<p><strong>Collary</strong>. <span class="arithmatex">\(\mathbb{R}\)</span> is uncountable.</p>
 
 
 
@@ -1113,7 +1177,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 24, 2024</span>
   </span>
 
     
@@ -1184,13 +1248,13 @@
         
         
           
-          <a href="../../../physics/electrostatics/1-math/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 1 - Mathematics">
+          <a href="../3-sequences-series/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 3 - Sequences and Series">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Chapter 1 - Mathematics
+                Chapter 3 - Sequences and Series
               </div>
             </div>
             <div class="md-footer__button md-icon">
