@@ -118,11 +118,11 @@ This direct product is in itself an $R$-module.
 
 **Definition**. An $R$-module $F$ is said to be *free* on the subset $A$ of $F$ if for every nonzero $x \in F$, there exists nonzero elements $r_1, \ldots, r_n$ of $R$ and unique $a_1, \ldots, a_n$ such that $x = r_1 a_1 + \ldots + r_n a_n$ for some $n \in \mathbb{Z}^+$. That is, $A$ is a *basis* or *set of free generators* of $F$.
 
-**Theorem**. For any set $A$, there is a free $R$-module $F(A)$ on $A$ such that $F(A)$ satisfies tthe universal property: if $M$ is any $R$-module, and $\varphi: A \rightarrow M$ is a map of sets, there eixts a unique $R$-module homomorphism: $\Phi: F(A) \rightarrow M$ such that $\Phi(a) = \varphi(a)$ for all $a \in A$.
+**Theorem**. For any set $A$, there is a free $R$-module $F(A)$ on $A$ such that $F(A)$ satisfies the universal property: if $M$ is any $R$-module, and $\varphi: A \rightarrow M$ is a map of sets, there eixts a unique $R$-module homomorphism: $\Phi: F(A) \rightarrow M$ such that $\Phi(a) = \varphi(a)$ for all $a \in A$.
 
 **Collary**. If $F_1$ and $F_2$ are free modules on $A$, then there is a unique isomorphism between $F_1$ and $F_2$, which is the identity map on A.
 
-**Collary**. If $F$ is a free $R$-module with basis $A$, then $F \coong F(A)$.
+**Collary**. If $F$ is a free $R$-module with basis $A$, then $F \cong F(A)$.
 
 **Definition** For a free module $F$ with basis $A$, if $R$ is commutative, tthen the *rank* of $F$ is the cardinality of $A$.
 
