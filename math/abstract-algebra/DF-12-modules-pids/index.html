@@ -1115,6 +1115,33 @@ M_1 \subseteq M_2 \subseteq \ldots
 \]</div>
 <p>there xists some <span class="arithmatex">\(k \in \mathbb{N}\)</span> such thaht given any <span class="arithmatex">\(n \in \mathbb{N}\)</span> with <span class="arithmatex">\(n \geq k\)</span>, then <span class="arithmatex">\(M_n = M_k\)</span>.</p>
 <p><strong>Definition</strong>. A ring <span class="arithmatex">\(R\)</span> is <em>Noetherian</em> if it is Noetherian when viewed as a left <span class="arithmatex">\(R\)</span>-module over itself.</p>
+<p><strong>Theorem</strong>. Let <span class="arithmatex">\(R\)</span> be a ring and <span class="arithmatex">\(M\)</span> a left <span class="arithmatex">\(R\)</span>-module. Then, the following are equivalent:</p>
+<ol>
+<li><span class="arithmatex">\(M\)</span> is Noetherian</li>
+<li>Every nonempty set of submodules of <span class="arithmatex">\(M\)</span> contains a maximal element under inclusion</li>
+<li>Every submodule of <span class="arithmatex">\(M\)</span> is finitely-generated</li>
+</ol>
+<p><strong>Collary</strong>. If <span class="arithmatex">\(R\)</span> is a principal ideal domain (PID), then all nonempty set of ideals of <span class="arithmatex">\(R\)</span> has a maximal element. Additionally, <span class="arithmatex">\(R\)</span> is as Noetherian ring.</p>
+<p><strong>Proposition</strong>. Let <span class="arithmatex">\(R\)</span> be an integral doman, and <span class="arithmatex">\(M\)</span> be a free <span class="arithmatex">\(R\)</span>-module of rank <span class="arithmatex">\(n &lt; \infty\)</span>. Then, given <span class="arithmatex">\(S\)</span> is subset <span class="arithmatex">\(M\)</span> with <span class="arithmatex">\(|S| &gt; n\)</span>, the elements of <span class="arithmatex">\(S\)</span> are <span class="arithmatex">\(R\)</span>-linearly dependent.</p>
+<p><strong>Definition</strong>. Given <span class="arithmatex">\(R\)</span> an integral domain and <span class="arithmatex">\(M\)</span> an <span class="arithmatex">\(R\)</span>-module,</p>
+<div class="arithmatex">\[
+\Tor(M) = \{ x \in M | rx = 0 \text{ for any } r \neq 0 \}
+\]</div>
+<p>This is the <em>torsion submodule</em> of <span class="arithmatex">\(M\)</span>. If <span class="arithmatex">\(\Tor(M)\)</span> is empty, then <span class="arithmatex">\(M\)</span> is <em>torsion-free</em>.</p>
+<p><strong>Definition</strong> Let <span class="arithmatex">\(R\)</span> be an integral domain and <span class="arithmatex">\(M\)</span> be an <span class="arithmatex">\(R\)</span>-module. Then, given a submodule <span class="arithmatex">\(N\)</span>,</p>
+<div class="arithmatex">\[
+\Ann_R(N) = \{r \in R | rn = 0 \text{ for all } n \in N \}
+\]</div>
+<p>This ideal of <span class="arithmatex">\(R\)</span> is the *<em>annihilator of <span class="arithmatex">\(N\)</span></em>. That is, <span class="arithmatex">\(\Ann(N)\)</span> is the set of elements of <span class="arithmatex">\(R\)</span> such that <span class="arithmatex">\((r)N = \{ 0 \}\)</span>.</p>
+<p>Note that if <span class="arithmatex">\(N\)</span> is not a torsion submodule of <span class="arithmatex">\(M\)</span>, then <span class="arithmatex">\(\Ann(N) = (0)R\)</span>. Additionally, given <span class="arithmatex">\(N, L\)</span> are submodules of <span class="arithmatex">\(M\)</span> with <span class="arithmatex">\(N \subseteq L\)</span>, then <span class="arithmatex">\(\Ann(N) \subseteq \Ann(L)\)</span>.</p>
+<p>Additionally, if <span class="arithmatex">\(R\)</span> is a PID, as <span class="arithmatex">\(\Ann_R(N)\)</span> is an ideal, <span class="arithmatex">\(\Ann(N) = (n)R\)</span> and <span class="arithmatex">\(\Ann(L) = (l)R\)</span> for some <span class="arithmatex">\(n, l \in R\)</span> such that <span class="arithmatex">\(n | l\)</span>.</p>
+<p><strong>Definition</strong>. Given any integral domain <span class="arithmatex">\(R\)</span>, the <em>rank</em> of an <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(M\)</span> is the maximum number of <span class="arithmatex">\(R\)</span>-linearly independent elements of M.</p>
+<p><strong>Collary</strong>. The rank of a free module is the number of generating elements.</p>
+<p><strong>Theorem</strong>. Let <span class="arithmatex">\(R\)</span> be a principal ideal domain, and <span class="arithmatex">\(M\)</span> be a free <span class="arithmatex">\(R\)</span>-module of finite rank <span class="arithmatex">\(m\)</span>, and <span class="arithmatex">\(N\)</span> be a submodule of <span class="arithmatex">\(M\)</span>. Then,</p>
+<ol>
+<li><span class="arithmatex">\(N\)</span> is a free submodule with rank <span class="arithmatex">\(n \leq m\)</span>.</li>
+<li>There exiss a basis <span class="arithmatex">\(y_1, y_2, \ldots, y_m\)</span> of <span class="arithmatex">\(M\)</span> so that <span class="arithmatex">\(r_1 y_1, r_2 y_2, \ldots, r_m y_n\)</span> is a basis of <span class="arithmatex">\(N\)</span> for some <span class="arithmatex">\(r_i \in R\)</span> and <span class="arithmatex">\(r_1 | r_2 | \ldots | r_n\)</span></li>
+</ol>
 
 
 
