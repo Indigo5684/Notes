@@ -12,7 +12,7 @@
         <link rel="prev" href="../18-integral-domains/">
       
       
-        <link rel="next" href="../../diffeq/1-intro/">
+        <link rel="next" href="../DF-12-modules-pids/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -466,6 +466,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DF-12-modules-pids/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 12 - Modules over Principal Ideal Domains
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1243,9 +1264,9 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
 <li>Every <span class="arithmatex">\(x \in N_1 + \ldots + N_n\)</span> can be written uniquely in the form <span class="arithmatex">\(a_1 + \ldots + a_n\)</span>, with <span class="arithmatex">\(a_i \in N_i\)</span></li>
 </ol>
 <p><strong>Definition</strong>. An <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(F\)</span> is said to be <em>free</em> on the subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(F\)</span> if for every nonzero <span class="arithmatex">\(x \in F\)</span>, there exists nonzero elements <span class="arithmatex">\(r_1, \ldots, r_n\)</span> of <span class="arithmatex">\(R\)</span> and unique <span class="arithmatex">\(a_1, \ldots, a_n\)</span> such that <span class="arithmatex">\(x = r_1 a_1 + \ldots + r_n a_n\)</span> for some <span class="arithmatex">\(n \in \mathbb{Z}^+\)</span>. That is, <span class="arithmatex">\(A\)</span> is a <em>basis</em> or <em>set of free generators</em> of <span class="arithmatex">\(F\)</span>.</p>
-<p><strong>Theorem</strong>. For any set <span class="arithmatex">\(A\)</span>, there is a free <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(F(A)\)</span> on <span class="arithmatex">\(A\)</span> such that <span class="arithmatex">\(F(A)\)</span> satisfies tthe universal property: if <span class="arithmatex">\(M\)</span> is any <span class="arithmatex">\(R\)</span>-module, and <span class="arithmatex">\(\varphi: A \rightarrow M\)</span> is a map of sets, there eixts a unique <span class="arithmatex">\(R\)</span>-module homomorphism: <span class="arithmatex">\(\Phi: F(A) \rightarrow M\)</span> such that <span class="arithmatex">\(\Phi(a) = \varphi(a)\)</span> for all <span class="arithmatex">\(a \in A\)</span>.</p>
+<p><strong>Theorem</strong>. For any set <span class="arithmatex">\(A\)</span>, there is a free <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(F(A)\)</span> on <span class="arithmatex">\(A\)</span> such that <span class="arithmatex">\(F(A)\)</span> satisfies the universal property: if <span class="arithmatex">\(M\)</span> is any <span class="arithmatex">\(R\)</span>-module, and <span class="arithmatex">\(\varphi: A \rightarrow M\)</span> is a map of sets, there eixts a unique <span class="arithmatex">\(R\)</span>-module homomorphism: <span class="arithmatex">\(\Phi: F(A) \rightarrow M\)</span> such that <span class="arithmatex">\(\Phi(a) = \varphi(a)\)</span> for all <span class="arithmatex">\(a \in A\)</span>.</p>
 <p><strong>Collary</strong>. If <span class="arithmatex">\(F_1\)</span> and <span class="arithmatex">\(F_2\)</span> are free modules on <span class="arithmatex">\(A\)</span>, then there is a unique isomorphism between <span class="arithmatex">\(F_1\)</span> and <span class="arithmatex">\(F_2\)</span>, which is the identity map on A.</p>
-<p><strong>Collary</strong>. If <span class="arithmatex">\(F\)</span> is a free <span class="arithmatex">\(R\)</span>-module with basis <span class="arithmatex">\(A\)</span>, then <span class="arithmatex">\(F \coong F(A)\)</span>.</p>
+<p><strong>Collary</strong>. If <span class="arithmatex">\(F\)</span> is a free <span class="arithmatex">\(R\)</span>-module with basis <span class="arithmatex">\(A\)</span>, then <span class="arithmatex">\(F \cong F(A)\)</span>.</p>
 <p><strong>Definition</strong> For a free module <span class="arithmatex">\(F\)</span> with basis <span class="arithmatex">\(A\)</span>, if <span class="arithmatex">\(R\)</span> is commutative, tthen the <em>rank</em> of <span class="arithmatex">\(F\)</span> is the cardinality of <span class="arithmatex">\(A\)</span>.</p>
 <h2 id="section-104-tensor-products-of-modules">Section 10.4 - Tensor Products of Modules</h2>
 <p>Skipped</p>
@@ -1273,7 +1294,7 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 25, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 28, 2024</span>
   </span>
 
     
@@ -1344,13 +1365,13 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
         
         
           
-          <a href="../../diffeq/1-intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Section 1 - Basic Concepts">
+          <a href="../DF-12-modules-pids/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 12 - Modules over Principal Ideal Domains">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Section 1 - Basic Concepts
+                Chapter 12 - Modules over Principal Ideal Domains
               </div>
             </div>
             <div class="md-footer__button md-icon">
