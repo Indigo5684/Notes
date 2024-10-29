@@ -5,7 +5,12 @@ window.MathJax = {
         displayMath: [["\\[", "\\]"]],
         processEscapes: true,
         processEnvironments: true,
-        packages: {'[+]': ['physics', 'gensymb']}
+        packages: {'[+]': ['physics', 'gensymb']},
+        macros: {
+            "Hom": ["\\operatorname\{Hom\}"],
+            "Ann": ["\\operatorname\{Ann\}"],
+            "Tor": ["\\operatorname\{Tor\}"]
+        }
     },
     options: {
         ignoreHtmlClass: ".*|",
