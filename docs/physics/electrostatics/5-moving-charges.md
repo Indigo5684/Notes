@@ -12,7 +12,7 @@ For a wire of uniform cross-sectional area, we see that $G = \sigma \frac{A}{L}$
 
 **Definition**. *Ohm's Law* can be written as $I = G V$, or inverted, $V = IR$. In a wire, we see that current density $\vb{} = \frac{I}{A} = \sigma \frac{V}{L} = \sigma \vb{E}$
 
-## Section 5.2
+## Section 5.2 - Currents and Curling Fields
 
 We know that $\vb{J}_e = \curl{\vb{H}}$ and $\vb{J}_m = -\curl{\vb{E}}$. That is, current densities cause the opposing field to curl.
 
@@ -32,3 +32,42 @@ $$
 
 ---
 
+Consider a current loop instead, on the $x-y$ plane and current $I$. Then, $r = z \vu{z}$ and $\dd{\vb{l'}} = R \vu{\varphi'} \dd{\phi'}$, and the magnetic field collapses to $\vb{H}(s = 0, z) = \frac{I_e R^2}{2(R^2 + z^2)^{\frac{3}{2}}} \vu{z}$
+
+---
+
+Consider some infinite bar magnet with height $h$ and width $w$. Then, the top and bottom surfaces will have a magnetic charge with density $\vb{J}_m^+ = M_0 \vb{b} \delta(z - h)$ and $\vb{J}_m^- = -M_0 \vb{v} \delta(z)$ respectively. By definition, $I_m = M_0 w v$.
+
+Now, consider a loop around only the top of the conductor. Then,
+
+$$
+\int_S \vb{J}_m \vdot \vu{n} \dd{S} = I_m = M_o w v
+$$
+
+By definition,
+
+$$
+\int_S \vb{J}_m \vdot \vu{n} \dd{S} = -\int_S (\curl{\vb{E}}) \vdot \vu{n} \dd{S}
+$$
+
+Applying Stokes theorem,
+
+$$
+\int_S (\curl{\vb{E}}) \vdot \vu{n} \dd{S} = M_0 w v
+$$
+
+## Section 5.3 - Forces on Moving Charges and Current
+
+Consider an electric charge moving with velocity $\vb{v}$ in a magnetic parallel plate capacitor with charge densities $\plusminus \sigma_m$. That is, $\mu_0 \vb{H} = \sigma_m \vu{z}$. Then, we can apply theorems to see the resulting force.
+
+**Theorem**. *Lorentz Force Law* states that $\vb{F} = q_e \vb{v} \cross \u_0 \vb{H}$ in the presence of a magnetic field. In the presence of both an electic andmagnetic field, $\vb{F} = q_e (\vb{E} + \vb{v} \cross \u_0 \vb{H})$.
+
+**Theorem**. *Ampere's Force Law* states that generalizing the previous theorem, we can see that
+
+$$
+\dd{\vb{F}} = I_e \dd{\vb{L}} \cross \u_0 \vb{H}(\vb{r})
+$$
+
+## Section 5.4 - Multipole Expansion of a Vector Potential
+
+This is messy. Skipped.
