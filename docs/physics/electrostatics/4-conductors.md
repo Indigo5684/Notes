@@ -62,3 +62,21 @@ Both $\vb{D}$ and $\vb{P}$ have units of Coulombs/m^2. Additionally, we see that
 $$
 \div \vb{D} = \div (\epsilon_0 \vb{E} + \vb{P}) = \div \epsilon_0 \vb{E} + \div \vb{P} = (\rho_{ef} + \rho_{eb}) - \rho_{eb} = \rho_{ef}
 $$
+
+## Section 4.5 - Induced Electric Charges, their Potentials and Fields
+
+This is an application chapter.
+
+## Section 4.6 - Capacitance
+
+**Definition**. The *capacitance* of an object $C$ is the charge per volt, such that
+
+$$
+C := \frac{Q}{V}
+$$
+
+This unit, $\frac{C}{V}$, is known as a Farad. For a sphere, $C = 4 \pi \epsilon_0 R$. For a parallel plate capacitor, this reduces to $C = \frac{epsilon_0 A}{d}$.
+
+## Section 4.7 - Forces on Charged Conductors in Electric Fields
+
+We know that $\vb{F} = \int \vb{E}_{ext}(\vb{r}) \rho_e(\vb{r}) dV$, where $\vb{E}_{ext}(\vb{r})$ is the external electric field and $\rho_e(\vb{r})$ is the charge density of the object.
