@@ -11,3 +11,24 @@ With math, we see that $\div \vb{J}(\vb{r}) = -\frac{\partial \rho(\vb{r})}{\par
 For a wire of uniform cross-sectional area, we see that $G = \sigma \frac{A}{L}$, where $A$ is the cross-sectional area, $L$ is the length of the wire, and $\sigma$ is the conductivity of a wire. Inverted, we see that $R$ = $\rho \frac{L}{A}$, where $\rho = \frac{1}{\sigma}$ is the resistivity of the wire.
 
 **Definition**. *Ohm's Law* can be written as $I = G V$, or inverted, $V = IR$. In a wire, we see that current density $\vb{} = \frac{I}{A} = \sigma \frac{V}{L} = \sigma \vb{E}$
+
+## Section 5.2
+
+We know that $\vb{J}_e = \curl{\vb{H}}$ and $\vb{J}_m = -\curl{\vb{E}}$. That is, current densities cause the opposing field to curl.
+
+For a wire with current $I_e$, we see that applying Stoke's theorem to the first equation,
+
+$ \int_S \curl{\vb{H}} \vdot \vu{n} \dd{S} = \int_{\partial S} = \vb{H} \vdot \dd{\vb{l}}$. Apply the identity $\curl{\vb{H}} = \vb{J}_e$ to the left side to see that $\int_S \curl{\vb{H}} \vdot \vu{n} \dd{S} = \int_S \vb{J}_e \vdot \vu{n} \dd{S} = (I_e)_S$, or the current passing through the cross-sectional area. By the original equation, we see that $(I_e)_S = \vb{H} \vdot \dd{\vb{l}}$.
+
+If we assume cylindrical coordinates and that $\vb{H}(vb{r}) = H_\varphi(s) \vu{\varphi}$, then $\vb{H} \vdot \dd{\vb{l}} = \int_0^{2\pi} H_\varphi(S) s \dd{\varphi}$, so then $(I_e)_S = \int_0^{2\pi} H_\varphi(S) s \dd{\varphi}$. Thus, for $s > a$ (where $a$ is the radius of the wire), $2\pi s H_\varphi = I_e$, and for $s < a$, $2\pi s H_\varphi = I_e \frac{s^2}{a^2}$.
+
+---
+
+By Helmholtz Theorem, we know that $\vb{H}(\vb{r}) = \curl{\vb{A}(\vb{r})}$. For a current-carying wire, $\vb{A}(\vb{r}) = \frac{I_e}{4\pi} \int_{\text{wire}} \frac{\dd{\vb{l'}}}{|\vb{r}-\vb{r'}|}$. Applying identities, we see the *Law of Biot and Savart$, where
+
+$$
+\vb{H}(\vb{r}) = \int{I_e}{4\pi}\int_{\text{wire}} \frac{-(\vb{r}-\vb{r'}) \cross \dd{\vb{l'}}}{|\vb{r}-\vb{r'}|^3}
+$$
+
+---
+
