@@ -30,6 +30,8 @@ Note that some books impose the condition that $1 \neq 0$. If $1 = 0$, we can sh
 
 **Definition**. A commutative division ring is called a *field*. That is, in a field, every element has an inverse.
 
+**Definition**. A subset $S$ of ring $R$ is a *subring* if given any $r, s \in S$, then $rs \in S$ and $r - s \in S$.
+
 ## Section 16.2 - Integral Domains and Fields
 
 **Definition**. If $R$ is a commutative ring and $r \in R$, then $r$ is said to be a *zero divisor* if there is some nonzero $s \in R$ such that $rs = 0$.
