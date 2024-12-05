@@ -1205,7 +1205,7 @@
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(R\)</span> be a ring. A <em>left <span class="arithmatex">\(R\)</span>-module</em> or a <em>left module over <span class="arithmatex">\(R\)</span></em> is a nonempty set <span class="arithmatex">\(M\)</span> together with</p>
 <ol>
 <li>A binary operation <span class="arithmatex">\(+\)</span> on <span class="arithmatex">\(M\)</span> under which <span class="arithmatex">\(M\)</span> is an abelian group</li>
-<li>An action <span class="arithmatex">\(\cross\)</span> of <span class="arithmatex">\(R\)</span> on <span class="arithmatex">\(M\)</span>, that is, a map or function <span class="arithmatex">\(R \cross M \leftarrow M\)</span>, denoted <span class="arithmatex">\(rm\)</span>, that for all <span class="arithmatex">\(r, s \in R, m, n \in M\)</span> satisfies<ul>
+<li>An action <span class="arithmatex">\(\cross\)</span> of <span class="arithmatex">\(R\)</span> on <span class="arithmatex">\(M\)</span>, that is, a map or function <span class="arithmatex">\(R \cross M \rightarrow M\)</span>, denoted <span class="arithmatex">\(rm\)</span>, that for all <span class="arithmatex">\(r, s \in R, m, n \in M\)</span> satisfies<ul>
 <li><span class="arithmatex">\((r + s)m = rm + sm\)</span></li>
 <li><span class="arithmatex">\((rs)m = r(sm)\)</span></li>
 <li><span class="arithmatex">\(r(m + n) = rm + rn\)</span></li>
@@ -1218,7 +1218,7 @@
 <p><strong>Definition</strong> An <em>R-submodule</em> is a subset<span class="arithmatex">\(N \subseteq M\)</span> which is closed under the action taken forall <span class="arithmatex">\(r \in R\)</span>. That is, given <span class="arithmatex">\(r \in R, n \in N\)</span>, tthen <span class="arithmatex">\(rn \in N\)</span>. Every module has at least two submodules: itself and the trivial (empty) submodule.</p>
 <p><strong>Remark</strong>. If <span class="arithmatex">\(F\)</span> is a field, submodules are equivilent to subspaces.</p>
 <hr />
-<p><strong>Example</strong>. Let <span class="arithmatex">\(F\)</span> be a field and <span class="arithmatex">\(F[x]\)</span> a polynomial ring. Then, let <span class="arithmatex">\(V\)</span> be a vector space of <span class="arithmatex">\(F\)</span>, and <span class="arithmatex">\(T\)</span> be a linear transformaion from <span class="arithmatex">\(V\)</span> to itself. That is, <span class="arithmatex">\(V: T \leftarrow T\)</span>. We know that <span class="arithmatex">\(V\)</span> is an <span class="arithmatex">\(F\)</span>-module. We will want to show that <span class="arithmatex">\(V\)</span> can be written as an <span class="arithmatex">\(F[x]\)</span>-module for some choice of <span class="arithmatex">\(T\)</span>. That is, we want an action <span class="arithmatex">\(F[x] \cross V \rightarrow V\)</span>.</p>
+<p><strong>Example</strong>. Let <span class="arithmatex">\(F\)</span> be a field and <span class="arithmatex">\(F[x]\)</span> a polynomial ring. Then, let <span class="arithmatex">\(V\)</span> be a vector space of <span class="arithmatex">\(F\)</span>, and <span class="arithmatex">\(T\)</span> be a linear transformaion from <span class="arithmatex">\(V\)</span> to itself. That is, <span class="arithmatex">\(V: T \rightarrow T\)</span>. We know that <span class="arithmatex">\(V\)</span> is an <span class="arithmatex">\(F\)</span>-module. We will want to show that <span class="arithmatex">\(V\)</span> can be written as an <span class="arithmatex">\(F[x]\)</span>-module for some choice of <span class="arithmatex">\(T\)</span>. That is, we want an action <span class="arithmatex">\(F[x] \cross V \rightarrow V\)</span>.</p>
 <p>Now, for a given linear transformation <span class="arithmatex">\(T\)</span>, consider some polynomial <span class="arithmatex">\(p(x) = a_n x^n + \ldots + a_0\)</span> and some <span class="arithmatex">\(v \in V\)</span>. We define <span class="arithmatex">\(p(x) \cross v\)</span> by$</p>
 <div class="arithmatex">\[
 p(x) \cross v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
@@ -1269,19 +1269,19 @@ A + B = {a + b | a \in A, b \in B}
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(M\)</span> be an <span class="arithmatex">\(R\)</span>-module and <span class="arithmatex">\(N_1, \ldots, N_n\)</span> be submodules of <span class="arithmatex">\(M\)</span>.</p>
 <ol>
 <li>The <em>sum</em> of <span class="arithmatex">\(N_1, \ldots, N_n\)</span> is the set of all finite sums of elements from the sets <span class="arithmatex">\(N_i\)</span>. That is, <span class="arithmatex">\(N_1, \ldots, N_n := \{a_1 + a_2 + \ldots + a_n | a_i \in N_i\}\)</span></li>
-<li>For a ny subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(M\)</span>, let <span class="arithmatex">\(RA = \{r_1 a_1 + r_2 a_2 + \ldots + r_m a_m | r_i \in R, a_i \in A\}\)</span>. If <span class="arithmatex">\(N\)</span> is a submodule of <span class="arithmatex">\(M\)</span> such that <span class="arithmatex">\(N = RA\)</span>, then <span class="arithmatex">\(A\)</span> is called the <em>generating set</em> for <span class="arithmatex">\(N\)</span>.</li>
+<li>For any subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(M\)</span>, let <span class="arithmatex">\(RA = \{r_1 a_1 + r_2 a_2 + \ldots + r_m a_m | r_i \in R, a_i \in A\}\)</span>. If <span class="arithmatex">\(N\)</span> is a submodule of <span class="arithmatex">\(M\)</span> such that <span class="arithmatex">\(N = RA\)</span>, then <span class="arithmatex">\(A\)</span> is called the <em>generating set</em> for <span class="arithmatex">\(N\)</span>.</li>
 <li>A submodule <span class="arithmatex">\(N\)</span> of <span class="arithmatex">\(M\)</span> is <em>finitely generaated</em> if there is some finite subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(M\)</span> such that <span class="arithmatex">\(N = RA\)</span>. That is, <span class="arithmatex">\(N\)</span> is generated by some finite subset.</li>
 <li>A submodule of <span class="arithmatex">\(M\)</span> (up to equality) is <span class="arithmatex">\(cyclic\)</span> if there exists some element <span class="arithmatex">\(a \in M\)</span> such that <span class="arithmatex">\(N = Ra = \{ra | r \in R\}\)</span>.</li>
 </ol>
-<p><strong>Definition</strong>. Let <span class="arithmatex">\(M_1, \ldots, M_k\)</span> be a collection of <span class="arithmatex">\(R\)</span>-modules. Then, the <em>drirect product</em> is defined as</p>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(M_1, \ldots, M_k\)</span> be a collection of <span class="arithmatex">\(R\)</span>-modules. Then, the <em>direct product</em> is defined as</p>
 <div class="arithmatex">\[
 M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
 \]</div>
 <p>This direct product is in itself an <span class="arithmatex">\(R\)</span>-module.</p>
 <p><strong>Proposition</strong>. Let <span class="arithmatex">\(N_1, \ldots, N_n\)</span> be submodules of the <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(M\)</span>. Then, the following are equivalent:</p>
 <ol>
-<li>The map <span class="arithmatex">\(\pi: N_1 \otimes \ldots \otimes N_k \leftarrow N_1 + \ldots + N_k\)</span> defined by <span class="arithmatex">\(\pi(a_1, \ldots, a_n) = a_1 + \ldots + a_n\)</span> is an isomorphism</li>
-<li>$N_j \cup (N+1 + \ldots + N_{j-1} + N{j+1} + \ldots + N_n) = 0 $ for all <span class="arithmatex">\(j \in \{1, 2, \ldots, k\}\)</span></li>
+<li>The map <span class="arithmatex">\(\pi: N_1 \otimes \ldots \otimes N_k \rightarrow N_1 + \ldots + N_k\)</span> defined by <span class="arithmatex">\(\pi(a_1, \ldots, a_n) = a_1 + \ldots + a_n\)</span> is an isomorphism</li>
+<li><span class="arithmatex">\(N_j \cup (N+1 + \ldots + N_{j-1} + N{j+1} + \ldots + N_n) = 0\)</span> for all <span class="arithmatex">\(j \in \{1, 2, \ldots, k\}\)</span></li>
 <li>Every <span class="arithmatex">\(x \in N_1 + \ldots + N_n\)</span> can be written uniquely in the form <span class="arithmatex">\(a_1 + \ldots + a_n\)</span>, with <span class="arithmatex">\(a_i \in N_i\)</span></li>
 </ol>
 <p><strong>Definition</strong>. An <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(F\)</span> is said to be <em>free</em> on the subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(F\)</span> if for every nonzero <span class="arithmatex">\(x \in F\)</span>, there exists nonzero elements <span class="arithmatex">\(r_1, \ldots, r_n\)</span> of <span class="arithmatex">\(R\)</span> and unique <span class="arithmatex">\(a_1, \ldots, a_n\)</span> such that <span class="arithmatex">\(x = r_1 a_1 + \ldots + r_n a_n\)</span> for some <span class="arithmatex">\(n \in \mathbb{Z}^+\)</span>. That is, <span class="arithmatex">\(A\)</span> is a <em>basis</em> or <em>set of free generators</em> of <span class="arithmatex">\(F\)</span>.</p>
@@ -1315,7 +1315,7 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 5, 2024</span>
   </span>
 
     
