@@ -8,7 +8,7 @@ $$
 M_1 \subseteq M_2 \subseteq \ldots
 $$
 
-there xists some $k \in \mathbb{N}$ such thaht given any $n \in \mathbb{N}$ with $n \geq k$, then $M_n = M_k$.
+there exists some $k \in \mathbb{N}$ such thaht given any $n \in \mathbb{N}$ with $n \geq k$, then $M_n = M_k$.
 
 **Definition**. A ring $R$ is *Noetherian* if it is Noetherian when viewed as a left $R$-module over itself.
 
@@ -36,7 +36,7 @@ $$
 \Ann_R(N) = \{r \in R | rn = 0 \text{ for all } n \in N \}
 $$
 
-This ideal of $R$ is the **annihilator of $N$*. That is, $\Ann(N)$ is the set of elements of $R$ such that $(r)N = \{ 0 \}$.
+This ideal of $R$ is the *annihilator of $N$*. That is, $\Ann(N)$ is the set of elements of $R$ such that $(r)N = \{ 0 \}$.
 
 Note that if $N$ is not a torsion submodule of $M$, then $\Ann(N) = (0)R$. Additionally, given $N, L$ are submodules of $M$ with $N \subseteq L$, then $\Ann(N) \subseteq \Ann(L)$.
 
@@ -50,3 +50,4 @@ Additionally, if $R$ is a PID, as $\Ann_R(N)$ is an ideal, $\Ann(N) = (n)R$ and 
 
 1. $N$ is a free submodule with rank $n \leq m$.
 2. There exiss a basis $y_1, y_2, \ldots, y_m$ of $M$ so that $r_1 y_1, r_2 y_2, \ldots, r_m y_n$ is a basis of $N$ for some $r_i \in R$ and $r_1 | r_2 | \ldots | r_n$
+
