@@ -21,7 +21,7 @@
 **Definition**. Suppose $f: A \rightarrow \mathbb{R}$ is a function with domain $A \subseteq \mathbb{R}$, and let $c \in A$ be a cluster point of $A$. then, a real number $L$ is a *limit of $f$ at $c$* if goven any $\epsilon > 0$, there exists some $\delta > 0$ such that
 
 $$
-0 < |x-c| < \delta \Rightarrrow |f(x) - L| < \epsilon
+0 < |x-c| < \delta \Rightarrow |f(x) - L| < \epsilon
 $$
 
 **Therorem**. For a given function and cluster point, there can be at most one limit at said point.
@@ -30,12 +30,52 @@ $$
 
 ---
 
-**Definition**. The *extended real numbers aree $\hat{\mathbb{R}} = \mathbb{R} \cup \{ \inftyy, -\infty \}$ are a totally-ordered set witth supremum and infimum. Note that this set is no longer a field.
+**Definition**. The *extended real numbers* are $\hat{\mathbb{R}} = \mathbb{R} \cup \{ \infty, -\infty \}$ are a totally-ordered set witth supremum and infimum. Note that this set is no longer a field.
 
 **Definition**. At any point $c$, the limitt of $f$ at $c$ is infinite if given some $\alpha$,  there exists some $V_\delta(c)$ such that forr all $x \in V_\epsilon(c)$, then $f(x) \in V_\alpha(\infty)$.
 
-**Definition**. The limit of a function at infinity is defined if for a given $\epsilon$, there ixists some $\alpha$ so that there exists some $V_\delta(c)$ such that for all $x \in A$,
+**Definition**. The limit of a function at infinity is defined if for a given $\epsilon$, there exists some $\alpha$ so that there exists some $V_\delta(c)$ such that for all $x \in A$,
 
 $$
 x > \alpha \Rightarrow |f(x) - L| < \epsilon
 $$
+
+## Section 4.2 - Limit Theorems
+
+**Definition**. Let $A \subseteq \mathbb{R}$ and $c \in \mathbb{R}$ be a cluster point of $A$. Then, a function $f: A \rightarrow \mathbb{R}$ is *bounded on a neighborhood of $c$* if there exists some $\delta$-neighborhood $V_\delta(c)$ of $c$ and some constant $M > 0$ such that for all $x \in A \cap V_\delta(c)$, then $|f(x)| \leq M$.
+
+**Theorem**. If $A \subseteq \mathbb{R}$ and $f: A \rightarrow \mathbb{R}$ has a finite limit at $c \in \mathbb{R}$, then $f$ is bounded on some neighborhood of $c$.
+
+**Theorem**. With $A \subseteq \mathbb{R}$, and $f, g: A \rightarrow \mathbb{R}$, with $c \in \mathbb{R}$ a cluster point of $A$, then if $\lim_{x \rightarrow c} f(x) = L$ and $\lim_{x \rightarrow c} g(x) = M$, then:
+
+$$\lim_{x \rightarrow c} (f(x) + g(x)) = L + M$$
+
+$$\lim_{x \rightarrow c} (f(x)g(x)) = LM$$
+
+Additionally, if $g(x) \neq 0$ for all $x \in A$, and $M \neq 0$, then
+
+$$
+\lim_{x \rightarrow c} \frac{f(x)}{g(x)} = \frac{L}{M}
+$$
+
+**Collary**. If $p, q \in \mathbb{R}[x]$, and $q(c) \neq 0$ for some $c \in \mathbb{R}$, then
+
+$$
+\lim_{x \rightarrow c} p(x) = p(c)
+$$
+
+$$
+\lim_{x \rightarrow c} \frac{p(x)}{q(x)} = \frac{p(c)}{q(c)}
+$$
+
+**Theorem**. Squeeze Theorem. Let $A \subseteq \mathbb{R}$. Then, if $f, g, h: A \rightarrow \mathbb{R}$ and with $c \in \mathbb{R}$ being a cluster point of $A$, then if both
+
+$$
+\lim_{x \rightarrow c} f(x) = \lim_{x \rightarrow c} h(x) = L
+$$
+
+$$
+f(x) \leq g(x) \leq h(x) \; \text{ for all } x \in A, x \neq c
+$$
+
+Then, $\lim_{x \rightarrow c} g(x) = L$.
