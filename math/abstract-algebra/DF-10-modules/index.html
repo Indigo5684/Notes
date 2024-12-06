@@ -482,7 +482,7 @@
         
   
   <span class="md-ellipsis">
-    Chapter 12 - Modules over Principal Ideal Domains
+    Dummit &amp; Foote Chapter 10 Chapter 12 - Modules over Principal Ideal Domains
   </span>
   
 
@@ -757,7 +757,28 @@
         
   
   <span class="md-ellipsis">
-    Chapter 5 - Continuiy
+    Chapter 5 - Continuity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../real-analysis/6-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6 - Derivatives
   </span>
   
 
@@ -1257,10 +1278,10 @@
 </ol>
 <p><strong>Theorem</strong>. If <span class="arithmatex">\(R\)</span> is commutative, any left-module is also a <em>right-module</em>.</p>
 <p><strong>Remark</strong>. Modules over a field <span class="arithmatex">\(F\)</span> and vector spaces over <span class="arithmatex">\(F\)</span> are identical.</p>
-<p><strong>Definition</strong> An <em>R-submodule</em> is a subset<span class="arithmatex">\(N \subseteq M\)</span> which is closed under the action taken forall <span class="arithmatex">\(r \in R\)</span>. That is, given <span class="arithmatex">\(r \in R, n \in N\)</span>, tthen <span class="arithmatex">\(rn \in N\)</span>. Every module has at least two submodules: itself and the trivial (empty) submodule.</p>
-<p><strong>Remark</strong>. If <span class="arithmatex">\(F\)</span> is a field, submodules are equivilent to subspaces.</p>
+<p><strong>Definition</strong> An <em>R-submodule</em> is a subset<span class="arithmatex">\(N \subseteq M\)</span> which is closed under the action taken forall <span class="arithmatex">\(r \in R\)</span>. That is, given <span class="arithmatex">\(r \in R, n \in N\)</span>, then <span class="arithmatex">\(rn \in N\)</span>. Every module has at least two submodules: itself and the trivial (empty) submodule.</p>
+<p><strong>Remark</strong>. If <span class="arithmatex">\(F\)</span> is a field, submodules are equivalent to subspaces.</p>
 <hr />
-<p><strong>Example</strong>. Let <span class="arithmatex">\(F\)</span> be a field and <span class="arithmatex">\(F[x]\)</span> a polynomial ring. Then, let <span class="arithmatex">\(V\)</span> be a vector space of <span class="arithmatex">\(F\)</span>, and <span class="arithmatex">\(T\)</span> be a linear transformaion from <span class="arithmatex">\(V\)</span> to itself. That is, <span class="arithmatex">\(V: T \rightarrow T\)</span>. We know that <span class="arithmatex">\(V\)</span> is an <span class="arithmatex">\(F\)</span>-module. We will want to show that <span class="arithmatex">\(V\)</span> can be written as an <span class="arithmatex">\(F[x]\)</span>-module for some choice of <span class="arithmatex">\(T\)</span>. That is, we want an action <span class="arithmatex">\(F[x] \cross V \rightarrow V\)</span>.</p>
+<p><strong>Example</strong>. Let <span class="arithmatex">\(F\)</span> be a field and <span class="arithmatex">\(F[x]\)</span> a polynomial ring. Then, let <span class="arithmatex">\(V\)</span> be a vector space of <span class="arithmatex">\(F\)</span>, and <span class="arithmatex">\(T\)</span> be a linear transformation from <span class="arithmatex">\(V\)</span> to itself. That is, <span class="arithmatex">\(V: T \rightarrow T\)</span>. We know that <span class="arithmatex">\(V\)</span> is an <span class="arithmatex">\(F\)</span>-module. We will want to show that <span class="arithmatex">\(V\)</span> can be written as an <span class="arithmatex">\(F[x]\)</span>-module for some choice of <span class="arithmatex">\(T\)</span>. That is, we want an action <span class="arithmatex">\(F[x] \cross V \rightarrow V\)</span>.</p>
 <p>Now, for a given linear transformation <span class="arithmatex">\(T\)</span>, consider some polynomial <span class="arithmatex">\(p(x) = a_n x^n + \ldots + a_0\)</span> and some <span class="arithmatex">\(v \in V\)</span>. We define <span class="arithmatex">\(p(x) \cross v\)</span> by$</p>
 <div class="arithmatex">\[
 p(x) \cross v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
@@ -1274,12 +1295,12 @@ p(x) \cross v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
 </ol>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(R\)</span> be a commutative ring with identity. An <span class="arithmatex">\(R\)</span>-algebra is a ring <span class="arithmatex">\(A\)</span> together with a ring homomorphism <span class="arithmatex">\(f: R \rightarrow A\)</span> such that <span class="arithmatex">\(\varphi(1_R) = 1_A\)</span>. Thus, the subring <span class="arithmatex">\(f(R) \subseteq A\)</span> is contained in the center of <span class="arithmatex">\(A\)</span>.</p>
 <p><strong>Recall</strong>. The center of a ring <span class="arithmatex">\(A\)</span> is the subring <span class="arithmatex">\(A'\)</span> such that for all <span class="arithmatex">\(x, y \in R'\)</span>, then <span class="arithmatex">\(xy = yx\)</span>. In other words, it is the commutative subring of <span class="arithmatex">\(A\)</span>.</p>
-<p><strong>Definition</strong>. Given two <span class="arithmatex">\(R\)</span>-algebras <span class="arithmatex">\(A, B\)</span>, an *<span class="arithmatex">\(R\)</span>-algebra homomorphhism$ is a ring homomorphism <span class="arithmatex">\(\varphi: A \rightarrow B\)</span> that maps <span class="arithmatex">\(1_A \rightarrow 1_B\)</span> such that <span class="arithmatex">\(\varphi(ra) = r\varphi(a)\)</span>.</p>
+<p><strong>Definition</strong>. Given two <span class="arithmatex">\(R\)</span>-algebras <span class="arithmatex">\(A, B\)</span>, an *<span class="arithmatex">\(R\)</span>-algebra homomorphism$ is a ring homomorphism <span class="arithmatex">\(\varphi: A \rightarrow B\)</span> that maps <span class="arithmatex">\(1_A \rightarrow 1_B\)</span> such that <span class="arithmatex">\(\varphi(ra) = r\varphi(a)\)</span>.</p>
 <h2 id="section-102-quotient-modules-and-module-homomorphisms">Section 10.2 - Quotient Modules and Module Homomorphisms</h2>
-<p><strong>Definition</strong>. Let <span class="arithmatex">\(R\)</span> be a ring and <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules. then a ring homomorphhism <span class="arithmatex">\(\varphi: M \rightarrow N\)</span> is an <em><span class="arithmatex">\(R\)</span>-module homomorphism</em> if for all <span class="arithmatex">\(r \in R\)</span>, <span class="arithmatex">\(\varphi(rx) = r\varphi(x)\)</span>.</p>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(R\)</span> be a ring and <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules. then a ring homomorphism <span class="arithmatex">\(\varphi: M \rightarrow N\)</span> is an <em><span class="arithmatex">\(R\)</span>-module homomorphism</em> if for all <span class="arithmatex">\(r \in R\)</span>, <span class="arithmatex">\(\varphi(rx) = r\varphi(x)\)</span>.</p>
 <p><strong>Theorem</strong>. An <span class="arithmatex">\(R\)</span>-module homomorphism is an <em>isomorphism</em> if it is 1-1 and onto, and said modules are <em>isomorphic</em>.</p>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules. The set <span class="arithmatex">\(\Hom_R(M, N)\)</span> is the set of all homomorphisms from <span class="arithmatex">\(M\)</span> to <span class="arithmatex">\(N\)</span>.</p>
-<p><strong>Promposition</strong>. Let <span class="arithmatex">\(M\)</span>, <span class="arithmatex">\(N\)</span>, and <span class="arithmatex">\(L\)</span> be <span class="arithmatex">\(R\)</span>-modules. Then,</p>
+<p><strong>Proposition</strong>. Let <span class="arithmatex">\(M\)</span>, <span class="arithmatex">\(N\)</span>, and <span class="arithmatex">\(L\)</span> be <span class="arithmatex">\(R\)</span>-modules. Then,</p>
 <ol>
 <li>A function <span class="arithmatex">\(\varphi: M \rightarrow N\)</span> is an <span class="arithmatex">\(R\)</span>-module homomorphism if and only if <span class="arithmatex">\(\varphi(rx + y) = r\varphi(x) + \varphi(y)\)</span> for all <span class="arithmatex">\(x, y \in M\)</span> and <span class="arithmatex">\(r \in R\)</span>.</li>
 <li>Let <span class="arithmatex">\(\varphi, \psi \in \Hom_R(M, N)\)</span>. Then, define <span class="arithmatex">\(\varphi + \psi\)</span> as</li>
@@ -1303,16 +1324,16 @@ r \overline{x} = \overline{rx}
 A + B = {a + b | a \in A, b \in B}
 \]</div>
 <p>This is the smallest submodule that contains both <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>.</p>
-<p><strong>Theorem</strong>. First Isomorphism Theorem. Let <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules, and <span class="arithmatex">\(\varphi: M \rightarrow N\)</span> be an <span class="arithmatex">\(R\)</span>-module homomorphhiism. Then, <span class="arithmatex">\(\ker \varphi\)</span> is a submodule of <span class="arithmatex">\(M\)</span>, and <span class="arithmatex">\(M / \ker \varphi \cong \varphi(M)\)</span>.</p>
+<p><strong>Theorem</strong>. First Isomorphism Theorem. Let <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules, and <span class="arithmatex">\(\varphi: M \rightarrow N\)</span> be an <span class="arithmatex">\(R\)</span>-module homomorphism. Then, <span class="arithmatex">\(\ker \varphi\)</span> is a submodule of <span class="arithmatex">\(M\)</span>, and <span class="arithmatex">\(M / \ker \varphi \cong \varphi(M)\)</span>.</p>
 <p><strong>Theorem</strong>. Second Isomorphism Theorem. Let <span class="arithmatex">\(A, B\)</span> be submodules of the <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(M\)</span>. Then, <span class="arithmatex">\((A + B)/B \cong A/(A \cap B)\)</span>.</p>
 <p><strong>Theorem</strong>. Third Isomorphism Theorem. Let <span class="arithmatex">\(M\)</span> be an <span class="arithmatex">\(R\)</span>-module, and <span class="arithmatex">\(A \subseteq B\)</span> be submodules of <span class="arithmatex">\(M\)</span>. Then, <span class="arithmatex">\(\frac{M/A}{B/A} \cong M/B\)</span>.</p>
-<p><strong>Theorem</strong>. Lattice Isomorphism Theorem. Let <span class="arithmatex">\(N\)</span> be a submodule of the <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(M\)</span>. Then, there is a bijection between submoudles of <span class="arithmatex">\(M\)</span> containing <span class="arithmatex">\(N\)</span> and submodules of <span class="arithmatex">\(M/N\)</span>. This is given by <span class="arithmatex">\(A \leftrightarrow A/N\)</span>, for <span class="arithmatex">\(A \supseteq N\)</span>.</p>
+<p><strong>Theorem</strong>. Lattice Isomorphism Theorem. Let <span class="arithmatex">\(N\)</span> be a submodule of the <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(M\)</span>. Then, there is a bijection between submodules of <span class="arithmatex">\(M\)</span> containing <span class="arithmatex">\(N\)</span> and submodules of <span class="arithmatex">\(M/N\)</span>. This is given by <span class="arithmatex">\(A \leftrightarrow A/N\)</span>, for <span class="arithmatex">\(A \supseteq N\)</span>.</p>
 <h2 id="section-103-generation-of-modules-direct-sums-and-free-modules">Section 10.3 - Generation of Modules, Direct Sums, and Free Modules</h2>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(M\)</span> be an <span class="arithmatex">\(R\)</span>-module and <span class="arithmatex">\(N_1, \ldots, N_n\)</span> be submodules of <span class="arithmatex">\(M\)</span>.</p>
 <ol>
 <li>The <em>sum</em> of <span class="arithmatex">\(N_1, \ldots, N_n\)</span> is the set of all finite sums of elements from the sets <span class="arithmatex">\(N_i\)</span>. That is, <span class="arithmatex">\(N_1, \ldots, N_n := \{a_1 + a_2 + \ldots + a_n | a_i \in N_i\}\)</span></li>
 <li>For any subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(M\)</span>, let <span class="arithmatex">\(RA = \{r_1 a_1 + r_2 a_2 + \ldots + r_m a_m | r_i \in R, a_i \in A\}\)</span>. If <span class="arithmatex">\(N\)</span> is a submodule of <span class="arithmatex">\(M\)</span> such that <span class="arithmatex">\(N = RA\)</span>, then <span class="arithmatex">\(A\)</span> is called the <em>generating set</em> for <span class="arithmatex">\(N\)</span>.</li>
-<li>A submodule <span class="arithmatex">\(N\)</span> of <span class="arithmatex">\(M\)</span> is <em>finitely generaated</em> if there is some finite subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(M\)</span> such that <span class="arithmatex">\(N = RA\)</span>. That is, <span class="arithmatex">\(N\)</span> is generated by some finite subset.</li>
+<li>A submodule <span class="arithmatex">\(N\)</span> of <span class="arithmatex">\(M\)</span> is <em>finitely generated</em> if there is some finite subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(M\)</span> such that <span class="arithmatex">\(N = RA\)</span>. That is, <span class="arithmatex">\(N\)</span> is generated by some finite subset.</li>
 <li>A submodule of <span class="arithmatex">\(M\)</span> (up to equality) is <span class="arithmatex">\(cyclic\)</span> if there exists some element <span class="arithmatex">\(a \in M\)</span> such that <span class="arithmatex">\(N = Ra = \{ra | r \in R\}\)</span>.</li>
 </ol>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(M_1, \ldots, M_k\)</span> be a collection of <span class="arithmatex">\(R\)</span>-modules. Then, the <em>direct product</em> is defined as</p>
@@ -1327,10 +1348,10 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
 <li>Every <span class="arithmatex">\(x \in N_1 + \ldots + N_n\)</span> can be written uniquely in the form <span class="arithmatex">\(a_1 + \ldots + a_n\)</span>, with <span class="arithmatex">\(a_i \in N_i\)</span></li>
 </ol>
 <p><strong>Definition</strong>. An <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(F\)</span> is said to be <em>free</em> on the subset <span class="arithmatex">\(A\)</span> of <span class="arithmatex">\(F\)</span> if for every nonzero <span class="arithmatex">\(x \in F\)</span>, there exists nonzero elements <span class="arithmatex">\(r_1, \ldots, r_n\)</span> of <span class="arithmatex">\(R\)</span> and unique <span class="arithmatex">\(a_1, \ldots, a_n\)</span> such that <span class="arithmatex">\(x = r_1 a_1 + \ldots + r_n a_n\)</span> for some <span class="arithmatex">\(n \in \mathbb{Z}^+\)</span>. That is, <span class="arithmatex">\(A\)</span> is a <em>basis</em> or <em>set of free generators</em> of <span class="arithmatex">\(F\)</span>.</p>
-<p><strong>Theorem</strong>. For any set <span class="arithmatex">\(A\)</span>, there is a free <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(F(A)\)</span> on <span class="arithmatex">\(A\)</span> such that <span class="arithmatex">\(F(A)\)</span> satisfies the universal property: if <span class="arithmatex">\(M\)</span> is any <span class="arithmatex">\(R\)</span>-module, and <span class="arithmatex">\(\varphi: A \rightarrow M\)</span> is a map of sets, there eixts a unique <span class="arithmatex">\(R\)</span>-module homomorphism: <span class="arithmatex">\(\Phi: F(A) \rightarrow M\)</span> such that <span class="arithmatex">\(\Phi(a) = \varphi(a)\)</span> for all <span class="arithmatex">\(a \in A\)</span>.</p>
+<p><strong>Theorem</strong>. For any set <span class="arithmatex">\(A\)</span>, there is a free <span class="arithmatex">\(R\)</span>-module <span class="arithmatex">\(F(A)\)</span> on <span class="arithmatex">\(A\)</span> such that <span class="arithmatex">\(F(A)\)</span> satisfies the universal property: if <span class="arithmatex">\(M\)</span> is any <span class="arithmatex">\(R\)</span>-module, and <span class="arithmatex">\(\varphi: A \rightarrow M\)</span> is a map of sets, there exists a unique <span class="arithmatex">\(R\)</span>-module homomorphism: <span class="arithmatex">\(\Phi: F(A) \rightarrow M\)</span> such that <span class="arithmatex">\(\Phi(a) = \varphi(a)\)</span> for all <span class="arithmatex">\(a \in A\)</span>.</p>
 <p><strong>Corollary</strong>. If <span class="arithmatex">\(F_1\)</span> and <span class="arithmatex">\(F_2\)</span> are free modules on <span class="arithmatex">\(A\)</span>, then there is a unique isomorphism between <span class="arithmatex">\(F_1\)</span> and <span class="arithmatex">\(F_2\)</span>, which is the identity map on A.</p>
 <p><strong>Corollary</strong>. If <span class="arithmatex">\(F\)</span> is a free <span class="arithmatex">\(R\)</span>-module with basis <span class="arithmatex">\(A\)</span>, then <span class="arithmatex">\(F \cong F(A)\)</span>.</p>
-<p><strong>Definition</strong> For a free module <span class="arithmatex">\(F\)</span> with basis <span class="arithmatex">\(A\)</span>, if <span class="arithmatex">\(R\)</span> is commutative, tthen the <em>rank</em> of <span class="arithmatex">\(F\)</span> is the cardinality of <span class="arithmatex">\(A\)</span>.</p>
+<p><strong>Definition</strong> For a free module <span class="arithmatex">\(F\)</span> with basis <span class="arithmatex">\(A\)</span>, if <span class="arithmatex">\(R\)</span> is commutative, then the <em>rank</em> of <span class="arithmatex">\(F\)</span> is the cardinality of <span class="arithmatex">\(A\)</span>.</p>
 <h2 id="section-104-tensor-products-of-modules">Section 10.4 - Tensor Products of Modules</h2>
 <p>Skipped</p>
 <h2 id="section-105-exact-sequences-projective-injective-and-flat-modules">Section 10.5 - Exact Sequences - Projective, Injective, and Flat Modules</h2>
@@ -1428,13 +1449,13 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
         
         
           
-          <a href="../DF-12-modules-pids/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 12 - Modules over Principal Ideal Domains">
+          <a href="../DF-12-modules-pids/" class="md-footer__link md-footer__link--next" aria-label="Next: Dummit &amp;amp; Foote Chapter 10 Chapter 12 - Modules over Principal Ideal Domains">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Chapter 12 - Modules over Principal Ideal Domains
+                Dummit &amp; Foote Chapter 10 Chapter 12 - Modules over Principal Ideal Domains
               </div>
             </div>
             <div class="md-footer__button md-icon">

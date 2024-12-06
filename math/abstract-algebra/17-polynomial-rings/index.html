@@ -464,7 +464,7 @@
         
   
   <span class="md-ellipsis">
-    Chapter 12 - Modules over Principal Ideal Domains
+    Dummit &amp; Foote Chapter 10 Chapter 12 - Modules over Principal Ideal Domains
   </span>
   
 
@@ -739,7 +739,28 @@
         
   
   <span class="md-ellipsis">
-    Chapter 5 - Continuiy
+    Chapter 5 - Continuity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../real-analysis/6-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6 - Derivatives
   </span>
   
 
@@ -1215,7 +1236,7 @@ f(x) = \sum_{i=0}^n a_i x^i = a_0 + a_1x + a_2x^2 + \ldots + a_n x^n
 \]</div>
 <p>where <span class="arithmatex">\(a_i \in R\)</span> and <span class="arithmatex">\(a_n \neq 0\)</span> is called a <em>polynomial over <span class="arithmatex">\(R\)</span></em> with <em>indeterminate</em> <span class="arithmatex">\(x\)</span>. The elements <span class="arithmatex">\(a_0, a_1, \ldots, a_n\)</span> are the <em>coefficients</em> of <span class="arithmatex">\(f\)</span>. The coefficient <span class="arithmatex">\(a_n\)</span> is the <em>leading coefficient</em>.</p>
 <p><strong>Definition</strong>. A polynomial is known as <em>monic</em> if the leading coefficient is equal to <span class="arithmatex">\(1\)</span>.</p>
-<p><strong>Definition</strong>. The <em>degree</em> of <span class="arithmatex">\(f\)</span> is the largest nonnegative number such that <span class="arithmatex">\(a_n \neq 0\)</span>, written as <span class="arithmatex">\(\deg f(x) = n\)</span>. If no such mumber exists, that is, <span class="arithmatex">\(f(x) = 0\)</span>, we say the degree of <span class="arithmatex">\(f\)</span> is $-\infty%.</p>
+<p><strong>Definition</strong>. The <em>degree</em> of <span class="arithmatex">\(f\)</span> is the largest nonnegative number such that <span class="arithmatex">\(a_n \neq 0\)</span>, written as <span class="arithmatex">\(\deg f(x) = n\)</span>. If no such number exists, that is, <span class="arithmatex">\(f(x) = 0\)</span>, we say the degree of <span class="arithmatex">\(f\)</span> is $-\infty%.</p>
 <p><strong>Definition</strong>. We denote the set of all polynomials with coefficients in <span class="arithmatex">\(R\)</span> as <span class="arithmatex">\(R[x]\)</span>.</p>
 <p>Two polynomials are equal if and only if their corresponding coefficients are equal. When combined with standard addition and multiplication, <span class="arithmatex">\(R[x]\)</span> forms a ring.</p>
 <p><strong>Theorem</strong>. If <span class="arithmatex">\(R\)</span> is commutative and has identity, so does <span class="arithmatex">\(R[x]\)</span>.</p>
@@ -1232,7 +1253,7 @@ f(x) = g(x)q(x) + r(x)
 <p><strong>Definition</strong>. A monic polynomial <span class="arithmatex">\(d(x)\)</span> is the <em>greatest common divisor</em> of polynomials <span class="arithmatex">\(p(x), q(x) \in F[x]\)</span> if <span class="arithmatex">\(d(x)\)</span> evenly divides both <span class="arithmatex">\(p(x)\)</span> and <span class="arithmatex">\(q(x)\)</span>. We write <span class="arithmatex">\(\gcd(p(x), q(x)) = d(x)\)</span>. This polynomial is unique.</p>
 <p><strong>Definition</strong>. Two polynomials are <em>relatively prime</em> if their greatest common divisor is <span class="arithmatex">\(1\)</span>.</p>
 <h2 id="section-173-irreducible-polynomials">Section 17.3 Irreducible Polynomials</h2>
-<p><strong>Definition</strong> A nonconstant polynomial <span class="arithmatex">\(f(x) \ in F[x]\)</span> is <em>irreducible</em> over a field <span class="arithmatex">\(F\)</span> if it cannot be expressed as the product of two non-identity polynomials <span class="arithmatex">\(g(x)\)</span> and <span class="arithmatex">\(h(x)\)</span> in <span class="arithmatex">\(F[x]\)</span>, with the degree of both polynomials strictly less than the  degree of <span class="arithmatex">\(f(x)\)</span>.</p>
+<p><strong>Definition</strong> A non-constant polynomial <span class="arithmatex">\(f(x) \ in F[x]\)</span> is <em>irreducible</em> over a field <span class="arithmatex">\(F\)</span> if it cannot be expressed as the product of two non-identity polynomials <span class="arithmatex">\(g(x)\)</span> and <span class="arithmatex">\(h(x)\)</span> in <span class="arithmatex">\(F[x]\)</span>, with the degree of both polynomials strictly less than the  degree of <span class="arithmatex">\(f(x)\)</span>.</p>
 <p><strong>Lemma</strong>. Let <span class="arithmatex">\(p(x) \in \mathbb{Q}[x]\)</span>. Then, with <span class="arithmatex">\(r, s \in \mathbb{Z}, a(x) \in \mathbb{N}[x]\)</span>, we can write <span class="arithmatex">\(p(x) = \frac{r}{s} a(x)\)</span>.</p>
 <p><strong>Lemma</strong>. Gauss's Lemma. Let <span class="arithmatex">\(p(x) \in \mathbb{Z}[x]\)</span> be monic such that <span class="arithmatex">\(p(x)\)</span> factors into two polynomials <span class="arithmatex">\(\alpha(x), \beta{x} \in \mathbb{Q}[x]\)</span>, with the degrees of both strictly less than the degree of <span class="arithmatex">\(p(x)\)</span>. Then, there exists two polynomials <span class="arithmatex">\(a(x), b(x) \in \mathbb{Z}[x]\)</span> such that <span class="arithmatex">\(p(x) = a(x)b(x)\)</span>, and <span class="arithmatex">\(\deg \alpha(x) = \deg a(x)\)</span> and <span class="arithmatex">\(\deg \beta(x) = \deg b(x)\)</span>.</p>
 <p><strong>Corollary</strong>. Let <span class="arithmatex">\(p(x) \in \mathbb{Z}[x]\)</span> be monic with constant term <span class="arithmatex">\(a_0\)</span>. Then, if <span class="arithmatex">\(p(x)\)</span> has a zero in <span class="arithmatex">\(\mathbb{Q}\)</span>, then it also has a zero <span class="arithmatex">\(\alpha\)</span> in <span class="arithmatex">\(\mathbb[Z]\)</span>. Furthermore, <span class="arithmatex">\(\alpha\)</span> divides <span class="arithmatex">\(a_0\)</span>.</p>

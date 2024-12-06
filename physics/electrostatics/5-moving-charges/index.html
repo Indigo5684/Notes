@@ -393,7 +393,7 @@
         
   
   <span class="md-ellipsis">
-    Chapter 12 - Modules over Principal Ideal Domains
+    Dummit &amp; Foote Chapter 10 Chapter 12 - Modules over Principal Ideal Domains
   </span>
   
 
@@ -668,7 +668,28 @@
         
   
   <span class="md-ellipsis">
-    Chapter 5 - Continuiy
+    Chapter 5 - Continuity
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../math/real-analysis/6-derivatives/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6 - Derivatives
   </span>
   
 
@@ -904,9 +925,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#section-51-currents-in-steady-state-regine" class="md-nav__link">
+  <a href="#section-51-currents-in-steady-state-regime" class="md-nav__link">
     <span class="md-ellipsis">
-      Section 5.1 - Currents in Steady-State Regine
+      Section 5.1 - Currents in Steady-State Regime
     </span>
   </a>
   
@@ -1158,9 +1179,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#section-51-currents-in-steady-state-regine" class="md-nav__link">
+  <a href="#section-51-currents-in-steady-state-regime" class="md-nav__link">
     <span class="md-ellipsis">
-      Section 5.1 - Currents in Steady-State Regine
+      Section 5.1 - Currents in Steady-State Regime
     </span>
   </a>
   
@@ -1225,7 +1246,7 @@
 
 
 <h1 id="chapter-5-electrodynamics-with-moving-charges">Chapter 5 - Electrodynamics with Moving Charges</h1>
-<h2 id="section-51-currents-in-steady-state-regine">Section 5.1 - Currents in Steady-State Regine</h2>
+<h2 id="section-51-currents-in-steady-state-regime">Section 5.1 - Currents in Steady-State Regime</h2>
 <p>We want to work in a steady-state system. Thus, we restrict ourselves to currents that do not change in time.</p>
 <p>With math, we see that <span class="arithmatex">\(\div \vb{J}(\vb{r}) = -\frac{\partial \rho(\vb{r})}{\partial t}\)</span>. Since we are only considering a steady-state system, <span class="arithmatex">\(\div \vb{J}_e = \div \vb{J}_m = 0\)</span>.</p>
 <p><strong>Definition</strong>. The <em>conductance</em> of a material is <span class="arithmatex">\(G = \frac{1}{R}\)</span>, where <span class="arithmatex">\(R\)</span> is the resistance of a material.</p>
@@ -1237,7 +1258,7 @@
 <p>$ \int_S \curl{\vb{H}} \vdot \vu{n} \dd{S} = \int_{\partial S} = \vb{H} \vdot \dd{\vb{l}}$. Apply the identity <span class="arithmatex">\(\curl{\vb{H}} = \vb{J}_e\)</span> to the left side to see that <span class="arithmatex">\(\int_S \curl{\vb{H}} \vdot \vu{n} \dd{S} = \int_S \vb{J}_e \vdot \vu{n} \dd{S} = (I_e)_S\)</span>, or the current passing through the cross-sectional area. By the original equation, we see that <span class="arithmatex">\((I_e)_S = \vb{H} \vdot \dd{\vb{l}}\)</span>.</p>
 <p>If we assume cylindrical coordinates and that <span class="arithmatex">\(\vb{H}(vb{r}) = H_\varphi(s) \vu{\varphi}\)</span>, then <span class="arithmatex">\(\vb{H} \vdot \dd{\vb{l}} = \int_0^{2\pi} H_\varphi(S) s \dd{\varphi}\)</span>, so then <span class="arithmatex">\((I_e)_S = \int_0^{2\pi} H_\varphi(S) s \dd{\varphi}\)</span>. Thus, for <span class="arithmatex">\(s &gt; a\)</span> (where <span class="arithmatex">\(a\)</span> is the radius of the wire), <span class="arithmatex">\(2\pi s H_\varphi = I_e\)</span>, and for <span class="arithmatex">\(s &lt; a\)</span>, <span class="arithmatex">\(2\pi s H_\varphi = I_e \frac{s^2}{a^2}\)</span>.</p>
 <hr />
-<p>By Helmholtz Theorem, we know that <span class="arithmatex">\(\vb{H}(\vb{r}) = \curl{\vb{A}(\vb{r})}\)</span>. For a current-carying wire, <span class="arithmatex">\(\vb{A}(\vb{r}) = \frac{I_e}{4\pi} \int_{\text{wire}} \frac{\dd{\vb{l'}}}{|\vb{r}-\vb{r'}|}\)</span>. Applying identities, we see the *Law of Biot and Savart$, where</p>
+<p>By Helmholtz Theorem, we know that <span class="arithmatex">\(\vb{H}(\vb{r}) = \curl{\vb{A}(\vb{r})}\)</span>. For a current-carrying wire, <span class="arithmatex">\(\vb{A}(\vb{r}) = \frac{I_e}{4\pi} \int_{\text{wire}} \frac{\dd{\vb{l'}}}{|\vb{r}-\vb{r'}|}\)</span>. Applying identities, we see the *Law of Biot and Savart$, where</p>
 <div class="arithmatex">\[
 \vb{H}(\vb{r}) = \int{I_e}{4\pi}\int_{\text{wire}} \frac{-(\vb{r}-\vb{r'}) \cross \dd{\vb{l'}}}{|\vb{r}-\vb{r'}|^3}
 \]</div>
@@ -1259,7 +1280,7 @@
 \]</div>
 <h2 id="section-53-forces-on-moving-charges-and-current">Section 5.3 - Forces on Moving Charges and Current</h2>
 <p>Consider an electric charge moving with velocity <span class="arithmatex">\(\vb{v}\)</span> in a magnetic parallel plate capacitor with charge densities <span class="arithmatex">\(\plusminus \sigma_m\)</span>. That is, <span class="arithmatex">\(\mu_0 \vb{H} = \sigma_m \vu{z}\)</span>. Then, we can apply theorems to see the resulting force.</p>
-<p><strong>Theorem</strong>. <em>Lorentz Force Law</em> states that <span class="arithmatex">\(\vb{F} = q_e \vb{v} \cross \u_0 \vb{H}\)</span> in the presence of a magnetic field. In the presence of both an electic andmagnetic field, <span class="arithmatex">\(\vb{F} = q_e (\vb{E} + \vb{v} \cross \u_0 \vb{H})\)</span>.</p>
+<p><strong>Theorem</strong>. <em>Lorentz Force Law</em> states that <span class="arithmatex">\(\vb{F} = q_e \vb{v} \cross \u_0 \vb{H}\)</span> in the presence of a magnetic field. In the presence of both an electric and magnetic field, <span class="arithmatex">\(\vb{F} = q_e (\vb{E} + \vb{v} \cross \u_0 \vb{H})\)</span>.</p>
 <p><strong>Theorem</strong>. <em>Ampere's Force Law</em> states that generalizing the previous theorem, we can see that</p>
 <div class="arithmatex">\[
 \dd{\vb{F}} = I_e \dd{\vb{L}} \cross \u_0 \vb{H}(\vb{r})
@@ -1288,7 +1309,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2024</span>
   </span>
 
     
