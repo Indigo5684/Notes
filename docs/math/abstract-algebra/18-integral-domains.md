@@ -18,9 +18,9 @@ $$
 
 Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$, there exists a map $\psi: F_D \rightarrow D$ giving an isomorphism such that $\psi(a) = a$ for all $a \in D$.
 
-**Collary**. 18.6: Let $F$ be a field of charactaristic $0$. Then, $F$ contains a subfield isomorphic to $\mathbb{Q}$.
+**Corollary**. 18.6: Let $F$ be a field of charactaristic $0$. Then, $F$ contains a subfield isomorphic to $\mathbb{Q}$.
 
-**Collary**. 18.6: Let $F$ be a field of charactaristic $p$. Then, $F$ contains a subfield isomorphic to $\mathbb{Z}_p$.
+**Corollary**. 18.6: Let $F$ be a field of charactaristic $p$. Then, $F$ contains a subfield isomorphic to $\mathbb{Z}_p$.
 
 ## Section 18.2 - Factorization in Integral Domains
 
@@ -49,7 +49,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 **Theorem**. 18.12: Let $D$ be a PID, and let $\langle p \rangle$ be a nonzero ideal in $D$. Thus, $\langle p \rangle$ is a maximal ideal if and only if $p$ is irreducible.
 
-**Collary**. 18.13: Let $D$ be a PID. For any $p \in D$, if $p$ is irreducible, then $p$ is prime.
+**Corollary**. 18.13: Let $D$ be a PID. For any $p \in D$, if $p$ is irreducible, then $p$ is prime.
 
 **Lemma**. 18.14: Let $D$ be a PID. Let $I_1 \subseteq I_2 \subseteq \ldots$. Then, there exists some integer $N$ such that $I_n = I_N$ for all $n > N$. That is, any chain of ideals converges.
 
@@ -57,7 +57,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 **Theorem**. 18.15: Every PID is a UFD. Note that the converse is not true.
 
-**Collary** 18.16: Let $F$ be a field. Then, $F[x]$ is a UFD.
+**Corollary** 18.16: Let $F$ be a field. Then, $F[x]$ is a UFD.
 
 ---
 
@@ -74,7 +74,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 **Theorem**. 18.21: Every Euclidian domain is a PID.
 
-**Collary**. Every Euclidian domain is a UFD.
+**Corollary**. Every Euclidian domain is a UFD.
 
 ---
 
@@ -88,13 +88,13 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 As a direct consequence, we see the following.
 
-**Collary**. Let $D$ be a UFD, and $F = F_D$. Then, a primitive polynomial $p(x) \in D[x]$ is irreducible in $D[x]$ if and only if it is irreducible in $F[x]$.
+**Corollary**. Let $D$ be a UFD, and $F = F_D$. Then, a primitive polynomial $p(x) \in D[x]$ is irreducible in $D[x]$ if and only if it is irreducible in $F[x]$.
 
-**Collary**. Let $D$ be a UDF, and $F = F_D$. Then, if a monic polynomial $p(x) \ in D[x]$ can be written as $p(x) = f(x)g(x)$ with $f(x), g(x) \in F_D[x]$, then $p(x)$ can be written as $p(x) = f_1(x)g_1(x)$, where $f_1(x), g_1(x) \in D[x]$.
+**Corollary**. Let $D$ be a UDF, and $F = F_D$. Then, if a monic polynomial $p(x) \ in D[x]$ can be written as $p(x) = f(x)g(x)$ with $f(x), g(x) \in F_D[x]$, then $p(x)$ can be written as $p(x) = f_1(x)g_1(x)$, where $f_1(x), g_1(x) \in D[x]$.
 
 **Theorem**. If $D$ is as UFD, then $D[x]$ is a UFD.
 
-**Collary**. This theorem has several collaries:
+**Corollary**. This theorem has several collaries:
 
 1. Given a field $F$, since $F$ is a PID, it is also a UFD. Thus, $F[x]$ is a UFD.
 2. The ring of polynomials over integers, $\mathbb{Z}[x]$ is a UFD.

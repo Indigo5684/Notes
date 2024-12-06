@@ -43,21 +43,21 @@ $$
 \lim_{x \rightarrow c} g(f(x)) = g(L) = g(\lim_{x \rightarrow c} f(x))
 $$
 
-**Collary**. let $A, B \subseteq  \mathbb{R}$, with $f: A \rightarrow B$ and $g: B \rightarrow \mathbb{R}$. If $f$ is continuous at $a \in A$ and $g$ is continuous at $f(a) \in B$, then $g(f(x))$ is continuous at $a$.
+**Corollary**. let $A, B \subseteq  \mathbb{R}$, with $f: A \rightarrow B$ and $g: B \rightarrow \mathbb{R}$. If $f$ is continuous at $a \in A$ and $g$ is continuous at $f(a) \in B$, then $g(f(x))$ is continuous at $a$.
 
 ## Section 5.3 - continuous functions on Intervals
 
 **Theorem**. Let $S, T$ be metric spaces with $A \subseteq S$ and $f: A \rightarrow T$. If $A$ is a compact subset of $S$, then $f(A)$ is a compact subset of $T$.
 
-**Collary**. Let $f: A \rightarrow \mathbb{R}$ be a continuous function, with $A$ being a compact subset of metric space $S$. Then, $f(A)$ is closed and bounded. Moreover, there exists a $p, q \in A$ such that $f(p)$ and $f(q)$ are the supremum and infimum of $f(A)$.
+**Corollary**. Let $f: A \rightarrow \mathbb{R}$ be a continuous function, with $A$ being a compact subset of metric space $S$. Then, $f(A)$ is closed and bounded. Moreover, there exists a $p, q \in A$ such that $f(p)$ and $f(q)$ are the supremum and infimum of $f(A)$.
 
-**Collary**. Maximum-Minimum Theorem. If $I = [a, b]$ is a closed and bounded interval and $f: I \rightarrow \mathbb{R}$ is continuous on $I$, then $f$ has an absolute minumum and maximum on $I$.
+**Corollary**. Maximum-Minimum Theorem. If $I = [a, b]$ is a closed and bounded interval and $f: I \rightarrow \mathbb{R}$ is continuous on $I$, then $f$ has an absolute minumum and maximum on $I$.
 
 ---
 
 **Theorem**. Let $S, T$ be metric spaces and $A \subseteq S$. Then, if $f: A \rightarrow T$ is continuous on $A$, and $A$ is a connected subset of $S$, then $f(A)$ is a connected subset of $T$.
 
-**Collary**. Suppose that $I$ is an interval. Let $f: I \rightarrow \mathbb{R}$ be continuous on $I$. Then, $f(I)$ is an intterval.
+**Corollary**. Suppose that $I$ is an interval. Let $f: I \rightarrow \mathbb{R}$ be continuous on $I$. Then, $f(I)$ is an intterval.
 
 **Theorem**. (Bolzano's) Invermediate Value Theorem. Suppose $f: [a, b] \rightarrow \mathbb{R}$ is continuous on $[a, b]$ with $a \neq b$. Then, given some $k$ such that $f(a) < k < f(b)$, there exists some $c \in (a, b)$ such that $k = f(c)$.
 
@@ -75,6 +75,6 @@ Note that if $f$ is uniformly continuous, it must be continuous on $A$.
 
 **Remark**. If $S, T$ are metric spaces, $K$ is a compact subset of $S$, and $f: K \rightarrow T$ is continuous on $K$, then $f$ is uniformly continuous.
 
-**Theorem**. Suppose $A \subseteq \mathbb{R}$ and $f: A \rightaarrow \mathbb{R}$ is uniformly continuous. Then, if $(x_n)$ is a Cauchy sequence in $A$, $(f(x_n))$ is a Cauchy sequence in $\mathbb{R}$.
+**Theorem**. Suppose $A \subseteq \mathbb{R}$ and $f: A \rightarrow \mathbb{R}$ is uniformly continuous. Then, if $(x_n)$ is a Cauchy sequence in $A$, $(f(x_n))$ is a Cauchy sequence in $\mathbb{R}$.
 
-**Remark**. Suppose $S, T$ are metric spaces and $f: S \rightaarrow T$ is uniformly continuous. Then, if $(x_n)$ is a Cauchy sequence in $S$, $(f(x_n))$ is a Cauchy sequence in $T$.
+**Remark**. Suppose $S, T$ are metric spaces and $f: S \rightarrow T$ is uniformly continuous. Then, if $(x_n)$ is a Cauchy sequence in $S$, $(f(x_n))$ is a Cauchy sequence in $T$.

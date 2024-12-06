@@ -6,11 +6,11 @@
 
 **Theorem**. A real number $c$ is a cluster point for a set $A$ if and only if there exists a sequence $(a_n)$ in $A\\ \{c\}$ such that $a_n \rightarrow c$
 
-**Collary**. A real number $c$ is a cluster point of a set $A$ if and only if every $\delta$-neighborhood conttains infinitely many points of $A$.
+**Corollary**. A real number $c$ is a cluster point of a set $A$ if and only if every $\delta$-neighborhood conttains infinitely many points of $A$.
 
 **Definition**. The set of every cluster point of $A$ is called the *derived set* of $A$, and denoted $A'$.
 
-**Collary**. A set $A$ is closed if and only if $A' \subseteq A$.
+**Corollary**. A set $A$ is closed if and only if $A' \subseteq A$.
 
 **Remark**. If $A'$ is the derived set of $A$, then $A'' \subseteq A'$.
 
@@ -58,7 +58,7 @@ $$
 \lim_{x \rightarrow c} \frac{f(x)}{g(x)} = \frac{L}{M}
 $$
 
-**Collary**. If $p, q \in \mathbb{R}[x]$, and $q(c) \neq 0$ for some $c \in \mathbb{R}$, then
+**Corollary**. If $p, q \in \mathbb{R}[x]$, and $q(c) \neq 0$ for some $c \in \mathbb{R}$, then
 
 $$
 \lim_{x \rightarrow c} p(x) = p(c)

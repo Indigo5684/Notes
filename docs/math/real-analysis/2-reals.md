@@ -56,7 +56,7 @@
 2. $|ab| = |a||b|$
 3. $|a + b| \leq |a| + |b|$
 
-**Collary**. Givem $a, b \in \mathbb{R}$, then $\abs{\abs{a} - \abs{b}} \leq \abs{a - b}$.
+**Corollary**. Givem $a, b \in \mathbb{R}$, then $\abs{\abs{a} - \abs{b}} \leq \abs{a - b}$.
 
 **Remark**. Every field has at least one absolute value function.
 
@@ -104,4 +104,4 @@ $$
 
 **Theorem**. If $a < b$, then the interval $[a, b]$ is an uncountable set.
 
-**Collary**. $\mathbb{R}$ is uncountable.
+**Corollary**. $\mathbb{R}$ is uncountable.

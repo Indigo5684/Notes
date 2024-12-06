@@ -96,7 +96,7 @@ is a *subsequence* of $X$,
 
 **Theorem**. Every sequence of real numbers $(x_n)$ contains a monotonic subsequence $(x_{n_k})$.
 
-**Collary**. Bolzano-Weierstrass Theorem. Every bounded sequence of real numbers has a convergent subsequence.
+**Corollary**. Bolzano-Weierstrass Theorem. Every bounded sequence of real numbers has a convergent subsequence.
 
 ## Section 3.5 - The Cauchy Criterion
 
@@ -136,9 +136,9 @@ $$
 \abs{s_m - s_n} = \abs{\sum_{i = m + 1}^n x_i} < \epsilon
 $$
 
-**Collary**. $n$-th Term Test. If $\sum x_n$ converges, then $x_n \rightarrow 0$.
+**Corollary**. $n$-th Term Test. If $\sum x_n$ converges, then $x_n \rightarrow 0$.
 
-**Collary**. Absolute Convergence Test. If $\sum \abs{x_n}$ converges, then $\sum x_n$ converges.
+**Corollary**. Absolute Convergence Test. If $\sum \abs{x_n}$ converges, then $\sum x_n$ converges.
 
 ---
 

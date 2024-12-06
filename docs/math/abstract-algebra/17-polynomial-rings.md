@@ -36,9 +36,9 @@ $$
 
 where either $\deg r(x) < \deg g(x)$ or $r(x)$ is the zero polynomial.
 
-**Collary**. Let $F$ be a field. Then, an element $\alpha \in F$ is a zero of $p(x) \ in F[x]$ if and only if $(x-\alpha)$ is a factor of $p(x)$.
+**Corollary**. Let $F$ be a field. Then, an element $\alpha \in F$ is a zero of $p(x) \ in F[x]$ if and only if $(x-\alpha)$ is a factor of $p(x)$.
 
-**Collary**. Let $F$ be a field. Then, a nonzero polynomial $p(x) \in F[x]$ with degree $n$ can have at most $n$ distinct zeros in $F$.
+**Corollary**. Let $F$ be a field. Then, a nonzero polynomial $p(x) \in F[x]$ with degree $n$ can have at most $n$ distinct zeros in $F$.
 
 **Definition**. A monic polynomial $d(x)$ is the *greatest common divisor* of polynomials $p(x), q(x) \in F[x]$ if $d(x)$ evenly divides both $p(x)$ and $q(x)$. We write $\gcd(p(x), q(x)) = d(x)$. This polynomial is unique.
 
@@ -52,7 +52,7 @@ where either $\deg r(x) < \deg g(x)$ or $r(x)$ is the zero polynomial.
 
 **Lemma**. Gauss's Lemma. Let $p(x) \in \mathbb{Z}[x]$ be monic such that $p(x)$ factors into two polynomials $\alpha(x), \beta{x} \in \mathbb{Q}[x]$, with the degrees of both strictly less than the degree of $p(x)$. Then, there exists two polynomials $a(x), b(x) \in \mathbb{Z}[x]$ such that $p(x) = a(x)b(x)$, and $\deg \alpha(x) = \deg a(x)$ and $\deg \beta(x) = \deg b(x)$.
 
-**Collary**. Let $p(x) \in \mathbb{Z}[x]$ be monic with constant term $a_0$. Then, if $p(x)$ has a zero in $\mathbb{Q}$, then it also has a zero $\alpha$ in $\mathbb[Z]$. Furthermore, $\alpha$ divides $a_0$.
+**Corollary**. Let $p(x) \in \mathbb{Z}[x]$ be monic with constant term $a_0$. Then, if $p(x)$ has a zero in $\mathbb{Q}$, then it also has a zero $\alpha$ in $\mathbb[Z]$. Furthermore, $\alpha$ divides $a_0$.
 
 **Theorem**. Eisenstein's Criterion. Let $p$ be prime, and suppose that
 

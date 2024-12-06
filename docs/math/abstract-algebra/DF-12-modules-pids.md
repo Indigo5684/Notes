@@ -18,7 +18,7 @@ there exists some $k \in \mathbb{N}$ such thaht given any $n \in \mathbb{N}$ wit
 2. Every nonempty set of submodules of $M$ contains a maximal element under inclusion
 3. Every submodule of $M$ is finitely-generated
 
-**Collary**. If $R$ is a principal ideal domain (PID), then all nonempty set of ideals of $R$ has a maximal element. Additionally, $R$ is as Noetherian ring.
+**Corollary**. If $R$ is a principal ideal domain (PID), then all nonempty set of ideals of $R$ has a maximal element. Additionally, $R$ is as Noetherian ring.
 
 **Proposition**. Let $R$ be an integral doman, and $M$ be a free $R$-module of rank $n < \infty$. Then, given $S$ is subset $M$ with $|S| > n$, the elements of $S$ are $R$-linearly dependent.
 
@@ -44,7 +44,7 @@ Additionally, if $R$ is a PID, as $\Ann_R(N)$ is an ideal, $\Ann(N) = (n)R$ and 
 
 **Definition**. Given any integral domain $R$, the *rank* of an $R$-module $M$ is the maximum number of $R$-linearly independent elements of M.
 
-**Collary**. The rank of a free module is the number of generating elements.
+**Corollary**. The rank of a free module is the number of generating elements.
 
 **Theorem**. Let $R$ be a principal ideal domain, and $M$ be a free $R$-module of finite rank $m$, and $N$ be a submodule of $M$. Then,
 
