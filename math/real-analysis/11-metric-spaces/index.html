@@ -1197,6 +1197,40 @@ V_\epsilon(a) = {x \in S | d(a, x) &lt; \epsilon}
 <p><strong>Definition</strong>. Let <span class="arithmatex">\((S, d)\)</span> be a metric space. Then, a subset <span class="arithmatex">\(G \subseteq S\)</span> is <em>closed</em> if its complement <span class="arithmatex">\(C(G) = S - G = S \ F\)</span> is closed.</p>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\((S, d)\)</span> be a metric space. A point <span class="arithmatex">\(c \in S\)</span> is a *cluster point$ of a set <span class="arithmatex">\(A \subseteq S\)</span> if every <span class="arithmatex">\(\epsilon\)</span>-neighborhood of <span class="arithmatex">\(c\)</span> contains some point <span class="arithmatex">\(a \in A\)</span> such that <span class="arithmatex">\(a \neq c\)</span>.</p>
 <p><strong>Theorem</strong>. Every <span class="arithmatex">\(\epsilon\)</span>-neighborhood of a point is an open set.</p>
+<p><strong>Theorem</strong>. The union of an arbitrary collection of open sets is open.</p>
+<p><strong>Theorem</strong>. The intersection of a finite collection of open sets is open.</p>
+<p><strong>Theorem</strong>. The union of finitely many closed sets is closed.</p>
+<p><strong>Theorem</strong>. The intersection of infinitely many closed sets is closed.</p>
+<p><strong>Theorem</strong>. A subset of a metric space is closed if and only if it contains all of its cluster points.</p>
+<hr />
+<p><strong>Definition</strong>. A <em>sequence</em> <span class="arithmatex">\((x_n)\)</span> in a metric space <span class="arithmatex">\((S, d)\)</span> converges to a point <span class="arithmatex">\(x \in S\)</span> if given any <span class="arithmatex">\(\epsilon &gt; 0\)</span>, there exists a <span class="arithmatex">\(K \in \mathbb{N}\)</span> such that given <span class="arithmatex">\(n \in \mathbb{N}\)</span>,</p>
+<div class="arithmatex">\[
+n \geq K \Rightarrow d(x_n, x) \leq \epsilon
+\]</div>
+<p><strong>Theorem</strong>. Let <span class="arithmatex">\((x_n)\)</span> be a sequence in metric space <span class="arithmatex">\((S, d)\)</span>. Then,</p>
+<ul>
+<li><span class="arithmatex">\((x_n)\)</span> converges to <span class="arithmatex">\(x\)</span> if and only if every <span class="arithmatex">\(\epsilon\)</span>-neighborhood of <span class="arithmatex">\(x\)</span> contains all but finitely many terms of <span class="arithmatex">\((x_n)\)</span>.</li>
+<li>If <span class="arithmatex">\((x_n) \rightarrow x\)</span> and <span class="arithmatex">\((x_n) \rightarrow x'\)</span>, then <span class="arithmatex">\(x = x'\)</span>.</li>
+<li>If <span class="arithmatex">\((x_n)\)</span> converges, then <span class="arithmatex">\((x_n)\)</span> is bound.</li>
+</ul>
+<p><strong>Definition</strong>. A sequence <span class="arithmatex">\((x_n)\)</span> in metric space <span class="arithmatex">\((S, d)\)</span> is a <em>Cauchy sequence</em> if for every <span class="arithmatex">\(\epsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(H \in \mathbb{N}\)</span> such that for any <span class="arithmatex">\(m, n \in \mathbb{N}\)</span>,</p>
+<div class="arithmatex">\[
+m, n \geq H \Rightarrow d(x_n, x_m) &lt; \epsilon
+\]</div>
+<p><strong>Definition</strong>. A metric space in which every Cauchy sequence converges is said to be <em>complete</em>.</p>
+<p><strong>Remark</strong>. <span class="arithmatex">\(\mathbb{R}\)</span> is complete, but <span class="arithmatex">\(\mathbb{Q}\)</span> is not.</p>
+<hr />
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(A\)</span> be a subset of metric space <span class="arithmatex">\((S, d)\)</span>. Then, an <em>open cover</em> of <span class="arithmatex">\(A\)</span> is some collection of subsets <span class="arithmatex">\(\mathcal{G} = \{G_\alpha\}_{\alpha \in I}\)</span>, such that <span class="arithmatex">\(G_\alpha \subseteq S\)</span> and <span class="arithmatex">\(A \subseteq \cup_{\alpha \in I} G_\alpha\)</span>. That is, <span class="arithmatex">\(A\)</span> is contained within the union of all open subsets in <span class="arithmatex">\(\mathcal{G}\)</span>.</p>
+<p><strong>Definition</strong>. If <span class="arithmatex">\(\mathcal{G}' \subseteq \mathcal{G}\)</span> is an open cover of <span class="arithmatex">\(A\)</span>, then <span class="arithmatex">\(\mathcal{G}'\)</span> is a <em>subcover</em> of <span class="arithmatex">\(\mathcal{G}\)</span>.</p>
+<p><strong>Definition</strong>. Given <span class="arithmatex">\(K\)</span> is a subset of metric space <span class="arithmatex">\((S, d)\)</span>, K is <em>compact</em> if every cover of <span class="arithmatex">\(K\)</span> contains a finite subcover.</p>
+<p><strong>Theorem</strong>. If <span class="arithmatex">\(K\)</span> is a compact subset of a metric space, then <span class="arithmatex">\(K\)</span> is closed and bounded.</p>
+<p><strong>Theorem</strong>. Heine-Borel Theorem. In <span class="arithmatex">\(\mathbb{R}\)</span>, the convese is true. That is, if <span class="arithmatex">\(K \subseteq \mathbb{R}\)</span> is closed and bounded, then it is compact.</p>
+<p><strong>Theorem</strong>. If <span class="arithmatex">\(K\)</span> is a compact subset of a metric space, then every infinite subset of <span class="arithmatex">\(K\)</span> has a cluster point.</p>
+<p><strong>Corollary</strong>. Bolzano-Weirstrass Theorem. Every bounded infinite subset of <span class="arithmatex">\(\mathbb{R}\)</span> has a cluster point in <span class="arithmatex">\(\mathbb{R}\)</span>.</p>
+<hr />
+<p><strong>Definition</strong>. Let <span class="arithmatex">\((S, d)\)</span> be a metric space, and <span class="arithmatex">\(A_1, A_2 \in S\)</span> be subsets. Then, <span class="arithmatex">\(A_1, A_2\)</span> are said to be <em>separated</em> if there exist disjoint open subsets <span class="arithmatex">\(U_1, U_2\)</span> such that <span class="arithmatex">\(A_1 \subseteq U_1\)</span> and <span class="arithmatex">\(A_2 \subseteq U_2\)</span>.</p>
+<p><strong>Definition</strong>. A subset <span class="arithmatex">\(C\)</span> of metric space <span class="arithmatex">\((S, d)\)</span> is said to be <em>connected</em> if it is not the union of nonempty separated subsets.</p>
+<p><strong>Theorem</strong>. A subset of <span class="arithmatex">\(\mathbb{R}\)</span> is connected if and only if it is an interval.</p>
 
 
 
