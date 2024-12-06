@@ -60,7 +60,7 @@ $$
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/IVPWithLaplace.aspx).
 
-**Theorum**. Given a function $f(t)$ with $C^n$ continuity, then
+**Theorem**. Given a function $f(t)$ with $C^n$ continuity, then
 
 $$
 \mathcal{L} \{ f^{(n)} (t) \} = s^n F(s) - s^{n-1} f(0) - s^{n-2} f'(0) - \ldots - s f^{(n-2)} (0) - f^{(n-1)} (0)
@@ -77,6 +77,6 @@ $$
 
 We can take the Laplace transformation of an IVP, solve for $Y(s)$, then take the inverse to find the solution.
 
-## Section 4.6 - Nonconstant Coefficient IVPs
+## Section 4.6 - Non-constant Coefficient IVPs
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/IVPWithNonConstantCoefficient.aspx).

@@ -56,7 +56,7 @@
 2. $|ab| = |a||b|$
 3. $|a + b| \leq |a| + |b|$
 
-**Corollary**. Givem $a, b \in \mathbb{R}$, then $\abs{\abs{a} - \abs{b}} \leq \abs{a - b}$.
+**Corollary**. Given $a, b \in \mathbb{R}$, then $\abs{\abs{a} - \abs{b}} \leq \abs{a - b}$.
 
 **Remark**. Every field has at least one absolute value function.
 
@@ -86,7 +86,7 @@ $$
 
 ---
 
-**Decimals**. Let $x \in \mathbb{R}$ such that $x > 0$. By the archimedian property, there exists some $b_0 \in \mathbb{N} \cup {0}$ such that $b_0 < x < b_0 + 1$. We can repeat this to see
+**Decimals**. Let $x \in \mathbb{R}$ such that $x > 0$. By the archimedean property, there exists some $b_0 \in \mathbb{N} \cup {0}$ such that $b_0 < x < b_0 + 1$. We can repeat this to see
 
 $$
 x = b_0 + \frac{b_1}{10} + \frac{b_2}{100} + \ldots + \frac{b_n}{100^n} + \ldots

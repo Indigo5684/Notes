@@ -98,11 +98,11 @@ $$
 
 We can verify that $\curl{(\vb{r}-\vb{r'})} = 0$, cancelling the first term. Additionally, $\curl{\frac{1}{\abs{\vb{r}-\vb{r'}}^3}} = -3 \frac{\vb{r}-\vb{r'}}{\abs{\vb{r}-\vb{r'}}^5}$, which when crossed with $\vb{r}-\vb{r'}$, will cancel. Thus, all terms in the curl cancel, so for a static field, the curl is zero.
 
-## Section 2.4 - Eletric and Magnetic Flux Densities
+## Section 2.4 - Electric and Magnetic Flux Densities
 
 The electric and magnetic flux density vectors are given by $\epsilon_0 \vb{E}$ and $\mu_0 \vb{H}$.
 
-Now, given $S$ is a surfance enclosing $Q_e$ or $Q_m$ total charge, we denotate flux as following:
+Now, given $S$ is a surface enclosing $Q_e$ or $Q_m$ total charge, we denote flux as following:
 
 $$
 \Phi_e = \epsilon_0 \int_S \vb{E} \vdot \vu{n} \dd = Q_e S \text{ or } \Phi_m = \mu_0 \int_S \vb{H} \vdot \vu{n} \dd S = Q_m
@@ -131,4 +131,4 @@ $$
 
 **Definition**. This is known as *Gauss' Law*.
 
-With applicable symnetry, the integral factor becomes simply $E(r)*A$, where $A$ is the area of the surface at $r$.
+With applicable symmetry, the integral factor becomes simply $E(r)*A$, where $A$ is the area of the surface at $r$.

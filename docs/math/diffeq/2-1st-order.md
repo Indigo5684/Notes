@@ -24,7 +24,7 @@ $$
 \mu(t)\frac{dy}{dt} + \mu'(t)y = \mu(t)g(t)
 $$
 
-The left of the preceeding equation is simply the product rule, so we can write $(\mu(t)y(t))' = \mu(t)g(t)$. Take the integral of both sides.
+The left of the preceding equation is simply the product rule, so we can write $(\mu(t)y(t))' = \mu(t)g(t)$. Take the integral of both sides.
 
 \begin{align}
     \int (\mu(t)y(t))' dt &= \int \mu(t)g(t) \\
@@ -88,7 +88,7 @@ Let the following differential equation of the following forms be given.
     \frac{dy}{dx} &= N(y)M(x) \\
 \end{align}.
 
-For the sake of simplicty, select the following form:
+For the sake of simplicity, select the following form:
 
 $$
 N(y) \frac{dy}{dx} = M(x)

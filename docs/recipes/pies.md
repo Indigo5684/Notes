@@ -4,13 +4,13 @@
 
 - Whisk $1 \frac{1}{4}$ cups of flour with $\frac{1}{4}$ tsp. salt
 - Cut in $\frac{1}{2}$ cups of cubed butter (chilled), $\frac{1}{4}$ cups cold water.
-- Refridgerate
+- Refrigerate
 
 ## Pie Crust 2
 
 - Mix $\frac{1}{3}$ cup flour, $\frac{1}{3}$ tsp. salt.
 - Cut in $\frac{1}{2}$ cups of shortening, 3 tbsp. cold water.
-- Refridgerate
+- Refrigerate
 
 ## Pumpkin Pie 1
 
@@ -46,7 +46,7 @@ From: [Link](https://www.allrecipes.com/recipe/234374/apple-hand-pies/)
 ### Hand Pies
 
 - Preheat oven to $400 \degree$ F.
-- Split pie crust into 4. Place fillin in crust, fold.
+- Split pie crust into 4. Place filling in crust, fold.
 - Sprinkle with $\frac{1}{4}$ tsp. white sugar.
 - Whisk 2 tsp. milk, 1 egg. Brush pastries.
 - Bake at $400 \degree$ F. for 25-30 minutes.

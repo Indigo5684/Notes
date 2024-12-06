@@ -14,7 +14,7 @@ where $a_i \in R$ and $a_n \neq 0$ is called a *polynomial over $R$* with *indet
 
 **Definition**. A polynomial is known as *monic* if the leading coefficient is equal to $1$.
 
-**Definition**. The *degree* of $f$ is the largest nonnegative number such that $a_n \neq 0$, written as $\deg f(x) = n$. If no such mumber exists, that is, $f(x) = 0$, we say the degree of $f$ is $-\infty%.
+**Definition**. The *degree* of $f$ is the largest nonnegative number such that $a_n \neq 0$, written as $\deg f(x) = n$. If no such number exists, that is, $f(x) = 0$, we say the degree of $f$ is $-\infty%.
 
 **Definition**. We denote the set of all polynomials with coefficients in $R$ as $R[x]$.
 
@@ -46,7 +46,7 @@ where either $\deg r(x) < \deg g(x)$ or $r(x)$ is the zero polynomial.
 
 ## Section 17.3 Irreducible Polynomials
 
-**Definition** A nonconstant polynomial $f(x) \ in F[x]$ is *irreducible* over a field $F$ if it cannot be expressed as the product of two non-identity polynomials $g(x)$ and $h(x)$ in $F[x]$, with the degree of both polynomials strictly less than the  degree of $f(x)$.
+**Definition** A non-constant polynomial $f(x) \ in F[x]$ is *irreducible* over a field $F$ if it cannot be expressed as the product of two non-identity polynomials $g(x)$ and $h(x)$ in $F[x]$, with the degree of both polynomials strictly less than the  degree of $f(x)$.
 
 **Lemma**. Let $p(x) \in \mathbb{Q}[x]$. Then, with $r, s \in \mathbb{Z}, a(x) \in \mathbb{N}[x]$, we can write $p(x) = \frac{r}{s} a(x)$.
 

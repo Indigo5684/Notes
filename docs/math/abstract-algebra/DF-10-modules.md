@@ -15,13 +15,13 @@
 
 **Remark**. Modules over a field $F$ and vector spaces over $F$ are identical.
 
-**Definition** An *R-submodule* is a subset$N \subseteq M$ which is closed under the action taken forall $r \in R$. That is, given $r \in R, n \in N$, tthen $rn \in N$. Every module has at least two submodules: itself and the trivial (empty) submodule.
+**Definition** An *R-submodule* is a subset$N \subseteq M$ which is closed under the action taken forall $r \in R$. That is, given $r \in R, n \in N$, then $rn \in N$. Every module has at least two submodules: itself and the trivial (empty) submodule.
 
-**Remark**. If $F$ is a field, submodules are equivilent to subspaces.
+**Remark**. If $F$ is a field, submodules are equivalent to subspaces.
 
 ---
 
-**Example**. Let $F$ be a field and $F[x]$ a polynomial ring. Then, let $V$ be a vector space of $F$, and $T$ be a linear transformaion from $V$ to itself. That is, $V: T \rightarrow T$. We know that $V$ is an $F$-module. We will want to show that $V$ can be written as an $F[x]$-module for some choice of $T$. That is, we want an action $F[x] \cross V \rightarrow V$.
+**Example**. Let $F$ be a field and $F[x]$ a polynomial ring. Then, let $V$ be a vector space of $F$, and $T$ be a linear transformation from $V$ to itself. That is, $V: T \rightarrow T$. We know that $V$ is an $F$-module. We will want to show that $V$ can be written as an $F[x]$-module for some choice of $T$. That is, we want an action $F[x] \cross V \rightarrow V$.
 
 Now, for a given linear transformation $T$, consider some polynomial $p(x) = a_n x^n + \ldots + a_0$ and some $v \in V$. We define $p(x) \cross v$ by$
 
@@ -42,17 +42,17 @@ with $T^n$ being defined as applying $T$ a total of $n$ times.
 
 **Recall**. The center of a ring $A$ is the subring $A'$ such that for all $x, y \in R'$, then $xy = yx$. In other words, it is the commutative subring of $A$.
 
-**Definition**. Given two $R$-algebras $A, B$, an *$R$-algebra homomorphhism$ is a ring homomorphism $\varphi: A \rightarrow B$ that maps $1_A \rightarrow 1_B$ such that $\varphi(ra) = r\varphi(a)$.
+**Definition**. Given two $R$-algebras $A, B$, an *$R$-algebra homomorphism$ is a ring homomorphism $\varphi: A \rightarrow B$ that maps $1_A \rightarrow 1_B$ such that $\varphi(ra) = r\varphi(a)$.
 
 ## Section 10.2 - Quotient Modules and Module Homomorphisms
 
-**Definition**. Let $R$ be a ring and $M, N$ be $R$-modules. then a ring homomorphhism $\varphi: M \rightarrow N$ is an *$R$-module homomorphism* if for all $r \in R$, $\varphi(rx) = r\varphi(x)$.
+**Definition**. Let $R$ be a ring and $M, N$ be $R$-modules. then a ring homomorphism $\varphi: M \rightarrow N$ is an *$R$-module homomorphism* if for all $r \in R$, $\varphi(rx) = r\varphi(x)$.
 
 **Theorem**. An $R$-module homomorphism is an *isomorphism* if it is 1-1 and onto, and said modules are *isomorphic*.
 
 **Definition**. Let $M, N$ be $R$-modules. The set $\Hom_R(M, N)$ is the set of all homomorphisms from $M$ to $N$.
 
-**Promposition**. Let $M$, $N$, and $L$ be $R$-modules. Then,
+**Proposition**. Let $M$, $N$, and $L$ be $R$-modules. Then,
 
 1. A function $\varphi: M \rightarrow N$ is an $R$-module homomorphism if and only if $\varphi(rx + y) = r\varphi(x) + \varphi(y)$ for all $x, y \in M$ and $r \in R$.
 2. Let $\varphi, \psi \in \Hom_R(M, N)$. Then, define $\varphi + \psi$ as
@@ -85,13 +85,13 @@ $$
 
 This is the smallest submodule that contains both $A$ and $B$.
 
-**Theorem**. First Isomorphism Theorem. Let $M, N$ be $R$-modules, and $\varphi: M \rightarrow N$ be an $R$-module homomorphhiism. Then, $\ker \varphi$ is a submodule of $M$, and $M / \ker \varphi \cong \varphi(M)$.
+**Theorem**. First Isomorphism Theorem. Let $M, N$ be $R$-modules, and $\varphi: M \rightarrow N$ be an $R$-module homomorphism. Then, $\ker \varphi$ is a submodule of $M$, and $M / \ker \varphi \cong \varphi(M)$.
 
 **Theorem**. Second Isomorphism Theorem. Let $A, B$ be submodules of the $R$-module $M$. Then, $(A + B)/B \cong A/(A \cap B)$.
 
 **Theorem**. Third Isomorphism Theorem. Let $M$ be an $R$-module, and $A \subseteq B$ be submodules of $M$. Then, $\frac{M/A}{B/A} \cong M/B$.
 
-**Theorem**. Lattice Isomorphism Theorem. Let $N$ be a submodule of the $R$-module $M$. Then, there is a bijection between submoudles of $M$ containing $N$ and submodules of $M/N$. This is given by $A \leftrightarrow A/N$, for $A \supseteq N$.
+**Theorem**. Lattice Isomorphism Theorem. Let $N$ be a submodule of the $R$-module $M$. Then, there is a bijection between submodules of $M$ containing $N$ and submodules of $M/N$. This is given by $A \leftrightarrow A/N$, for $A \supseteq N$.
 
 ## Section 10.3 - Generation of Modules, Direct Sums, and Free Modules
 
@@ -99,7 +99,7 @@ This is the smallest submodule that contains both $A$ and $B$.
 
 1. The *sum* of $N_1, \ldots, N_n$ is the set of all finite sums of elements from the sets $N_i$. That is, $N_1, \ldots, N_n := \{a_1 + a_2 + \ldots + a_n | a_i \in N_i\}$
 2. For any subset $A$ of $M$, let $RA = \{r_1 a_1 + r_2 a_2 + \ldots + r_m a_m | r_i \in R, a_i \in A\}$. If $N$ is a submodule of $M$ such that $N = RA$, then $A$ is called the *generating set* for $N$.
-3. A submodule $N$ of $M$ is *finitely generaated* if there is some finite subset $A$ of $M$ such that $N = RA$. That is, $N$ is generated by some finite subset.
+3. A submodule $N$ of $M$ is *finitely generated* if there is some finite subset $A$ of $M$ such that $N = RA$. That is, $N$ is generated by some finite subset.
 4. A submodule of $M$ (up to equality) is $cyclic$ if there exists some element $a \in M$ such that $N = Ra = \{ra | r \in R\}$.
 
 **Definition**. Let $M_1, \ldots, M_k$ be a collection of $R$-modules. Then, the *direct product* is defined as
@@ -118,13 +118,13 @@ This direct product is in itself an $R$-module.
 
 **Definition**. An $R$-module $F$ is said to be *free* on the subset $A$ of $F$ if for every nonzero $x \in F$, there exists nonzero elements $r_1, \ldots, r_n$ of $R$ and unique $a_1, \ldots, a_n$ such that $x = r_1 a_1 + \ldots + r_n a_n$ for some $n \in \mathbb{Z}^+$. That is, $A$ is a *basis* or *set of free generators* of $F$.
 
-**Theorem**. For any set $A$, there is a free $R$-module $F(A)$ on $A$ such that $F(A)$ satisfies the universal property: if $M$ is any $R$-module, and $\varphi: A \rightarrow M$ is a map of sets, there eixts a unique $R$-module homomorphism: $\Phi: F(A) \rightarrow M$ such that $\Phi(a) = \varphi(a)$ for all $a \in A$.
+**Theorem**. For any set $A$, there is a free $R$-module $F(A)$ on $A$ such that $F(A)$ satisfies the universal property: if $M$ is any $R$-module, and $\varphi: A \rightarrow M$ is a map of sets, there exists a unique $R$-module homomorphism: $\Phi: F(A) \rightarrow M$ such that $\Phi(a) = \varphi(a)$ for all $a \in A$.
 
 **Corollary**. If $F_1$ and $F_2$ are free modules on $A$, then there is a unique isomorphism between $F_1$ and $F_2$, which is the identity map on A.
 
 **Corollary**. If $F$ is a free $R$-module with basis $A$, then $F \cong F(A)$.
 
-**Definition** For a free module $F$ with basis $A$, if $R$ is commutative, tthen the *rank* of $F$ is the cardinality of $A$.
+**Definition** For a free module $F$ with basis $A$, if $R$ is commutative, then the *rank* of $F$ is the cardinality of $A$.
 
 ## Section 10.4 - Tensor Products of Modules
 

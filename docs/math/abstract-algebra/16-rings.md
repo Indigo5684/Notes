@@ -2,7 +2,7 @@
 
 ## Section 16.1 - Rings
 
-**Definition**. A nonempty set $S$ is a *ring* if, with two binary operations called addition and multipllication, the following are satisfied:
+**Definition**. A nonempty set $S$ is a *ring* if, with two binary operations called addition and multiplication, the following are satisfied:
 
 1. Addition is commutative. $a + b = b + a$ for $a, b \in R$
 2. Addition is associative. $(a + b) + c = a + (b + c)$ for $a, b, c \in R$
@@ -46,17 +46,17 @@ Note that some books impose the condition that $1 \neq 0$. If $1 = 0$, we can sh
 
 **Definition**. For any non-negative integer $n \in \mathbb{N}$ and $r \in R$, we say that $nr = r + \ldots + r \text{(n times)}$.
 
-**Definition**. The *charactaristic* of a ring is the leat possible $n \in \mathbb{N}$ such that $nr = 0$ for all $r \in R$.
+**Definition**. The *characteristic* of a ring is the least possible $n \in \mathbb{N}$ such that $nr = 0$ for all $r \in R$.
 
-**Example**. For every prime number $p$, $\mathbb{N}_p$ is a field of charactaristic $p$.
+**Example**. For every prime number $p$, $\mathbb{N}_p$ is a field of characteristic $p$.
 
-**Lemma**. 16.18: Given $R$ is a ring with identity, the charactaristic of $1$ is the charactartistic of the field.
+**Lemma**. 16.18: Given $R$ is a ring with identity, the characteristic of $1$ is the characteristic of the field.
 
-**Theorem**. 16.19: The charactaristic of an integral domain is prime or zero.
+**Theorem**. 16.19: The characteristic of an integral domain is prime or zero.
 
 ## Section 16.3 - Ring Homomorphisms and Ideals
 
-**Definition** Given rins $R$ and $S$, and a mapping $\varphi: R \rightarrow S$, we say that $\varphi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
+**Definition** Given rings $R$ and $S$, and a mapping $\varphi: R \rightarrow S$, we say that $\varphi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
 
 $$
 \begin{align}
@@ -92,7 +92,7 @@ is an ideal in $R$. Specifically, $\langle a \rangle$ is a *principal ideal*.
 
 **Example**. Theorem 16.25. Every ideal in $\mathbb{Z}$ is a principal ideal.
 
-**Examplee**. With $\varphi: R \rightarrow S$, $\ker \varphi$ is an ideal of $R$.
+**Example**. With $\varphi: R \rightarrow S$, $\ker \varphi$ is an ideal of $R$.
 
 **Remark**. 16.28: We are working with *two-sided ideals*. If rings are not commutative, we may deal with *left ideals* and *right ideals*.
 
@@ -118,7 +118,7 @@ $$
 R/I \cong \frac{R/J}{I/J}
 $$
 
-**Theorem**. 16.34, *Correspondence Theorem*. Let $I$ be an ideal of $R$. Then, $S \mapsto S/I$ is a one-to-one correspeondence between the set of subrings $S$ containing $I$ (that is, $I \in S$) and the set of subrings of $R/I$. Furthermore, the ideals of $R$ containing $I$ correspond to the ideals of $R/I$.
+**Theorem**. 16.34, *Correspondence Theorem*. Let $I$ be an ideal of $R$. Then, $S \mapsto S/I$ is a one-to-one correspondence between the set of subrings $S$ containing $I$ (that is, $I \in S$) and the set of subrings of $R/I$. Furthermore, the ideals of $R$ containing $I$ correspond to the ideals of $R/I$.
 
 ## Section 16.4 - Maximal and Prime Ideals
 
@@ -140,6 +140,6 @@ $$
 (a + P)(b + P) = ab + P = 0 + P = P
 $$
 
-Thus, $ab \in P$. By symnetry, assume $a \notin P$. Thus, $b \in P$ by the  devinition of a prime ideal, so $b + P = 0 + P$, meaning $R/P$ is an integral domain.
+Thus, $ab \in P$. By symnetry, assume $a \notin P$. Thus, $b \in P$ by the definition of a prime ideal, so $b + P = 0 + P$, meaning $R/P$ is an integral domain.
 
 **Theorem**. 16.40: In a commutative ring with identity, every maximal ideal is also a prime ideal.

@@ -9,7 +9,7 @@ Original: [Link](https://www.allrecipes.com/recipe/10813/best-chocolate-chip-coo
 - In a medium bowl, mix together $\frac{1}{2}$ cup butter, $\frac{1}{2}$ cup sugar, $\frac{1}{2}$ cup brown sugar.
 - To the wet ingredients, add 1 egg and 1 tsp. vanilla.
 - To the wet ingredients, add a combination of 1 tsp. hot water and $\frac{1}{2}$ tsp. baking soda.
-- Mix the wet and dry ingredients. Stir in 1 cup chocolate chips and optionallt $\frac{1}{2}$ cup walnuts.
+- Mix the wet and dry ingredients. Stir in 1 cup chocolate chips and optionally $\frac{1}{2}$ cup walnuts.
 - Bake for 10m at $350 \degree$ F.
 
 ## Peanut Butter Cookies
@@ -36,7 +36,7 @@ Original: [Link](https://www.allrecipes.com/recipe/10813/best-chocolate-chip-coo
 ## Snickerdoodle Cookies
 
 - Preheat oven to $400 \degree$ F.
-- Blend together $\frac{3}{4}$ cup sugar, $\frac{1}{4}$ cup butter (softened), $\frac{1}{4} cup shortening.
+- Blend together $\frac{3}{4}$ cup sugar, $\frac{1}{4}$ cup butter (softened), $\frac{1}{4}$ cup shortening.
 - Add 1 egg, 1 tsp. vanilla
 - In a separate bowl, combine $1 \frac{1}{4}$ cups flour, 1 tsp. cream of tartar, $\frac{1}{2}$ tsp. baking soda, and $\frac{1}{4}$ tsp. salt
 - Combine

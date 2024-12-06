@@ -1,4 +1,4 @@
-# Chapter 12 - Modules over Principal Ideal Domains
+# Dummit & Foote Chapter 10 Chapter 12 - Modules over Principal Ideal Domains
 
 ## Section 12.1 The Basic Theory
 
@@ -8,7 +8,7 @@ $$
 M_1 \subseteq M_2 \subseteq \ldots
 $$
 
-there exists some $k \in \mathbb{N}$ such thaht given any $n \in \mathbb{N}$ with $n \geq k$, then $M_n = M_k$.
+there exists some $k \in \mathbb{N}$ such that given any $n \in \mathbb{N}$ with $n \geq k$, then $M_n = M_k$.
 
 **Definition**. A ring $R$ is *Noetherian* if it is Noetherian when viewed as a left $R$-module over itself.
 
@@ -20,7 +20,7 @@ there exists some $k \in \mathbb{N}$ such thaht given any $n \in \mathbb{N}$ wit
 
 **Corollary**. If $R$ is a principal ideal domain (PID), then all nonempty set of ideals of $R$ has a maximal element. Additionally, $R$ is as Noetherian ring.
 
-**Proposition**. Let $R$ be an integral doman, and $M$ be a free $R$-module of rank $n < \infty$. Then, given $S$ is subset $M$ with $|S| > n$, the elements of $S$ are $R$-linearly dependent.
+**Proposition**. Let $R$ be an integral domain, and $M$ be a free $R$-module of rank $n < \infty$. Then, given $S$ is subset $M$ with $|S| > n$, the elements of $S$ are $R$-linearly dependent.
 
 **Definition**. Given $R$ an integral domain and $M$ an $R$-module,
 
@@ -49,5 +49,5 @@ Additionally, if $R$ is a PID, as $\Ann_R(N)$ is an ideal, $\Ann(N) = (n)R$ and 
 **Theorem**. Let $R$ be a principal ideal domain, and $M$ be a free $R$-module of finite rank $m$, and $N$ be a submodule of $M$. Then,
 
 1. $N$ is a free submodule with rank $n \leq m$.
-2. There exiss a basis $y_1, y_2, \ldots, y_m$ of $M$ so that $r_1 y_1, r_2 y_2, \ldots, r_m y_n$ is a basis of $N$ for some $r_i \in R$ and $r_1 | r_2 | \ldots | r_n$
+2. There exists a basis $y_1, y_2, \ldots, y_m$ of $M$ so that $r_1 y_1, r_2 y_2, \ldots, r_m y_n$ is a basis of $N$ for some $r_i \in R$ and $r_1 | r_2 | \ldots | r_n$
 

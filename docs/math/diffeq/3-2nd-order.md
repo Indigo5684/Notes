@@ -14,21 +14,21 @@ $$ ay'' + by' + cy = g(t) $$
 
 This is a second-order differential equation with constant coefficients.
 
-**Definition**. In the event that $g(t) = 0$, we say the equation is *homogenous*. Otherwise, the equation is *nonhomogenous*.
+**Definition**. In the event that $g(t) = 0$, we say the equation is *homogenous*. Otherwise, the equation is *nonhomogeneous*.
 
 **Definition**. Principal of Superposition. Let $y_1(t)$ and $y_2(t)$ be solutions to a linear, homogenous differential equation. Then, any linear combination of said solutions is also a solution to the differential equation. In other words, with $c_1, c_2 \in \mathbb{R}$, the following is a solution to a differential equation.
 
 $$ y(t) = c_1 y_1(t) + c_2 y_2(t) $$
 
-Given a second-order homogenous differential equation with constant coeffictions, we assume solutions of the following form:
+Given a second-order homogenous differential equation with constant coefficients, we assume solutions of the following form:
 
 $$ y(t) = e^{rt} $$
 
-Substituting this equation into the differential equationm, we see the following:
+Substituting this equation into the differential equation, we see the following:
 
 $$ e^{rt}(ar^2 + br + c) = 0 $$
 
-Thus, we allow the *charactaristic equation* of the differential equation to be as follows:
+Thus, we allow the *characteristic equation* of the differential equation to be as follows:
 
 $$ ar^2 + br + c = 0 $$
 
@@ -36,7 +36,7 @@ $$ ar^2 + br + c = 0 $$
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/RealRoots.aspx).
 
-When the two roots to the charactaristic equation are discrete roots in the real numbers, we see the following solutions.
+When the two roots to the characteristic equation are discrete roots in the real numbers, we see the following solutions.
 
 $$ y_1(t) = e^{r_1 t} $$
 
@@ -50,7 +50,7 @@ $$ y(t) = c_1 e^{r_1 t} + c_2 e^{r_2 t} $$
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/ComplexRoots.aspx).
 
-Let the solutions to the charactaristic equation be of the following form:
+Let the solutions to the characteristic equation be of the following form:
 
 $$ r_{1,2} = \lambda \pm \mu i $$
 
@@ -64,7 +64,7 @@ Recall Euler's Formula:
 
 $$ e^{i \theta} = \cos \theta + i \sin \theta $$
 
-A colliloquy of Euler's formula is the following:
+A corollary of Euler's formula is the following:
 
 $$ e^{-i \theta} = \cos(-\theta) + i \sin(-\theta) = \cos \theta - i \sin \theta $$
 
@@ -83,7 +83,7 @@ $$ y(t) = c_1 e^{\lambda t} \cos(\mu t) + c_2 e^{\lambda t} \sin(\mu t) $$
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/RepeatedRoots.aspx).
 
-Assume the solutions to the charactaristic equations are $r = r_1 = r_2$. Thus, the two equations $y_t(t)$ and $y_2(t)$ are not linearly independent.
+Assume the solutions to the characteristic equations are $r = r_1 = r_2$. Thus, the two equations $y_t(t)$ and $y_2(t)$ are not linearly independent.
 
 After a *lot* of algebra, we see that
 
@@ -112,7 +112,7 @@ $$
 
 **Definition**. If $W(f, g) \neq 0$, then $f(t)$ and $g(t)$ are said to form a *fundamental set of solutions*, and can be superimposed to form the general solution.
 
-## Section 3.8 - Nonhomogenous Differential Equations
+## Section 3.8 - Nonhomogeneous Differential Equations
 
 This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/Classes/DE/NonhomogeneousDE.aspx).
 
@@ -120,11 +120,11 @@ Assume we have the differential equation as follows:
 
 $$ y'' + p(t) y' + q(t) y = g(t) $$
 
-The equivilent homogenous differential equation is
+The equivalent homogenous differential equation is
 
 $$ y'' + p(t) y' + q(t) y = 0 $$
 
-**Theorem**. Assume $Y_1(t)$, $Y_2(t)$ are solutions to the nonhomogenous differential equations. Then, $Y_1(t) - Y_2(t)$ is a solution to the homogenous differential equation. This can be proved by substitution.
+**Theorem**. Assume $Y_1(t)$, $Y_2(t)$ are solutions to the nonhomogeneous differential equations. Then, $Y_1(t) - Y_2(t)$ is a solution to the homogenous differential equation. This can be proved by substitution.
 
 Thus, with $y_h(t)$ the solution to the homogenous problem, and $y_p(t)$ the solution to this particular problem, we can say that the general form of the solution to this differential equation is
 
@@ -156,7 +156,7 @@ Assume we have the differential equation as follows:
 
 $$ y'' + p(t) y' + q(t) y = g(t) $$
 
-The equivilent homogenous differential equation is
+The equivalent homogenous differential equation is
 
 $$ y'' + p(t) y' + q(t) y = 0 $$
 

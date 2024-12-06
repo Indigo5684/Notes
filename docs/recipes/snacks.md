@@ -16,11 +16,11 @@
 
 ## Chocolate Fudge
 
-- Melt 1 bag of chocolate chips on low. Stir in 1 can of sweeteneed condensed milk. Pour into buttered or oiled tray.
+- Melt 1 bag of chocolate chips on low. Stir in 1 can of sweetened condensed milk. Pour into buttered or oiled tray.
 
 ## Peanut Butter Fudge
 
 - Melt $\frac{1}{2}$ cup of butter on medium heat. Stir in a 16oz bag of brown sugar, $\frac{1}{2}$ cup of milk.
-- Remove from heat. Stir in $\frac{3}{4}$ cups of peanut butter and 1 tsp banilla.
+- Remove from heat. Stir in $\frac{3}{4}$ cups of peanut butter and 1 tsp bvnilla.
 - Add to $3 \frac{1}{2}$ cups of powdered sugar
 - Pour into buttered or oiled tray.

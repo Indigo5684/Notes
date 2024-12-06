@@ -16,15 +16,15 @@ This section is from [Paul's Online Math Notes](https://tutorial.math.lamar.edu/
 
 \[ a_n(t)y^{(n)}(t) + a_{n-1}(t)+y^{n-1}(t) + \ldots + a_1(t)y'(t) + a_0(t)y(t) = g(t) \]
 
-Note that $a_n(t)$ does not depeond on any derivative of $y$, so the presence of terms such as $e^y$ or $\sqrt{y'}$ signal that the equation is *nonlinear*.
+Note that $a_n(t)$ does not depend on any derivative of $y$, so the presence of terms such as $e^y$ or $\sqrt{y'}$ signal that the equation is *nonlinear*.
 
-**Definition**. The *solution(s)* to a differential equation over an inverval $\alpha < t < \beta$ are any funcion(s) $y(t)$ that satisfy the differential equation.
+**Definition**. The *solution(s)* to a differential equation over an interval $\alpha < t < \beta$ are any function(s) $y(t)$ that satisfy the differential equation.
 
 **Definition**. The *initial conditions* are a condition or set of conditions that constrain the possible solution sets.
 
 **Definition**. An *Initial Value Problem* is a differential equation along with the appropriate boundary or initial conditions.
 
-**Definition**. The *integral of validity* for a solution to a differential equation is the largest possible interval containing the initial coniditions for which the solution is valid.
+**Definition**. The *integral of validity* for a solution to a differential equation is the largest possible interval containing the initial conditions for which the solution is valid.
 
 **Definition**. The *general solution* to a differential equation is the most general form a solution to a differential equation can take without requiring the initial conditions.
 

@@ -14,7 +14,7 @@ $$
 \vb{E}(\vb{r}) = \frac{1}{q_e} \vb{F_e}(\vb{r}) = - \frac{1}{q_e} \grad{U_e(\vb{r})} = -\grad{V_e(\vb{r})}
 $$
 
-The units of electrostatic potential is Joule/Coublomb, also known as a Volt. Thus, the units of the electric field should be expressed in Volts/meter. Similarly,
+The units of electrostatic potential is Joule/Coulomb, also known as a Volt. Thus, the units of the electric field should be expressed in Volts/meter. Similarly,
 
 $$
 \vb{H}(\vb{r}) = \frac{1}{q_m} \vb{F_m}(\vb{r}) = - \frac{1}{q_m} \grad{U_m(\vb{r})} = -\grad{V_m(\vb{r})}
@@ -80,7 +80,7 @@ $$
 W_n = \frac{1}{2} \frac{4 \pi \epsilon_0} \sum_{i = 1}^{N} \sum_{j > i}^{N} \frac{Q_{ei}Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
 $$
 
-For the sake of symnetry, sum overall charges and divide by 2.
+For the sake of symmetry, sum overall charges and divide by 2.
 
 $$
 W_n = \frac{1}{2} \frac{1}{4 \pi \epsilon_0} \sum_{i = 1}^{N} \sum_{j \neq i}^{N} \frac{Q_{ei}Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
@@ -93,7 +93,7 @@ W_n = \frac{1}{2} \sum_{i = 1}^{N}Q_{ei} \sum_{i \neq j}^{N} \frac{1}{4 \pi \eps
 = \frac{1}{2}\sum_{i = 1}^{N} Q_{ei} V(\vb{r_i})
 $$
 
-We can rewrite this as a Reimann sum and convert to an integral.
+We can rewrite this as a Riemann sum and convert to an integral.
 
 $$
 W_e = \frac{1}{2} \int_V p_e(\vb{r}) V_e(\vb{r}) \dd V ; \quad
@@ -129,7 +129,7 @@ $$
 
 We know that $\vb{E}(\vb{r}) = -\div{V_e(\vb{r})}$ and $\vb{H}(\vb{r}) = -\div{V_m(\vb{r})}$
 
-Combinind this, as well as the first of the Maxwell equations, we see that
+Combined this, as well as the first of the Maxwell equations, we see that
 
 $$
 \div{\vb{E}} = -\div{\grad{V_e}} = - \laplacian{V_e} = \frac{\rho_e}{\epsilon_0}
@@ -139,7 +139,7 @@ $$
 \div{\vb{H}} = -\div{\grad{V_m}} = - \laplacian{V_m} = \frac{\rho_m}{\mu_0}
 $$
 
-The last inequatlity is called the Poisson Equation, or the inhomogenous Laplace equation.
+The last inequality is called the Poisson Equation, or the inhomogeneous Laplace equation.
 
 To solve this equation, we define a Green function as follows:
 
@@ -147,7 +147,7 @@ $$
 \laplacian G(\vb{r}, \vb{r'}) = \delta(\vb{r} - \vb{r'})
 $$
 
-Now, we can construct a potential function in terms of said green function that satisfies the lapalce equation.
+Now, we can construct a potential function in terms of said green function that satisfies the Laplace equation.
 
 $$
 V_e(\vb{r}) = - \int_V G(\vb{r}, \vb{r'}) \frac{\rho_e(\vb{r'})}{\epsilon_0} \dd{V'}
@@ -273,4 +273,4 @@ $$
 
 Note that as a quirk of the function, $P_n(1) = 1$ for all $n$.
 
-We can apply these quadrupole and beyond terms to the volate or other equations, however, this becomes very messy.
+We can apply these quadrupole and beyond terms to the violate or other equations, however, this becomes very messy.

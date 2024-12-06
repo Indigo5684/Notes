@@ -2,7 +2,7 @@
 
 ## Section 18.1 - Fields of Fractions
 
-**Definition**. Given an integral domain $D$, we can construct a field $F$ containing $D$ by stating that any $p/q \in F$, annd that any two elements $a/b = c/d$ if and only if $ad = bc$. We can consider this akin o a set of ordered pairs
+**Definition**. Given an integral domain $D$, we can construct a field $F$ containing $D$ by stating that any $p/q \in F$, and that any two elements $a/b = c/d$ if and only if $ad = bc$. We can consider this akin o a set of ordered pairs
 
 $$
 S = \{(a, b) : a, b \in D \text{ and } b \neq 0 \}
@@ -18,13 +18,13 @@ $$
 
 Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$, there exists a map $\psi: F_D \rightarrow D$ giving an isomorphism such that $\psi(a) = a$ for all $a \in D$.
 
-**Corollary**. 18.6: Let $F$ be a field of charactaristic $0$. Then, $F$ contains a subfield isomorphic to $\mathbb{Q}$.
+**Corollary**. 18.6: Let $F$ be a field of characteristic $0$. Then, $F$ contains a subfield isomorphic to $\mathbb{Q}$.
 
-**Corollary**. 18.6: Let $F$ be a field of charactaristic $p$. Then, $F$ contains a subfield isomorphic to $\mathbb{Z}_p$.
+**Corollary**. 18.6: Let $F$ be a field of characteristic $p$. Then, $F$ contains a subfield isomorphic to $\mathbb{Z}_p$.
 
 ## Section 18.2 - Factorization in Integral Domains
 
-**Definition**. Let $R$ be a commutative ring with identity, and $a, b \in R$. We say that $a$ *divideds* $b$, that is, $a | b$, if there exists some $c \in R$ such that $b = ac$.
+**Definition**. Let $R$ be a commutative ring with identity, and $a, b \in R$. We say that $a$ *divides* $b$, that is, $a | b$, if there exists some $c \in R$ such that $b = ac$.
 
 **Definition**. A *unit* element is any element that has a multiplicative inverse.
 
@@ -37,7 +37,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 **Definition**. Given integral domain $D$, we say that $D$ is a *Unique Factorization Domain (UFD)* if it satisfies the following criteria:
 
 1. Given $a \in D, a \neq 0$, and $a$ is not a unit, $a$ can be written as a product of irreducible elements in $D$.
-2. Let $a = p_1 \ldots p_r = q_1 \ldots q_s$, where $p_i$ and $q_i$ are all irreducible. Then, $r = s$, and there exists some fuction $\pi \in S_r$ such that $p_i$ and $q_{\pi(j)}$ are associates for $j = 1, \ldots, r$.
+2. Let $a = p_1 \ldots p_r = q_1 \ldots q_s$, where $p_i$ and $q_i$ are all irreducible. Then, $r = s$, and there exists some function $\pi \in S_r$ such that $p_i$ and $q_{\pi(j)}$ are associates for $j = 1, \ldots, r$.
 
 **Definition**. A ring $R$ is a *principal ideal domain (PID)* if every ideal of $R$ is principal.
 
@@ -61,24 +61,24 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 ---
 
-**Definition**. Any integral domain $D$ is a *euclidian domain* with a *euclidian function* $nu: D \\ \{0\} \rightarrow \mathbb{N}$ that satisfies the following:
+**Definition**. Any integral domain $D$ is a *Euclidean domain* with a *Euclidean function* $nu: D \\ \{0\} \rightarrow \mathbb{N}$ that satisfies the following:
 
 1. Given $a, b \neq 0$, then $\nu(a) \leq \nu(ab)$.
 2. Given, $a, b \in D$ and $b \neq 0$, there exists some $q, r \in D$ such that $a = bq + r$ and either $r = 0$ or $\nu(r) < \nu(b)$.
 
-**Example**. Absolute value on $\mathbb{Z}$ is a Euclidian validation.
+**Example**. Absolute value on $\mathbb{Z}$ is a Euclidean validation.
 
-**Example**. Degree on $F[x]$ is a Euclidian validation.
+**Example**. Degree on $F[x]$ is a Euclidean validation.
 
-**Example**. $\nu(a + bi) = a^2 + b^2$ is a Euclidian validation over $\mathbb{Z}[i]$.
+**Example**. $\nu(a + bi) = a^2 + b^2$ is a Euclidean validation over $\mathbb{Z}[i]$.
 
-**Theorem**. 18.21: Every Euclidian domain is a PID.
+**Theorem**. 18.21: Every Euclidean domain is a PID.
 
-**Corollary**. Every Euclidian domain is a UFD.
+**Corollary**. Every Euclidean domain is a UFD.
 
 ---
 
-**Definition**. Given a polynomial $p(x) \in D$, with $D$ bein an integer domain, we say that the *content* of $p(x)$ is the greatest common divisor of its coefficients. Additionally, if the content is $1$, we say that $p(x)$ is *primitive*.
+**Definition**. Given a polynomial $p(x) \in D$, with $D$ being an integer domain, we say that the *content* of $p(x)$ is the greatest common divisor of its coefficients. Additionally, if the content is $1$, we say that $p(x)$ is *primitive*.
 
 **Theorem**. 18.24: Let $D$ be a UFD, and $f(x), g(x) \in D[x]$ be primitive. Then, $f(x)g(x)$ is primitive.
 
@@ -94,7 +94,7 @@ As a direct consequence, we see the following.
 
 **Theorem**. If $D$ is as UFD, then $D[x]$ is a UFD.
 
-**Corollary**. This theorem has several collaries:
+**Corollary**. This theorem has several corollaries:
 
 1. Given a field $F$, since $F$ is a PID, it is also a UFD. Thus, $F[x]$ is a UFD.
 2. The ring of polynomials over integers, $\mathbb{Z}[x]$ is a UFD.

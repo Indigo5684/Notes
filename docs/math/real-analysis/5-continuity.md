@@ -1,4 +1,4 @@
-# Chapter 5 - Continuiy
+# Chapter 5 - Continuity
 
 ## Section 5.1 - Continuous Functions
 
@@ -8,7 +8,7 @@ $$
 |x - a| < \delta \Rightarrow |f(x) - f(a)| < \epsilon
 $$
 
-Note that if $a$ is an *isolateed point* of $A$, that is, not a cluster point, then $a$ is automatically continuous.
+Note that if $a$ is an *isolated point* of $A$, that is, not a cluster point, then $a$ is automatically continuous.
 
 If $a$ is a cluster point of $A$, then this definition collapses to the definition of $\lim_{x \rightarrow a} f(x) = f(a)$.
 
@@ -20,17 +20,17 @@ Note that a function cannot be continuous at a point outside of its domain, even
 
 ---
 
-**Definition**. Let $(S, d_S)$ and $(T, d_T)$ be metric spaces. A function $f: S \rightarrow T$ is continuous at a point $a \in S$ if given any $\epsilon > 0$, there exists some $\delta > 0$ such thaat for all $x \in S$,
+**Definition**. Let $(S, d_S)$ and $(T, d_T)$ be metric spaces. A function $f: S \rightarrow T$ is continuous at a point $a \in S$ if given any $\epsilon > 0$, there exists some $\delta > 0$ such that for all $x \in S$,
 
 $$
 d_S(x, a) < \delta \Rightarrow d_T(f(x),  f(a)) < \epsilon
 $$
 
-**Theorem**. A function $f: S \rightarrow T$ is continuous at a point $a \in A$ if and only if given some neighborhood $V(f(a)) \in B$, there xists some $U(a) \in A$ such that $f(U) \subseteq V$.
+**Theorem**. A function $f: S \rightarrow T$ is continuous at a point $a \in A$ if and only if given some neighborhood $V(f(a)) \in B$, there exists some $U(a) \in A$ such that $f(U) \subseteq V$.
 
-## Section 5.2 - Combinations of continuous Functions.
+## Section 5.2 - Combinations of continuous Functions
 
-**Theorem**. Let $f, g: A \rightarrow \mathbb{R}$ be continuous at $a \in A$. Then, 
+**Theorem**. Let $f, g: A \rightarrow \mathbb{R}$ be continuous at $a \in A$. Then,
 
 - $f + g$ and $fg$ are continuous at $a$
 - If $g(x) \neq 0$ for all $x \in A$, then $\frac{f}{g}$ is continuous at $a$.
@@ -51,15 +51,15 @@ $$
 
 **Corollary**. Let $f: A \rightarrow \mathbb{R}$ be a continuous function, with $A$ being a compact subset of metric space $S$. Then, $f(A)$ is closed and bounded. Moreover, there exists a $p, q \in A$ such that $f(p)$ and $f(q)$ are the supremum and infimum of $f(A)$.
 
-**Corollary**. Maximum-Minimum Theorem. If $I = [a, b]$ is a closed and bounded interval and $f: I \rightarrow \mathbb{R}$ is continuous on $I$, then $f$ has an absolute minumum and maximum on $I$.
+**Corollary**. Maximum-Minimum Theorem. If $I = [a, b]$ is a closed and bounded interval and $f: I \rightarrow \mathbb{R}$ is continuous on $I$, then $f$ has an absolute minimum and maximum on $I$.
 
 ---
 
 **Theorem**. Let $S, T$ be metric spaces and $A \subseteq S$. Then, if $f: A \rightarrow T$ is continuous on $A$, and $A$ is a connected subset of $S$, then $f(A)$ is a connected subset of $T$.
 
-**Corollary**. Suppose that $I$ is an interval. Let $f: I \rightarrow \mathbb{R}$ be continuous on $I$. Then, $f(I)$ is an intterval.
+**Corollary**. Suppose that $I$ is an interval. Let $f: I \rightarrow \mathbb{R}$ be continuous on $I$. Then, $f(I)$ is an interval.
 
-**Theorem**. (Bolzano's) Invermediate Value Theorem. Suppose $f: [a, b] \rightarrow \mathbb{R}$ is continuous on $[a, b]$ with $a \neq b$. Then, given some $k$ such that $f(a) < k < f(b)$, there exists some $c \in (a, b)$ such that $k = f(c)$.
+**Theorem**. (Bolzano's) Intermediate Value Theorem. Suppose $f: [a, b] \rightarrow \mathbb{R}$ is continuous on $[a, b]$ with $a \neq b$. Then, given some $k$ such that $f(a) < k < f(b)$, there exists some $c \in (a, b)$ such that $k = f(c)$.
 
 ---
 

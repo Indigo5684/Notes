@@ -1,6 +1,6 @@
 # Chapter 5 - Electrodynamics with Moving Charges
 
-## Section 5.1 - Currents in Steady-State Regine
+## Section 5.1 - Currents in Steady-State Regime
 
 We want to work in a steady-state system. Thus, we restrict ourselves to currents that do not change in time.
 
@@ -24,7 +24,7 @@ If we assume cylindrical coordinates and that $\vb{H}(vb{r}) = H_\varphi(s) \vu{
 
 ---
 
-By Helmholtz Theorem, we know that $\vb{H}(\vb{r}) = \curl{\vb{A}(\vb{r})}$. For a current-carying wire, $\vb{A}(\vb{r}) = \frac{I_e}{4\pi} \int_{\text{wire}} \frac{\dd{\vb{l'}}}{|\vb{r}-\vb{r'}|}$. Applying identities, we see the *Law of Biot and Savart$, where
+By Helmholtz Theorem, we know that $\vb{H}(\vb{r}) = \curl{\vb{A}(\vb{r})}$. For a current-carrying wire, $\vb{A}(\vb{r}) = \frac{I_e}{4\pi} \int_{\text{wire}} \frac{\dd{\vb{l'}}}{|\vb{r}-\vb{r'}|}$. Applying identities, we see the *Law of Biot and Savart$, where
 
 $$
 \vb{H}(\vb{r}) = \int{I_e}{4\pi}\int_{\text{wire}} \frac{-(\vb{r}-\vb{r'}) \cross \dd{\vb{l'}}}{|\vb{r}-\vb{r'}|^3}
@@ -60,7 +60,7 @@ $$
 
 Consider an electric charge moving with velocity $\vb{v}$ in a magnetic parallel plate capacitor with charge densities $\plusminus \sigma_m$. That is, $\mu_0 \vb{H} = \sigma_m \vu{z}$. Then, we can apply theorems to see the resulting force.
 
-**Theorem**. *Lorentz Force Law* states that $\vb{F} = q_e \vb{v} \cross \u_0 \vb{H}$ in the presence of a magnetic field. In the presence of both an electic andmagnetic field, $\vb{F} = q_e (\vb{E} + \vb{v} \cross \u_0 \vb{H})$.
+**Theorem**. *Lorentz Force Law* states that $\vb{F} = q_e \vb{v} \cross \u_0 \vb{H}$ in the presence of a magnetic field. In the presence of both an electric and magnetic field, $\vb{F} = q_e (\vb{E} + \vb{v} \cross \u_0 \vb{H})$.
 
 **Theorem**. *Ampere's Force Law* states that generalizing the previous theorem, we can see that
 

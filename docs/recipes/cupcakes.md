@@ -4,9 +4,9 @@
 
 - Preheat oven to $350 \degree$ F
 - Combine $1 \frac{1}{4}$ cups flour, $\frac{3}{4}$ tsp. baking powder, $\frac{1}{4}$ tsp. baking soda.
-- In a separate bowl, combine $\frac{1}{4}$ cup butter, $\frac{3}{4}$ cup sugar, $\frac{1}{4}$ cup vegetable oil, $\frac{1}{4}$ tsp. vaninna
+- In a separate bowl, combine $\frac{1}{4}$ cup butter, $\frac{3}{4}$ cup sugar, $\frac{1}{4}$ cup vegetable oil, $\frac{1}{4}$ tsp. vanilla
 - Add 2 eggs.
-- Combine with half of the dry mixture. Add 6 tbsp. milk, 1 lemon of zest and juce. Stir. Add the rest of the dry ingredients.
+- Combine with half of the dry mixture. Add 6 tbsp. milk, 1 lemon of zest and juice. Stir. Add the rest of the dry ingredients.
 - Bake for 15-18 minutes at $350 \degree$ F.
 
 ### Frosting
