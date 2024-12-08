@@ -143,3 +143,27 @@ $$
 Thus, $ab \in P$. By symnetry, assume $a \notin P$. Thus, $b \in P$ by the definition of a prime ideal, so $b + P = 0 + P$, meaning $R/P$ is an integral domain.
 
 **Theorem**. 16.40: In a commutative ring with identity, every maximal ideal is also a prime ideal.
+
+## Section 16.5 - Applications to Computer Science
+
+**Lemma**. Let $m, n \in \mathbb{B}$ be given. Then, for any $a, b \in \mathbb{Z}$, there exists some $x$ that satisfies
+
+$$
+\begin{align}
+    x &\equiv a \pmod{m} \\
+    x &\equiv b \pmod{n}
+\end{align}
+$$
+
+**Theorem**. Chineese Remainer Theorem. Let $n_1, \ldots, n_k \in \mathbb{N}$ be given such that $\gcd(n_i, n_j) = 1$. Then, for any integers $a_1, \ldots, a_k$, the system
+
+$$
+\begin{align}
+    x &\equiv a_1 \pmod{n_1} \\
+    x &\equiv a_2 \pmod{n_2} \\
+    \vdots
+    x &\equiv a_k \pmod{n_k}
+\end{align}
+$$
+
+has a solution. Additionally, all systems are congruent modulo $n_1 n_2 \ldots n_k$.

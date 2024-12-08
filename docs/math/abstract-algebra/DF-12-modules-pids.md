@@ -1,4 +1,4 @@
-# Dummit & Foote Chapter 10 Chapter 12 - Modules over Principal Ideal Domains
+# Dummit & Foote Chapter 12 - Modules over Principal Ideal Domains
 
 ## Section 12.1 The Basic Theory
 
@@ -50,4 +50,3 @@ Additionally, if $R$ is a PID, as $\Ann_R(N)$ is an ideal, $\Ann(N) = (n)R$ and 
 
 1. $N$ is a free submodule with rank $n \leq m$.
 2. There exists a basis $y_1, y_2, \ldots, y_m$ of $M$ so that $r_1 y_1, r_2 y_2, \ldots, r_m y_n$ is a basis of $N$ for some $r_i \in R$ and $r_1 | r_2 | \ldots | r_n$
-
