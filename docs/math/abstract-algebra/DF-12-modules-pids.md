@@ -50,3 +50,33 @@ Additionally, if $R$ is a PID, as $\Ann_R(N)$ is an ideal, $\Ann(N) = (n)R$ and 
 
 1. $N$ is a free submodule with rank $n \leq m$.
 2. There exists a basis $y_1, y_2, \ldots, y_m$ of $M$ so that $r_1 y_1, r_2 y_2, \ldots, r_m y_n$ is a basis of $N$ for some $r_i \in R$ and $r_1 | r_2 | \ldots | r_n$
+
+**Theorem**. Fundamental Theorem, Existence: Invariant Form. Let $R$ be a PID and $M$ be a finitely generated $R$-module. THen,
+
+- $M$ is isomorphic for some $r \in \mathbb{N}\cup{0}$, $a_1, \ldots, \a_m \neq 0 \in R$ such that $a_1 | a_2 | \ldots | a_m$, with
+
+$$
+M \cong R^{\oplus r} \oplus \frac{R}{(a_1)R} \oplus \frac{R}{(a_2)R} \oplus \ldots \oplus \frac{R}{(a_m)R}
+$$
+
+- $M$ is torsion-free if and only if $M$ is free
+
+- Note that
+
+$$
+\Tor{M} \cong \frac{R}{(a_1)R} \oplus \frac{R}{(a_2)R} \oplus \ldots \oplus \frac{R}{(a_m)R}
+$$
+
+As a consequence, $M$ is a torsion module if and only if $r = 0$.
+
+**Definition**. In the above, $r$ is the *free rank* of $M$, and $a_1, \ldots, a_m$ are the *invariant factors* of $M$.
+
+**Theorem**. Fundamental Theorem, Existence: Elementary Divisor Form. The sum above can be written as
+
+$$
+M \cong R^{\oplus r} \oplus \frac{R}{(p_1^{\alpha_1})R} \oplus \frac{R}{(p_2^{\alpha_2})R} \oplus \ldots \oplus \frac{R}{(p_t^{\alpha_t})R}
+$$
+
+with $p_t$ non-unique primes and $\alpha_t$ non-unique, but with $(p_t^{\alpha_t})$ unique. These are called the *elementary divisors* of $M$.
+
+TODO: Incomplete for Now
