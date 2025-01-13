@@ -88,7 +88,7 @@ We are familar with energy in the form of $\frac{1}{2}ab_{x, y, z}^2$, where $a$
 
 **Theorem**. *Equipartition Theorem*. The average energy of any quadratic degree of freedom is $\frac{1}{2}kT$.
 
-If an object contains $N$ molecules, each with $f$ degrees of freedom, the total (average) thermal energy is 
+If an object contains $N$ molecules, each with $f$ degrees of freedom, the total (average) thermal energy is
 
 $$U_\text{thermal} = N \vdot f \vdot \frac{1}{2}{k}{T} $$
 
