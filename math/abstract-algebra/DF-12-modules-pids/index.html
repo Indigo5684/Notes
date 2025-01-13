@@ -12,7 +12,7 @@
         <link rel="prev" href="../DF-10-modules/">
       
       
-        <link rel="next" href="../../diffeq/1-intro/">
+        <link rel="next" href="../DF-13-fields/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -451,6 +451,27 @@
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../DF-13-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Dummit &amp; Foote Chapter 12 - Field Theory
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -942,6 +963,48 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../physics/electrostatics/6%20-polarization-magnetization/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 6 - Polarization and Magnetization
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../physics/electrostatics/7-time-dependent-em-fields/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 7 - Time Dependent Electric and Magnetic Fields
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1226,6 +1289,32 @@ M_1 \subseteq M_2 \subseteq \ldots
 <li><span class="arithmatex">\(N\)</span> is a free submodule with rank <span class="arithmatex">\(n \leq m\)</span>.</li>
 <li>There exists a basis <span class="arithmatex">\(y_1, y_2, \ldots, y_m\)</span> of <span class="arithmatex">\(M\)</span> so that <span class="arithmatex">\(r_1 y_1, r_2 y_2, \ldots, r_m y_n\)</span> is a basis of <span class="arithmatex">\(N\)</span> for some <span class="arithmatex">\(r_i \in R\)</span> and <span class="arithmatex">\(r_1 | r_2 | \ldots | r_n\)</span></li>
 </ol>
+<p><strong>Theorem</strong>. Fundamental Theorem, Existence: Invariant Form. Let <span class="arithmatex">\(R\)</span> be a PID and <span class="arithmatex">\(M\)</span> be a finitely generated <span class="arithmatex">\(R\)</span>-module. THen,</p>
+<ul>
+<li><span class="arithmatex">\(M\)</span> is isomorphic for some <span class="arithmatex">\(r \in \mathbb{N}\cup{0}\)</span>, <span class="arithmatex">\(a_1, \ldots, \a_m \neq 0 \in R\)</span> such that <span class="arithmatex">\(a_1 | a_2 | \ldots | a_m\)</span>, with</li>
+</ul>
+<div class="arithmatex">\[
+M \cong R^{\oplus r} \oplus \frac{R}{(a_1)R} \oplus \frac{R}{(a_2)R} \oplus \ldots \oplus \frac{R}{(a_m)R}
+\]</div>
+<ul>
+<li>
+<p><span class="arithmatex">\(M\)</span> is torsion-free if and only if <span class="arithmatex">\(M\)</span> is free</p>
+</li>
+<li>
+<p>Note that</p>
+</li>
+</ul>
+<div class="arithmatex">\[
+\Tor{M} \cong \frac{R}{(a_1)R} \oplus \frac{R}{(a_2)R} \oplus \ldots \oplus \frac{R}{(a_m)R}
+\]</div>
+<p>As a consequence, <span class="arithmatex">\(M\)</span> is a torsion module if and only if <span class="arithmatex">\(r = 0\)</span>.</p>
+<p><strong>Definition</strong>. In the above, <span class="arithmatex">\(r\)</span> is the <em>free rank</em> of <span class="arithmatex">\(M\)</span>, and <span class="arithmatex">\(a_1, \ldots, a_m\)</span> are the <em>invariant factors</em> of <span class="arithmatex">\(M\)</span>.</p>
+<p><strong>Theorem</strong>. Fundamental Theorem, Existence: Elementary Divisor Form. The sum above can be written as</p>
+<div class="arithmatex">\[
+M \cong R^{\oplus r} \oplus \frac{R}{(p_1^{\alpha_1})R} \oplus \frac{R}{(p_2^{\alpha_2})R} \oplus \ldots \oplus \frac{R}{(p_t^{\alpha_t})R}
+\]</div>
+<p>with <span class="arithmatex">\(p_t\)</span> non-unique primes and <span class="arithmatex">\(\alpha_t\)</span> non-unique, but with <span class="arithmatex">\((p_t^{\alpha_t})\)</span> unique. These are called the <em>elementary divisors</em> of <span class="arithmatex">\(M\)</span>.</p>
+<p>TODO: Incomplete for Now</p>
 
 
 
@@ -1248,7 +1337,7 @@ M_1 \subseteq M_2 \subseteq \ldots
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 8, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2025</span>
   </span>
 
     
@@ -1319,13 +1408,13 @@ M_1 \subseteq M_2 \subseteq \ldots
         
         
           
-          <a href="../../diffeq/1-intro/" class="md-footer__link md-footer__link--next" aria-label="Next: Section 1 - Basic Concepts">
+          <a href="../DF-13-fields/" class="md-footer__link md-footer__link--next" aria-label="Next: Dummit &amp;amp; Foote Chapter 12 - Field Theory">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Section 1 - Basic Concepts
+                Dummit &amp; Foote Chapter 12 - Field Theory
               </div>
             </div>
             <div class="md-footer__button md-icon">
