@@ -97,3 +97,45 @@ In monoatomic molecules, each molecule has $3$ degrees of freedom, corresponding
 Additionally, there exist modes of vibration, which each contribute two degrees of freedom (positional energy and vibrational kinetic energy). At room temperature, these are negligible in gasses. In solids, each atom may vibrate in three directions (as there are 3 translational axis), but atoms may not rotate, leading to $6$ total degrees of freedom.
 
 In liquids, we are sad.
+
+## Section 1.4 - Heat and Work
+
+We are familiar with energy, temperature, and work.
+
+**Theorem**. The Law of Conservation of Energy. Energy cannot be created or destroyed, only moved.
+
+**Theorem**. In thermodynamics, energy may only enter or leave a closed systeem via *heat* and *work*.
+
+**Definition**. *Heat* is any spontaneous flow of energy between two objects due to a difference in temperature.
+
+**Definition**. *Work* is any other flow of energy in or out of a system.
+
+With $U$ being the total energy of a system, we can write
+
+$$\Delta U = Q + W$$
+
+That is, the change in total energy of a system is equal to the heat being added to the system and work done on the system.
+
+Note that with heat engines, we often see $Q - W$, where $W$ instead represents the work done by the system.
+
+**Theorem**. The First Law of Thermodynamics. $\Delta U = Q + W$, along with the Law of Conservation of Energy. In  other words, you can't win the game.
+
+**Definition**. The SI unit of energy is the *Joule*, where $1J = 1 \text{kg} \vdot \text{m}^2 / \text{s}^2$.
+
+**Defitition**. The imperial unit of energy is the *calorie*, or the amount of energy to heat one gram of water by $1 \degree \text{C}$. The exact conversion factor is defined as $1 \text{J} = 4.184 \text{cal}$
+
+**Definition**. *Conduction* is the transfer of heat by molecular contact, in which fast moving molecules bump into slow moving molecules and transfer energy.
+
+**Definition**. *Convection* is the transfer of heat by the bulk motion of a liquid or gas.
+
+**Definition**. *Radiation* is the transfer of heat via electromagnetic waves.
+
+## Section 1.5 - Compression Work
+
+From classical mechanics, we know that $W = \vec{F} \cdot d\vec{r}$.
+
+Consider a piston with a compressable gas. In tthis case, with $\Delta x$ positive as the piston moves inwards, we can state that $W = F \Delta x$. Now, we want the gas to always maintain internal equilibrium. For this to be true, the piston must be moving relatively slowly. Note that any volume change that happens in this way is said to be *quasistatic*.
+
+We know that the force exerted by the piston is equal to the pressure times the area. Thus, $W = P A \Delta  x$. But $A\Delta x$ is just volume (in this case, negative, as volume is decreasing). So, $W = -P \Delta V$.
+
+However, this assumes constant pressure. For a non-constant perssure, $P(V)$, we know that $W = \int F dx = - \int P(V) dV$.
