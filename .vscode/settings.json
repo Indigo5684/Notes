@@ -1,25 +1,21 @@
 {
     "cSpell.words": [
-        // TeX
-        "infty",
-        "mathbb",
-        "mathcal",
-        "stackrel",
-        "vmatrix",
-
-        // Vocab - Math
-        "subring",
-        "subrings",
-        "monic",
-        "Noetherian",
         "abelian",
+        "Electomagnetic",
         "indeterminates",
         "infimum",
-        "supremum",
-        "Wronskian",
-
-        // Vocab - Physics
+        "infty",
         "Magnetostatic",
-        "Magnetostatics"
+        "Magnetostatics",
+        "mathbb",
+        "mathcal",
+        "monic",
+        "Noetherian",
+        "stackrel",
+        "subring",
+        "subrings",
+        "supremum",
+        "vmatrix",
+        "Wronskian"
     ]
 }
