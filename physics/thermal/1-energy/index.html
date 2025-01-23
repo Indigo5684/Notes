@@ -828,6 +828,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../electrodynamics/9-conservation-laws/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 9 - Conservation Laws
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1239,6 +1260,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-16-heat-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 1.6 - Heat Capacity
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1517,6 +1547,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-16-heat-capacity" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 1.6 - Heat Capacity
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1619,6 +1658,20 @@
 <p>Consider a piston with a compressable gas. In tthis case, with <span class="arithmatex">\(\Delta x\)</span> positive as the piston moves inwards, we can state that <span class="arithmatex">\(W = F \Delta x\)</span>. Now, we want the gas to always maintain internal equilibrium. For this to be true, the piston must be moving relatively slowly. Note that any volume change that happens in this way is said to be <em>quasistatic</em>.</p>
 <p>We know that the force exerted by the piston is equal to the pressure times the area. Thus, <span class="arithmatex">\(W = P A \Delta  x\)</span>. But <span class="arithmatex">\(A\Delta x\)</span> is just volume (in this case, negative, as volume is decreasing). So, <span class="arithmatex">\(W = -P \Delta V\)</span>.</p>
 <p>However, this assumes constant pressure. For a non-constant perssure, <span class="arithmatex">\(P(V)\)</span>, we know that <span class="arithmatex">\(W = \int F dx = - \int P(V) dV\)</span>.</p>
+<h2 id="section-16-heat-capacity">Section 1.6 - Heat Capacity</h2>
+<p><strong>Definition</strong>. The <em>heat capacity</em> <span class="arithmatex">\(C = Q / \Delta T\)</span> of an object is the energy required to raise its temperaature by one degree.</p>
+<p><strong>Definition</strong>. The <em>specific heat capacity</em> <span class="arithmatex">\(c = C / m = C / (m \Delta T)\)</span> is the energy needed to raise a substance by one degree per unit mass.</p>
+<p>In a system, we can note thaht</p>
+<div class="arithmatex">\[$C = \frac{Q}{\Delta T} = \frac{\Delta U - W}{\Delta T}\]</div>
+<p>Consider the case in which volume is constant. Under these circumstances, we can calculate the <em>heat capacity at constant volume</em>, and as volume does not change, <span class="arithmatex">\(W = 0\)</span>, so</p>
+<div class="arithmatex">\[C_V = (\frac{\Delta U}{\Delta T})_V = (\frac{\partial U}{\partial T})_V\]</div>
+<p>In the case where pressure is constant instead, we see that the <em>heat capacity at constant pressurue</em> is defined as</p>
+<div class="arithmatex">\[C_P = (\frac{\Delta U}{\Delta T})_V = (\frac{\Delta  U - (- P \Delta V)}{\Delta T})_P = (\frac{\partial U}{\partial T})_P + P (\frac{\partial V}{\partial T})_P\]</div>
+<p>Knowing that <span class="arithmatex">\(U = \frac{1}{2}NfkT\)</span>, we can see that <span class="arithmatex">\(C_V = \frac{NfK}{2}\)</span>.</p>
+<p><strong>Theorem</strong>. The <em>Rule of Dulong and Pitt</em> states that in solids, <span class="arithmatex">\(f = 6\)</span>, so the heat capacity per mole is <span class="arithmatex">\(3R\)</span>. In reality, all degrees of freedom freeze out as <span class="arithmatex">\(T\)</span> approaches <span class="arithmatex">\(0\)</span>, so <span class="arithmatex">\(C\)</span> approaches <span class="arithmatex">\(0\)</span>.</p>
+<p>For an ideal gas, at constant pressurre,</p>
+<div class="arithmatex">\[(\frac{\partial V}{\partial T})_P = \frac{\partial}{\partial T} (\frac{NkT}{P}) = \frac{Nk}{P}\]</div>
+<p>So, <span class="arithmatex">\(C_P = C_V + Nk = C_V + nR\)</span>.</p>
 
 
 
@@ -1641,7 +1694,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 15, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2025</span>
   </span>
 
     
