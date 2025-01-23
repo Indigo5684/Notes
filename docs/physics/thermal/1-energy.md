@@ -139,3 +139,31 @@ Consider a piston with a compressable gas. In tthis case, with $\Delta x$ positi
 We know that the force exerted by the piston is equal to the pressure times the area. Thus, $W = P A \Delta  x$. But $A\Delta x$ is just volume (in this case, negative, as volume is decreasing). So, $W = -P \Delta V$.
 
 However, this assumes constant pressure. For a non-constant perssure, $P(V)$, we know that $W = \int F dx = - \int P(V) dV$.
+
+## Section 1.6 - Heat Capacity
+
+**Definition**. The *heat capacity* $C = Q / \Delta T$ of an object is the energy required to raise its temperaature by one degree.
+
+**Definition**. The *specific heat capacity* $c = C / m = C / (m \Delta T)$ is the energy needed to raise a substance by one degree per unit mass.
+
+In a system, we can note thaht
+
+$$$C = \frac{Q}{\Delta T} = \frac{\Delta U - W}{\Delta T}$$
+
+Consider the case in which volume is constant. Under these circumstances, we can calculate the *heat capacity at constant volume*, and as volume does not change, $W = 0$, so
+
+$$C_V = (\frac{\Delta U}{\Delta T})_V = (\frac{\partial U}{\partial T})_V$$
+
+In the case where pressure is constant instead, we see that the *heat capacity at constant pressurue* is defined as
+
+$$C_P = (\frac{\Delta U}{\Delta T})_V = (\frac{\Delta  U - (- P \Delta V)}{\Delta T})_P = (\frac{\partial U}{\partial T})_P + P (\frac{\partial V}{\partial T})_P$$
+
+Knowing that $U = \frac{1}{2}NfkT$, we can see that $C_V = \frac{NfK}{2}$.
+
+**Theorem**. The *Rule of Dulong and Pitt* states that in solids, $f = 6$, so the heat capacity per mole is $3R$. In reality, all degrees of freedom freeze out as $T$ approaches $0$, so $C$ approaches $0$.
+
+For an ideal gas, at constant pressurre,
+
+$$(\frac{\partial V}{\partial T})_P = \frac{\partial}{\partial T} (\frac{NkT}{P}) = \frac{Nk}{P}$$
+
+So, $C_P = C_V + Nk = C_V + nR$.
