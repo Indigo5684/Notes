@@ -74,3 +74,55 @@ Notably, inside the wire, $\div \vb{S} = \frac{\rho I^2}{\pi^2 a^4}$, but is equ
 ---
 
 Further examples are present but omitted.
+
+## Section 9.3 - Conservation of Momentum and Maxwell Stress Tensor
+
+We know that the rate of change of momentum for any given particle is simply the force acting on it. To calculate this, recall the force density:
+
+$$\vb{f} = \sum_i \vb{F}_i\delta(\vb{r}-\vb{r}_i) + \sum_j \vb{F}_j\delta(\vb{r}-\vb{r}_j) = \sum_i q_{ei}\delta(\vb{r}-\vb{r}_i)(\vb{E} + \vb{v}_i \cross \vb{B}) + \sum_j q_{ej} \delta(\vb{r}-\vb{r}_i) (\vb{H} - \vb{v}_j \times \vb{D})$$
+
+Converting to currents, we see that
+
+$$\vb{f}(\vb{r}) = \rho_e(\vb{r})\vb{E}(\vb{r}) + \vb{J}_e(\vb{r}) \times \vb{B}(\vb{r}) + \rho_m(\vb{r}) + \vb{H}(\vb{r}) - \vb{J}_m(\vb{r}) \times \vb{D}(\vb{r})$$
+
+Substituting in Maxwell's Equations, we see that
+
+$$\vb{f}(\vb{r}) + \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = \epsilon_0 (\div \vb{E})\vb{E} + (\curl \vb{E})\times\vb{D} + \mu_0(\div \vb{H})\vb{H} + (\curl \vb{H})\times\vb{B}$$
+
+Now, we claim that the right-hand side is the divergence of some tensor $\overleftrightarrow{\vb{T}}$, so that
+
+$$\vb{f}(\vb{r}) + \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = \div \overleftrightarrow{\vb{T}}$$
+
+This tensor is the Maxwell Stress Tensor. We claim that the divergence of this tensor is composed of both an electric and magnetic part, so that $\div \overleftrightarrow{\vb{T}} = \div \overleftrightarrow{\vb{T}}_e + \div \overleftrightarrow{\vb{T}}_m$. Then, we  can state
+
+$$\begin{align}
+\div \overleftrightarrow{\vb{T}}_e &= \epsilon_0 [(\div \vb{E})\vb{E} + (\curl \vb{E})\times \vb{E}] \\
+\div \overleftrightarrow{\vb{T}}_m &= \epsilon_0 [(\div \vb{H})\vb{H} + (\curl \vb{H})\times \vb{H}]
+\end{align}$$
+
+We know that $\div(\vb{EE}) = (\div \vb{E})\vb{E} + (\vb{E} \vdot \nabla)\vb{E}$ and $\div(\overleftrightarrow{\vb{I}}f) = \grad f$. If we let $f = \frac{1}{2}\vb{E} \vdot \vb{E}$, we see that $\grad(\frac{1}{2}\vb{E} \vdot \vb{E}) = (\vb{E} \vdot \nabla)\vb{E} + (\curl \vb{E})\vb{E}$. Then, we see that
+
+$$\begin{align}
+\overleftrightarrow{\vb{T}}_e &= \epsilon_0 \vb{EE} - \frac{\epsilon_0}{2} \overleftrightarrow{\vb{I}}(\vb{E} \vdot \vb{E}) \\
+\overleftrightarrow{\vb{T}}_m &= \mu_0 \vb{HH} - \frac{\mu_0}{2} \overleftrightarrow{\vb{I}}(\vb{H} \vdot \vb{H})
+\end{align}$$
+
+Knowing that $\overleftrightarrow{\vb{T}} = \overleftrightarrow{\vb{T}}_e + \overleftrightarrow{\vb{T}}_m$, and that $u = \frac{1}{2}(\epsilon_0 E^2 + \mu_0 H^2)$ is the energy density of the electromagnetic fields in a vacuum,
+
+$$\overleftrightarrow{\vb{T}} = \epsilon_0 \vb{EE} + \mu_0 \vb{HH} - \overleftrightarrow{\vb{I}}u$$
+
+Additionally, we denote the time rate of change of the momentum density of the electromagnetic fields as $\vb{g}(\vb{r}) = \vb{D}(\vb{r}) \times \vb{B}(\vb{r})$. Thus,
+
+$$\vb{f}(\vb{r}) = \frac{\partial}{\partial t}\vb{g} = \div \overleftrightarrow{\vb{T}}$$
+
+---
+
+The Divergence Theorem states that $\int_V(\div \overleftrightarrow{\vb{T}}) dV = \int_{SofV} dS \vu{n} \vdot \overleftrightarrow{\vb{T}}$. We can prove this by expanding the left-hand side over a cube. Note that as $\overleftrightarrow{\vb{T}}$ is symmetric, $\vu{n} \vdot \overleftrightarrow{\vb{T}} = \overleftrightarrow{\vb{T}} \vdot \vu{n}$.
+
+Given a static field, the momentum does not change in time. That is,
+
+$$\frac{\partial}{\partial t} \vb{g} = \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = 0$$
+
+Then, we can see that $\vb{f}(\vb{r}) = \div \overleftrightarrow{\vb{T}}$. We can thus integrate over the volume to find force on an object.
+
+$$\vb{F} = \int_V \vb{f}(\vb{r}) dV = \int_V \div \overleftrightarrow{\vb{T}} dV = \int_{\partial V} dS \vu{n} \vdot \overleftrightarrow{\vb{T}} = \int_{\partial V} \overleftrightarrow{\vb{T}} \vdot \vu{n} dS$$
