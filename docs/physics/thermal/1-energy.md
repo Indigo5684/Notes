@@ -167,3 +167,27 @@ For an ideal gas, at constant pressurre,
 $$(\frac{\partial V}{\partial T})_P = \frac{\partial}{\partial T} (\frac{NkT}{P}) = \frac{Nk}{P}$$
 
 So, $C_P = C_V + Nk = C_V + nR$.
+
+---
+
+There are times when heat can be added without increasing the temperature at all, such as during a *phase transformation*. Then,
+
+**Definition**. The *latent heat* $L$ of an object is the energy required to melt or boil a substance completely. We can also define *specific latent heat* $l$ as
+
+$$l = \frac{L}{m} = \frac{Q}{m}$$
+
+Note that during this, we assume the pressure is constant and no other work is done aside from constant-pressure volume change. Additionally, the latent heat for freezing and boiling does not have to be (and almost never is) equal.
+
+ **Definition**. We define *enthalpy*, $H$, as the total energy needed to create any given system out of nothing in a set environment, and is defined as
+
+ $$H = U + PV$$
+
+ This can also be interpreted as the maximum possible energy extracted from annihilating the system, consisting of the system's internal energy $U$ and the work $PV$ done by the atmosphere to fill its absence.
+
+ In a system, if the pressure is held constant, we see that $\Delta H = \Delta U + P \Delta V$. Thus, enthalpy can only increase due to expansion or internal energy changes. From the First Law of Thermodynamics, $\Delta H = Q + W_{other}$ if pressure is constant. Notably, the change in enthalpy per degree of temperature at a constant pressure is the same as the heat capacity at constant pressure $C_P$.
+
+ **Definition**. The *Enthalpy of Formation* is the energy needed to create a compound or undergo a phase transition from base constituents in their most stable states.
+
+## Section 1.7 - Rates of Processes
+
+Skipped.
