@@ -924,6 +924,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-93-conservation-of-momentum-and-maxwell-stress-tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 9.3 - Conservation of Momentum and Maxwell Stress Tensor
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1251,6 +1260,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../thermal/2-second-law/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 1 - The Second Law
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1502,6 +1532,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-93-conservation-of-momentum-and-maxwell-stress-tensor" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 9.3 - Conservation of Momentum and Maxwell Stress Tensor
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1573,6 +1612,35 @@
 <p>Notably, inside the wire, <span class="arithmatex">\(\div \vb{S} = \frac{\rho I^2}{\pi^2 a^4}\)</span>, but is equal to <span class="arithmatex">\(0\)</span> outside of the wire.</p>
 <hr />
 <p>Further examples are present but omitted.</p>
+<h2 id="section-93-conservation-of-momentum-and-maxwell-stress-tensor">Section 9.3 - Conservation of Momentum and Maxwell Stress Tensor</h2>
+<p>We know that the rate of change of momentum for any given particle is simply the force acting on it. To calculate this, recall the force density:</p>
+<div class="arithmatex">\[\vb{f} = \sum_i \vb{F}_i\delta(\vb{r}-\vb{r}_i) + \sum_j \vb{F}_j\delta(\vb{r}-\vb{r}_j) = \sum_i q_{ei}\delta(\vb{r}-\vb{r}_i)(\vb{E} + \vb{v}_i \cross \vb{B}) + \sum_j q_{ej} \delta(\vb{r}-\vb{r}_i) (\vb{H} - \vb{v}_j \times \vb{D})\]</div>
+<p>Converting to currents, we see that</p>
+<div class="arithmatex">\[\vb{f}(\vb{r}) = \rho_e(\vb{r})\vb{E}(\vb{r}) + \vb{J}_e(\vb{r}) \times \vb{B}(\vb{r}) + \rho_m(\vb{r}) + \vb{H}(\vb{r}) - \vb{J}_m(\vb{r}) \times \vb{D}(\vb{r})\]</div>
+<p>Substituting in Maxwell's Equations, we see that</p>
+<div class="arithmatex">\[\vb{f}(\vb{r}) + \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = \epsilon_0 (\div \vb{E})\vb{E} + (\curl \vb{E})\times\vb{D} + \mu_0(\div \vb{H})\vb{H} + (\curl \vb{H})\times\vb{B}\]</div>
+<p>Now, we claim that the right-hand side is the divergence of some tensor <span class="arithmatex">\(\overleftrightarrow{\vb{T}}\)</span>, so that</p>
+<div class="arithmatex">\[\vb{f}(\vb{r}) + \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = \div \overleftrightarrow{\vb{T}}\]</div>
+<p>This tensor is the Maxwell Stress Tensor. We claim that the divergence of this tensor is composed of both an electric and magnetic part, so that <span class="arithmatex">\(\div \overleftrightarrow{\vb{T}} = \div \overleftrightarrow{\vb{T}}_e + \div \overleftrightarrow{\vb{T}}_m\)</span>. Then, we  can state</p>
+<div class="arithmatex">\[\begin{align}
+\div \overleftrightarrow{\vb{T}}_e &amp;= \epsilon_0 [(\div \vb{E})\vb{E} + (\curl \vb{E})\times \vb{E}] \\
+\div \overleftrightarrow{\vb{T}}_m &amp;= \epsilon_0 [(\div \vb{H})\vb{H} + (\curl \vb{H})\times \vb{H}]
+\end{align}\]</div>
+<p>We know that <span class="arithmatex">\(\div(\vb{EE}) = (\div \vb{E})\vb{E} + (\vb{E} \vdot \nabla)\vb{E}\)</span> and <span class="arithmatex">\(\div(\overleftrightarrow{\vb{I}}f) = \grad f\)</span>. If we let <span class="arithmatex">\(f = \frac{1}{2}\vb{E} \vdot \vb{E}\)</span>, we see that <span class="arithmatex">\(\grad(\frac{1}{2}\vb{E} \vdot \vb{E}) = (\vb{E} \vdot \nabla)\vb{E} + (\curl \vb{E})\vb{E}\)</span>. Then, we see that</p>
+<div class="arithmatex">\[\begin{align}
+\overleftrightarrow{\vb{T}}_e &amp;= \epsilon_0 \vb{EE} - \frac{\epsilon_0}{2} \overleftrightarrow{\vb{I}}(\vb{E} \vdot \vb{E}) \\
+\overleftrightarrow{\vb{T}}_m &amp;= \mu_0 \vb{HH} - \frac{\mu_0}{2} \overleftrightarrow{\vb{I}}(\vb{H} \vdot \vb{H})
+\end{align}\]</div>
+<p>Knowing that <span class="arithmatex">\(\overleftrightarrow{\vb{T}} = \overleftrightarrow{\vb{T}}_e + \overleftrightarrow{\vb{T}}_m\)</span>, and that <span class="arithmatex">\(u = \frac{1}{2}(\epsilon_0 E^2 + \mu_0 H^2)\)</span> is the energy density of the electromagnetic fields in a vacuum,</p>
+<div class="arithmatex">\[\overleftrightarrow{\vb{T}} = \epsilon_0 \vb{EE} + \mu_0 \vb{HH} - \overleftrightarrow{\vb{I}}u\]</div>
+<p>Additionally, we denote the time rate of change of the momentum density of the electromagnetic fields as <span class="arithmatex">\(\vb{g}(\vb{r}) = \vb{D}(\vb{r}) \times \vb{B}(\vb{r})\)</span>. Thus,</p>
+<div class="arithmatex">\[\vb{f}(\vb{r}) = \frac{\partial}{\partial t}\vb{g} = \div \overleftrightarrow{\vb{T}}\]</div>
+<hr />
+<p>The Divergence Theorem states that <span class="arithmatex">\(\int_V(\div \overleftrightarrow{\vb{T}}) dV = \int_{SofV} dS \vu{n} \vdot \overleftrightarrow{\vb{T}}\)</span>. We can prove this by expanding the left-hand side over a cube. Note that as <span class="arithmatex">\(\overleftrightarrow{\vb{T}}\)</span> is symmetric, <span class="arithmatex">\(\vu{n} \vdot \overleftrightarrow{\vb{T}} = \overleftrightarrow{\vb{T}} \vdot \vu{n}\)</span>.</p>
+<p>Given a static field, the momentum does not change in time. That is,</p>
+<div class="arithmatex">\[\frac{\partial}{\partial t} \vb{g} = \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = 0\]</div>
+<p>Then, we can see that <span class="arithmatex">\(\vb{f}(\vb{r}) = \div \overleftrightarrow{\vb{T}}\)</span>. We can thus integrate over the volume to find force on an object.</p>
+<div class="arithmatex">\[\vb{F} = \int_V \vb{f}(\vb{r}) dV = \int_V \div \overleftrightarrow{\vb{T}} dV = \int_{\partial V} dS \vu{n} \vdot \overleftrightarrow{\vb{T}} = \int_{\partial V} \overleftrightarrow{\vb{T}} \vdot \vu{n} dS\]</div>
 
 
 
@@ -1595,7 +1663,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 21, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2025</span>
   </span>
 
     
