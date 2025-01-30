@@ -16,7 +16,7 @@ Consider any two points internal to the conductor. The voltage between said poin
 
 The electric field at the surface of a conductor is perpendicular to its surface. Consider some displacement $\dd{\vb{l}}$. Now, $\vb{E} \vdot \dd{\vb{l}} = \vb{E}_s \vdot \dd{\vb{l}}_s + \vb{E}_p \vdot \dd{\vb{l}}_p = \dd{V_s} + \dd{V_p}$, in terms of parallel and perpendicular components. The parallel voltage difference is zero, so the electric field must be zero.
 
-Consider the surface of a conductor with surface charge density $\sigma_e$. A cylinder with one end inside and one end outside said surface, with its axis normal to said surface, will be a Gaussian "pillbox", which will show that with V being the volume of the pillbox, $\int_V \div{\vb{E}} \dd{V} = \frac{Q_e}{\epsilon_0} = \frac{A\sigma_e}{\epsilon_0}$. Thus, $\sigma_e = \epsilon_0 E$.
+Consider the surface of a conductor with surface charge density $\sigma_e$. A cylinder with one end inside and one end outside said surface, with its axis normal to said surface, will be a Gaussian "pillbox", which will show that with V being the volume of the pillbox, $\int_V \div{\vb{E}} \dd{V} = \frac{Q_e}{\varepsilon_0} = \frac{A\sigma_e}{\varepsilon_0}$. Thus, $\sigma_e = \varepsilon_0 E$.
 
 ## Section 4.3 - Exercises involving conductors at fixed potentials
 
@@ -48,19 +48,19 @@ This field is zero outside of a material, and if non-zero inside a material, wil
 **Definition**. Charges not bound are called *free*, with density denoted as $\rho_{ef}$. Combined with $\rho_{eb}$, they form the basis of the electric field. THat is,
 
 $$
-\epsilon_0 \div \vb{E} = \rho_{ef} + \rho_{eb}
+\varepsilon_0 \div \vb{E} = \rho_{ef} + \rho_{eb}
 $$
 
 **Definition**. The electric flux density field $\vb{D}$ is defined as
 
 $$
-\vb{D} = \epsilon_0 \vb{E} + \vb{P}
+\vb{D} = \varepsilon_0 \vb{E} + \vb{P}
 $$
 
 Both $\vb{D}$ and $\vb{P}$ have units of Coulombs/m^2. Additionally, we see that
 
 $$
-\div \vb{D} = \div (\epsilon_0 \vb{E} + \vb{P}) = \div \epsilon_0 \vb{E} + \div \vb{P} = (\rho_{ef} + \rho_{eb}) - \rho_{eb} = \rho_{ef}
+\div \vb{D} = \div (\varepsilon_0 \vb{E} + \vb{P}) = \div \varepsilon_0 \vb{E} + \div \vb{P} = (\rho_{ef} + \rho_{eb}) - \rho_{eb} = \rho_{ef}
 $$
 
 ## Section 4.5 - Induced Electric Charges, their Potentials and Fields
@@ -75,7 +75,7 @@ $$
 C := \frac{Q}{V}
 $$
 
-This unit, $\frac{C}{V}$, is known as a Farad. For a sphere, $C = 4 \pi \epsilon_0 R$. For a parallel plate capacitor, this reduces to $C = \frac{epsilon_0 A}{d}$.
+This unit, $\frac{C}{V}$, is known as a Farad. For a sphere, $C = 4 \pi \varepsilon_0 R$. For a parallel plate capacitor, this reduces to $C = \frac{epsilon_0 A}{d}$.
 
 ## Section 4.7 - Forces on Charged Conductors in Electric Fields
 

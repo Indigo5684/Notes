@@ -31,7 +31,7 @@ $$
 Strictly speaking, this is a potential difference. To find the absolute potential, assume a point charge $Q$ at the origin, and a charge $q$. We take the work as $q$ moves from $\vb{r'} = \vb{\infty}$ to $\vb{r'} = \vb{r}$. Thus,
 
 $$
-W = -q_e \frac{Q_e}{4 \pi \epsilon_0} \int_{\infty}^0 \frac{\vu{r'}}{r'^2} \vdot (\vu{r'}) \dd{r'} = -q_e \frac{Q_e}{4 \pi \epsilon_0} [\frac{-1}{r'}]_{\infty}^{r'} = q_e \frac{Q_e}{4 \pi \epsilon_0} \frac{1}{r}
+W = -q_e \frac{Q_e}{4 \pi \varepsilon_0} \int_{\infty}^0 \frac{\vu{r'}}{r'^2} \vdot (\vu{r'}) \dd{r'} = -q_e \frac{Q_e}{4 \pi \varepsilon_0} [\frac{-1}{r'}]_{\infty}^{r'} = q_e \frac{Q_e}{4 \pi \varepsilon_0} \frac{1}{r}
 $$
 
 $$
@@ -41,25 +41,25 @@ $$
 Letting the potential as $\vb{r} \rightarrow \infty$ equal $0$ be our reference and dividing out $q$, we find that the voltage for arrangement is the following:
 
 $$
-V_e(\vb{r}) = \frac{Q_e}{4 \pi \epsilon_0 r} \text{ and } V_m(\vb{r}) = \frac{Q_m}{4 \pi \mu_0 r}
+V_e(\vb{r}) = \frac{Q_e}{4 \pi \varepsilon_0 r} \text{ and } V_m(\vb{r}) = \frac{Q_m}{4 \pi \mu_0 r}
 $$
 
 Now, if we let the stationary charge $Q$ be located at $\vb{r'}$, we see that
 
 $$
-V_e(\vb{r}) = \frac{Q_e}{4 \pi \epsilon_0 \abs{\vb{r} - \vb{r'}}} \text{ and } V_m(\vb{r}) = \frac{Q_m}{4 \pi \mu_0 \abs{\vb{r} - \vb{r'}}}
+V_e(\vb{r}) = \frac{Q_e}{4 \pi \varepsilon_0 \abs{\vb{r} - \vb{r'}}} \text{ and } V_m(\vb{r}) = \frac{Q_m}{4 \pi \mu_0 \abs{\vb{r} - \vb{r'}}}
 $$
 
 If we allow multiple charges, this becomes
 
 $$
-V_e(\vb{r}) = \frac{1}{4\pi \epsilon_0} \sum_{i=1}^N \frac{Q_ei}{\abs{\vb{r}-\vb{r_i}}}
+V_e(\vb{r}) = \frac{1}{4\pi \varepsilon_0} \sum_{i=1}^N \frac{Q_ei}{\abs{\vb{r}-\vb{r_i}}}
 $$
 
 Taking this to its natural limit,
 
 $$
-V_e(\vb{r}) = \frac{1}{4 \pi \epsilon_0} \int_{V'} \frac{\rho_e(\vb{r'})}{\abs{\vb{r}-\vb{r'}}} \dd{V'}
+V_e(\vb{r}) = \frac{1}{4 \pi \varepsilon_0} \int_{V'} \frac{\rho_e(\vb{r'})}{\abs{\vb{r}-\vb{r'}}} \dd{V'}
 $$
 
 $$
@@ -71,25 +71,25 @@ $$
 Given two point charges $Q_{e1}, Q_{e2}$ we know the work to bring them together is
 
 $$
-W_2 = W_{21} = \frac{1}{4 \pi \epsilon_0} \frac{Q_{e1} Q_{e2}}{\abs{\vb{r_2} - \vb{r_1}}}
+W_2 = W_{21} = \frac{1}{4 \pi \varepsilon_0} \frac{Q_{e1} Q_{e2}}{\abs{\vb{r_2} - \vb{r_1}}}
 $$
 
 Superposition applies here. The energy to create $N$ charges is
 
 $$
-W_n = \frac{1}{2} \frac{4 \pi \epsilon_0} \sum_{i = 1}^{N} \sum_{j > i}^{N} \frac{Q_{ei}Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
+W_n = \frac{1}{2} \frac{4 \pi \varepsilon_0} \sum_{i = 1}^{N} \sum_{j > i}^{N} \frac{Q_{ei}Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
 $$
 
 For the sake of symmetry, sum overall charges and divide by 2.
 
 $$
-W_n = \frac{1}{2} \frac{1}{4 \pi \epsilon_0} \sum_{i = 1}^{N} \sum_{j \neq i}^{N} \frac{Q_{ei}Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
+W_n = \frac{1}{2} \frac{1}{4 \pi \varepsilon_0} \sum_{i = 1}^{N} \sum_{j \neq i}^{N} \frac{Q_{ei}Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
 $$
 
 Rearranging, we see the following:
 
 $$
-W_n = \frac{1}{2} \sum_{i = 1}^{N}Q_{ei} \sum_{i \neq j}^{N} \frac{1}{4 \pi \epsilon_0} \frac{Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
+W_n = \frac{1}{2} \sum_{i = 1}^{N}Q_{ei} \sum_{i \neq j}^{N} \frac{1}{4 \pi \varepsilon_0} \frac{Q_{ej}}{\abs{\vb{r_i}-\vb{r_j}}}
 = \frac{1}{2}\sum_{i = 1}^{N} Q_{ei} V(\vb{r_i})
 $$
 
@@ -103,7 +103,7 @@ $$
 We can also express this as
 
 $$
-W_e = \frac{1}{2} \frac{1}{4 \pi \epsilon_0} \int_V \int_{V'} \frac{\rho_e(\vb{r})\rho_e(\vb{r'})}{\abs{\vb{r} - \vb{r'}}} \dd{V'} \dd{V}
+W_e = \frac{1}{2} \frac{1}{4 \pi \varepsilon_0} \int_V \int_{V'} \frac{\rho_e(\vb{r})\rho_e(\vb{r'})}{\abs{\vb{r} - \vb{r'}}} \dd{V'} \dd{V}
 $$
 
 $$
@@ -115,13 +115,13 @@ Note the $\frac{1}{2}$ is the same anti-double-counting factor introduced previo
 We can now write an expression for energy of a charge density in terms of the field that it produces.
 
 $$
-W = \frac{\epsilon_0}{2} \int_V (\div{\vb{E}(\vb{r})}) V(\vb{r}) \dd V
+W = \frac{\varepsilon_0}{2} \int_V (\div{\vb{E}(\vb{r})}) V(\vb{r}) \dd V
 $$
 
 Simplifying, we see that
 
 $$
-W_e = \frac{\epsilon_0}{2} \int_{V} E^2(\vb{r}) \dd V ; \quad
+W_e = \frac{\varepsilon_0}{2} \int_{V} E^2(\vb{r}) \dd V ; \quad
 W_m = \frac{\mu_0}{2} \int_{V} H^2(\vb{r}) \dd V
 $$
 
@@ -132,7 +132,7 @@ We know that $\vb{E}(\vb{r}) = -\div{V_e(\vb{r})}$ and $\vb{H}(\vb{r}) = -\div{V
 Combined this, as well as the first of the Maxwell equations, we see that
 
 $$
-\div{\vb{E}} = -\div{\grad{V_e}} = - \laplacian{V_e} = \frac{\rho_e}{\epsilon_0}
+\div{\vb{E}} = -\div{\grad{V_e}} = - \laplacian{V_e} = \frac{\rho_e}{\varepsilon_0}
 $$
 
 $$
@@ -150,13 +150,13 @@ $$
 Now, we can construct a potential function in terms of said green function that satisfies the Laplace equation.
 
 $$
-V_e(\vb{r}) = - \int_V G(\vb{r}, \vb{r'}) \frac{\rho_e(\vb{r'})}{\epsilon_0} \dd{V'}
+V_e(\vb{r}) = - \int_V G(\vb{r}, \vb{r'}) \frac{\rho_e(\vb{r'})}{\varepsilon_0} \dd{V'}
 $$
 
 This is the specific solution. Let $\psi(\vb{r})$ be a solution to the homogenous equation. We can state the following:
 
 $$
-V_e(\vb{r}) = \psi(\vb{r}) - \int_V G(\vb{r}, \vb{r'}) \frac{\rho_e(\vb{r'})}{\epsilon_0} \dd{V'}
+V_e(\vb{r}) = \psi(\vb{r}) - \int_V G(\vb{r}, \vb{r'}) \frac{\rho_e(\vb{r'})}{\varepsilon_0} \dd{V'}
 $$
 
 We will consider the potential of a point charge. THat is, the limit of potential is zero as distance approaches infinity.
@@ -164,20 +164,20 @@ We will consider the potential of a point charge. THat is, the limit of potentia
 Recall the potential of a point charge:
 
 $$
-V_e(\vb{r}) = \frac{Q_e}{\epsilon_0} \frac{1}{4 \pi \abs{\vb{r} - \vb{r}}}
+V_e(\vb{r}) = \frac{Q_e}{\varepsilon_0} \frac{1}{4 \pi \abs{\vb{r} - \vb{r}}}
 $$
 
 We know that $- \laplacian{V(\vb{r})} = \div{\vb{E}(\vb{r})}$. Thus, recall the electric field of a point charge.
 
 $$
-\vb{E}(\vb{r}) = -\grad{V(\vb{r})} = \frac{Q_e}{\epsilon_0} \grad({\frac{-1}{4\pi \abs{\vb{r} - \vb{r'}}}}) = \frac{Q_e}{\epsilon_0} \frac{\vb{r} - \vb{r'}}{\abs{\vb{r} - \vb{r'}}^3}
+\vb{E}(\vb{r}) = -\grad{V(\vb{r})} = \frac{Q_e}{\varepsilon_0} \grad({\frac{-1}{4\pi \abs{\vb{r} - \vb{r'}}}}) = \frac{Q_e}{\varepsilon_0} \frac{\vb{r} - \vb{r'}}{\abs{\vb{r} - \vb{r'}}^3}
 $$
 
 Taking the divergence, we find that
 
 $$
-- \laplacian{V(\vb{r})} = G(\vb{r}, \vb{r'}) \frac{Q_e}{\epsilon_0} = \frac{Q_e}{\epsilon_0} \laplacian({\frac{-1}{4\pi \abs{\vb{r} - \vb{r'}}}})
-=  \frac{Q_e}{\epsilon_0} \div \frac{\vb{r} - \vb{r'}}{\abs{\vb{r} - \vb{r'}}^3} = \frac{Q_e}{\epsilon_0} \delta(\vb{r} - \vb{r'})
+- \laplacian{V(\vb{r})} = G(\vb{r}, \vb{r'}) \frac{Q_e}{\varepsilon_0} = \frac{Q_e}{\varepsilon_0} \laplacian({\frac{-1}{4\pi \abs{\vb{r} - \vb{r'}}}})
+=  \frac{Q_e}{\varepsilon_0} \div \frac{\vb{r} - \vb{r'}}{\abs{\vb{r} - \vb{r'}}^3} = \frac{Q_e}{\varepsilon_0} \delta(\vb{r} - \vb{r'})
 $$
 
 Thus, we see that
@@ -189,7 +189,7 @@ $$
 Finally,
 
 $$
-V_e(\vb{r}) = \int_{V'} \frac{1}{4 \pi \abs{\vb{r} - \vb{r}}} \frac{\rho_e}{\epsilon_0} \dd{V'}
+V_e(\vb{r}) = \int_{V'} \frac{1}{4 \pi \abs{\vb{r} - \vb{r}}} \frac{\rho_e}{\varepsilon_0} \dd{V'}
 $$
 
 $$
@@ -230,9 +230,9 @@ $$
 Applying this to the equation for voltage, we see that
 
 $$
-V_e(r) = \frac{1}{\epsilon_0} \int_{V'} G(\vb{r}, \vb{r'}) p_e(\vb{r'}) \dd{V'} \approx
-\frac{1}{4 \pi \epsilon_0 r} \int_{V'}  (1 + \frac{\vu{r} \vdot \vb{r'}}{r}) p_e(\vb{r'}) \dd{V'}
-= \frac{Q_e}{4 \pi \epsilon_0 r} + \frac{\vu{r} \vdot \vb{p}}{4 \pi \epsilon_0 r^2}
+V_e(r) = \frac{1}{\varepsilon_0} \int_{V'} G(\vb{r}, \vb{r'}) p_e(\vb{r'}) \dd{V'} \approx
+\frac{1}{4 \pi \varepsilon_0 r} \int_{V'}  (1 + \frac{\vu{r} \vdot \vb{r'}}{r}) p_e(\vb{r'}) \dd{V'}
+= \frac{Q_e}{4 \pi \varepsilon_0 r} + \frac{\vu{r} \vdot \vb{p}}{4 \pi \varepsilon_0 r^2}
 $$
 
 **Definition**. The first and second terms of this equation are the *monopole* and *dipole* terms respectively.

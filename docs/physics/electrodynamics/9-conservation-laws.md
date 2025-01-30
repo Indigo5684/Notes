@@ -53,9 +53,9 @@ If the dyadics are symmetric, the energy functions uniquely specify the energy i
 
 Consider a long coaxial cable, bridged by a constant voltage $V$ on one side and a resistor $R$ on the other. Then, we know that between the conductors, $\vb{H} = \frac{R}{2\pi s R}\vb{\varphi}$. Additionally, we know that
 
-$$V=\int_a^b \vb{E} \vdot d\vb{l} = \frac{Q}{2\pi \ell \epsilon_0} \ln(\frac{b}{a}) \Rightarrow \frac{Q}{\ell} = \frac{2\pi\epsilon_0}{\ln(\frac{b}{a})} V$$
+$$V=\int_a^b \vb{E} \vdot d\vb{l} = \frac{Q}{2\pi \ell \varepsilon_0} \ln(\frac{b}{a}) \Rightarrow \frac{Q}{\ell} = \frac{2\pi\varepsilon_0}{\ln(\frac{b}{a})} V$$
 
-This then implies that $\vb{E} = \frac{V}{\ln(\frac{b}{a})s} \vu(s)$. We can then solve for both the energy density and Poynting vector, as well as $\vb{v} = \vb{S} / u$, the speed at which energy moves through the cable. With the impedance for a coaxial cable $Z_{C0} = \sqrt{\frac{\mu_0}{\epsilon_0}} \frac{\ln(\frac{b}{a})}{2\pi}$, we see that
+This then implies that $\vb{E} = \frac{V}{\ln(\frac{b}{a})s} \vu(s)$. We can then solve for both the energy density and Poynting vector, as well as $\vb{v} = \vb{S} / u$, the speed at which energy moves through the cable. With the impedance for a coaxial cable $Z_{C0} = \sqrt{\frac{\mu_0}{\varepsilon_0}} \frac{\ln(\frac{b}{a})}{2\pi}$, we see that
 
 $$\vb{v} = \frac{2c \vu{z}}{\frac{R}{Z_{C0}} + \frac{Z_{C0}}{R}}$$
 
@@ -87,7 +87,7 @@ $$\vb{f}(\vb{r}) = \rho_e(\vb{r})\vb{E}(\vb{r}) + \vb{J}_e(\vb{r}) \times \vb{B}
 
 Substituting in Maxwell's Equations, we see that
 
-$$\vb{f}(\vb{r}) + \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = \epsilon_0 (\div \vb{E})\vb{E} + (\curl \vb{E})\times\vb{D} + \mu_0(\div \vb{H})\vb{H} + (\curl \vb{H})\times\vb{B}$$
+$$\vb{f}(\vb{r}) + \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = \varepsilon_0 (\div \vb{E})\vb{E} + (\curl \vb{E})\times\vb{D} + \mu_0(\div \vb{H})\vb{H} + (\curl \vb{H})\times\vb{B}$$
 
 Now, we claim that the right-hand side is the divergence of some tensor $\overleftrightarrow{\vb{T}}$, so that
 
@@ -96,20 +96,20 @@ $$\vb{f}(\vb{r}) + \frac{\partial}{\partial t}(\vb{D} \times \vb{B}) = \div \ove
 This tensor is the Maxwell Stress Tensor. We claim that the divergence of this tensor is composed of both an electric and magnetic part, so that $\div \overleftrightarrow{\vb{T}} = \div \overleftrightarrow{\vb{T}}_e + \div \overleftrightarrow{\vb{T}}_m$. Then, we  can state
 
 $$\begin{align}
-\div \overleftrightarrow{\vb{T}}_e &= \epsilon_0 [(\div \vb{E})\vb{E} + (\curl \vb{E})\times \vb{E}] \\
-\div \overleftrightarrow{\vb{T}}_m &= \epsilon_0 [(\div \vb{H})\vb{H} + (\curl \vb{H})\times \vb{H}]
+\div \overleftrightarrow{\vb{T}}_e &= \varepsilon_0 [(\div \vb{E})\vb{E} + (\curl \vb{E})\times \vb{E}] \\
+\div \overleftrightarrow{\vb{T}}_m &= \varepsilon_0 [(\div \vb{H})\vb{H} + (\curl \vb{H})\times \vb{H}]
 \end{align}$$
 
 We know that $\div(\vb{EE}) = (\div \vb{E})\vb{E} + (\vb{E} \vdot \nabla)\vb{E}$ and $\div(\overleftrightarrow{\vb{I}}f) = \grad f$. If we let $f = \frac{1}{2}\vb{E} \vdot \vb{E}$, we see that $\grad(\frac{1}{2}\vb{E} \vdot \vb{E}) = (\vb{E} \vdot \nabla)\vb{E} + (\curl \vb{E})\vb{E}$. Then, we see that
 
 $$\begin{align}
-\overleftrightarrow{\vb{T}}_e &= \epsilon_0 \vb{EE} - \frac{\epsilon_0}{2} \overleftrightarrow{\vb{I}}(\vb{E} \vdot \vb{E}) \\
+\overleftrightarrow{\vb{T}}_e &= \varepsilon_0 \vb{EE} - \frac{\varepsilon_0}{2} \overleftrightarrow{\vb{I}}(\vb{E} \vdot \vb{E}) \\
 \overleftrightarrow{\vb{T}}_m &= \mu_0 \vb{HH} - \frac{\mu_0}{2} \overleftrightarrow{\vb{I}}(\vb{H} \vdot \vb{H})
 \end{align}$$
 
-Knowing that $\overleftrightarrow{\vb{T}} = \overleftrightarrow{\vb{T}}_e + \overleftrightarrow{\vb{T}}_m$, and that $u = \frac{1}{2}(\epsilon_0 E^2 + \mu_0 H^2)$ is the energy density of the electromagnetic fields in a vacuum,
+Knowing that $\overleftrightarrow{\vb{T}} = \overleftrightarrow{\vb{T}}_e + \overleftrightarrow{\vb{T}}_m$, and that $u = \frac{1}{2}(\varepsilon_0 E^2 + \mu_0 H^2)$ is the energy density of the electromagnetic fields in a vacuum,
 
-$$\overleftrightarrow{\vb{T}} = \epsilon_0 \vb{EE} + \mu_0 \vb{HH} - \overleftrightarrow{\vb{I}}u$$
+$$\overleftrightarrow{\vb{T}} = \varepsilon_0 \vb{EE} + \mu_0 \vb{HH} - \overleftrightarrow{\vb{I}}u$$
 
 Additionally, we denote the time rate of change of the momentum density of the electromagnetic fields as $\vb{g}(\vb{r}) = \vb{D}(\vb{r}) \times \vb{B}(\vb{r})$. Thus,
 
