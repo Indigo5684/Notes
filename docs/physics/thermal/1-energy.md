@@ -1,6 +1,6 @@
 # Chapter 1 - Energy in Thermal Physics
 
-## Section 1.1 - Thermal Equilibruim
+## Section 1.1 - Thermal Equilibrium
 
 **Definition**. The *theoretical definition* for *temperature* is the quantity that is the same for two objects when in thermal equilibrium.
 
@@ -20,7 +20,7 @@
 
 ## Section 1.2 - The Ideal Gas
 
-**Theorem**. Recall the *Ideal Gas Law* from chemistry, in which given $P = \text{pressure}$, $V = \text{volume}$, $n = \text{number of moles of a gas}$, $T = \text{tempreature in an absoltue scale}$, and $R = \text{the ideal gas constant}$,
+**Theorem**. Recall the *Ideal Gas Law* from chemistry, in which given $P = \text{pressure}$, $V = \text{volume}$, $n = \text{number of moles of a gas}$, $T = \text{temperature in an absolute scale}$, and $R = \text{the ideal gas constant}$,
 
 $$PV = nRT$$
 
@@ -84,7 +84,7 @@ $$v_\text{rms} \equiv \sqrt{\overline{v^2}} = \sqrt{\frac{3kT}{m}}$$
 
 ## Section 1.3 - Equipartition of Energy
 
-We are familar with energy in the form of $\frac{1}{2}ab_{x, y, z}^2$, where $a$ is some fixed property of an object.
+We are familiar with energy in the form of $\frac{1}{2}ab_{x, y, z}^2$, where $a$ is some fixed property of an object.
 
 **Theorem**. *Equipartition Theorem*. The average energy of any quadratic degree of freedom is $\frac{1}{2}kT$.
 
@@ -92,7 +92,7 @@ If an object contains $N$ molecules, each with $f$ degrees of freedom, the total
 
 $$U_\text{thermal} = N \vdot f \vdot \frac{1}{2}{k}{T} $$
 
-In monoatomic molecules, each molecule has $3$ degrees of freedom, corresponding to the translational position. In diatomics, there are $2$ additional rotational degrees of freedom.
+In monoatomic molecules, each molecule has $3$ degrees of freedom, corresponding to the translational position. In diatomic gasses, there are $2$ additional rotational degrees of freedom.
 
 Additionally, there exist modes of vibration, which each contribute two degrees of freedom (positional energy and vibrational kinetic energy). At room temperature, these are negligible in gasses. In solids, each atom may vibrate in three directions (as there are 3 translational axis), but atoms may not rotate, leading to $6$ total degrees of freedom.
 
@@ -104,7 +104,7 @@ We are familiar with energy, temperature, and work.
 
 **Theorem**. The Law of Conservation of Energy. Energy cannot be created or destroyed, only moved.
 
-**Theorem**. In thermodynamics, energy may only enter or leave a closed systeem via *heat* and *work*.
+**Theorem**. In thermodynamics, energy may only enter or leave a closed system via *heat* and *work*.
 
 **Definition**. *Heat* is any spontaneous flow of energy between two objects due to a difference in temperature.
 
@@ -122,7 +122,7 @@ Note that with heat engines, we often see $Q - W$, where $W$ instead represents 
 
 **Definition**. The SI unit of energy is the *Joule*, where $1J = 1 \text{kg} \vdot \text{m}^2 / \text{s}^2$.
 
-**Defitition**. The imperial unit of energy is the *calorie*, or the amount of energy to heat one gram of water by $1 \degree \text{C}$. The exact conversion factor is defined as $1 \text{J} = 4.184 \text{cal}$
+**Definition**. The imperial unit of energy is the *calorie*, or the amount of energy to heat one gram of water by $1 \degree \text{C}$. The exact conversion factor is defined as $1 \text{J} = 4.184 \text{cal}$
 
 **Definition**. *Conduction* is the transfer of heat by molecular contact, in which fast moving molecules bump into slow moving molecules and transfer energy.
 
@@ -134,19 +134,25 @@ Note that with heat engines, we often see $Q - W$, where $W$ instead represents 
 
 From classical mechanics, we know that $W = \vec{F} \cdot d\vec{r}$.
 
-Consider a piston with a compressable gas. In tthis case, with $\Delta x$ positive as the piston moves inwards, we can state that $W = F \Delta x$. Now, we want the gas to always maintain internal equilibrium. For this to be true, the piston must be moving relatively slowly. Note that any volume change that happens in this way is said to be *quasistatic*.
+Consider a piston with a compressible gas. In this case, with $\Delta x$ positive as the piston moves inwards, we can state that $W = F \Delta x$. Now, we want the gas to always maintain internal equilibrium. For this to be true, the piston must be moving relatively slowly. Note that any volume change that happens in this way is said to be *quasistatic*.
 
 We know that the force exerted by the piston is equal to the pressure times the area. Thus, $W = P A \Delta  x$. But $A\Delta x$ is just volume (in this case, negative, as volume is decreasing). So, $W = -P \Delta V$.
 
-However, this assumes constant pressure. For a non-constant perssure, $P(V)$, we know that $W = \int F dx = - \int P(V) dV$.
+However, this assumes constant pressure. For a non-constant pressure, $P(V)$, we know that $W = \int F dx = - \int P(V) dV$.
+
+**Definition**. In *isothermal compression*, we see that $\delta T = 0$. Then, $T$ is a constant, so $nRT$ is constant meaning $PV$ is constant. Then, as $P(V) = (P_0V_0)/(V)$, we can see that $W = \int_V_1^V_2 P(V) dV = nRT \ln(V_i/V_f) = PV \ln(P_f/P_i)$
+
+**Definition**. The line formed by isothermal compression on a $PV$-diagram is called an *isotherm*.
+
+**Definition**. In *adiabatic compression*, we assume that $Q = 0$. Then, we see that $PV^\gamma$ is constant, with $\gamma$ being the adiabatic constant. Note that as $U = \frac{f}{2}NkT = W$, we can see that $V_2 T_2^{f/2} = V_1 T_1^{f/2}$, and \$gamma = (f+2)(f)$. Additionally, we see that $W$ = $\frac{1}{1-\gamma}\frac{P_2 V_2 - P_1 V_1}$
 
 ## Section 1.6 - Heat Capacity
 
-**Definition**. The *heat capacity* $C = Q / \Delta T$ of an object is the energy required to raise its temperaature by one degree.
+**Definition**. The *heat capacity* $C = Q / \Delta T$ of an object is the energy required to raise its temperature by one degree.
 
 **Definition**. The *specific heat capacity* $c = C / m = C / (m \Delta T)$ is the energy needed to raise a substance by one degree per unit mass.
 
-In a system, we can note thaht
+In a system, we can note that
 
 $$$C = \frac{Q}{\Delta T} = \frac{\Delta U - W}{\Delta T}$$
 
@@ -154,7 +160,7 @@ Consider the case in which volume is constant. Under these circumstances, we can
 
 $$C_V = (\frac{\Delta U}{\Delta T})_V = (\frac{\partial U}{\partial T})_V$$
 
-In the case where pressure is constant instead, we see that the *heat capacity at constant pressurue* is defined as
+In the case where pressure is constant instead, we see that the *heat capacity at constant pressure* is defined as
 
 $$C_P = (\frac{\Delta U}{\Delta T})_V = (\frac{\Delta  U - (- P \Delta V)}{\Delta T})_P = (\frac{\partial U}{\partial T})_P + P (\frac{\partial V}{\partial T})_P$$
 
@@ -162,7 +168,7 @@ Knowing that $U = \frac{1}{2}NfkT$, we can see that $C_V = \frac{NfK}{2}$.
 
 **Theorem**. The *Rule of Dulong and Pitt* states that in solids, $f = 6$, so the heat capacity per mole is $3R$. In reality, all degrees of freedom freeze out as $T$ approaches $0$, so $C$ approaches $0$.
 
-For an ideal gas, at constant pressurre,
+For an ideal gas, at constant pressure,
 
 $$(\frac{\partial V}{\partial T})_P = \frac{\partial}{\partial T} (\frac{NkT}{P}) = \frac{Nk}{P}$$
 

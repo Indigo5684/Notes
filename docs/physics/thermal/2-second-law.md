@@ -22,7 +22,7 @@ Assuming the external magnetic field points up, we note that an up-dipole contai
 
 ## Section 2.2 - The Einstein Model of a Solid
 
-Consider a collection of microscopic systems that can each store any discrete amount of quantized energy. If each system is a harmonic oscillator, we know from [Quantum Mechanics](/todo.md) that the potential energy is $\frac{1}{2}k_s x^2$, where $k_s$ is the spring constant. Then, the size of energy units is $hf$, where $h$ is Planck's constant ($h = 6.63 \times 10^{-34} \text{J} \vdot \text{s}$) and $f$ is the natural frequency of the oscillator ($f = \frac{1}{2\pi} \sqrt{k_s / m}$).
+Consider a collection of microscopic systems that can each store any discrete amount of quantized energy. If each system is a harmonic oscillator, we know from [Quantum Mechanics](../../todo.md) that the potential energy is $\frac{1}{2}k_s x^2$, where $k_s$ is the spring constant. Then, the size of energy units is $hf$, where $h$ is Planck's constant ($h = 6.63 \times 10^{-34} \text{J} \vdot \text{s}$) and $f$ is the natural frequency of the oscillator ($f = \frac{1}{2\pi} \sqrt{k_s / m}$).
 
 **Definition**. For a three-dimensional solid, each particle can oscillate in three dimensions. Thus, if there are $N$ oscillators, there are $N/3$ particles. A solid modeled as such is known as an *Einstein solid*.
 
