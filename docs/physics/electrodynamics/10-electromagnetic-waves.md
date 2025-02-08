@@ -37,7 +37,7 @@ $$\begin{align}
 
 ### Section 10.1.1 - The Wave Equation and Plane Waves
 
-**Definition**. The equation $[\frac{\partial^2}{\partial x^2} - \frac{1}{v^2} \frac{\partial^2}{\partial t^2}] f(x, t) = 0$ is well-known to mathematicians (see [Differential Equations](/todo.md)), and is known as the **wave equation**. In physics, the speed of the wave is $v = c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}$.
+**Definition**. The equation $[\frac{\partial^2}{\partial x^2} - \frac{1}{v^2} \frac{\partial^2}{\partial t^2}] f(x, t) = 0$ is well-known to mathematicians (see [Differential Equations](../../todo.md)), and is known as the **wave equation**. In physics, the speed of the wave is $v = c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}$.
 
 Consider some function $f(s)$. If $s = x - vt$ or $x + vt$, it is trivial to see that $f(x)$ satisfies the wave equation.
 
@@ -84,5 +84,17 @@ Notably, an elliptically polarized wave can be described as follows:
 
 $$\begin{align}
 \vb{E}(\vb{r}, t) &= E_{x0} \vu{x} \cos(kz - \omega t) + E_{y0} \vu{y} \sin(kz - \omega t) \\
-\vb{H}(\vb{r}, t) &= \sqrt{\frac{\varepsilon}{\mu}} (E_{x0} \vu{x} \cos(kz - \omega t) + E_{y0} \vu{y} \sin(kz - \omega t))
+\vb{H}(\vb{r}, t) &= \sqrt{\frac{\varepsilon}{\mu}} (E_{x0} \vu{y} \cos(kz - \omega t) - E_{y0} \vu{x} \sin(kz - \omega t))
 \end{align}$$
+
+If $E_{x0} = E_{y0}$, the wave is said to be circularly polarized.
+
+## Section 10.2 - Reflection and Refraction of Plane Electromagnetic Waves at a a Planar Interface
+
+This section will focus on plane monochromatic waves incident from material 1 onto material 2, where both materials are homogenous insulators and the surface between the two materials is smooth (on the scale of the wavelength).
+
+In this case, we must re-consider Maxwell's equations. We know from previous sections that $\div \vb{E} = \frac{\vb{\rho_e}}{\varepsilon_0}$ and $\div \vb{H} = \frac{\vb{\rho_m}}{\mu_0}$. We also know that $\div \vb{D} = \rho_{ef}$ and $\div \vb{B} = \rho_{mf}$.
+
+Consider the boundary between the two materials. If we consider $\div \vb{D}$, and take the integral over a Gaussian pillbox on the boundary, we can apply divergence theorem to see that $\int_V \div \vb{D} dV = \int_{SofV} D \vdot \vu{n} dS = \rho_{efree}$. If we assume the materials are insulating, we do not expect to find any electrical charge, so $\rho_{efree} = 0$. Thus, we can say that $\int_{SofV} D \vdot \vu{n} = 0$, so $\vb{D}_1 \vdot \vu{n} + \vb{D}_2 \vdot \vu{n} = \vb{D_1} \vdot \vu{z} + \vb{D}_1 \vdot (-\vu{n}) = 0$. Then, we can say that $\vb{D}_1 \vdot{z} = \vb{D}_2 \vdot{z}$, or in simpler terms, $\vdot{D}_1^\perp = \vdot{D}_2^\perp$.
+
+Applying the same logic to $\vb{B}$, we see that $\vdot{B}_1^\perp = \vdot{B}_2^\perp$. Note that due to the existence of polarization and magnetization, we cannot say the same regarding $\mathbf{E}$ or $\mathbf{H}$.
