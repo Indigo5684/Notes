@@ -78,3 +78,12 @@ In the case where there is both vertical and horizontal motion, the differential
 
 ## Section 2.5 - Motion of a Charge in a Uniform Magnetic Field
 
+Skipped. This is a practical exercise.
+
+## Section 2.6 - Complex Exponentials
+
+Skipped. This covers Euler's formula, Taylor series, etc.
+
+## Section 2.7 - Solution for the Charge in a B Field
+
+Skipped.
