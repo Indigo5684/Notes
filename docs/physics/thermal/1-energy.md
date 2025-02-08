@@ -24,11 +24,11 @@
 
 $$PV = nRT$$
 
-In SI units, $R = 8.31 \frac{\text{J}}{\text{mol} \vdot \text{K}}$.
+In SI units, $R = 8.31 \frac{\text{J}}{\text{mol} \cdot \text{K}}$.
 
-**Definition**. Recall that one *mole* of a substance is $6.022 \cross 10^{23}$ units of said substance. This constant, $N_A$, is *Avogadro's Number*.
+**Definition**. Recall that one *mole* of a substance is $6.022 \times 10^{23}$ units of said substance. This constant, $N_A$, is *Avogadro's Number*.
 
-Using Avogadro's Number, we can rewrite the Ideal Gas law in terms of molecules, with $N = \text{number of molecules of a gas}$ and $n \vdot N_A = N$. Thus,
+Using Avogadro's Number, we can rewrite the Ideal Gas law in terms of molecules, with $N = \text{number of molecules of a gas}$ and $n \cdot N_A = N$. Thus,
 
 $$PV = NkT$$
 
@@ -72,7 +72,7 @@ $$\frac{1}{2} m \overline{v^2} = \frac{1}{2} m (\overline{v_x^2} + \overline{v_y
 
 This is the average translational kinetic energy for an ideal gas.
 
-**Definition**. A useful unit to measure energy on this scale is the **electron-volt** (eV), which is the kinetic energy gained by an electron that has been accelerated through a voltage difference of one volt. Note that $1 \text{eV} = 1.6 \cross 10^{-19} \text{J}$.
+**Definition**. A useful unit to measure energy on this scale is the **electron-volt** (eV), which is the kinetic energy gained by an electron that has been accelerated through a voltage difference of one volt. Note that $1 \text{eV} = 1.6 \times 10^{-19} \text{J}$.
 
 Note that the average speed in this model can be obtained as follows:
 
@@ -90,7 +90,7 @@ We are familiar with energy in the form of $\frac{1}{2}ab_{x, y, z}^2$, where $a
 
 If an object contains $N$ molecules, each with $f$ degrees of freedom, the total (average) thermal energy is
 
-$$U_\text{thermal} = N \vdot f \vdot \frac{1}{2}{k}{T} $$
+$$U_\text{thermal} = N \cdot f \cdot \frac{1}{2}{k}{T} $$
 
 In monoatomic molecules, each molecule has $3$ degrees of freedom, corresponding to the translational position. In diatomic gasses, there are $2$ additional rotational degrees of freedom.
 
@@ -120,7 +120,7 @@ Note that with heat engines, we often see $Q - W$, where $W$ instead represents 
 
 **Theorem**. The First Law of Thermodynamics. $\Delta U = Q + W$, along with the Law of Conservation of Energy. In  other words, you can't win the game.
 
-**Definition**. The SI unit of energy is the *Joule*, where $1J = 1 \text{kg} \vdot \text{m}^2 / \text{s}^2$.
+**Definition**. The SI unit of energy is the *Joule*, where $1J = 1 \text{kg} \cdot \text{m}^2 / \text{s}^2$.
 
 **Definition**. The imperial unit of energy is the *calorie*, or the amount of energy to heat one gram of water by $1 \degree \text{C}$. The exact conversion factor is defined as $1 \text{J} = 4.184 \text{cal}$
 
@@ -140,11 +140,11 @@ We know that the force exerted by the piston is equal to the pressure times the 
 
 However, this assumes constant pressure. For a non-constant pressure, $P(V)$, we know that $W = \int F dx = - \int P(V) dV$.
 
-**Definition**. In *isothermal compression*, we see that $\delta T = 0$. Then, $T$ is a constant, so $nRT$ is constant meaning $PV$ is constant. Then, as $P(V) = (P_0V_0)/(V)$, we can see that $W = \int_V_1^V_2 P(V) dV = nRT \ln(V_i/V_f) = PV \ln(P_f/P_i)$
+**Definition**. In *isothermal compression*, we see that $\delta T = 0$. Then, $T$ is a constant, so $nRT$ is constant meaning $PV$ is constant. Then, as $P(V) = (P_0V_0)/(V)$, we can see that $W = \int_{V_1}^{V_2} P(V) dV = nRT \ln(V_i/V_f) = PV \ln(P_f/P_i)$
 
 **Definition**. The line formed by isothermal compression on a $PV$-diagram is called an *isotherm*.
 
-**Definition**. In *adiabatic compression*, we assume that $Q = 0$. Then, we see that $PV^\gamma$ is constant, with $\gamma$ being the adiabatic constant. Note that as $U = \frac{f}{2}NkT = W$, we can see that $V_2 T_2^{f/2} = V_1 T_1^{f/2}$, and \$gamma = (f+2)(f)$. Additionally, we see that $W$ = $\frac{1}{1-\gamma}\frac{P_2 V_2 - P_1 V_1}$
+**Definition**. In *adiabatic compression*, we assume that $Q = 0$. Then, we see that $PV^\gamma$ is constant, with $\gamma$ being the adiabatic constant. Note that as $U = \frac{f}{2}NkT = W$, we can see that $V_2 T_2^{f/2} = V_1 T_1^{f/2}$, and \$gamma = (f+2)(f)$. Additionally, we see that $W$ = $\frac{P_2 V_2 - P_1 V_1}{1-\gamma}$
 
 ## Section 1.6 - Heat Capacity
 
@@ -154,7 +154,7 @@ However, this assumes constant pressure. For a non-constant pressure, $P(V)$, we
 
 In a system, we can note that
 
-$$$C = \frac{Q}{\Delta T} = \frac{\Delta U - W}{\Delta T}$$
+$$C = \frac{Q}{\Delta T} = \frac{\Delta U - W}{\Delta T}$$
 
 Consider the case in which volume is constant. Under these circumstances, we can calculate the *heat capacity at constant volume*, and as volume does not change, $W = 0$, so
 
@@ -186,13 +186,13 @@ Note that during this, we assume the pressure is constant and no other work is d
 
  **Definition**. We define *enthalpy*, $H$, as the total energy needed to create any given system out of nothing in a set environment, and is defined as
 
- $$H = U + PV$$
+$$H = U + PV$$
 
- This can also be interpreted as the maximum possible energy extracted from annihilating the system, consisting of the system's internal energy $U$ and the work $PV$ done by the atmosphere to fill its absence.
+This can also be interpreted as the maximum possible energy extracted from annihilating the system, consisting of the system's internal energy $U$ and the work $PV$ done by the atmosphere to fill its absence.
 
- In a system, if the pressure is held constant, we see that $\Delta H = \Delta U + P \Delta V$. Thus, enthalpy can only increase due to expansion or internal energy changes. From the First Law of Thermodynamics, $\Delta H = Q + W_{other}$ if pressure is constant. Notably, the change in enthalpy per degree of temperature at a constant pressure is the same as the heat capacity at constant pressure $C_P$.
+In a system, if the pressure is held constant, we see that $\Delta H = \Delta U + P \Delta V$. Thus, enthalpy can only increase due to expansion or internal energy changes. From the First Law of Thermodynamics, $\Delta H = Q + W_{other}$ if pressure is constant. Notably, the change in enthalpy per degree of temperature at a constant pressure is the same as the heat capacity at constant pressure $C_P$.
 
- **Definition**. The *Enthalpy of Formation* is the energy needed to create a compound or undergo a phase transition from base constituents in their most stable states.
+**Definition**. The *Enthalpy of Formation* is the energy needed to create a compound or undergo a phase transition from base constituents in their most stable states.
 
 ## Section 1.7 - Rates of Processes
 

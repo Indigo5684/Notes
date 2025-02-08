@@ -25,22 +25,22 @@ there exists some $k \in \mathbb{N}$ such that given any $n \in \mathbb{N}$ with
 **Definition**. Given $R$ an integral domain and $M$ an $R$-module,
 
 $$
-\Tor(M) = \{ x \in M | rx = 0 \text{ for any } r \neq 0 \}
+\text{Tor}(M) = \{ x \in M | rx = 0 \text{ for any } r \neq 0 \}
 $$
 
-This is the *torsion submodule* of $M$. If $\Tor(M)$ is empty, then $M$ is *torsion-free*.
+This is the *torsion submodule* of $M$. If $\text{Tor}(M)$ is empty, then $M$ is *torsion-free*.
 
 **Definition** Let $R$ be an integral domain and $M$ be an $R$-module. Then, given a submodule $N$,
 
 $$
-\Ann_R(N) = \{r \in R | rn = 0 \text{ for all } n \in N \}
+\text{Ann}_R(N) = \{r \in R | rn = 0 \text{ for all } n \in N \}
 $$
 
-This ideal of $R$ is the *annihilator of $N$*. That is, $\Ann(N)$ is the set of elements of $R$ such that $(r)N = \{ 0 \}$.
+This ideal of $R$ is the *annihilator of $N$*. That is, $\text{Ann}(N)$ is the set of elements of $R$ such that $(r)N = \{ 0 \}$.
 
-Note that if $N$ is not a torsion submodule of $M$, then $\Ann(N) = (0)R$. Additionally, given $N, L$ are submodules of $M$ with $N \subseteq L$, then $\Ann(N) \subseteq \Ann(L)$.
+Note that if $N$ is not a torsion submodule of $M$, then $\text{Ann}(N) = (0)R$. Additionally, given $N, L$ are submodules of $M$ with $N \subseteq L$, then $\text{Ann}(N) \subseteq \text{Ann}(L)$.
 
-Additionally, if $R$ is a PID, as $\Ann_R(N)$ is an ideal, $\Ann(N) = (n)R$ and $\Ann(L) = (l)R$ for some $n, l \in R$ such that $n | l$.
+Additionally, if $R$ is a PID, as $\text{Ann}_R(N)$ is an ideal, $\text{Ann}(N) = (n)R$ and $\text{Ann}(L) = (l)R$ for some $n, l \in R$ such that $n | l$.
 
 **Definition**. Given any integral domain $R$, the *rank* of an $R$-module $M$ is the maximum number of $R$-linearly independent elements of M.
 
@@ -64,7 +64,7 @@ $$
 - Note that
 
 $$
-\Tor{M} \cong \frac{R}{(a_1)R} \oplus \frac{R}{(a_2)R} \oplus \ldots \oplus \frac{R}{(a_m)R}
+\text{Tor}{M} \cong \frac{R}{(a_1)R} \oplus \frac{R}{(a_2)R} \oplus \ldots \oplus \frac{R}{(a_m)R}
 $$
 
 As a consequence, $M$ is a torsion module if and only if $r = 0$.

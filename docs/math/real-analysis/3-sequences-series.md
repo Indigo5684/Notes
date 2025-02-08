@@ -26,10 +26,10 @@ $$
 
 ---
 
-**Definition**. A sequence $X = (x_n)$ is said to *converge* to a number $x \in \mathbb{R}$ if when given any $\epsilon > 0$, there exists some $K \in \mathbb{N}$ such that for every $n \in \mathbb{N}$ with $n \geq K$,
+**Definition**. A sequence $X = (x_n)$ is said to *converge* to a number $x \in \mathbb{R}$ if when given any $\varepsilon > 0$, there exists some $K \in \mathbb{N}$ such that for every $n \in \mathbb{N}$ with $n \geq K$,
 
 $$
-\abs{x_n - x} < \epsilon
+|x_n - x| < \varepsilon
 $$
 
 If this is the case, we say that $X$ converges to  $x$, and $x$ is a *limit* of X. This can be written as
@@ -66,9 +66,9 @@ $$
 
 **Theorem**. Suppose $(x_n)$ is a sequence if real numbers. Then,
 
-1. If $x_n \rightarrow x$, then $\abs{x_n} \rightarrow \abs{x}$
-2. If $\abs{x_n} \rightarrow 0$, then $x_n \rightarrow 0$
-3. $x_n \rightarrow x$ if and only if $\abs{x_n - n} \rightarrow 0$
+1. If $x_n \rightarrow x$, then $|x_n| \rightarrow |x|$
+2. If $|x_n| \rightarrow 0$, then $x_n \rightarrow 0$
+3. $x_n \rightarrow x$ if and only if $|x_n - n| \rightarrow 0$
 
 **Theorem**. Suppose $(x_n)$ is a sequence if real numbers, with each $x_n \geq 0$. Then, given some $k \in \mathbb{N}$, if $x_n \rightarrow x$, then $\sqrt[k]{x_n} \rightarrow \sqrt[k]{x}$.
 
@@ -100,11 +100,9 @@ is a *subsequence* of $X$,
 
 ## Section 3.5 - The Cauchy Criterion
 
-**Definition**. A sequence $(x_n)$ is said to be a *Cauchy sequence* such that for any given $\epsilon$, there exists a natural number $H$ such that all natural numbers $m, n \geq H$, then
+**Definition**. A sequence $(x_n)$ is said to be a *Cauchy sequence* such that for any given $\varepsilon$, there exists a natural number $H$ such that all natural numbers $m, n \geq H$, then
 
-$$
-\abs{x_m - x_n} \leq \epsilon
-$$
+$$|x_m - x_n \leq \varepsilon$$
 
 **Theorem**. If $(x_n)$ is a Cauchy sequence, then $(x_n)$ is convergent.
 
@@ -130,15 +128,15 @@ $$
 
 In particular, $s_n - s_{n - 1} = x^n$. Thus, the Cauchy criteria takes the form
 
-**Theorem**. Cauchy Criteria for Series. The series $\sum x_n$ converges if and only if, for a given $\epsilon$, there exists some natural number $H$ such that when $m > n > H$,
+**Theorem**. Cauchy Criteria for Series. The series $\sum x_n$ converges if and only if, for a given $\varepsilon$, there exists some natural number $H$ such that when $m > n > H$,
 
 $$
-\abs{s_m - s_n} = \abs{\sum_{i = m + 1}^n x_i} < \epsilon
+|s_m - s_n| = |\sum_{i = m + 1}^n x_i| < \varepsilon
 $$
 
 **Corollary**. $n$-th Term Test. If $\sum x_n$ converges, then $x_n \rightarrow 0$.
 
-**Corollary**. Absolute Convergence Test. If $\sum \abs{x_n}$ converges, then $\sum x_n$ converges.
+**Corollary**. Absolute Convergence Test. If $\sum |x_n|$ converges, then $\sum x_n$ converges.
 
 ---
 

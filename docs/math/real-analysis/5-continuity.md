@@ -2,10 +2,10 @@
 
 ## Section 5.1 - Continuous Functions
 
-**Definition**. Let $A \subseteq \mathbb{R}$, and $f: A \rightarrow \mathbb{R}$. Then, if $a \in A$, $f$ is *continuous at $a$* if, given any $\epsilon > 0$, there exists some $\delta > 0$ such that for all $x \in A$,
+**Definition**. Let $A \subseteq \mathbb{R}$, and $f: A \rightarrow \mathbb{R}$. Then, if $a \in A$, $f$ is *continuous at $a$* if, given any $\varepsilon > 0$, there exists some $\delta > 0$ such that for all $x \in A$,
 
 $$
-|x - a| < \delta \Rightarrow |f(x) - f(a)| < \epsilon
+|x - a| < \delta \Rightarrow |f(x) - f(a)| < \varepsilon
 $$
 
 Note that if $a$ is an *isolated point* of $A$, that is, not a cluster point, then $a$ is automatically continuous.
@@ -20,10 +20,10 @@ Note that a function cannot be continuous at a point outside of its domain, even
 
 ---
 
-**Definition**. Let $(S, d_S)$ and $(T, d_T)$ be metric spaces. A function $f: S \rightarrow T$ is continuous at a point $a \in S$ if given any $\epsilon > 0$, there exists some $\delta > 0$ such that for all $x \in S$,
+**Definition**. Let $(S, d_S)$ and $(T, d_T)$ be metric spaces. A function $f: S \rightarrow T$ is continuous at a point $a \in S$ if given any $\varepsilon > 0$, there exists some $\delta > 0$ such that for all $x \in S$,
 
 $$
-d_S(x, a) < \delta \Rightarrow d_T(f(x),  f(a)) < \epsilon
+d_S(x, a) < \delta \Rightarrow d_T(f(x),  f(a)) < \varepsilon
 $$
 
 **Theorem**. A function $f: S \rightarrow T$ is continuous at a point $a \in A$ if and only if given some neighborhood $V(f(a)) \in B$, there exists some $U(a) \in A$ such that $f(U) \subseteq V$.
@@ -63,10 +63,10 @@ $$
 
 ---
 
-**Definition**. Let $A \subseteq R$. Then, a function $f: A \rightarrow \mathbb{R}$ is *uniformly continuous* if given any $\epsilon > 0$, there exists some $\delta > 0$ depending only on $\epsilon$ such that for any $x, y \in A$,
+**Definition**. Let $A \subseteq R$. Then, a function $f: A \rightarrow \mathbb{R}$ is *uniformly continuous* if given any $\varepsilon > 0$, there exists some $\delta > 0$ depending only on $\varepsilon$ such that for any $x, y \in A$,
 
 $$
-|x - y| < \delta \Rightarrow |f(x) - f(y)| < \epsilon
+|x - y| < \delta \Rightarrow |f(x) - f(y)| < \varepsilon
 $$
 
 Note that if $f$ is uniformly continuous, it must be continuous on $A$.

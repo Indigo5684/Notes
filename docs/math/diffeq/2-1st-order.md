@@ -103,7 +103,7 @@ $$
 Since $y$ is really $y(x)$, we can make the following substitution:
 
 $$
-u = y(x) \text{ and } du = y'(x)dx = \frac{dy}{dx}{dx}
+u = y(x) \text{ and } du = y'(x)dx = \frac{dy}{dx} dx
 $$
 
 This reduces the integral to the following:

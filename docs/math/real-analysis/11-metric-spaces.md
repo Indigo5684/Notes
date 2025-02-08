@@ -24,19 +24,19 @@ $$
 
 ---
 
-**Definition**. Let $(S, d)$ be a metric space. Then, for each $\epsilon > 0$, the *$\epsilon$-neighborhood* or *$\epsilon$-ball* of a point $a \in S$ is the set
+**Definition**. Let $(S, d)$ be a metric space. Then, for each $\varepsilon > 0$, the *$\varepsilon$-neighborhood* or *$\varepsilon$-ball* of a point $a \in S$ is the set
 
 $$
-V_\epsilon(a) = {x \in S | d(a, x) < \epsilon}
+V_\varepsilon(a) = {x \in S | d(a, x) < \varepsilon}
 $$
 
-**Definition**. Let $(S, d)$ be a metric space. Then, a subset $G \subseteq S$ is *open* if for each $x \in G$, there exists some $\epsilon > 0$ so that $V_\epsilon(x) \subseteq G$.
+**Definition**. Let $(S, d)$ be a metric space. Then, a subset $G \subseteq S$ is *open* if for each $x \in G$, there exists some $\varepsilon > 0$ so that $V_\varepsilon(x) \subseteq G$.
 
 **Definition**. Let $(S, d)$ be a metric space. Then, a subset $G \subseteq S$ is *closed* if its complement $C(G) = S - G = S \ F$ is closed.
 
-**Definition**. Let $(S, d)$ be a metric space. A point $c \in S$ is a *cluster point$ of a set $A \subseteq S$ if every $\epsilon$-neighborhood of $c$ contains some point $a \in A$ such that $a \neq c$.
+**Definition**. Let $(S, d)$ be a metric space. A point $c \in S$ is a *cluster point$ of a set $A \subseteq S$ if every $\varepsilon$-neighborhood of $c$ contains some point $a \in A$ such that $a \neq c$.
 
-**Theorem**. Every $\epsilon$-neighborhood of a point is an open set.
+**Theorem**. Every $\varepsilon$-neighborhood of a point is an open set.
 
 **Theorem**. The union of an arbitrary collection of open sets is open.
 
@@ -50,22 +50,22 @@ $$
 
 ---
 
-**Definition**. A *sequence* $(x_n)$ in a metric space $(S, d)$ converges to a point $x \in S$ if given any $\epsilon > 0$, there exists a $K \in \mathbb{N}$ such that given $n \in \mathbb{N}$,
+**Definition**. A *sequence* $(x_n)$ in a metric space $(S, d)$ converges to a point $x \in S$ if given any $\varepsilon > 0$, there exists a $K \in \mathbb{N}$ such that given $n \in \mathbb{N}$,
 
 $$
-n \geq K \Rightarrow d(x_n, x) \leq \epsilon
+n \geq K \Rightarrow d(x_n, x) \leq \varepsilon
 $$
 
 **Theorem**. Let $(x_n)$ be a sequence in metric space $(S, d)$. Then,
 
-- $(x_n)$ converges to $x$ if and only if every $\epsilon$-neighborhood of $x$ contains all but finitely many terms of $(x_n)$.
+- $(x_n)$ converges to $x$ if and only if every $\varepsilon$-neighborhood of $x$ contains all but finitely many terms of $(x_n)$.
 - If $(x_n) \rightarrow x$ and $(x_n) \rightarrow x'$, then $x = x'$.
 - If $(x_n)$ converges, then $(x_n)$ is bound.
 
-**Definition**. A sequence $(x_n)$ in metric space $(S, d)$ is a *Cauchy sequence* if for every $\epsilon > 0$, there exists some $H \in \mathbb{N}$ such that for any $m, n \in \mathbb{N}$,
+**Definition**. A sequence $(x_n)$ in metric space $(S, d)$ is a *Cauchy sequence* if for every $\varepsilon > 0$, there exists some $H \in \mathbb{N}$ such that for any $m, n \in \mathbb{N}$,
 
 $$
-m, n \geq H \Rightarrow d(x_n, x_m) < \epsilon
+m, n \geq H \Rightarrow d(x_n, x_m) < \varepsilon
 $$
 
 **Definition**. A metric space in which every Cauchy sequence converges is said to be *complete*.

@@ -5,7 +5,7 @@
 **Definition**. Let $R$ be a ring. A *left $R$-module* or a *left module over $R$* is a nonempty set $M$ together with
 
 1. A binary operation $+$ on $M$ under which $M$ is an abelian group
-2. An action $\cross$ of $R$ on $M$, that is, a map or function $R \cross M \rightarrow M$, denoted $rm$, that for all $r, s \in R, m, n \in M$ satisfies
+2. An action $\times$ of $R$ on $M$, that is, a map or function $R \times M \rightarrow M$, denoted $rm$, that for all $r, s \in R, m, n \in M$ satisfies
     - $(r + s)m = rm + sm$
     - $(rs)m = r(sm)$
     - $r(m + n) = rm + rn$
@@ -21,12 +21,12 @@
 
 ---
 
-**Example**. Let $F$ be a field and $F[x]$ a polynomial ring. Then, let $V$ be a vector space of $F$, and $T$ be a linear transformation from $V$ to itself. That is, $V: T \rightarrow T$. We know that $V$ is an $F$-module. We will want to show that $V$ can be written as an $F[x]$-module for some choice of $T$. That is, we want an action $F[x] \cross V \rightarrow V$.
+**Example**. Let $F$ be a field and $F[x]$ a polynomial ring. Then, let $V$ be a vector space of $F$, and $T$ be a linear transformation from $V$ to itself. That is, $V: T \rightarrow T$. We know that $V$ is an $F$-module. We will want to show that $V$ can be written as an $F[x]$-module for some choice of $T$. That is, we want an action $F[x] \times V \rightarrow V$.
 
-Now, for a given linear transformation $T$, consider some polynomial $p(x) = a_n x^n + \ldots + a_0$ and some $v \in V$. We define $p(x) \cross v$ by$
+Now, for a given linear transformation $T$, consider some polynomial $p(x) = a_n x^n + \ldots + a_0$ and some $v \in V$. We define $p(x) \times v$ by$
 
 $$
-p(x) \cross v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
+p(x) \times v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
 $$
 
 with $T^n$ being defined as applying $T$ a total of $n$ times.
@@ -50,20 +50,20 @@ with $T^n$ being defined as applying $T$ a total of $n$ times.
 
 **Theorem**. An $R$-module homomorphism is an *isomorphism* if it is 1-1 and onto, and said modules are *isomorphic*.
 
-**Definition**. Let $M, N$ be $R$-modules. The set $\Hom_R(M, N)$ is the set of all homomorphisms from $M$ to $N$.
+**Definition**. Let $M, N$ be $R$-modules. The set $\text{Hom}_R(M, N)$ is the set of all homomorphisms from $M$ to $N$.
 
 **Proposition**. Let $M$, $N$, and $L$ be $R$-modules. Then,
 
 1. A function $\varphi: M \rightarrow N$ is an $R$-module homomorphism if and only if $\varphi(rx + y) = r\varphi(x) + \varphi(y)$ for all $x, y \in M$ and $r \in R$.
-2. Let $\varphi, \psi \in \Hom_R(M, N)$. Then, define $\varphi + \psi$ as
+2. Let $\varphi, \psi \in \text{Hom}_R(M, N)$. Then, define $\varphi + \psi$ as
 
 $$
 (\varphi + \psi)(m) = \varphi(m) + \psi(m)
 $$
 
-Then, $\varphi + \psi \in \Hom_R(M, N)$. Additionally, if $R$ is commutative, with $(r\varphi)(m) = r(\varphi(m))$, then $r\varphi \in \Hom_R(M,N)$
-3. If $\varphi \in \Hom_R(L, M)$ and $\psi \in \Hom_R(M, N)$, then $\psi \circ \varphi \in \Hom_R(L, N)$
-4. $\Hom_R(M, M)$ is a ring with identity. With $R$ being commutative, $\Hom_R(M, M)$ is an $R$-algebra.
+Then, $\varphi + \psi \in \text{Hom}_R(M, N)$. Additionally, if $R$ is commutative, with $(r\varphi)(m) = r(\varphi(m))$, then $r\varphi \in \text{Hom}_R(M,N)$
+3. If $\varphi \in \text{Hom}_R(L, M)$ and $\psi \in \text{Hom}_R(M, N)$, then $\psi \circ \varphi \in \text{Hom}_R(L, N)$
+4. $\text{Hom}_R(M, M)$ is a ring with identity. With $R$ being commutative, $\text{Hom}_R(M, M)$ is an $R$-algebra.
 
 **Proposition**. Let $R$ be a ring, $M$ an $R$-module, and $N \subseteq M$ an $R$-submodule. then, $M/N$ can be made into an $R$-module by defining addition. With $r \in R$ and $x + N \in M/N$,
 

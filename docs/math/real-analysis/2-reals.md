@@ -56,32 +56,32 @@
 2. $|ab| = |a||b|$
 3. $|a + b| \leq |a| + |b|$
 
-**Corollary**. Given $a, b \in \mathbb{R}$, then $\abs{\abs{a} - \abs{b}} \leq \abs{a - b}$.
+**Corollary**. Given $a, b \in \mathbb{R}$, then $||a| - |b|| \leq |a - b|$.
 
 **Remark**. Every field has at least one absolute value function.
 
 **Theorem**. In an ordered field $F$, for any $r > 0$, we know that
 
-1. $\abs{x = r}$ if and only if $x = r$ or $x = -r$
-2. $\abs{x < r}$ if and only if $-r < x < r$
-3. $\abs{x > r}$ if either $x > r$ or $x < -r$
+1. $|x = r$ if and only if $x = r$ or $x = -r$
+2. $|x < r$ if and only if $-r < x < r$
+3. $|x > r$ if either $x > r$ or $x < -r$
 
 ---
 
-**Definition**. The *standard distance function* or *metric* on the real numbers $\mathbb{R}$ given $a, b$ is $\abs{a - b}$.
+**Definition**. The *standard distance function* or *metric* on the real numbers $\mathbb{R}$ given $a, b$ is $|a - b|$.
 
 **Theorem**. For any real numbers $a, b, c$,
 
-1. $\abs{a - b} > 0$ if and only if $a \neq b$ and $\abs{a - b} = 0$ if and only if $a = b$
-2. $\abs{a - b} = \abs{b - a}$
-3. $\abs{a - c} \leq \abs{a - b} + \abs{b + c}$
+1. $|a - b| > 0$ if and only if $a \neq b$ and $|a - b| = 0$ if and only if $a = b$
+2. $|a - b| = |b - a|$
+3. $|a - c| \leq |a - b| + |b + c|$
 
 **Definition** A set together with a function satisfying these three properties is known as a *metric space*.
 
-**Definition** The $\epsilon$-neighborhood of $a \in \mathbb{R}$, denoted $V_\epsilon(a)$ is the set of all real numbers $x \in \mathbb{R}$ such that $\abs{x - a} < \epsilon$. That is,
+**Definition** The $\varepsilon$-neighborhood of $a \in \mathbb{R}$, denoted $V_\varepsilon(a)$ is the set of all real numbers $x \in \mathbb{R}$ such that $|x - a| < \varepsilon$. That is,
 
 $$
-V_\epsilon(a) = (a - \epsilon, a + \epsilon)
+V_\varepsilon(a) = (a - \varepsilon, a + \varepsilon)
 $$
 
 ---

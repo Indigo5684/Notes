@@ -53,7 +53,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 **Lemma**. 18.14: Let $D$ be a PID. Let $I_1 \subseteq I_2 \subseteq \ldots$. Then, there exists some integer $N$ such that $I_n = I_N$ for all $n > N$. That is, any chain of ideals converges.
 
-**Definition**. Any commutative ring that satisfies the above condition (the *ascending chain condition*), even if it's not a PID, is called a *Noetherien ring*.
+**Definition**. Any commutative ring that satisfies the above condition (the *ascending chain condition*), even if it's not a PID, is called a *Noetherian ring*.
 
 **Theorem**. 18.15: Every PID is a UFD. Note that the converse is not true.
 

@@ -2,13 +2,13 @@
 
 ## Section 2.1 - Air Resistance
 
-**Definition**. The *drag*, or resistive force on an object due to the atmosphere, is denoted as $\vb{f}$. Note that this is **not** the force density, but the overall force. In most cases, this force directly opposes the direction of motion. If not, the other component is known as *lift*, however this is mostly negligible.
+**Definition**. The *drag*, or resistive force on an object due to the atmosphere, is denoted as $\mathbf{f}$. Note that this is **not** the force density, but the overall force. In most cases, this force directly opposes the direction of motion. If not, the other component is known as *lift*, however this is mostly negligible.
 
-We define air resistance as $\vb{f} = -f(v) \vu{v}$. We consider two types in this text: linear, where $f(v) = f_{lin} = bv$, and quadratic, where $f(v) = f_{quad} = cv^2$. Note that often times we consider both, and state that $f(v) = f_{lin} + f_{quad} = bv + cv^2$.
+We define air resistance as $\mathbf{f} = -f(v) \hat{\mathbf{v}}$. We consider two types in this text: linear, where $f(v) = f_{lin} = bv$, and quadratic, where $f(v) = f_{quad} = cv^2$. Note that often times we consider both, and state that $f(v) = f_{lin} + f_{quad} = bv + cv^2$.
 
 The linear term comes from viscous drag and is generally proportional to the viscosity of the medium, while quadratic drag tends to arise from the particle needing to accelerate the mass of air which it is constantly colliding against.
 
-In some cases, we can calculate these coefficients. With $D$ as the diameter of a spherical object, and $\beta$ and $\gamma$ as properties of the medium, we can state that $b = \beta D$ and $c = \gamma D^2$. In air at STP, $\beta = 1.6 \times 10^{-4} \text{N} \vdot \text{s}/\text{m}^2$, and $\gamma = 0.25 \text{N} \vdot \text{s}^2/\text{m}^4$.
+In some cases, we can calculate these coefficients. With $D$ as the diameter of a spherical object, and $\beta$ and $\gamma$ as properties of the medium, we can state that $b = \beta D$ and $c = \gamma D^2$. In air at STP, $\beta = 1.6 \times 10^{-4} \text{N} \cdot \text{s}/\text{m}^2$, and $\gamma = 0.25 \text{N} \cdot \text{s}^2/\text{m}^4$.
 
 Oftentimes, one factor is far more impactful than the other, meaning that the smaller of the two may be neglected. To do so, compute the following ratio:
 
@@ -18,9 +18,9 @@ Note that the result is expected to be of the same order of magnitude as the *Re
 
 ## Section 2.2 - Linear Air Resistance
 
-First, consider the case in which the drag force is negligible. Then, we see that with $\vb{F}_g = \vb{w} = mg$ and $\vb{F}_{drag} = \vb{f} = -b\vb{v}$, then Newton's second law tells us that
+First, consider the case in which the drag force is negligible. Then, we see that with $\mathbf{F}_g = \mathbf{w} = mg$ and $\mathbf{F}_{drag} = \mathbf{f} = -b\mathbf{v}$, then Newton's second law tells us that
 
-$$\vb{F} = m \dot{\vb{v}} = m\vb{g} - b\vb{b}$$
+$$\mathbf{F} = m \dot{\mathbf{v}} = m\mathbf{g} - b\mathbf{b}$$
 
 This separates into two equations:
 
@@ -58,7 +58,7 @@ We can find the horizontal range by setting $y(R) = 0$. This results in an equat
 
 ## Section 2.4 - Quadratic Air Resistance
 
-In the case of quadratic air resistance, we see that $\vb{f} = -c v^2 \vu{v}$. Then, we can see that in the horizontal case, $m\frac{dv}{v_x^2} = -c dt$. Thus,
+In the case of quadratic air resistance, we see that $\mathbf{f} = -c v^2 \hat{\mathbf{v}}$. Then, we can see that in the horizontal case, $m\frac{dv}{v_x^2} = -c dt$. Thus,
 
 $$v_x(t) = \frac{v_{x0}}{1+cv_{x0}t/m} = \frac{v_{x0}}{1+\tau/t}$$
 

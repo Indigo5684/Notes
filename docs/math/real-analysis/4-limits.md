@@ -18,10 +18,10 @@
 
 ---
 
-**Definition**. Suppose $f: A \rightarrow \mathbb{R}$ is a function with domain $A \subseteq \mathbb{R}$, and let $c \in A$ be a cluster point of $A$. then, a real number $L$ is a *limit of $f$ at $c$* if given any $\epsilon > 0$, there exists some $\delta > 0$ such that
+**Definition**. Suppose $f: A \rightarrow \mathbb{R}$ is a function with domain $A \subseteq \mathbb{R}$, and let $c \in A$ be a cluster point of $A$. then, a real number $L$ is a *limit of $f$ at $c$* if given any $\varepsilon > 0$, there exists some $\delta > 0$ such that
 
 $$
-0 < |x-c| < \delta \Rightarrow |f(x) - L| < \epsilon
+0 < |x-c| < \delta \Rightarrow |f(x) - L| < \varepsilon
 $$
 
 **Theorem**. For a given function and cluster point, there can be at most one limit at said point.
@@ -32,12 +32,12 @@ $$
 
 **Definition**. The *extended real numbers* are $\hat{\mathbb{R}} = \mathbb{R} \cup \{ \infty, -\infty \}$ are a totally-ordered set with supremum and infimum. Note that this set is no longer a field.
 
-**Definition**. At any point $c$, the limit of $f$ at $c$ is infinite if given some $\alpha$,  there exists some $V_\delta(c)$ such that for all $x \in V_\epsilon(c)$, then $f(x) \in V_\alpha(\infty)$.
+**Definition**. At any point $c$, the limit of $f$ at $c$ is infinite if given some $\alpha$,  there exists some $V_\delta(c)$ such that for all $x \in V_\varepsilon(c)$, then $f(x) \in V_\alpha(\infty)$.
 
-**Definition**. The limit of a function at infinity is defined if for a given $\epsilon$, there exists some $\alpha$ so that there exists some $V_\delta(c)$ such that for all $x \in A$,
+**Definition**. The limit of a function at infinity is defined if for a given $\varepsilon$, there exists some $\alpha$ so that there exists some $V_\delta(c)$ such that for all $x \in A$,
 
 $$
-x > \alpha \Rightarrow |f(x) - L| < \epsilon
+x > \alpha \Rightarrow |f(x) - L| < \varepsilon
 $$
 
 ## Section 4.2 - Limit Theorems

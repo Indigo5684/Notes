@@ -155,13 +155,13 @@ $$
 \end{align}
 $$
 
-**Theorem**. Chineese Remainer Theorem. Let $n_1, \ldots, n_k \in \mathbb{N}$ be given such that $\gcd(n_i, n_j) = 1$. Then, for any integers $a_1, \ldots, a_k$, the system
+**Theorem**. Chinese Remainder Theorem. Let $n_1, \ldots, n_k \in \mathbb{N}$ be given such that $\gcd(n_i, n_j) = 1$. Then, for any integers $a_1, \ldots, a_k$, the system
 
 $$
 \begin{align}
     x &\equiv a_1 \pmod{n_1} \\
     x &\equiv a_2 \pmod{n_2} \\
-    \vdots
+    \ldots
     x &\equiv a_k \pmod{n_k}
 \end{align}
 $$

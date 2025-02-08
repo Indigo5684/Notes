@@ -44,11 +44,11 @@ $$\cos \phi = \frac{R}{\sqrt{R^2 + X_C^2}}$$
 
 ### Section 8.1.2 - Quasi-Static Error for a Parallel Plate Capacitor
 
-Consider a parallel-plate capacitor. We know that within the capacitor, the electric flux is $\vb{D}(t) = \varepsilon_0 \vb{E}(t)$. With the charge on a plate given by $Q(t)$, we can say that $\vb{D}(t) = \frac{Q(t)}{\pi R^2}$.
+Consider a parallel-plate capacitor. We know that within the capacitor, the electric flux is $\mathbf{D}(t) = \varepsilon_0 \mathbf{E}(t)$. With the charge on a plate given by $Q(t)$, we can say that $\mathbf{D}(t) = \frac{Q(t)}{\pi R^2}$.
 
-We also know by Ampere's law that $\curl \vb{H} = \frac{\partial}{\partial t} \vb{D}$. From this, given circular platFrom this, applying Stokes to Ampere's Law, we see that
+We also know by Ampere's law that $\nabla \times \mathbf{H} = \frac{\partial}{\partial t} \mathbf{D}$. From this, given circular platFrom this, applying Stokes to Ampere's Law, we see that
 
-$$\vb{H} = \frac{\partial Q}{\partial t} \frac{s}{2 \pi R^2} \vu{\varphi}$$
+$$\mathbf{H} = \frac{\partial Q}{\partial t} \frac{s}{2 \pi R^2} \hat{\mathbf{\varphi}}$$
 
 This continues on in this manner, however, I've opted to skip most of the math.
 
@@ -60,11 +60,11 @@ For an inductor, the voltage drop across an inductor is directly proportional to
 
 $$\Delta V_L = L \frac{d^2Q}{dt^2} = L\frac{dI}{dt}$$
 
-Consider a circular current loop with a voltage source in the $x-y$ plane. Then, applying Faraday's law, $\int_{circle} = (\curl \vb{E}) \cdot \vu{z} dS = -\frac{\partial}{\partial t} \int_{circle} \vb{B} \cdot \vu{z} dS$.
+Consider a circular current loop with a voltage source in the $x-y$ plane. Then, applying Faraday's law, $\int_{circle} = (\nabla \times \mathbf{E}) \cdot \hat{\mathbf{z}} dS = -\frac{\partial}{\partial t} \int_{circle} \mathbf{B} \cdot \hat{\mathbf{z}} dS$.
 
-Apply Stokes' law to the left hand side to see that $\int_{circumference} \vb{E} \cdot d\vb{l} = -\frac{\partial \Phi_B}{\partial t}$.
+Apply Stokes' law to the left hand side to see that $\int_{circumference} \mathbf{E} \cdot d\mathbf{l} = -\frac{\partial \Phi_B}{\partial t}$.
 
-With $\Phi_B = LI$, we see the "back EMF" opposing the increasing current will be $\vb{\mathcal{E}} = -L \frac{\partial I}{\partial t}$.
+With $\Phi_B = LI$, we see the "back EMF" opposing the increasing current will be $\mathbf{\mathcal{E}} = -L \frac{\partial I}{\partial t}$.
 
 Consider a circuit with a voltage source, a switch, an inductor, and a resistor in series. Then, by KVL, $V_{cell} = L \frac{dI}{dt} + IR$.
 
@@ -84,9 +84,9 @@ $$\sin \phi = -\frac{X_L}{Z}; \cos \phi = \frac{R}{Z}; I_0 = \frac{V_0}{Z}$$
 
 ### Section 8.1.4 - Calculation of Inductance
 
-Recall that the back EMF $\vb{\mathcal{E}} = -L \frac{\partial I}{\partial T}$. We can calculate the work done by this force as follows.
+Recall that the back EMF $\mathbf{\mathcal{E}} = -L \frac{\partial I}{\partial T}$. We can calculate the work done by this force as follows.
 
-$$\frac{dW}{dt} = I(\vb{\mathcal{E}}) = IL \frac{dI}{dt} = \frac{1}{2} L \frac{d}{dt}(I^2)$$
+$$\frac{dW}{dt} = I(\mathbf{\mathcal{E}}) = IL \frac{dI}{dt} = \frac{1}{2} L \frac{d}{dt}(I^2)$$
 
 Then, integrating both sides, we see that
 
@@ -96,9 +96,9 @@ We also know from Section 3.2 that the work needed to create a magnetic field is
 
 $$W = \frac{1}{2} \mu_0 \int_V H^2 dV$$
 
-Now, consider a long air-filled solenoid with $n$ turns per unit length and cross-sectional area $A$. Then, we know the flux through a cross-section of the solenoid will be $\Phi = BA = \mu_0 n I A$. Then, the back-EMF for one loop of the solenoid can be given by $\vb{\mathcal{E}}_{1 loop} = - \frac{d\Phi}{dt} = -\mu_0 n A \frac{dI}{dt}$. Then, the total induced EMF will be $\vb{\mathcal{E}} = nl\vb{\mathcal{E}}_{1 loop}$, where $l$ is the length of the solenoid. Thus, by the definition of back-EMF,
+Now, consider a long air-filled solenoid with $n$ turns per unit length and cross-sectional area $A$. Then, we know the flux through a cross-section of the solenoid will be $\Phi = BA = \mu_0 n I A$. Then, the back-EMF for one loop of the solenoid can be given by $\mathbf{\mathcal{E}}_{1 loop} = - \frac{d\Phi}{dt} = -\mu_0 n A \frac{dI}{dt}$. Then, the total induced EMF will be $\mathbf{\mathcal{E}} = nl\mathbf{\mathcal{E}}_{1 loop}$, where $l$ is the length of the solenoid. Thus, by the definition of back-EMF,
 
-$$\vb{\mathcal{E}} = -nl \mu_0 nA \frac{dI}{dt} = -L\frac{dI}{dt}$$
+$$\mathbf{\mathcal{E}} = -nl \mu_0 nA \frac{dI}{dt} = -L\frac{dI}{dt}$$
 
 So, $L = \mu_0 n^2 Al$
 
@@ -106,15 +106,15 @@ We can also compute thsi by energy. We know that $W = \frac{1}{2} \mu_0 \int_V H
 
 Now, consider a coaxial cable. That is, consider a solid cylinder of radius $a$ that conducts current in the $+z$ direction. The circuit is completed by a thin cylindical shell outside of the conductor yet still with radius $a$. We also assume that current density is uniform within the cylindrical conductor.
 
-Recall that from Ampere's Law, for $s \in (0, a)$, we have $\vb{H}(s) = \frac{I_enc}{2\pi s}\vu{\varphi}$, with $I_enc = \frac{I\pi s^2}{\pi a^2}$. Thus, $\vb{H} = \frac{Is}{2\pi a^2}\vu{\varphi}$. Then,
+Recall that from Ampere's Law, for $s \in (0, a)$, we have $\mathbf{H}(s) = \frac{I_enc}{2\pi s}\hat{\mathbf{\varphi}}$, with $I_enc = \frac{I\pi s^2}{\pi a^2}$. Thus, $\mathbf{H} = \frac{Is}{2\pi a^2}\hat{\mathbf{\varphi}}$. Then,
 
 $$W = \frac{1}{2} \mu_0 \int_V H^2 dV = \frac{1}{2} \mu_0 l \int_0^a 2\pi s ds (\frac{Is}{2\pi a^2})^2 = \frac{I^2}{2} \frac{\mu_0 l}{2\pi} \frac{1}{4}$$
 
 This implies that $L = \frac{\mu_0 l}{8\pi}$.
 
-We can also solve this via flux. We know that $\vb{B}(s) = \frac{u_0 Is}{2\pi a^2}\vu{\varphi}$. Then,
+We can also solve this via flux. We know that $\mathbf{B}(s) = \frac{u_0 Is}{2\pi a^2}\hat{\mathbf{\varphi}}$. Then,
 
-$$\Phi = \int_0^a \vb{B} \vdot \vu{n} dS = \int_0^a \frac{\mu_0 Is}{2\pi a^2} l ds = \frac{\mu_0 I l}{2\pi} \frac{1}{2}$$
+$$\Phi = \int_0^a \mathbf{B} \cdot \hat{\mathbf{n}} dS = \int_0^a \frac{\mu_0 Is}{2\pi a^2} l ds = \frac{\mu_0 I l}{2\pi} \frac{1}{2}$$
 
 This is off by a factor of $2$. Instead, multiply by a fator of $f(s) = \frac{s^2}{a^2}$ to see
 
@@ -126,9 +126,9 @@ This becomes complicated, and is thus omitted.
 
 ### Section 8.1.5 - Quasi-static Error for a Solenoidal Inductor
 
-In section 5.2, we learned that in a long solenoid, $\vb{H} = nI \vb{z}$, where $I$ is the current and $n$ the number of turns per uniut length. This, however, was dependent of the current being constant. Now, let current be represented as $I(t) = I_0 \cos (\omega t + \phi)$. Now, $\vb{H}(t) = nI(t) \vu{z}$.
+In section 5.2, we learned that in a long solenoid, $\mathbf{H} = nI \mathbf{z}$, where $I$ is the current and $n$ the number of turns per uniut length. This, however, was dependent of the current being constant. Now, let current be represented as $I(t) = I_0 \cos (\omega t + \phi)$. Now, $\mathbf{H}(t) = nI(t) \hat{\mathbf{z}}$.
 
-This implies magnetic flux with a density of $\vb{B} = \mu_0 n I(t) \vu{z}$. Given the inductor with radius $s$, this will cause changing flux $\Phi_B(t) = \vb{B} * A = \mu_0 n I(t) \pi s^2$.
+This implies magnetic flux with a density of $\mathbf{B} = \mu_0 n I(t) \hat{\mathbf{z}}$. Given the inductor with radius $s$, this will cause changing flux $\Phi_B(t) = \mathbf{B} * A = \mu_0 n I(t) \pi s^2$.
 
 By Faraday's Law,
 
@@ -136,13 +136,13 @@ $$E_{induced} = -N \frac{\partial \Phi_B}{\partial{t}}$$
 
 This can be rearranged to see
 
-$$2\pi s \vb{E}_{induced}(t) = -\frac{\partial \Phi_b(t)}{\partial t} = -\mu_0 n \pi s^2 \frac{\partial}{\partial t} I(t)$$
+$$2\pi s \mathbf{E}_{induced}(t) = -\frac{\partial \Phi_b(t)}{\partial t} = -\mu_0 n \pi s^2 \frac{\partial}{\partial t} I(t)$$
 
-This can be used to find $\vb{E} = -\mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \vu{\varphi}$, equivalent to a flux density $\vb{D}(t) = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \vu{\varphi}$. We can then apply Ampere's law to see that
+This can be used to find $\mathbf{E} = -\mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \hat{\mathbf{\varphi}}$, equivalent to a flux density $\mathbf{D}(t) = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \hat{\mathbf{\varphi}}$. We can then apply Ampere's law to see that
 
-$$\curl \vb{H} = \frac{\partial \vb{D}(t)}{\partial t} = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial^2}{\partial t^2}I(t) \vu{\varphi}$$
+$$\nabla \times \mathbf{H} = \frac{\partial \mathbf{D}(t)}{\partial t} = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial^2}{\partial t^2}I(t) \hat{\mathbf{\varphi}}$$
 
-We can work backwards to find that $\vb{H}(s, t) = (1 - \frac{\mu_0 \varepsilon_0 s^2 \omega^2}{4}) H_{z0}(t)\vu{z}$. Then, the same conditions should apply as in 8.1.2. That is, $\omega$ should be low enough or the d evice small enough that light can easily propagate across the device during one period of oscillation.
+We can work backwards to find that $\mathbf{H}(s, t) = (1 - \frac{\mu_0 \varepsilon_0 s^2 \omega^2}{4}) H_{z0}(t)\hat{\mathbf{z}}$. Then, the same conditions should apply as in 8.1.2. That is, $\omega$ should be low enough or the d evice small enough that light can easily propagate across the device during one period of oscillation.
 
 ## Section 8.2 - Circuits with Resistance, Capacitance and Inductance and a Sinusoidal EMF
 
@@ -213,24 +213,24 @@ $$u = \frac{1}{2}(\varepsilon_0 e^2 + \mu_u H^2)$$
 
 In a capacitor, we cannot directly state the energy. However, we can state its rate of change:
 
-$$\frac{du_E}{dt} = \vb{E} \vdot \frac{d\vb{D}}{dt}$$
+$$\frac{du_E}{dt} = \mathbf{E} \cdot \frac{d\mathbf{D}}{dt}$$
 
-In the case where $\vb{D} = \varepsilon \vb{E}$, that is, in the presence of a simple dielectric,
+In the case where $\mathbf{D} = \varepsilon \mathbf{E}$, that is, in the presence of a simple dielectric,
 
-$$u_E = \frac{1}{2} \varepsilon E^2 = \frac{1}{2}\vb{E} \vdot \vb{D}$$
+$$u_E = \frac{1}{2} \varepsilon E^2 = \frac{1}{2}\mathbf{E} \cdot \mathbf{D}$$
 
 This is mirrored in solenoids / inductors, where
 
-$$\frac{du_M}{dt} = \vb{H} \vdot \frac{d\vb{B}}{dt}$$
+$$\frac{du_M}{dt} = \mathbf{H} \cdot \frac{d\mathbf{B}}{dt}$$
 
-In the case where $\vb{B} = \mu \vb{H}$, that is, in the presence of a simple magnetic material,
+In the case where $\mathbf{B} = \mu \mathbf{H}$, that is, in the presence of a simple magnetic material,
 
-$$u_M = \frac{1}{2}\vb{H} \vdot \vb{B}$$
+$$u_M = \frac{1}{2}\mathbf{H} \cdot \mathbf{B}$$
 
 Lastly, this continues for electromagnetic fields.
 
-$$\frac{du_{EM}}{dt} = \vb{E} \vdot \frac{d\vb{D}}{dt} + \vb{H} \vdot \frac{d\vb{B}}{dt}$$
+$$\frac{du_{EM}}{dt} = \mathbf{E} \cdot \frac{d\mathbf{D}}{dt} + \mathbf{H} \cdot \frac{d\mathbf{B}}{dt}$$
 
 In simple electromagnetic materials, we see that
 
-$$u_{EM} = \frac{1}{2}(\vb{E} \vdot \vb{D} + \vb{H} \vdot{B}) = \frac{1}{2}(\varepsilon E^2 + \mu H^2)$$
+$$u_{EM} = \frac{1}{2}(\mathbf{E} \cdot \mathbf{D} + \mathbf{H} \cdot \mathbf{B}) = \frac{1}{2}(\varepsilon E^2 + \mu H^2)$$

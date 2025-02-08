@@ -1,8 +1,8 @@
-# Dummit & Foote Chapter 12 - Field Theory
+# Dummit & Foote Chapter 13 - Field Theory
 
 ## Section 13.1 Basic Theory of Field Extensions
 
-**Definition**. The *charactaristic* of a field $F$ is the smallest positive integer $p$ such that $1_F * p = 0$. It follows that $p$ is $0$ or prime, and $p \alpha = 0$ for any $\alpha \in F$.
+**Definition**. The *characteristic* of a field $F$ is the smallest positive integer $p$ such that $1_F * p = 0$. It follows that $p$ is $0$ or prime, and $p \alpha = 0$ for any $\alpha \in F$.
 
 **Definition**. If $K, F$ are fields such that $F \subseteq K$, then $K$ is an *extension field* or *extension* of $F$, denoted $K / F$.
 
