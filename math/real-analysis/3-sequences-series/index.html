@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -436,7 +438,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1656,9 +1658,9 @@
 \]</div>
 <p><strong>Example</strong>. Decimal expansions are bounded sequences.</p>
 <hr />
-<p><strong>Definition</strong>. A sequence <span class="arithmatex">\(X = (x_n)\)</span> is said to <em>converge</em> to a number <span class="arithmatex">\(x \in \mathbb{R}\)</span> if when given any <span class="arithmatex">\(\epsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(K \in \mathbb{N}\)</span> such that for every <span class="arithmatex">\(n \in \mathbb{N}\)</span> with <span class="arithmatex">\(n \geq K\)</span>,</p>
+<p><strong>Definition</strong>. A sequence <span class="arithmatex">\(X = (x_n)\)</span> is said to <em>converge</em> to a number <span class="arithmatex">\(x \in \mathbb{R}\)</span> if when given any <span class="arithmatex">\(\varepsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(K \in \mathbb{N}\)</span> such that for every <span class="arithmatex">\(n \in \mathbb{N}\)</span> with <span class="arithmatex">\(n \geq K\)</span>,</p>
 <div class="arithmatex">\[
-\abs{x_n - x} &lt; \epsilon
+|x_n - x| &lt; \varepsilon
 \]</div>
 <p>If this is the case, we say that <span class="arithmatex">\(X\)</span> converges to  <span class="arithmatex">\(x\)</span>, and <span class="arithmatex">\(x\)</span> is a <em>limit</em> of X. This can be written as</p>
 <div class="arithmatex">\[
@@ -1686,9 +1688,9 @@
 \]</div>
 <p><strong>Theorem</strong>. Suppose <span class="arithmatex">\((x_n)\)</span> is a sequence if real numbers. Then,</p>
 <ol>
-<li>If <span class="arithmatex">\(x_n \rightarrow x\)</span>, then <span class="arithmatex">\(\abs{x_n} \rightarrow \abs{x}\)</span></li>
-<li>If <span class="arithmatex">\(\abs{x_n} \rightarrow 0\)</span>, then <span class="arithmatex">\(x_n \rightarrow 0\)</span></li>
-<li><span class="arithmatex">\(x_n \rightarrow x\)</span> if and only if <span class="arithmatex">\(\abs{x_n - n} \rightarrow 0\)</span></li>
+<li>If <span class="arithmatex">\(x_n \rightarrow x\)</span>, then <span class="arithmatex">\(|x_n| \rightarrow |x|\)</span></li>
+<li>If <span class="arithmatex">\(|x_n| \rightarrow 0\)</span>, then <span class="arithmatex">\(x_n \rightarrow 0\)</span></li>
+<li><span class="arithmatex">\(x_n \rightarrow x\)</span> if and only if <span class="arithmatex">\(|x_n - n| \rightarrow 0\)</span></li>
 </ol>
 <p><strong>Theorem</strong>. Suppose <span class="arithmatex">\((x_n)\)</span> is a sequence if real numbers, with each <span class="arithmatex">\(x_n \geq 0\)</span>. Then, given some <span class="arithmatex">\(k \in \mathbb{N}\)</span>, if <span class="arithmatex">\(x_n \rightarrow x\)</span>, then <span class="arithmatex">\(\sqrt[k]{x_n} \rightarrow \sqrt[k]{x}\)</span>.</p>
 <h2 id="section-33-monotonic-sequences">Section 3.3 - Monotonic Sequences</h2>
@@ -1706,10 +1708,8 @@ X_{n_k} = (x_{n_1}, x_{n_2}, \ldots)
 <p><strong>Theorem</strong>. Every sequence of real numbers <span class="arithmatex">\((x_n)\)</span> contains a monotonic subsequence <span class="arithmatex">\((x_{n_k})\)</span>.</p>
 <p><strong>Corollary</strong>. Bolzano-Weierstrass Theorem. Every bounded sequence of real numbers has a convergent subsequence.</p>
 <h2 id="section-35-the-cauchy-criterion">Section 3.5 - The Cauchy Criterion</h2>
-<p><strong>Definition</strong>. A sequence <span class="arithmatex">\((x_n)\)</span> is said to be a <em>Cauchy sequence</em> such that for any given <span class="arithmatex">\(\epsilon\)</span>, there exists a natural number <span class="arithmatex">\(H\)</span> such that all natural numbers <span class="arithmatex">\(m, n \geq H\)</span>, then</p>
-<div class="arithmatex">\[
-\abs{x_m - x_n} \leq \epsilon
-\]</div>
+<p><strong>Definition</strong>. A sequence <span class="arithmatex">\((x_n)\)</span> is said to be a <em>Cauchy sequence</em> such that for any given <span class="arithmatex">\(\varepsilon\)</span>, there exists a natural number <span class="arithmatex">\(H\)</span> such that all natural numbers <span class="arithmatex">\(m, n \geq H\)</span>, then</p>
+<div class="arithmatex">\[|x_m - x_n \leq \varepsilon\]</div>
 <p><strong>Theorem</strong>. If <span class="arithmatex">\((x_n)\)</span> is a Cauchy sequence, then <span class="arithmatex">\((x_n)\)</span> is convergent.</p>
 <h2 id="section-37-series">Section 3.7 - Series</h2>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\((x_n)\)</span> be a sequence in <span class="arithmatex">\(\mathbb{R}\)</span>. Then, the <em>infinite series generated by <span class="arithmatex">\(X\)</span></em> is the sequence <span class="arithmatex">\(S = (s_n)\)</span> with terms</p>
@@ -1724,12 +1724,12 @@ s_1 = x_1; \; s_{n+1} = s_n + x_{n+1}
 s_n - s_m = \sum_{i=m + 1}^n x_i
 \]</div>
 <p>In particular, <span class="arithmatex">\(s_n - s_{n - 1} = x^n\)</span>. Thus, the Cauchy criteria takes the form</p>
-<p><strong>Theorem</strong>. Cauchy Criteria for Series. The series <span class="arithmatex">\(\sum x_n\)</span> converges if and only if, for a given <span class="arithmatex">\(\epsilon\)</span>, there exists some natural number <span class="arithmatex">\(H\)</span> such that when <span class="arithmatex">\(m &gt; n &gt; H\)</span>,</p>
+<p><strong>Theorem</strong>. Cauchy Criteria for Series. The series <span class="arithmatex">\(\sum x_n\)</span> converges if and only if, for a given <span class="arithmatex">\(\varepsilon\)</span>, there exists some natural number <span class="arithmatex">\(H\)</span> such that when <span class="arithmatex">\(m &gt; n &gt; H\)</span>,</p>
 <div class="arithmatex">\[
-\abs{s_m - s_n} = \abs{\sum_{i = m + 1}^n x_i} &lt; \epsilon
+|s_m - s_n| = |\sum_{i = m + 1}^n x_i| &lt; \varepsilon
 \]</div>
 <p><strong>Corollary</strong>. <span class="arithmatex">\(n\)</span>-th Term Test. If <span class="arithmatex">\(\sum x_n\)</span> converges, then <span class="arithmatex">\(x_n \rightarrow 0\)</span>.</p>
-<p><strong>Corollary</strong>. Absolute Convergence Test. If <span class="arithmatex">\(\sum \abs{x_n}\)</span> converges, then <span class="arithmatex">\(\sum x_n\)</span> converges.</p>
+<p><strong>Corollary</strong>. Absolute Convergence Test. If <span class="arithmatex">\(\sum |x_n|\)</span> converges, then <span class="arithmatex">\(\sum x_n\)</span> converges.</p>
 <hr />
 <p><strong>Theorem</strong>. A series with non-negative terms converges if and only if its sequence of partial sums is bounded.</p>
 <hr />
@@ -1756,7 +1756,7 @@ s_n - s_m = \sum_{i=m + 1}^n x_i
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1874,9 +1874,11 @@ s_n - s_m = \sum_{i=m + 1}^n x_i
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

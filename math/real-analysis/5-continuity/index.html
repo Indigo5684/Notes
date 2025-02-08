@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -436,7 +438,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1588,9 +1590,9 @@
 
 <h1 id="chapter-5-continuity">Chapter 5 - Continuity</h1>
 <h2 id="section-51-continuous-functions">Section 5.1 - Continuous Functions</h2>
-<p><strong>Definition</strong>. Let <span class="arithmatex">\(A \subseteq \mathbb{R}\)</span>, and <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span>. Then, if <span class="arithmatex">\(a \in A\)</span>, <span class="arithmatex">\(f\)</span> is <em>continuous at <span class="arithmatex">\(a\)</span></em> if, given any <span class="arithmatex">\(\epsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> such that for all <span class="arithmatex">\(x \in A\)</span>,</p>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(A \subseteq \mathbb{R}\)</span>, and <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span>. Then, if <span class="arithmatex">\(a \in A\)</span>, <span class="arithmatex">\(f\)</span> is <em>continuous at <span class="arithmatex">\(a\)</span></em> if, given any <span class="arithmatex">\(\varepsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> such that for all <span class="arithmatex">\(x \in A\)</span>,</p>
 <div class="arithmatex">\[
-|x - a| &lt; \delta \Rightarrow |f(x) - f(a)| &lt; \epsilon
+|x - a| &lt; \delta \Rightarrow |f(x) - f(a)| &lt; \varepsilon
 \]</div>
 <p>Note that if <span class="arithmatex">\(a\)</span> is an <em>isolated point</em> of <span class="arithmatex">\(A\)</span>, that is, not a cluster point, then <span class="arithmatex">\(a\)</span> is automatically continuous.</p>
 <p>If <span class="arithmatex">\(a\)</span> is a cluster point of <span class="arithmatex">\(A\)</span>, then this definition collapses to the definition of <span class="arithmatex">\(\lim_{x \rightarrow a} f(x) = f(a)\)</span>.</p>
@@ -1598,9 +1600,9 @@
 <p><strong>Definition</strong>. <span class="arithmatex">\(f\)</span> is continuous on <span class="arithmatex">\(A\)</span> if it is continuous at every point <span class="arithmatex">\(a \in A\)</span>.</p>
 <p><strong>Theorem</strong>. <span class="arithmatex">\(f\)</span> is continuous if and only if for every sequence <span class="arithmatex">\((x_n)\)</span> in <span class="arithmatex">\(A\)</span> that converges to <span class="arithmatex">\(a\)</span>, the sequence <span class="arithmatex">\((f(x_n))\)</span> converges to <span class="arithmatex">\(f(a)\)</span>.</p>
 <hr />
-<p><strong>Definition</strong>. Let <span class="arithmatex">\((S, d_S)\)</span> and <span class="arithmatex">\((T, d_T)\)</span> be metric spaces. A function <span class="arithmatex">\(f: S \rightarrow T\)</span> is continuous at a point <span class="arithmatex">\(a \in S\)</span> if given any <span class="arithmatex">\(\epsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> such that for all <span class="arithmatex">\(x \in S\)</span>,</p>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\((S, d_S)\)</span> and <span class="arithmatex">\((T, d_T)\)</span> be metric spaces. A function <span class="arithmatex">\(f: S \rightarrow T\)</span> is continuous at a point <span class="arithmatex">\(a \in S\)</span> if given any <span class="arithmatex">\(\varepsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> such that for all <span class="arithmatex">\(x \in S\)</span>,</p>
 <div class="arithmatex">\[
-d_S(x, a) &lt; \delta \Rightarrow d_T(f(x),  f(a)) &lt; \epsilon
+d_S(x, a) &lt; \delta \Rightarrow d_T(f(x),  f(a)) &lt; \varepsilon
 \]</div>
 <p><strong>Theorem</strong>. A function <span class="arithmatex">\(f: S \rightarrow T\)</span> is continuous at a point <span class="arithmatex">\(a \in A\)</span> if and only if given some neighborhood <span class="arithmatex">\(V(f(a)) \in B\)</span>, there exists some <span class="arithmatex">\(U(a) \in A\)</span> such that <span class="arithmatex">\(f(U) \subseteq V\)</span>.</p>
 <h2 id="section-52-combinations-of-continuous-functions">Section 5.2 - Combinations of continuous Functions</h2>
@@ -1624,9 +1626,9 @@ d_S(x, a) &lt; \delta \Rightarrow d_T(f(x),  f(a)) &lt; \epsilon
 <p><strong>Corollary</strong>. Suppose that <span class="arithmatex">\(I\)</span> is an interval. Let <span class="arithmatex">\(f: I \rightarrow \mathbb{R}\)</span> be continuous on <span class="arithmatex">\(I\)</span>. Then, <span class="arithmatex">\(f(I)\)</span> is an interval.</p>
 <p><strong>Theorem</strong>. (Bolzano's) Intermediate Value Theorem. Suppose <span class="arithmatex">\(f: [a, b] \rightarrow \mathbb{R}\)</span> is continuous on <span class="arithmatex">\([a, b]\)</span> with <span class="arithmatex">\(a \neq b\)</span>. Then, given some <span class="arithmatex">\(k\)</span> such that <span class="arithmatex">\(f(a) &lt; k &lt; f(b)\)</span>, there exists some <span class="arithmatex">\(c \in (a, b)\)</span> such that <span class="arithmatex">\(k = f(c)\)</span>.</p>
 <hr />
-<p><strong>Definition</strong>. Let <span class="arithmatex">\(A \subseteq R\)</span>. Then, a function <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span> is <em>uniformly continuous</em> if given any <span class="arithmatex">\(\epsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> depending only on <span class="arithmatex">\(\epsilon\)</span> such that for any <span class="arithmatex">\(x, y \in A\)</span>,</p>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(A \subseteq R\)</span>. Then, a function <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span> is <em>uniformly continuous</em> if given any <span class="arithmatex">\(\varepsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> depending only on <span class="arithmatex">\(\varepsilon\)</span> such that for any <span class="arithmatex">\(x, y \in A\)</span>,</p>
 <div class="arithmatex">\[
-|x - y| &lt; \delta \Rightarrow |f(x) - f(y)| &lt; \epsilon
+|x - y| &lt; \delta \Rightarrow |f(x) - f(y)| &lt; \varepsilon
 \]</div>
 <p>Note that if <span class="arithmatex">\(f\)</span> is uniformly continuous, it must be continuous on <span class="arithmatex">\(A\)</span>.</p>
 <p><strong>Theorem</strong>. Let <span class="arithmatex">\(I = [a, b]\)</span> be a closed and bounded interval. If <span class="arithmatex">\(f: I \rightarrow \mathbb{R}\)</span> is continuous on <span class="arithmatex">\(I\)</span>, then <span class="arithmatex">\(f\)</span> is uniformly continuous.</p>
@@ -1655,7 +1657,7 @@ d_S(x, a) &lt; \delta \Rightarrow d_T(f(x),  f(a)) &lt; \epsilon
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1773,9 +1775,11 @@ d_S(x, a) &lt; \delta \Rightarrow d_T(f(x),  f(a)) &lt; \epsilon
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

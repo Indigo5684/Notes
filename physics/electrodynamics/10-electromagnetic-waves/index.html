@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -434,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -929,6 +931,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-102-reflection-and-refraction-of-plane-electromagnetic-waves-at-a-a-planar-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 10.2 - Reflection and Refraction of Plane Electromagnetic Waves at a a Planar Interface
+    </span>
+  </a>
   
 </li>
       
@@ -1603,6 +1614,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-102-reflection-and-refraction-of-plane-electromagnetic-waves-at-a-a-planar-interface" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 10.2 - Reflection and Refraction of Plane Electromagnetic Waves at a a Planar Interface
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1638,57 +1658,63 @@
 <h2 id="section-101-time-dependent-electromagnetic-fields-in-a-vacuum-satisfy-the-wave-equation">Section 10.1 - Time-Dependent Electromagnetic Fields in a Vacuum Satisfy the Wave Equation</h2>
 <p>Consider an empty space. Then, it is evident that</p>
 <div class="arithmatex">\[\begin{align}
-\div \vb{E} &amp;= 0 \\
-\div \vb{H} &amp;= 0
+    \nabla \cdot \mathbf{E} &amp;= 0 \\
+    \nabla \cdot \mathbf{H} &amp;= 0
 \end{align}\]</div>
 <div class="arithmatex">\[\begin{align}
-\curl \vb{E} + \frac{\partial \vb{B}}{\partial t} &amp;= 0 \\
-\curl \vb{H} - \frac{\partial \vb{D}}{\partial t} &amp;= 0
+\nabla \times \mathbf{E} + \frac{\partial \mathbf{B}}{\partial t} &amp;= 0 \\
+\nabla \times \mathbf{H} - \frac{\partial \mathbf{D}}{\partial t} &amp;= 0
 \end{align}\]</div>
-<p>As <span class="arithmatex">\(\vb{B} = \mu_0 \vb{H}\)</span> and <span class="arithmatex">\(\vb{D} = \varepsilon_0 \vb{E}\)</span> in a vacuum, the third and fourth equations can be rewritten as</p>
+<p>As <span class="arithmatex">\(\mathbf{B} = \mu_0 \mathbf{H}\)</span> and <span class="arithmatex">\(\mathbf{D} = \varepsilon_0 \mathbf{E}\)</span> in a vacuum, the third and fourth equations can be rewritten as</p>
 <div class="arithmatex">\[\begin{align}
-\curl \vb{E} + \mu_0 \frac{\partial \vb{H}}{\partial t} &amp;= 0 \\
-\curl \vb{H} - \varepsilon_0 \frac{\partial \vb{E}}{\partial t} &amp;= 0
+\nabla \times \mathbf{E} + \mu_0 \frac{\partial \mathbf{H}}{\partial t} &amp;= 0 \\
+\nabla \times \mathbf{H} - \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t} &amp;= 0
 \end{align}\]</div>
 <p>We can take the curl of both equations and then substitute to see that</p>
 <div class="arithmatex">\[\begin{align}
-\curl \curl \vb{E} + \mu_0 \varepsilon_0 \frac{\partial^2 \vb{E}}{\partial t^2} &amp;= 0 \\
-\curl \curl \vb{H} + \mu_0 \varepsilon_0 \frac{\partial^2 \vb{H}}{\partial t^2} &amp;= 0
+\nabla \times \nabla \times \mathbf{E} + \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2} &amp;= 0 \\
+\nabla \times \nabla \times \mathbf{H} + \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{H}}{\partial t^2} &amp;= 0
 \end{align}\]</div>
 <p>We can apply a vector identity to see</p>
 <div class="arithmatex">\[\begin{align}
--\nabla^2 \vb{E} + \mu_0 \epsilon_0 \frac{\partial^2 \vb{E}}{\partial t^2} &amp;= 0 \\
--\nabla^2 \vb{H} + \mu_0 \epsilon_0 \frac{\partial^2 \vb{H}}{\partial t^2} &amp;= 0
+-\nabla^2 \mathbf{E} + \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{E}}{\partial t^2} &amp;= 0 \\
+-\nabla^2 \mathbf{H} + \mu_0 \varepsilon_0 \frac{\partial^2 \mathbf{H}}{\partial t^2} &amp;= 0
 \end{align}\]</div>
 <h3 id="section-1011-the-wave-equation-and-plane-waves">Section 10.1.1 - The Wave Equation and Plane Waves</h3>
-<p><strong>Definition</strong>. The equation <span class="arithmatex">\([\frac{\partial^2}{\partial x^2} - \frac{1}{v^2} \frac{\partial^2}{\partial t^2}] f(x, t) = 0\)</span> is well-known to mathematicians (see <a href="/todo.md">Differential Equations</a>), and is known as the <strong>wave equation</strong>. In physics, the speed of the wave is <span class="arithmatex">\(v = c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}\)</span>.</p>
+<p><strong>Definition</strong>. The equation <span class="arithmatex">\([\frac{\partial^2}{\partial x^2} - \frac{1}{v^2} \frac{\partial^2}{\partial t^2}] f(x, t) = 0\)</span> is well-known to mathematicians (see <a href="../../../todo/">Differential Equations</a>), and is known as the <strong>wave equation</strong>. In physics, the speed of the wave is <span class="arithmatex">\(v = c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}\)</span>.</p>
 <p>Consider some function <span class="arithmatex">\(f(s)\)</span>. If <span class="arithmatex">\(s = x - vt\)</span> or <span class="arithmatex">\(x + vt\)</span>, it is trivial to see that <span class="arithmatex">\(f(x)\)</span> satisfies the wave equation.</p>
 <p><strong>Definition</strong>. A <em>plane wave</em> is a solution to the Laplacian form of the last two Maxwell equations for empty space that also satisfy the one-dimensional wave equation. However, these solutions may not be valid electromagnetic waves as they are not guaranteed to satisfy the first two Maxwell equations.</p>
-<p>Notably, the functions for <span class="arithmatex">\(\vb{E} = \vb{E}_0 f(s)\)</span> and <span class="arithmatex">\(\vb{H} = \vb{H}_0 g(s)\)</span> do not have to be equal. However, <span class="arithmatex">\(v = c\)</span>.</p>
-<p><strong>Definition</strong>. A <em>plane electromagnetic wave</em> is a plane wave which satisfies the first two Maxwell equations. The divergence equations restrict <span class="arithmatex">\(\vb{E}_0\)</span> and <span class="arithmatex">\(\vb{H}_0\)</span> to be in the plane normal to the direction of motion. That is, electomagnetic plane waves are transverse, not longitudinal.</p>
+<p>Notably, the functions for <span class="arithmatex">\(\mathbf{E} = \mathbf{E}_0 f(s)\)</span> and <span class="arithmatex">\(\mathbf{H} = \mathbf{H}_0 g(s)\)</span> do not have to be equal. However, <span class="arithmatex">\(v = c\)</span>.</p>
+<p><strong>Definition</strong>. A <em>plane electromagnetic wave</em> is a plane wave which satisfies the first two Maxwell equations. The divergence equations restrict <span class="arithmatex">\(\mathbf{E}_0\)</span> and <span class="arithmatex">\(\mathbf{H}_0\)</span> to be in the plane normal to the direction of motion. That is, electomagnetic plane waves are transverse, not longitudinal.</p>
 <p>Additionally, the curl equations force <span class="arithmatex">\(f(s) = g(s)\)</span>, such that <span class="arithmatex">\(H_0 = E_0 \sqrt{\frac{\varepsilon_0}{\mu_0}}\)</span>.</p>
 <p><strong>Definition</strong>. The quantity <span class="arithmatex">\(Y_0 = \sqrt{\frac{\varepsilon_0}{\mu_0}}\)</span> is the <em>vacuum admittance</em> and its inverse, <span class="arithmatex">\(Z_0 = \sqrt{\frac{\mu_0}{\varepsilon_0}}\)</span> is the <em>vacuum impedance</em>.</p>
-<p>If we assume the direction of propagation can be written as <span class="arithmatex">\(\vu{k}\)</span>, we can write <span class="arithmatex">\(f(s) = f(\vu{k} \vdot \vb{r} - vt)\)</span>, such that <span class="arithmatex">\(\vb{E}(\vb{r}, t) = \vb{E}_0 f(\vu{k}\vdot\vb{r} - vt)\)</span>, where <span class="arithmatex">\(\vu{k}\vdot\vb{E}_0 = 0\)</span>.</p>
-<p>From this, we can see that <span class="arithmatex">\(\vb{H}(\vb{r}, t) = \sqrt{\frac{\epsilon_0}{\mu_0}} \vu{k} \times \vb{E}_0 f(\vu{k} \vdot \vb{r} - vt)\)</span>. Similarly, <span class="arithmatex">\(\vu{k} \vdot \vb{H} = 0\)</span>.</p>
-<p>Additionally, we can compute <span class="arithmatex">\(\vb{S} = \vb{E} \times \vb{H} = c \epsilon_0 E_0^2 f^2(\vu{k} \vdot \vb{r} - vt) \vu{k}\)</span>. We can also see that <span class="arithmatex">\(\epsilon_0 E^2 = \mu_0 H^2\)</span> at any given time.</p>
+<p>If we assume the direction of propagation can be written as <span class="arithmatex">\(\hat{\mathbf{k}}\)</span>, we can write <span class="arithmatex">\(f(s) = f(\hat{\mathbf{k}} \cdot \mathbf{r} - vt)\)</span>, such that <span class="arithmatex">\(\mathbf{E}(\mathbf{r}, t) = \mathbf{E}_0 f(\hat{\mathbf{k}}\cdot\mathbf{r} - vt)\)</span>, where <span class="arithmatex">\(\hat{\mathbf{k}}\cdot\mathbf{E}_0 = 0\)</span>.</p>
+<p>From this, we can see that <span class="arithmatex">\(\mathbf{H}(\mathbf{r}, t) = \sqrt{\frac{\varepsilon_0}{\mu_0}} \hat{\mathbf{k}} \times \mathbf{E}_0 f(\hat{\mathbf{k}} \cdot \mathbf{r} - vt)\)</span>. Similarly, <span class="arithmatex">\(\hat{\mathbf{k}} \cdot \mathbf{H} = 0\)</span>.</p>
+<p>Additionally, we can compute <span class="arithmatex">\(\mathbf{S} = \mathbf{E} \times \mathbf{H} = c \varepsilon_0 E_0^2 f^2(\hat{\mathbf{k}} \cdot \mathbf{r} - vt) \hat{\mathbf{k}}\)</span>. We can also see that <span class="arithmatex">\(\varepsilon_0 E^2 = \mu_0 H^2\)</span> at any given time.</p>
 <h3 id="section-1012-monochromatic-plane-waves">Section 10.1.2 - Monochromatic Plane Waves</h3>
-<p>In any simple material, we like to say that <span class="arithmatex">\(\vb{D} = \epsilon \vb{E}\)</span> and <span class="arithmatex">\(\vb{B} = \mu \vb{H}\)</span>. However, this only holds true at a fixed frequency <span class="arithmatex">\(\omega\)</span>. For multiple frequencies, we see that <span class="arithmatex">\(\vb{D}(\omega) = \epsilon{\omega}\vb{E}(\omega)\)</span> and <span class="arithmatex">\(\vb{B}(\omega) = \mu(\omega)\vb{H}(\omega)\)</span>. This causes problems. As such, we will want to consider waves that are only composed of one frequency under Fourier decomposition.</p>
-<p><strong>Definition</strong>. A <em>monochromatic</em> plane wave is a plane wave in which the full Fourier series of <span class="arithmatex">\(f(x)\)</span> has only one term. That is, <span class="arithmatex">\(f(x)\)</span> is <span class="arithmatex">\(\sin(x)\)</span> or <span class="arithmatex">\(\cos(x)\)</span>. We furthermore define a <em>wave vector</em> <span class="arithmatex">\(\vb{k}\)</span> as <span class="arithmatex">\(\vb{k} = k \vu{k}\)</span>, so that <span class="arithmatex">\(\omega = kc\)</span>. Then,</p>
+<p>In any simple material, we like to say that <span class="arithmatex">\(\mathbf{D} = \varepsilon \mathbf{E}\)</span> and <span class="arithmatex">\(\mathbf{B} = \mu \mathbf{H}\)</span>. However, this only holds true at a fixed frequency <span class="arithmatex">\(\omega\)</span>. For multiple frequencies, we see that <span class="arithmatex">\(\mathbf{D}(\omega) = \varepsilon(\omega)\mathbf{E}(\omega)\)</span> and <span class="arithmatex">\(\mathbf{B}(\omega) = \mu(\omega)\mathbf{H}(\omega)\)</span>. This causes problems. As such, we will want to consider waves that are only composed of one frequency under Fourier decomposition.</p>
+<p><strong>Definition</strong>. A <em>monochromatic</em> plane wave is a plane wave in which the full Fourier series of <span class="arithmatex">\(f(x)\)</span> has only one term. That is, <span class="arithmatex">\(f(x)\)</span> is <span class="arithmatex">\(\sin(x)\)</span> or <span class="arithmatex">\(\cos(x)\)</span>. We furthermore define a <em>wave vector</em> <span class="arithmatex">\(\mathbf{k}\)</span> as <span class="arithmatex">\(\mathbf{k} = k \hat{\mathbf{k}}\)</span>, so that <span class="arithmatex">\(\omega = kc\)</span>. Then,</p>
 <div class="arithmatex">\[\begin{align}
-\vb{E}(\vb{r}, t) &amp;= \vb{E_0} \cos(\vb{k} \vdot \vb{r} - \omega t) \\
-\vb{H}(\vb{r}, t) &amp;= \sqrt{\frac{\epsilon_0}{\mu_0}} \vu{k} \times \vb{E}_0 \cos(\vb{k} \vdot \vb{r} - \omega t)
+\mathbf{E}(\mathbf{r}, t) &amp;= \mathbf{E_0} \cos(\mathbf{k} \cdot \mathbf{r} - \omega t) \\
+\mathbf{H}(\mathbf{r}, t) &amp;= \sqrt{\frac{\varepsilon_0}{\mu_0}} \hat{\mathbf{k}} \times \mathbf{E}_0 \cos(\mathbf{k} \cdot \mathbf{r} - \omega t)
 \end{align}\]</div>
 <p>Notably, the frequency, or number of cycles per second, is <span class="arithmatex">\(f = \frac{\omega}{2\pi}\)</span>, and wavelength <span class="arithmatex">\(\lambda = \frac{2\pi}{k}\)</span>.</p>
-<p>We can calculate the energy density <span class="arithmatex">\(u\)</span>, energy current density <span class="arithmatex">\(\vb{S}\)</span>, momentum density <span class="arithmatex">\(\vb{g}\)</span>, and momentum current density <span class="arithmatex">\(-\overleftrightarrow{\vb{T}}\)</span></p>
+<p>We can calculate the energy density <span class="arithmatex">\(u\)</span>, energy current density <span class="arithmatex">\(\mathbf{S}\)</span>, momentum density <span class="arithmatex">\(\mathbf{g}\)</span>, and momentum current density <span class="arithmatex">\(-\overleftrightarrow{\mathbf{T}}\)</span></p>
 <h3 id="section-1013-monochromatic-plane-waves-in-a-linear-model">Section 10.1.3 - Monochromatic Plane Waves in a Linear Model</h3>
 <p>Monochromatic plane waves with frequency <span class="arithmatex">\(\omega\)</span> in a simple linear material are similar to monochromatic plane waves in a vacuum, except when in a material, we know that the magnitude of the wave vector <span class="arithmatex">\(k = \frac{\omega}{v}\)</span>, and <span class="arithmatex">\(v = \frac{1}{\sqrt{\mu \varepsilon}}\)</span>.</p>
 <h3 id="section-1014-polarization-of-monochromatic-plane-waves">Section 10.1.4 - Polarization of Monochromatic Plane Waves</h3>
-<p>Any plane wave described in such a way that <span class="arithmatex">\(\vb{E} = \vb{E}_0 f(\vb{k} \vdot \vb{r} - ct)\)</span> is linearly polarized in the direction of <span class="arithmatex">\(\vb{E}_0\)</span>. That is, the direction of polarization is the direction of <span class="arithmatex">\(\vb{E}\)</span>, and if that direction is unchanging, the wave is linearly polarized.</p>
+<p>Any plane wave described in such a way that <span class="arithmatex">\(\mathbf{E} = \mathbf{E}_0 f(\mathbf{k} \cdot \mathbf{r} - ct)\)</span> is linearly polarized in the direction of <span class="arithmatex">\(\mathbf{E}_0\)</span>. That is, the direction of polarization is the direction of <span class="arithmatex">\(\mathbf{E}\)</span>, and if that direction is unchanging, the wave is linearly polarized.</p>
 <p>Notably, an elliptically polarized wave can be described as follows:</p>
 <div class="arithmatex">\[\begin{align}
-\vb{E}(\vb{r}, t) &amp;= E_{x0} \vu{x} \cos(kz - \omega t) + E_{y0} \vu{y} \sin(kz - \omega t) \\
-\vb{H}(\vb{r}, t) &amp;= \sqrt{\frac{\varepsilon}{\mu}} (E_{x0} \vu{x} \cos(kz - \omega t) + E_{y0} \vu{y} \sin(kz - \omega t))
+\mathbf{E}(\mathbf{r}, t) &amp;= E_{x0} \hat{\mathbf{x}} \cos(kz - \omega t) + E_{y0} \hat{\mathbf{y}} \sin(kz - \omega t) \\
+\mathbf{H}(\mathbf{r}, t) &amp;= \sqrt{\frac{\varepsilon}{\mu}} (E_{x0} \hat{\mathbf{y}} \cos(kz - \omega t) - E_{y0} \hat{\mathbf{x}} \sin(kz - \omega t))
 \end{align}\]</div>
+<p>If <span class="arithmatex">\(E_{x0} = E_{y0}\)</span>, the wave is said to be circularly polarized.</p>
+<h2 id="section-102-reflection-and-refraction-of-plane-electromagnetic-waves-at-a-a-planar-interface">Section 10.2 - Reflection and Refraction of Plane Electromagnetic Waves at a a Planar Interface</h2>
+<p>This section will focus on plane monochromatic waves incident from material 1 onto material 2, where both materials are homogenous insulators and the surface between the two materials is smooth (on the scale of the wavelength).</p>
+<p>In this case, we must re-consider Maxwell's equations. We know from previous sections that <span class="arithmatex">\(\nabla \cdot \mathbf{E} = \frac{\mathbf{\rho_e}}{\varepsilon_0}\)</span> and <span class="arithmatex">\(\nabla \cdot \mathbf{H} = \frac{\mathbf{\rho_m}}{\mu_0}\)</span>. We also know that <span class="arithmatex">\(\nabla \cdot \mathbf{D} = \rho_{ef}\)</span> and <span class="arithmatex">\(\nabla \cdot \mathbf{B} = \rho_{mf}\)</span>.</p>
+<p>Consider the boundary between the two materials. If we consider <span class="arithmatex">\(\nabla \cdot \mathbf{D}\)</span>, and take the integral over a Gaussian pillbox on the boundary, we can apply divergence theorem to see that <span class="arithmatex">\(\int_V \nabla \cdot \mathbf{D} dV = \int_{SofV} \mathbf{D} \cdot \hat{\mathbf{n}} dS = \rho_{efree}\)</span>. If we assume the materials are insulating, we do not expect to find any electrical charge, so <span class="arithmatex">\(\rho_{efree} = 0\)</span>. Thus, we can say that <span class="arithmatex">\(\int_{SofV} D \cdot \hat{\mathbf{n}} = 0\)</span>, so <span class="arithmatex">\(\mathbf{D}_1 \cdot \hat{\mathbf{n}} + \mathbf{D}_2 \cdot \hat{\mathbf{n}} = \mathbf{D_1} \cdot \hat{\mathbf{z}} + \mathbf{D}_1 \cdot (-\hat{\mathbf{n}}) = 0\)</span>. Then, we can say that <span class="arithmatex">\(\mathbf{D}_1 \cdot \hat{\mathbf{n}} = \mathbf{D}_2 \cdot \hat{\mathbf{n}}\)</span>, or in simpler terms, <span class="arithmatex">\(\mathbf{D}_1^\perp = \mathbf{D}_2^\perp\)</span>.</p>
+<p>Applying the same logic to <span class="arithmatex">\(\mathbf{B}\)</span>, we see that <span class="arithmatex">\(\mathbf{B}_1^\perp = \mathbf{B}_2^\perp\)</span>. Note that due to the existence of polarization and magnetization, we cannot say the same regarding <span class="arithmatex">\(\mathbf{E}\)</span> or <span class="arithmatex">\(\mathbf{H}\)</span>.</p>
 
 
 
@@ -1711,7 +1737,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1829,9 +1855,11 @@
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

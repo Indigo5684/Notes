@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -434,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1643,37 +1645,37 @@
 <h1 id="chapter-1-classical-mechanics">Chapter 1 - Classical Mechanics</h1>
 <h2 id="section-12-space-and-time">Section 1.2 - Space and Time</h2>
 <p>Each point <span class="arithmatex">\(P \in \mathbb{R}^3\)</span> can be written as <span class="arithmatex">\((x, y, z)\)</span>. However, we will utilize the convention below:</p>
-<div class="arithmatex">\[\vb{r} = x \vu{x} + y \vu{y} + z \vu{z}\]</div>
+<div class="arithmatex">\[\mathbf{r} = x \hat{\mathbf{x}} + y \hat{\mathbf{y}} + z \hat{\mathbf{z}}\]</div>
 <p>However, when working with ambiguous unit basis, it may be better to use the following:</p>
-<div class="arithmatex">\[\vb{r} = r_1 \vu{e_1} + r_2 \vu{e_2} + r_3 \vu{e_3}\]</div>
-<p>Here, <span class="arithmatex">\(r_1 = x, r_2 = y, r_3 = z\)</span> and <span class="arithmatex">\(\vu{e_1} = \vu{x_1}, \vdots\)</span>. That is, <span class="arithmatex">\(\vb{r} = \sum r_i \vu{e_i}\)</span>.</p>
+<div class="arithmatex">\[\mathbf{r} = r_1 \hat{\mathbf{e_1}} + r_2 \hat{\mathbf{e_2}} + r_3 \hat{\mathbf{e_3}}\]</div>
+<p>Here, <span class="arithmatex">\(r_1 = x, r_2 = y, r_3 = z\)</span> and <span class="arithmatex">\(\hat{\mathbf{e_1}} = \hat{\mathbf{x_1}}, \ldots\)</span>. That is, <span class="arithmatex">\(\mathbf{r} = \sum r_i \hat{\mathbf{e_i}}\)</span>.</p>
 <p>Vectors are an <span class="arithmatex">\(\mathbb{R}\)</span>-module, with addition defined component-wise. Additionally, the scalar (dot) product and vector (cross) product are defined as usual.</p>
 <p>Regarding time, classically, time is universal.</p>
 <p><strong>Definition</strong>. <em>Reference frames</em> are frames of motion with a defined coordinate system and origin position.</p>
 <p><strong>Definition</strong>. <em>Inertial frames</em> are reference frames in which Newton's laws of motion hold true. An inertial frame may not be accelerating.</p>
 <h2 id="section-13-mass-and-force">Section 1.3 - Mass and Force</h2>
 <p><strong>Definition</strong>. The <em>mass</em> <span class="arithmatex">\(m\)</span> of an object characterizes its translational inertia, and is measured in kilograms (kg)</p>
-<p><strong>Definition</strong>. The <em>force</em> <span class="arithmatex">\(\vb{F}\)</span> exerted on an object is a push or pull on said object and is measured in Newtons (N). Note that force is a vector.</p>
+<p><strong>Definition</strong>. The <em>force</em> <span class="arithmatex">\(\mathbf{F}\)</span> exerted on an object is a push or pull on said object and is measured in Newtons (N). Note that force is a vector.</p>
 <h2 id="section-14-newtons-first-and-second-laws-inertial-frames">Section 1.4 - Newton's First and Second Laws; Inertial Frames</h2>
 <p><strong>Definition</strong>. A <em>point mass</em> or <em>particle</em> is a convenient fiction, in which an object with mass has no size. It may move in space but has no internal degrees of freedom. Additionally, it may not have any rotational or vibrational kinetic energy.</p>
-<p><strong>Theorem</strong>. Newton's First Law. In the absence of external forces, a particle moves with constant velocity <span class="arithmatex">\(\vb{v}\)</span>.</p>
-<p><strong>Theorem</strong>. Newton's Second Law. Given any particle with mass <span class="arithmatex">\(m\)</span>, the net force <span class="arithmatex">\(\vb{F}\)</span> on the particle is always equal to the particle's mass times its acceleration. That is,</p>
-<div class="arithmatex">\[\vb{F} = m\vb{a} = m \ddot{\vb{r}}\]</div>
-<p>This can also be rewritten in terms of momentum. We know that momentum <span class="arithmatex">\(\vb{p}\)</span> can be written as <span class="arithmatex">\(\vb{p} = m\vb{v} = m \dot{\vb{r}}\)</span>. Then,</p>
-<div class="arithmatex">\[\vb{F} = m\vb{a} = m \dot{\vb{p}} = m \ddot{\vb{r}}\]</div>
-<p>If we have a constant force <span class="arithmatex">\(\vb{F} = F_0 \vu{x}\)</span>, we can write <span class="arithmatex">\(\ddot{\vu{x}}(t) = \frac{F_0}{m}\)</span>. Then,</p>
-<div class="arithmatex">\[\dot{\vb{x}}(t) = \int \ddot{\vb{x}} dt = v_0 + \frac{F_0}{m}t\]</div>
-<div class="arithmatex">\[\vb{x}(t) = \int \dot{\vb{x}} dt = x_0 + v_0t + \frac{F_0}{2m}t^2\]</div>
+<p><strong>Theorem</strong>. Newton's First Law. In the absence of external forces, a particle moves with constant velocity <span class="arithmatex">\(\mathbf{v}\)</span>.</p>
+<p><strong>Theorem</strong>. Newton's Second Law. Given any particle with mass <span class="arithmatex">\(m\)</span>, the net force <span class="arithmatex">\(\mathbf{F}\)</span> on the particle is always equal to the particle's mass times its acceleration. That is,</p>
+<div class="arithmatex">\[\mathbf{F} = m\mathbf{a} = m dot{\mathbf{r}}\]</div>
+<p>This can also be rewritten in terms of momentum. We know that momentum <span class="arithmatex">\(\mathbf{p}\)</span> can be written as <span class="arithmatex">\(\mathbf{p} = m\mathbf{v} = m \dot{\mathbf{r}}\)</span>. Then,</p>
+<div class="arithmatex">\[\mathbf{F} = m\mathbf{a} = m \dot{\mathbf{p}} = m dot{\mathbf{r}}\]</div>
+<p>If we have a constant force <span class="arithmatex">\(\mathbf{F} = F_0 \hat{\mathbf{x}}\)</span>, we can write <span class="arithmatex">\(dot{\hat{\mathbf{x}}}(t) = \frac{F_0}{m}\)</span>. Then,</p>
+<div class="arithmatex">\[\dot{\mathbf{x}}(t) = \int dot{\mathbf{x}} dt = v_0 + \frac{F_0}{m}t\]</div>
+<div class="arithmatex">\[\mathbf{x}(t) = \int \dot{\mathbf{x}} dt = x_0 + v_0t + \frac{F_0}{2m}t^2\]</div>
 <p><strong>Definition</strong>. An <em>inertial frame</em> is a reference frame relative to some fixed frame if they are moving with constant velocity in regards to each other. Otherwise, the frames are <em>non-inertial</em>.</p>
 <h2 id="section-15-the-third-law-and-conservation-of-momentum">Section 1.5 - The Third Law and Conservation of Momentum</h2>
 <p><strong>Definition</strong>. Newton's Third Law. Every force has an equal and opposite. If <span class="arithmatex">\(F_{21}\)</span> is the force exerted on object <span class="arithmatex">\(2\)</span> by object <span class="arithmatex">\(1\)</span>, there exists some force with equal magnitude <span class="arithmatex">\(F_{12}\)</span> exerted on object <span class="arithmatex">\(1\)</span> by object <span class="arithmatex">\(2\)</span>.</p>
 <p><strong>Definition</strong>. Force pairs that operate in the same line as each other (eg. gravitational attraction) are called <em>central forces</em>.</p>
-<p>Recall that the change in momentum of any particle can be defined as <span class="arithmatex">\(\dot{\vb{p}}_1 = \vb{F}_1 = \vb{F}_{12} + \vb{F}_{1}^{ext}\)</span>. Then, <span class="arithmatex">\(\dot{\vb{p}}_2 = \vb{F}_{21} + \vb{F}_2^{ext}\)</span>. As <span class="arithmatex">\(\vb{P} = \vb{p}_1 + \vb{p}_2\)</span>, we can see that</p>
-<div class="arithmatex">\[\dot{\vb{P}} = \vb{p}_1 + \vb{p}_2 = \vb{F}_{12} +\vb{F}_{21} + \vb{F}_{1}^{ext} + \vb{F}_{2}^{ext} = \vb{F}_{1}^{ext} + \vb{F}_{2}^{ext} = \vb{F}^{ext}\]</div>
-<p>From this, we can see that if <span class="arithmatex">\(\vb{F}^{ext} = 0\)</span>, then <span class="arithmatex">\(\vb{P}\)</span> is a constant.</p>
-<p>This argument can be generalized to multi-particle systems. Consider particle <span class="arithmatex">\(\alpha\)</span>. Then, <span class="arithmatex">\(\dot{\vb{p}}_\alpha = \vb{F}_\alpha = \sum_{\beta \neq \alpha} \vb{F}_{\alpha\beta} + \vb{F}_\alpha^{ext}\)</span>. We  can then see that</p>
-<div class="arithmatex">\[\dot{\vb{P}} = \sum_\alpha \vb{p}_\alpha = \sum_\alpha \sum_{\beta \neq \alpha} \vb{F}_{\alpha\beta} + \sum_\alpha \vb{F}_\alpha^{ext}\]</div>
-<p>With <span class="arithmatex">\(\sum_\alpha \sum_{\beta \neq \alpha} \vb{F}_{\alpha\beta} = \sum_\alpha \sum_{\beta &gt; \alpha} \vb{F}_{\alpha\beta}( + \vb{F}_{\beta\alpha})\)</span>, we can see that <span class="arithmatex">\(\dot{\vb{P}} = \sum_\alpha \vb{F}_\alpha^{ext}\)</span>.</p>
+<p>Recall that the change in momentum of any particle can be defined as <span class="arithmatex">\(\dot{\mathbf{p}}_1 = \mathbf{F}_1 = \mathbf{F}_{12} + \mathbf{F}_{1}^{ext}\)</span>. Then, <span class="arithmatex">\(\dot{\mathbf{p}}_2 = \mathbf{F}_{21} + \mathbf{F}_2^{ext}\)</span>. As <span class="arithmatex">\(\mathbf{P} = \mathbf{p}_1 + \mathbf{p}_2\)</span>, we can see that</p>
+<div class="arithmatex">\[\dot{\mathbf{P}} = \mathbf{p}_1 + \mathbf{p}_2 = \mathbf{F}_{12} +\mathbf{F}_{21} + \mathbf{F}_{1}^{ext} + \mathbf{F}_{2}^{ext} = \mathbf{F}_{1}^{ext} + \mathbf{F}_{2}^{ext} = \mathbf{F}^{ext}\]</div>
+<p>From this, we can see that if <span class="arithmatex">\(\mathbf{F}^{ext} = 0\)</span>, then <span class="arithmatex">\(\mathbf{P}\)</span> is a constant.</p>
+<p>This argument can be generalized to multi-particle systems. Consider particle <span class="arithmatex">\(\alpha\)</span>. Then, <span class="arithmatex">\(\dot{\mathbf{p}}_\alpha = \mathbf{F}_\alpha = \sum_{\beta \neq \alpha} \mathbf{F}_{\alpha\beta} + \mathbf{F}_\alpha^{ext}\)</span>. We  can then see that</p>
+<div class="arithmatex">\[\dot{\mathbf{P}} = \sum_\alpha \mathbf{p}_\alpha = \sum_\alpha \sum_{\beta \neq \alpha} \mathbf{F}_{\alpha\beta} + \sum_\alpha \mathbf{F}_\alpha^{ext}\]</div>
+<p>With <span class="arithmatex">\(\sum_\alpha \sum_{\beta \neq \alpha} \mathbf{F}_{\alpha\beta} = \sum_\alpha \sum_{\beta &gt; \alpha} \mathbf{F}_{\alpha\beta}( + \mathbf{F}_{\beta\alpha})\)</span>, we can see that <span class="arithmatex">\(\dot{\mathbf{P}} = \sum_\alpha \mathbf{F}_\alpha^{ext}\)</span>.</p>
 <hr />
 <p>Note that Newton's Third Law breaks down as the relative objects approach the speed of light, as it presumes the forces are equal at the same time. As events that are coincident in time in one frame may not be in another, it is clear that this law cannot hold.</p>
 <h2 id="section-16-newtons-second-law-in-cartesian-coordinates">Section 1.6 - Newton's Second Law in Cartesian Coordinates</h2>
@@ -1702,7 +1704,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1820,9 +1822,11 @@
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -434,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1572,52 +1574,52 @@
 <h2 id="15-dyads-and-tensors">1.5 - Dyads and Tensors</h2>
 <p><strong>Definition</strong>. A <em>dyadic</em> is a representation of two-ish vectors.</p>
 <div class="arithmatex">\[
-\stackrel{\leftrightarrow}{\vb{D}} = \begin{matrix}
-    D_{xx} \vu{x}\vu{x} &amp;+ D_{xy} \vu{x}\vu{y} &amp;+ D{xz} \vu{x}\vu{z} \\
-    + D_{yx} \vu{y}\vu{x} &amp;+ D_{yy} \vu{y}\vu{y} &amp;+ D{yz} \vu{y}\vu{z} \\
-    + D_{zx} \vu{z}\vu{x} &amp;+ D_{zy} \vu{z}\vu{y} &amp;+ D{zz} \vu{z}\vu{z}
+\stackrel{\leftrightarrow}{\mathbf{D}} = \begin{matrix}
+    D_{xx} \hat{\mathbf{x}}\hat{\mathbf{x}} &amp;+ D_{xy} \hat{\mathbf{x}}\hat{\mathbf{y}} &amp;+ D{xz} \hat{\mathbf{x}}\hat{\mathbf{z}} \\
+    + D_{yx} \hat{\mathbf{y}}\hat{\mathbf{x}} &amp;+ D_{yy} \hat{\mathbf{y}}\hat{\mathbf{y}} &amp;+ D{yz} \hat{\mathbf{y}}\hat{\mathbf{z}} \\
+    + D_{zx} \hat{\mathbf{z}}\hat{\mathbf{x}} &amp;+ D_{zy} \hat{\mathbf{z}}\hat{\mathbf{y}} &amp;+ D{zz} \hat{\mathbf{z}}\hat{\mathbf{z}}
 \end{matrix}
 \]</div>
-<p><strong>Definition</strong>. If a dyadic can be written as a composition of two vectors <span class="arithmatex">\(\vb{A}\)</span> and <span class="arithmatex">\(\vb{B}\)</span>, it is called a <em>dyad</em>.</p>
+<p><strong>Definition</strong>. If a dyadic can be written as a composition of two vectors <span class="arithmatex">\(\mathbf{A}\)</span> and <span class="arithmatex">\(\mathbf{B}\)</span>, it is called a <em>dyad</em>.</p>
 <div class="arithmatex">\[
-\vb{AB} = \begin{matrix}
-    A_x B_x \vu{x}\vu{x} &amp;+ A_x B_y \vu{x}\vu{y} &amp;+ A_x B_z \vu{x}\vu{z} \\
-    + A_y B_x \vu{y}\vu{x} &amp;+ A_y B_y \vu{y}\vu{y} &amp;+ A_y B_z \vu{y}\vu{z} \\
-    + A_z B_x \vu{z}\vu{x} &amp;+ A_z B_y \vu{z}\vu{y} &amp;+ A_z B_z \vu{z}\vu{z}
+\mathbf{AB} = \begin{matrix}
+    A_x B_x \hat{\mathbf{x}}\hat{\mathbf{x}} &amp;+ A_x B_y \hat{\mathbf{x}}\hat{\mathbf{y}} &amp;+ A_x B_z \hat{\mathbf{x}}\hat{\mathbf{z}} \\
+    + A_y B_x \hat{\mathbf{y}}\hat{\mathbf{x}} &amp;+ A_y B_y \hat{\mathbf{y}}\hat{\mathbf{y}} &amp;+ A_y B_z \hat{\mathbf{y}}\hat{\mathbf{z}} \\
+    + A_z B_x \hat{\mathbf{z}}\hat{\mathbf{x}} &amp;+ A_z B_y \hat{\mathbf{z}}\hat{\mathbf{y}} &amp;+ A_z B_z \hat{\mathbf{z}}\hat{\mathbf{z}}
 \end{matrix}
 \]</div>
-<p>The dot product of a dyad <span class="arithmatex">\(\stackrel{\leftrightarrow}{\vb{D}} = \vb{AB}\)</span> and vector <span class="arithmatex">\(\va{v}\)</span> can be written as follows:</p>
+<p>The dot product of a dyad <span class="arithmatex">\(\stackrel{\leftrightarrow}{\mathbf{D}} = \mathbf{AB}\)</span> and vector <span class="arithmatex">\(\mathbf{v}\)</span> can be written as follows:</p>
 <div class="arithmatex">\[
-(\vb{AB}) \vdot \va{v} = \vb{A} (\vb{B} \vdot \va{v})
+(\mathbf{AB}) \cdot \mathbf{v} = \mathbf{A} (\mathbf{B} \cdot \mathbf{v})
 \]</div>
 <p><strong>Definition</strong>. A <em>symmetric/antisymmetric</em> dyadic is defined the same way that a matrix is.</p>
-<p><strong>Definition</strong>. The <em>identity dyadic</em> is <span class="arithmatex">\(\stackrel{\leftrightarrow}{\vb{I}} = \vu{x}\vu{x} + \vu{y}\vu{y} + \vu{z}\vu{z}\)</span>.</p>
+<p><strong>Definition</strong>. The <em>identity dyadic</em> is <span class="arithmatex">\(\stackrel{\leftrightarrow}{\mathbf{I}} = \hat{\mathbf{x}}\hat{\mathbf{x}} + \hat{\mathbf{y}}\hat{\mathbf{y}} + \hat{\mathbf{z}}\hat{\mathbf{z}}\)</span>.</p>
 <p><strong>Definition</strong>. FOr a <em>tensor</em>, with coordinates <span class="arithmatex">\(u^i\)</span>, we have two sets of basis vectors:</p>
 <div class="arithmatex">\[
-\vb{e}_i = \pdv{\vb{r}}{u^i}
+\mathbf{e}_i = \pdv{\mathbf{r}}{u^i}
 \]</div>
 <div class="arithmatex">\[
-\vb{e}^i = \grad{u^i}
+\mathbf{e}^i = \nabla{u^i}
 \]</div>
 <h2 id="19-helmholtz-theorem">1.9 - Helmholtz Theorem</h2>
-<p>Given an arbitrary vector field <span class="arithmatex">\(\vb{F}(\vb(r))\)</span>, we can write said field as a composition of a curl-free component <span class="arithmatex">\(\vb{\Phi}(\vb{r})\)</span> and a divergence-free component <span class="arithmatex">\(\vb{A}(\vb{r})\)</span> as follows:</p>
+<p>Given an arbitrary vector field <span class="arithmatex">\(\mathbf{F}(\mathbf(r))\)</span>, we can write said field as a composition of a curl-free component <span class="arithmatex">\(\mathbf{\Phi}(\mathbf{r})\)</span> and a divergence-free component <span class="arithmatex">\(\mathbf{A}(\mathbf{r})\)</span> as follows:</p>
 <div class="arithmatex">\[
-\vb{F}(\vb{r}) = - \grad{\vb{\Phi}(\vb{r})} + \curl{\vb{A}(\vb{r})}
+\mathbf{F}(\mathbf{r}) = - \nabla{\mathbf{\Phi}(\mathbf{r})} + \nabla \times{\mathbf{A}(\mathbf{r})}
 \]</div>
-<p><strong>Definition</strong>. Here, the gradient of the scalar potential is <span class="arithmatex">\(\grad{\vb{\Phi}(\vb{r})}\)</span> and the curl of the vector potential is <span class="arithmatex">\(\curl{\vb{A}(\vb{r})}\)</span>. Thus, the scalar potential is <span class="arithmatex">\(\vb{\Phi}(\vb{r})\)</span> and the vector potential is <span class="arithmatex">\(\vb{A}(\vb{r})\)</span>.</p>
-<p>Letting said field be over bounded volume <span class="arithmatex">\(V\)</span> with closed surface <span class="arithmatex">\(\partial V\)</span>, and the functions <span class="arithmatex">\(\vb{C}(\vb{r}) = \curl{\vb{F}(\vb{r})}\)</span> and <span class="arithmatex">\(\vb{D}(\vb{r}) = \div{\vb{F}(\vb{r})}\)</span> are known, we can say that</p>
+<p><strong>Definition</strong>. Here, the gradient of the scalar potential is <span class="arithmatex">\(\nabla{\mathbf{\Phi}(\mathbf{r})}\)</span> and the curl of the vector potential is <span class="arithmatex">\(\nabla \times{\mathbf{A}(\mathbf{r})}\)</span>. Thus, the scalar potential is <span class="arithmatex">\(\mathbf{\Phi}(\mathbf{r})\)</span> and the vector potential is <span class="arithmatex">\(\mathbf{A}(\mathbf{r})\)</span>.</p>
+<p>Letting said field be over bounded volume <span class="arithmatex">\(V\)</span> with closed surface <span class="arithmatex">\(\partial V\)</span>, and the functions <span class="arithmatex">\(\mathbf{C}(\mathbf{r}) = \nabla \times{\mathbf{F}(\mathbf{r})}\)</span> and <span class="arithmatex">\(\mathbf{D}(\mathbf{r}) = \nabla \cdot \mathbf{F}(\mathbf{r})\)</span> are known, we can say that</p>
 <div class="arithmatex">\[
-\vb{\Phi}(\vb{r}) = \frac{1}{4 \pi} \int_V \frac{D(\vb{r}')}{\abs{\vb{r}-\vb{r}'}} \dd{V'} - \frac{1}{4 \pi} \int_{\partial V} \frac{\vb{F}(\vb{r}') \vdot \va{n}'}{\abs{\vb{r}-\vb{r}'}} \dd{S'}
-\]</div>
-<div class="arithmatex">\[
-\vb{A}(\vb{r}) = \frac{1}{4 \pi} \int_V \frac{C(\vb{r}')}{\abs{\vb{r}-\vb{r}'}} \dd{V'} - \frac{1}{4 \pi} \int_{\partial V} \va{n}' \cross \frac{\vb{F}(\vb{r}')}{\abs{\vb{r}-\vb{r}'}} \dd{S'}
-\]</div>
-<p>Now, assume that <span class="arithmatex">\(\lim(\frac{\vb{F}(\vb{r})}{\vb{r}}) = 0\)</span> as <span class="arithmatex">\(\vb{r} \rightarrow \infty\)</span>, with a large enough volume, we see that the second terms vanish.</p>
-<div class="arithmatex">\[
-\vb{\Phi}(\vb{r}) = \frac{1}{4 \pi} \int_V \frac{D(\vb{r}')}{\abs{\vb{r}-\vb{r}'}} \dd{V'}
+\mathbf{\Phi}(\mathbf{r}) = \frac{1}{4 \pi} \int_V \frac{D(\mathbf{r}')}{|{\mathbf{r}-\mathbf{r}'}|} d{V'} - \frac{1}{4 \pi} \int_{\partial V} \frac{\mathbf{F}(\mathbf{r}') \cdot \mathbf{n}'}{|{\mathbf{r}-\mathbf{r}'}|} d{S'}
 \]</div>
 <div class="arithmatex">\[
-\vb{A}(\vb{r}) = \frac{1}{4 \pi} \int_V \frac{C(\vb{r}')}{\abs{\vb{r}-\vb{r}'}} \dd{V'}
+\mathbf{A}(\mathbf{r}) = \frac{1}{4 \pi} \int_V \frac{C(\mathbf{r}')}{|{\mathbf{r}-\mathbf{r}'}|} d{V'} - \frac{1}{4 \pi} \int_{\partial V} \mathbf{n}' \times \frac{\mathbf{F}(\mathbf{r}')}{|{\mathbf{r}-\mathbf{r}'}|} d{S'}
+\]</div>
+<p>Now, assume that <span class="arithmatex">\(\lim(\frac{\mathbf{F}(\mathbf{r})}{\mathbf{r}}) = 0\)</span> as <span class="arithmatex">\(\mathbf{r} \rightarrow \infty\)</span>, with a large enough volume, we see that the second terms vanish.</p>
+<div class="arithmatex">\[
+\mathbf{\Phi}(\mathbf{r}) = \frac{1}{4 \pi} \int_V \frac{D(\mathbf{r}')}{|{\mathbf{r}-\mathbf{r}'}|} d{V'}
+\]</div>
+<div class="arithmatex">\[
+\mathbf{A}(\mathbf{r}) = \frac{1}{4 \pi} \int_V \frac{C(\mathbf{r}')}{|{\mathbf{r}-\mathbf{r}'}|} d{V'}
 \]</div>
 
 
@@ -1641,7 +1643,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 9, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1759,9 +1761,11 @@
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

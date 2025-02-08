@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -434,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1216,6 +1218,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-23-trajectory-and-range-in-a-linear-medium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.3 - Trajectory and Range in a Linear Medium
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-24-quadratic-air-resistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.4 - Quadratic Air Resistance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-25-motion-of-a-charge-in-a-uniform-magnetic-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.5 - Motion of a Charge in a Uniform Magnetic Field
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1537,6 +1566,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-23-trajectory-and-range-in-a-linear-medium" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.3 - Trajectory and Range in a Linear Medium
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-24-quadratic-air-resistance" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.4 - Quadratic Air Resistance
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-25-motion-of-a-charge-in-a-uniform-magnetic-field" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.5 - Motion of a Charge in a Uniform Magnetic Field
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1570,14 +1626,47 @@
 
 <h1 id="chapter-2-projectiles-and-charged-particles">Chapter 2 - Projectiles and Charged Particles</h1>
 <h2 id="section-21-air-resistance">Section 2.1 - Air Resistance</h2>
-<p><strong>Definition</strong>. The <em>drag</em>, or resistive force on an object due to the atmosphere, is denoted as <span class="arithmatex">\(\vb{f}\)</span>. Note that this is <strong>not</strong> the force density, but the overall force. In most cases, this force directly opposes the direction of motion. If not, the other component is known as <em>lift</em>, however this is mostly negligible.</p>
-<p>We define air resistance as <span class="arithmatex">\(\vb{f} = -f(v) \vu{v}\)</span>. We consider two types in this text: linear, where <span class="arithmatex">\(f(v) = f_{lin} = bv\)</span>, and quadratic, where <span class="arithmatex">\(f(v) = f_{quad} = cv^2\)</span>. Note that often times we consider both, and state that <span class="arithmatex">\(f(v) = f_{lin} + f_{quad} = bv + cv^2\)</span>.</p>
+<p><strong>Definition</strong>. The <em>drag</em>, or resistive force on an object due to the atmosphere, is denoted as <span class="arithmatex">\(\mathbf{f}\)</span>. Note that this is <strong>not</strong> the force density, but the overall force. In most cases, this force directly opposes the direction of motion. If not, the other component is known as <em>lift</em>, however this is mostly negligible.</p>
+<p>We define air resistance as <span class="arithmatex">\(\mathbf{f} = -f(v) \hat{\mathbf{v}}\)</span>. We consider two types in this text: linear, where <span class="arithmatex">\(f(v) = f_{lin} = bv\)</span>, and quadratic, where <span class="arithmatex">\(f(v) = f_{quad} = cv^2\)</span>. Note that often times we consider both, and state that <span class="arithmatex">\(f(v) = f_{lin} + f_{quad} = bv + cv^2\)</span>.</p>
 <p>The linear term comes from viscous drag and is generally proportional to the viscosity of the medium, while quadratic drag tends to arise from the particle needing to accelerate the mass of air which it is constantly colliding against.</p>
-<p>In some cases, we can calculate these coefficients. With <span class="arithmatex">\(D\)</span> as the diameter of a spherical object, and <span class="arithmatex">\(\beta\)</span> and <span class="arithmatex">\(\gamma\)</span> as properties of the medium, we can state that <span class="arithmatex">\(b = \beta D\)</span> and <span class="arithmatex">\(c = \gamma D^2\)</span>. In air at STP, <span class="arithmatex">\(\beta = 1.6 \times 10^{-4} \text{N} \vdot \text{s}/\text{m}^2\)</span>, and <span class="arithmatex">\(\gamma = 0.25 \text{N} \vdot \text{s}^2/\text{m}^4\)</span>.</p>
+<p>In some cases, we can calculate these coefficients. With <span class="arithmatex">\(D\)</span> as the diameter of a spherical object, and <span class="arithmatex">\(\beta\)</span> and <span class="arithmatex">\(\gamma\)</span> as properties of the medium, we can state that <span class="arithmatex">\(b = \beta D\)</span> and <span class="arithmatex">\(c = \gamma D^2\)</span>. In air at STP, <span class="arithmatex">\(\beta = 1.6 \times 10^{-4} \text{N} \cdot \text{s}/\text{m}^2\)</span>, and <span class="arithmatex">\(\gamma = 0.25 \text{N} \cdot \text{s}^2/\text{m}^4\)</span>.</p>
 <p>Oftentimes, one factor is far more impactful than the other, meaning that the smaller of the two may be neglected. To do so, compute the following ratio:</p>
 <div class="arithmatex">\[\frac{f_{quad}}{f_{lin}} = \frac{cv^2}{bv} = \frac{\gamma D}{\beta}v\]</div>
 <p>Note that the result is expected to be of the same order of magnitude as the <em>Reynolds number</em> <span class="arithmatex">\(R = Dv \mathcal{Q}/\eta\)</span>, where <span class="arithmatex">\(\mathcal{Q}\)</span> is the density of the medium and <span class="arithmatex">\(\eta\)</span> the viscosity.</p>
 <h2 id="section-22-linear-air-resistance">Section 2.2 - Linear Air Resistance</h2>
+<p>First, consider the case in which the drag force is negligible. Then, we see that with <span class="arithmatex">\(\mathbf{F}_g = \mathbf{w} = mg\)</span> and <span class="arithmatex">\(\mathbf{F}_{drag} = \mathbf{f} = -b\mathbf{v}\)</span>, then Newton's second law tells us that</p>
+<div class="arithmatex">\[\mathbf{F} = m \dot{\mathbf{v}} = m\mathbf{g} - b\mathbf{b}\]</div>
+<p>This separates into two equations:</p>
+<div class="arithmatex">\[\begin{align}
+\dot{v}_x &amp;= -\frac{b}{m}v_x \\
+\dot{v}_y &amp;= g - \frac{b}{m}v_y
+\end{align}\]</div>
+<p>These are separable equations and can be trivially solved.</p>
+<p>For an object on a surface in which the only motion is in the <span class="arithmatex">\(x\)</span>-direction, only the first of the above equations applies. Then, we can define <span class="arithmatex">\(k = \frac{b}{m}\)</span>, so that <span class="arithmatex">\(\dot{v_x} = -k v_x\)</span>. This can be integrated to see that <span class="arithmatex">\(v_x(t) = Ae^{-kt}\)</span>. We can also define <span class="arithmatex">\(\tau = \frac{1}{t} = \frac{m}{b}\)</span>, so that <span class="arithmatex">\(v(t) = Ae^{-\frac{t}{\tau}}\)</span></p>
+<p>Now, consider the second equation. This is still separable, however, the math is more complicated. Note that when we set <span class="arithmatex">\(\dot{v}_y = 0\)</span>, we are at some maximum (terminal) velocity <span class="arithmatex">\(v_{ter}\)</span>. Solving, we see that <span class="arithmatex">\(v_{ter} = \frac{mg}{b}\)</span>. Then, we can rewrite our equation as</p>
+<div class="arithmatex">\[m\dot{v}_y = -b(v_y - v_ter)\]</div>
+<p>This can be solved to see that <span class="arithmatex">\(v(y) = v_{ter} + (v_{y0} - v_{ter})e^{-\frac{t}{\tau}}\)</span>.</p>
+<h2 id="section-23-trajectory-and-range-in-a-linear-medium">Section 2.3 - Trajectory and Range in a Linear Medium</h2>
+<p>From the velocity functions in the previous section, we can integrate to obtain the position functions.</p>
+<div class="arithmatex">\[\begin{align}
+x(t) &amp;= v_{x0}\tau(1-e^{-\frac{t}{\tau}}) \\
+y(t) &amp;= (v_{y0} + v_{ter})\tau(1-e^{-\frac{t}{\tau}})-v_{ter}t
+\end{align}\]</div>
+<p>We can then solve the first equation for <span class="arithmatex">\(t\)</span> and substitute into the second to see that</p>
+<div class="arithmatex">\[y(t) = \frac{v_{y_0} + v_{ter}}{v_{x0}} + v_{ter} \tau \ln(1 - \frac{x}{v_{x0}\tau})\]</div>
+<p>Note the trajectory has a vertical asymptote at <span class="arithmatex">\(x = v_{x0} \tau\)</span>.</p>
+<p>We can find the horizontal range by setting <span class="arithmatex">\(y(R) = 0\)</span>. This results in an equation that contains many exponential terms, so we want to find an approximation. Truncating the Taylor series for <span class="arithmatex">\(\ln(1 - \varepsilon)\)</span>, we see that <span class="arithmatex">\(R \approx R_{vac}(1 - \frac{4}{3} \frac{v_{y0}}{v_{ter}})\)</span>, where <span class="arithmatex">\(R_{vac}\)</span>, or the air resistance assuming no air resistance, is <span class="arithmatex">\(R_{vac} = \frac{2 v_{x0}v_{y0}}{g}\)</span>.</p>
+<h2 id="section-24-quadratic-air-resistance">Section 2.4 - Quadratic Air Resistance</h2>
+<p>In the case of quadratic air resistance, we see that <span class="arithmatex">\(\mathbf{f} = -c v^2 \hat{\mathbf{v}}\)</span>. Then, we can see that in the horizontal case, <span class="arithmatex">\(m\frac{dv}{v_x^2} = -c dt\)</span>. Thus,</p>
+<div class="arithmatex">\[v_x(t) = \frac{v_{x0}}{1+cv_{x0}t/m} = \frac{v_{x0}}{1+\tau/t}\]</div>
+<p>where <span class="arithmatex">\(\tau = m/cv_{x0}\)</span>. We can see that at <span class="arithmatex">\(t = \tau\)</span>, <span class="arithmatex">\(v = v_{x0}/2\)</span>.</p>
+<p>Thus, <span class="arithmatex">\(x(t) = v_{x0} \tau \ln(1 + t / \tau)\)</span>.</p>
+<p>For exclusively vertical motion, we first define <span class="arithmatex">\(v_{ter} = \sqrt{\frac{mg}{c}}\)</span>. Then, we see that <span class="arithmatex">\(\dot{v_y} = g(1 - \frac{v^2}{v_{ter}^2})\)</span>. Solving via separation of variables yields</p>
+<div class="arithmatex">\[v_y(t) = v_{ter}\tanh(\frac{gt}{v_{ter}})\]</div>
+<p>Then, we see that</p>
+<div class="arithmatex">\[y(t) = \frac{v_{ter}^2}{g} \ln(\cosh(\frac{gt}{v_{ter}}))\]</div>
+<p>In the case where there is both vertical and horizontal motion, the differential equation no longer has an analytic solution.</p>
+<h2 id="section-25-motion-of-a-charge-in-a-uniform-magnetic-field">Section 2.5 - Motion of a Charge in a Uniform Magnetic Field</h2>
 
 
 
@@ -1600,7 +1689,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1718,9 +1807,11 @@
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -434,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1616,7 +1618,7 @@
 <p><strong>Definition</strong>. In a <em>two-state paramagnet</em>, when exposed to a magnetic field, each dipole may only be parallel or antiparallel to the applied field. We denote <span class="arithmatex">\(N = N_\uparrow + N_\downarrow\)</span> to represent the number of dipoles pointing up or down.</p>
 <p>Assuming the external magnetic field points up, we note that an up-dipole contains less energy than a down-dipole. The total energy of a system is determined by <span class="arithmatex">\(N_\uparrow\)</span> and <span class="arithmatex">\(N_\downarrow\)</span>, so the macrostate of this system can be used to determine the total energy.</p>
 <h2 id="section-22-the-einstein-model-of-a-solid">Section 2.2 - The Einstein Model of a Solid</h2>
-<p>Consider a collection of microscopic systems that can each store any discrete amount of quantized energy. If each system is a harmonic oscillator, we know from <a href="../../../todo/">Quantum Mechanics</a> that the potential energy is <span class="arithmatex">\(\frac{1}{2}k_s x^2\)</span>, where <span class="arithmatex">\(k_s\)</span> is the spring constant. Then, the size of energy units is <span class="arithmatex">\(hf\)</span>, where <span class="arithmatex">\(h\)</span> is Planck's constant (<span class="arithmatex">\(h = 6.63 \times 10^{-34} \text{J} \vdot \text{s}\)</span>) and <span class="arithmatex">\(f\)</span> is the natural frequency of the oscillator (<span class="arithmatex">\(f = \frac{1}{2\pi} \sqrt{k_s / m}\)</span>).</p>
+<p>Consider a collection of microscopic systems that can each store any discrete amount of quantized energy. If each system is a harmonic oscillator, we know from <a href="../../../todo/">Quantum Mechanics</a> that the potential energy is <span class="arithmatex">\(\frac{1}{2}k_s x^2\)</span>, where <span class="arithmatex">\(k_s\)</span> is the spring constant. Then, the size of energy units is <span class="arithmatex">\(hf\)</span>, where <span class="arithmatex">\(h\)</span> is Planck's constant (<span class="arithmatex">\(h = 6.63 \times 10^{-34} \text{J} \cdot \text{s}\)</span>) and <span class="arithmatex">\(f\)</span> is the natural frequency of the oscillator (<span class="arithmatex">\(f = \frac{1}{2\pi} \sqrt{k_s / m}\)</span>).</p>
 <p><strong>Definition</strong>. For a three-dimensional solid, each particle can oscillate in three dimensions. Thus, if there are <span class="arithmatex">\(N\)</span> oscillators, there are <span class="arithmatex">\(N/3\)</span> particles. A solid modeled as such is known as an <em>Einstein solid</em>.</p>
 <p>Consider a system in which <span class="arithmatex">\(N = 3\)</span>. Then, <span class="arithmatex">\(\Omega(0) = 1\)</span>, <span class="arithmatex">\(\Omega(1) = 3\)</span>, <span class="arithmatex">\(\Omega(2) = 6\)</span>, <span class="arithmatex">\(\Omega(3) = 10\)</span>, and so on. We can extend this to see that for an Einstein solid with <span class="arithmatex">\(N\)</span> oscillators, the multiplicity of the total energy <span class="arithmatex">\(q\)</span> is</p>
 <div class="arithmatex">\[\Omega(N, q) = \binom{q+N-1}{q} = \frac{(q+N-1)!}{q!(N-1)!}\]</div>
@@ -1660,7 +1662,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 6, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1778,9 +1780,11 @@
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -523,7 +525,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1627,7 +1629,7 @@
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(R\)</span> be a ring. A <em>left <span class="arithmatex">\(R\)</span>-module</em> or a <em>left module over <span class="arithmatex">\(R\)</span></em> is a nonempty set <span class="arithmatex">\(M\)</span> together with</p>
 <ol>
 <li>A binary operation <span class="arithmatex">\(+\)</span> on <span class="arithmatex">\(M\)</span> under which <span class="arithmatex">\(M\)</span> is an abelian group</li>
-<li>An action <span class="arithmatex">\(\cross\)</span> of <span class="arithmatex">\(R\)</span> on <span class="arithmatex">\(M\)</span>, that is, a map or function <span class="arithmatex">\(R \cross M \rightarrow M\)</span>, denoted <span class="arithmatex">\(rm\)</span>, that for all <span class="arithmatex">\(r, s \in R, m, n \in M\)</span> satisfies<ul>
+<li>An action <span class="arithmatex">\(\times\)</span> of <span class="arithmatex">\(R\)</span> on <span class="arithmatex">\(M\)</span>, that is, a map or function <span class="arithmatex">\(R \times M \rightarrow M\)</span>, denoted <span class="arithmatex">\(rm\)</span>, that for all <span class="arithmatex">\(r, s \in R, m, n \in M\)</span> satisfies<ul>
 <li><span class="arithmatex">\((r + s)m = rm + sm\)</span></li>
 <li><span class="arithmatex">\((rs)m = r(sm)\)</span></li>
 <li><span class="arithmatex">\(r(m + n) = rm + rn\)</span></li>
@@ -1640,10 +1642,10 @@
 <p><strong>Definition</strong> An <em>R-submodule</em> is a subset<span class="arithmatex">\(N \subseteq M\)</span> which is closed under the action taken forall <span class="arithmatex">\(r \in R\)</span>. That is, given <span class="arithmatex">\(r \in R, n \in N\)</span>, then <span class="arithmatex">\(rn \in N\)</span>. Every module has at least two submodules: itself and the trivial (empty) submodule.</p>
 <p><strong>Remark</strong>. If <span class="arithmatex">\(F\)</span> is a field, submodules are equivalent to subspaces.</p>
 <hr />
-<p><strong>Example</strong>. Let <span class="arithmatex">\(F\)</span> be a field and <span class="arithmatex">\(F[x]\)</span> a polynomial ring. Then, let <span class="arithmatex">\(V\)</span> be a vector space of <span class="arithmatex">\(F\)</span>, and <span class="arithmatex">\(T\)</span> be a linear transformation from <span class="arithmatex">\(V\)</span> to itself. That is, <span class="arithmatex">\(V: T \rightarrow T\)</span>. We know that <span class="arithmatex">\(V\)</span> is an <span class="arithmatex">\(F\)</span>-module. We will want to show that <span class="arithmatex">\(V\)</span> can be written as an <span class="arithmatex">\(F[x]\)</span>-module for some choice of <span class="arithmatex">\(T\)</span>. That is, we want an action <span class="arithmatex">\(F[x] \cross V \rightarrow V\)</span>.</p>
-<p>Now, for a given linear transformation <span class="arithmatex">\(T\)</span>, consider some polynomial <span class="arithmatex">\(p(x) = a_n x^n + \ldots + a_0\)</span> and some <span class="arithmatex">\(v \in V\)</span>. We define <span class="arithmatex">\(p(x) \cross v\)</span> by$</p>
+<p><strong>Example</strong>. Let <span class="arithmatex">\(F\)</span> be a field and <span class="arithmatex">\(F[x]\)</span> a polynomial ring. Then, let <span class="arithmatex">\(V\)</span> be a vector space of <span class="arithmatex">\(F\)</span>, and <span class="arithmatex">\(T\)</span> be a linear transformation from <span class="arithmatex">\(V\)</span> to itself. That is, <span class="arithmatex">\(V: T \rightarrow T\)</span>. We know that <span class="arithmatex">\(V\)</span> is an <span class="arithmatex">\(F\)</span>-module. We will want to show that <span class="arithmatex">\(V\)</span> can be written as an <span class="arithmatex">\(F[x]\)</span>-module for some choice of <span class="arithmatex">\(T\)</span>. That is, we want an action <span class="arithmatex">\(F[x] \times V \rightarrow V\)</span>.</p>
+<p>Now, for a given linear transformation <span class="arithmatex">\(T\)</span>, consider some polynomial <span class="arithmatex">\(p(x) = a_n x^n + \ldots + a_0\)</span> and some <span class="arithmatex">\(v \in V\)</span>. We define <span class="arithmatex">\(p(x) \times v\)</span> by$</p>
 <div class="arithmatex">\[
-p(x) \cross v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
+p(x) \times v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
 \]</div>
 <p>with <span class="arithmatex">\(T^n\)</span> being defined as applying <span class="arithmatex">\(T\)</span> a total of <span class="arithmatex">\(n\)</span> times.</p>
 <hr />
@@ -1658,18 +1660,18 @@ p(x) \cross v = a_n T^n(v) + a_{n-1} T^{n-1}(v) + \ldots + a_0 v
 <h2 id="section-102-quotient-modules-and-module-homomorphisms">Section 10.2 - Quotient Modules and Module Homomorphisms</h2>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(R\)</span> be a ring and <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules. then a ring homomorphism <span class="arithmatex">\(\varphi: M \rightarrow N\)</span> is an <em><span class="arithmatex">\(R\)</span>-module homomorphism</em> if for all <span class="arithmatex">\(r \in R\)</span>, <span class="arithmatex">\(\varphi(rx) = r\varphi(x)\)</span>.</p>
 <p><strong>Theorem</strong>. An <span class="arithmatex">\(R\)</span>-module homomorphism is an <em>isomorphism</em> if it is 1-1 and onto, and said modules are <em>isomorphic</em>.</p>
-<p><strong>Definition</strong>. Let <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules. The set <span class="arithmatex">\(\Hom_R(M, N)\)</span> is the set of all homomorphisms from <span class="arithmatex">\(M\)</span> to <span class="arithmatex">\(N\)</span>.</p>
+<p><strong>Definition</strong>. Let <span class="arithmatex">\(M, N\)</span> be <span class="arithmatex">\(R\)</span>-modules. The set <span class="arithmatex">\(\text{Hom}_R(M, N)\)</span> is the set of all homomorphisms from <span class="arithmatex">\(M\)</span> to <span class="arithmatex">\(N\)</span>.</p>
 <p><strong>Proposition</strong>. Let <span class="arithmatex">\(M\)</span>, <span class="arithmatex">\(N\)</span>, and <span class="arithmatex">\(L\)</span> be <span class="arithmatex">\(R\)</span>-modules. Then,</p>
 <ol>
 <li>A function <span class="arithmatex">\(\varphi: M \rightarrow N\)</span> is an <span class="arithmatex">\(R\)</span>-module homomorphism if and only if <span class="arithmatex">\(\varphi(rx + y) = r\varphi(x) + \varphi(y)\)</span> for all <span class="arithmatex">\(x, y \in M\)</span> and <span class="arithmatex">\(r \in R\)</span>.</li>
-<li>Let <span class="arithmatex">\(\varphi, \psi \in \Hom_R(M, N)\)</span>. Then, define <span class="arithmatex">\(\varphi + \psi\)</span> as</li>
+<li>Let <span class="arithmatex">\(\varphi, \psi \in \text{Hom}_R(M, N)\)</span>. Then, define <span class="arithmatex">\(\varphi + \psi\)</span> as</li>
 </ol>
 <div class="arithmatex">\[
 (\varphi + \psi)(m) = \varphi(m) + \psi(m)
 \]</div>
-<p>Then, <span class="arithmatex">\(\varphi + \psi \in \Hom_R(M, N)\)</span>. Additionally, if <span class="arithmatex">\(R\)</span> is commutative, with <span class="arithmatex">\((r\varphi)(m) = r(\varphi(m))\)</span>, then <span class="arithmatex">\(r\varphi \in \Hom_R(M,N)\)</span>
-3. If <span class="arithmatex">\(\varphi \in \Hom_R(L, M)\)</span> and <span class="arithmatex">\(\psi \in \Hom_R(M, N)\)</span>, then <span class="arithmatex">\(\psi \circ \varphi \in \Hom_R(L, N)\)</span>
-4. <span class="arithmatex">\(\Hom_R(M, M)\)</span> is a ring with identity. With <span class="arithmatex">\(R\)</span> being commutative, <span class="arithmatex">\(\Hom_R(M, M)\)</span> is an <span class="arithmatex">\(R\)</span>-algebra.</p>
+<p>Then, <span class="arithmatex">\(\varphi + \psi \in \text{Hom}_R(M, N)\)</span>. Additionally, if <span class="arithmatex">\(R\)</span> is commutative, with <span class="arithmatex">\((r\varphi)(m) = r(\varphi(m))\)</span>, then <span class="arithmatex">\(r\varphi \in \text{Hom}_R(M,N)\)</span>
+3. If <span class="arithmatex">\(\varphi \in \text{Hom}_R(L, M)\)</span> and <span class="arithmatex">\(\psi \in \text{Hom}_R(M, N)\)</span>, then <span class="arithmatex">\(\psi \circ \varphi \in \text{Hom}_R(L, N)\)</span>
+4. <span class="arithmatex">\(\text{Hom}_R(M, M)\)</span> is a ring with identity. With <span class="arithmatex">\(R\)</span> being commutative, <span class="arithmatex">\(\text{Hom}_R(M, M)\)</span> is an <span class="arithmatex">\(R\)</span>-algebra.</p>
 <p><strong>Proposition</strong>. Let <span class="arithmatex">\(R\)</span> be a ring, <span class="arithmatex">\(M\)</span> an <span class="arithmatex">\(R\)</span>-module, and <span class="arithmatex">\(N \subseteq M\)</span> an <span class="arithmatex">\(R\)</span>-submodule. then, <span class="arithmatex">\(M/N\)</span> can be made into an <span class="arithmatex">\(R\)</span>-module by defining addition. With <span class="arithmatex">\(r \in R\)</span> and <span class="arithmatex">\(x + N \in M/N\)</span>,</p>
 <div class="arithmatex">\[
 r(x + N) = (rx) + N
@@ -1737,7 +1739,7 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1855,9 +1857,11 @@ M_1 \otimes \ldots M_k = (m_1, \ldots, m_k), m_i \in M_i
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

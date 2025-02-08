@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -434,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1665,36 +1667,36 @@
 <p>In a metal or conductor, there are plentiful charges not bound to a particular atom and are thus free to move throughout the material.</p>
 <p>We note that there is no electric fiend inside a conductor, as charges internal to the material would move under the force it generates until they find a configuration that eliminates the field. This may happen, but not in electrostatics.</p>
 <p>Additionally, as the field is zero, it follows from Maxwell's equations that there is no charge inside a conductor. However, charge may be present at the surface. For sufficiently symmetric charges, this charge may be calculated.</p>
-<p>Consider any two points internal to the conductor. The voltage between said points is defined as <span class="arithmatex">\(\int_A^B \vb{E} \vdot \dd{\vb{l}}\)</span>. Since <span class="arithmatex">\(\vb{E} = 0\)</span> inside the conductor, the voltage difference must be zero. Thus, any two points in or on the surface (TODO: Why on the surface?) of a conductor must be at the same potential.</p>
-<p>The electric field at the surface of a conductor is perpendicular to its surface. Consider some displacement <span class="arithmatex">\(\dd{\vb{l}}\)</span>. Now, <span class="arithmatex">\(\vb{E} \vdot \dd{\vb{l}} = \vb{E}_s \vdot \dd{\vb{l}}_s + \vb{E}_p \vdot \dd{\vb{l}}_p = \dd{V_s} + \dd{V_p}\)</span>, in terms of parallel and perpendicular components. The parallel voltage difference is zero, so the electric field must be zero.</p>
-<p>Consider the surface of a conductor with surface charge density <span class="arithmatex">\(\sigma_e\)</span>. A cylinder with one end inside and one end outside said surface, with its axis normal to said surface, will be a Gaussian "pillbox", which will show that with V being the volume of the pillbox, <span class="arithmatex">\(\int_V \div{\vb{E}} \dd{V} = \frac{Q_e}{\varepsilon_0} = \frac{A\sigma_e}{\varepsilon_0}\)</span>. Thus, <span class="arithmatex">\(\sigma_e = \varepsilon_0 E\)</span>.</p>
+<p>Consider any two points internal to the conductor. The voltage between said points is defined as <span class="arithmatex">\(\int_A^B \mathbf{E} \cdot d{\mathbf{l}}\)</span>. Since <span class="arithmatex">\(\mathbf{E} = 0\)</span> inside the conductor, the voltage difference must be zero. Thus, any two points in or on the surface (TODO: Why on the surface?) of a conductor must be at the same potential.</p>
+<p>The electric field at the surface of a conductor is perpendicular to its surface. Consider some displacement <span class="arithmatex">\(d{\mathbf{l}}\)</span>. Now, <span class="arithmatex">\(\mathbf{E} \cdot d{\mathbf{l}} = \mathbf{E}_s \cdot d{\mathbf{l}}_s + \mathbf{E}_p \cdot d{\mathbf{l}}_p = d{V_s} + d{V_p}\)</span>, in terms of parallel and perpendicular components. The parallel voltage difference is zero, so the electric field must be zero.</p>
+<p>Consider the surface of a conductor with surface charge density <span class="arithmatex">\(\sigma_e\)</span>. A cylinder with one end inside and one end outside said surface, with its axis normal to said surface, will be a Gaussian "pillbox", which will show that with V being the volume of the pillbox, <span class="arithmatex">\(\int_V \nabla \cdot \mathbf{E} d{V} = \frac{Q_e}{\varepsilon_0} = \frac{A\sigma_e}{\varepsilon_0}\)</span>. Thus, <span class="arithmatex">\(\sigma_e = \varepsilon_0 E\)</span>.</p>
 <h2 id="section-43-exercises-involving-conductors-at-fixed-potentials">Section 4.3 - Exercises involving conductors at fixed potentials</h2>
 <p>Consider a square with left and right potentials <span class="arithmatex">\(V(0, y) = V(l, y) = V_1\)</span> and <span class="arithmatex">\(V(x, 0) = V(x, l) = V_2\)</span>. Since we are uniform in <span class="arithmatex">\(z\)</span>, we can say that <span class="arithmatex">\(V(x, y) = X(x)Y(y)\)</span> and apply separation of variables.</p>
 <p>In spherical polar coordinates, we see that with azimuthal symmetry, <span class="arithmatex">\(V(r, \theta) = \sum_{l=0}^\infty a_l r^l P_l(cos\theta)\)</span> where <span class="arithmatex">\(P_l(x)\)</span> are Legendre polynomials.</p>
-<p><strong>Theorem</strong>. 4.3.3: A Laplace equation's solution must be unique inside a volume <span class="arithmatex">\(\Omega\)</span> if <span class="arithmatex">\(\int_{\dd{\Omega}}[\Phi(\vb{r})\grad{\Phi{\vb{r}}} \vdot \vu{n} \dd{S} = 0]\)</span>. With this, consider a surface <span class="arithmatex">\(\dd{\Omega}\)</span> that surrounds conductors. The integral vanishes if a) the potential is specified on each conductor or b) the total charge on each conductor is specified.</p>
-<p>Now, define <span class="arithmatex">\(\Phi(\vb{r})\)</span> as the difference between any two potential solutions to the Laplace equation at point <span class="arithmatex">\(\vb{r}\)</span>. Since potential must be a constant,</p>
+<p><strong>Theorem</strong>. 4.3.3: A Laplace equation's solution must be unique inside a volume <span class="arithmatex">\(\Omega\)</span> if <span class="arithmatex">\(\int_{d{\Omega}}[\Phi(\mathbf{r})\nabla{\Phi{\mathbf{r}}} \cdot \hat{\mathbf{n}} d{S} = 0]\)</span>. With this, consider a surface <span class="arithmatex">\(d{\Omega}\)</span> that surrounds conductors. The integral vanishes if a) the potential is specified on each conductor or b) the total charge on each conductor is specified.</p>
+<p>Now, define <span class="arithmatex">\(\Phi(\mathbf{r})\)</span> as the difference between any two potential solutions to the Laplace equation at point <span class="arithmatex">\(\mathbf{r}\)</span>. Since potential must be a constant,</p>
 <div class="arithmatex">\[
-\int_{\dd{\Omega}}[\Phi(\vb{r})\grad{\Phi{\vb{r}}}] \vdot \vu{n} \dd{S}
-= \sum_{i=1}^N \Phi_i \int_{\dd{\Omega_i}} \grad{\Phi{\vb{r}}} \vdot \vu{n} \dd{S}
+\int_{d{\Omega}}[\Phi(\mathbf{r})\nabla{\Phi{\mathbf{r}}}] \cdot \hat{\mathbf{n}} d{S}
+= \sum_{i=1}^N \Phi_i \int_{d{\Omega_i}} \nabla{\Phi{\mathbf{r}}} \cdot \hat{\mathbf{n}} d{S}
 \]</div>
 <p>Thus, if potential is specified, <span class="arithmatex">\(\Phi_i\)</span> vanishes for that conductor. If the total charge is instead specified, the gradient vanishes because there is no difference in charge between any two points.</p>
 <h2 id="section-44-electric-field-polarization-field-and-flux-density-in-the-presence-of-conductors">Section 4.4 - Electric Field, Polarization Field, and Flux Density in the Presence of Conductors</h2>
-<p><strong>Definition</strong>. A <em>bound charge</em> is any charge in a conductor that is bound to an atom and not free to be redistributed at the surface. We say that bound charges are the source of the polarization field <span class="arithmatex">\(\vb{P}\)</span>. Additionally, we note the charge density of bound charges is <span class="arithmatex">\(\rho_{eb}\)</span>. Thus,</p>
+<p><strong>Definition</strong>. A <em>bound charge</em> is any charge in a conductor that is bound to an atom and not free to be redistributed at the surface. We say that bound charges are the source of the polarization field <span class="arithmatex">\(\mathbf{P}\)</span>. Additionally, we note the charge density of bound charges is <span class="arithmatex">\(\rho_{eb}\)</span>. Thus,</p>
 <div class="arithmatex">\[
-\div \vb{P} = - \rho_{eb}
+\nabla \cdot \mathbf{P} = - \rho_{eb}
 \]</div>
 <p>This field is zero outside of a material, and if non-zero inside a material, will drop to zero at the surface discontinuously. If there is a component perpendicular to the surface, the discontinuity will generate curl. If there is a component parallel to the surface, it will generate divergence.</p>
 <p><strong>Definition</strong>. Charges not bound are called <em>free</em>, with density denoted as <span class="arithmatex">\(\rho_{ef}\)</span>. Combined with <span class="arithmatex">\(\rho_{eb}\)</span>, they form the basis of the electric field. THat is,</p>
 <div class="arithmatex">\[
-\varepsilon_0 \div \vb{E} = \rho_{ef} + \rho_{eb}
+\varepsilon_0 \nabla \cdot \mathbf{E} = \rho_{ef} + \rho_{eb}
 \]</div>
-<p><strong>Definition</strong>. The electric flux density field <span class="arithmatex">\(\vb{D}\)</span> is defined as</p>
+<p><strong>Definition</strong>. The electric flux density field <span class="arithmatex">\(\mathbf{D}\)</span> is defined as</p>
 <div class="arithmatex">\[
-\vb{D} = \varepsilon_0 \vb{E} + \vb{P}
+\mathbf{D} = \varepsilon_0 \mathbf{E} + \mathbf{P}
 \]</div>
-<p>Both <span class="arithmatex">\(\vb{D}\)</span> and <span class="arithmatex">\(\vb{P}\)</span> have units of Coulombs/m^2. Additionally, we see that</p>
+<p>Both <span class="arithmatex">\(\mathbf{D}\)</span> and <span class="arithmatex">\(\mathbf{P}\)</span> have units of Coulombs/m^2. Additionally, we see that</p>
 <div class="arithmatex">\[
-\div \vb{D} = \div (\varepsilon_0 \vb{E} + \vb{P}) = \div \varepsilon_0 \vb{E} + \div \vb{P} = (\rho_{ef} + \rho_{eb}) - \rho_{eb} = \rho_{ef}
+\nabla \cdot \mathbf{D} = \nabla \cdot (\varepsilon_0 \mathbf{E} + \mathbf{P}) = \nabla \cdot \varepsilon_0 \mathbf{E} + \nabla \cdot \mathbf{P} = (\rho_{ef} + \rho_{eb}) - \rho_{eb} = \rho_{ef}
 \]</div>
 <h2 id="section-45-induced-electric-charges-their-potentials-and-fields">Section 4.5 - Induced Electric Charges, their Potentials and Fields</h2>
 <p>This is an application chapter.</p>
@@ -1705,7 +1707,7 @@ C := \frac{Q}{V}
 \]</div>
 <p>This unit, <span class="arithmatex">\(\frac{C}{V}\)</span>, is known as a Farad. For a sphere, <span class="arithmatex">\(C = 4 \pi \varepsilon_0 R\)</span>. For a parallel plate capacitor, this reduces to <span class="arithmatex">\(C = \frac{epsilon_0 A}{d}\)</span>.</p>
 <h2 id="section-47-forces-on-charged-conductors-in-electric-fields">Section 4.7 - Forces on Charged Conductors in Electric Fields</h2>
-<p>We know that <span class="arithmatex">\(\vb{F} = \int \vb{E}_{ext}(\vb{r}) \rho_e(\vb{r}) dV\)</span>, where <span class="arithmatex">\(\vb{E}_{ext}(\vb{r})\)</span> is the external electric field and <span class="arithmatex">\(\rho_e(\vb{r})\)</span> is the charge density of the object.</p>
+<p>We know that <span class="arithmatex">\(\mathbf{F} = \int \mathbf{E}_{ext}(\mathbf{r}) \rho_e(\mathbf{r}) dV\)</span>, where <span class="arithmatex">\(\mathbf{E}_{ext}(\mathbf{r})\)</span> is the external electric field and <span class="arithmatex">\(\rho_e(\mathbf{r})\)</span> is the charge density of the object.</p>
 
 
 
@@ -1728,7 +1730,7 @@ C := \frac{Q}{V}
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1846,9 +1848,11 @@ C := \frac{Q}{V}
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

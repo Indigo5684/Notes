@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -436,7 +438,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1578,18 +1580,18 @@
 <p><strong>Remark</strong>. If <span class="arithmatex">\(A'\)</span> is the derived set of <span class="arithmatex">\(A\)</span>, then <span class="arithmatex">\(A'' \subseteq A'\)</span>.</p>
 <p><strong>Remark</strong>. Intervals involving infinity and square brackets for the constant are closed.</p>
 <hr />
-<p><strong>Definition</strong>. Suppose <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span> is a function with domain <span class="arithmatex">\(A \subseteq \mathbb{R}\)</span>, and let <span class="arithmatex">\(c \in A\)</span> be a cluster point of <span class="arithmatex">\(A\)</span>. then, a real number <span class="arithmatex">\(L\)</span> is a <em>limit of <span class="arithmatex">\(f\)</span> at <span class="arithmatex">\(c\)</span></em> if given any <span class="arithmatex">\(\epsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> such that</p>
+<p><strong>Definition</strong>. Suppose <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span> is a function with domain <span class="arithmatex">\(A \subseteq \mathbb{R}\)</span>, and let <span class="arithmatex">\(c \in A\)</span> be a cluster point of <span class="arithmatex">\(A\)</span>. then, a real number <span class="arithmatex">\(L\)</span> is a <em>limit of <span class="arithmatex">\(f\)</span> at <span class="arithmatex">\(c\)</span></em> if given any <span class="arithmatex">\(\varepsilon &gt; 0\)</span>, there exists some <span class="arithmatex">\(\delta &gt; 0\)</span> such that</p>
 <div class="arithmatex">\[
-0 &lt; |x-c| &lt; \delta \Rightarrow |f(x) - L| &lt; \epsilon
+0 &lt; |x-c| &lt; \delta \Rightarrow |f(x) - L| &lt; \varepsilon
 \]</div>
 <p><strong>Theorem</strong>. For a given function and cluster point, there can be at most one limit at said point.</p>
 <p><strong>Theorem</strong>. Let <span class="arithmatex">\(A \subseteq \mathbb{R}\)</span> and <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span>. Then, to show that <span class="arithmatex">\(lim_{x \rightarrow c} f(x) = L\)</span>, it suffices to show that for every sequence <span class="arithmatex">\((a_n)\)</span> in <span class="arithmatex">\(A\\ \{c\}\)</span>, the sequence <span class="arithmatex">\((f(a_n))\)</span> converges tto <span class="arithmatex">\(L\)</span>.</p>
 <hr />
 <p><strong>Definition</strong>. The <em>extended real numbers</em> are <span class="arithmatex">\(\hat{\mathbb{R}} = \mathbb{R} \cup \{ \infty, -\infty \}\)</span> are a totally-ordered set with supremum and infimum. Note that this set is no longer a field.</p>
-<p><strong>Definition</strong>. At any point <span class="arithmatex">\(c\)</span>, the limit of <span class="arithmatex">\(f\)</span> at <span class="arithmatex">\(c\)</span> is infinite if given some <span class="arithmatex">\(\alpha\)</span>,  there exists some <span class="arithmatex">\(V_\delta(c)\)</span> such that for all <span class="arithmatex">\(x \in V_\epsilon(c)\)</span>, then <span class="arithmatex">\(f(x) \in V_\alpha(\infty)\)</span>.</p>
-<p><strong>Definition</strong>. The limit of a function at infinity is defined if for a given <span class="arithmatex">\(\epsilon\)</span>, there exists some <span class="arithmatex">\(\alpha\)</span> so that there exists some <span class="arithmatex">\(V_\delta(c)\)</span> such that for all <span class="arithmatex">\(x \in A\)</span>,</p>
+<p><strong>Definition</strong>. At any point <span class="arithmatex">\(c\)</span>, the limit of <span class="arithmatex">\(f\)</span> at <span class="arithmatex">\(c\)</span> is infinite if given some <span class="arithmatex">\(\alpha\)</span>,  there exists some <span class="arithmatex">\(V_\delta(c)\)</span> such that for all <span class="arithmatex">\(x \in V_\varepsilon(c)\)</span>, then <span class="arithmatex">\(f(x) \in V_\alpha(\infty)\)</span>.</p>
+<p><strong>Definition</strong>. The limit of a function at infinity is defined if for a given <span class="arithmatex">\(\varepsilon\)</span>, there exists some <span class="arithmatex">\(\alpha\)</span> so that there exists some <span class="arithmatex">\(V_\delta(c)\)</span> such that for all <span class="arithmatex">\(x \in A\)</span>,</p>
 <div class="arithmatex">\[
-x &gt; \alpha \Rightarrow |f(x) - L| &lt; \epsilon
+x &gt; \alpha \Rightarrow |f(x) - L| &lt; \varepsilon
 \]</div>
 <h2 id="section-42-limit-theorems">Section 4.2 - Limit Theorems</h2>
 <p><strong>Definition</strong>. Let <span class="arithmatex">\(A \subseteq \mathbb{R}\)</span> and <span class="arithmatex">\(c \in \mathbb{R}\)</span> be a cluster point of <span class="arithmatex">\(A\)</span>. Then, a function <span class="arithmatex">\(f: A \rightarrow \mathbb{R}\)</span> is <em>bounded on a neighborhood of <span class="arithmatex">\(c\)</span></em> if there exists some <span class="arithmatex">\(\delta\)</span>-neighborhood <span class="arithmatex">\(V_\delta(c)\)</span> of <span class="arithmatex">\(c\)</span> and some constant <span class="arithmatex">\(M &gt; 0\)</span> such that for all <span class="arithmatex">\(x \in A \cap V_\delta(c)\)</span>, then <span class="arithmatex">\(|f(x)| \leq M\)</span>.</p>
@@ -1638,7 +1640,7 @@ f(x) \leq g(x) \leq h(x) \; \text{ for all } x \in A, x \neq c
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1756,9 +1758,11 @@ f(x) \leq g(x) \leq h(x) \; \text{ for all } x \in A, x \neq c
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>

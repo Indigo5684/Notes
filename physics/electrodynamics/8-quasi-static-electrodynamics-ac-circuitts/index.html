@@ -43,6 +43,8 @@
       
     
     
+      <link rel="stylesheet" href="https://unpkg.com/katex@0/dist/katex.min.css">
+    
     <script>__md_scope=new URL("../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
     
       
@@ -434,7 +436,7 @@
         
   
   <span class="md-ellipsis">
-    Dummit &amp; Foote Chapter 12 - Field Theory
+    Dummit &amp; Foote Chapter 13 - Field Theory
   </span>
   
 
@@ -1759,17 +1761,17 @@
 <p><strong>Definition</strong>. Here, the term <span class="arithmatex">\(X_C = (wC)^{-1}\)</span> is the <em>capacitive reactance</em> of the circuit.</p>
 <p><strong>Definition</strong>. We also can solve for current to see that <span class="arithmatex">\(I_0 = \frac{V_0}{Z}\)</span>, where <span class="arithmatex">\(Z = \sqrt{R^2 + X_C^2}\)</span>, where <span class="arithmatex">\(Z\)</span> is the <em>impedence</em> of the circuit.</p>
 <h3 id="section-812-quasi-static-error-for-a-parallel-plate-capacitor">Section 8.1.2 - Quasi-Static Error for a Parallel Plate Capacitor</h3>
-<p>Consider a parallel-plate capacitor. We know that within the capacitor, the electric flux is <span class="arithmatex">\(\vb{D}(t) = \varepsilon_0 \vb{E}(t)\)</span>. With the charge on a plate given by <span class="arithmatex">\(Q(t)\)</span>, we can say that <span class="arithmatex">\(\vb{D}(t) = \frac{Q(t)}{\pi R^2}\)</span>.</p>
-<p>We also know by Ampere's law that <span class="arithmatex">\(\curl \vb{H} = \frac{\partial}{\partial t} \vb{D}\)</span>. From this, given circular platFrom this, applying Stokes to Ampere's Law, we see that</p>
-<div class="arithmatex">\[\vb{H} = \frac{\partial Q}{\partial t} \frac{s}{2 \pi R^2} \vu{\varphi}\]</div>
+<p>Consider a parallel-plate capacitor. We know that within the capacitor, the electric flux is <span class="arithmatex">\(\mathbf{D}(t) = \varepsilon_0 \mathbf{E}(t)\)</span>. With the charge on a plate given by <span class="arithmatex">\(Q(t)\)</span>, we can say that <span class="arithmatex">\(\mathbf{D}(t) = \frac{Q(t)}{\pi R^2}\)</span>.</p>
+<p>We also know by Ampere's law that <span class="arithmatex">\(\nabla \times \mathbf{H} = \frac{\partial}{\partial t} \mathbf{D}\)</span>. From this, given circular platFrom this, applying Stokes to Ampere's Law, we see that</p>
+<div class="arithmatex">\[\mathbf{H} = \frac{\partial Q}{\partial t} \frac{s}{2 \pi R^2} \hat{\mathbf{\varphi}}\]</div>
 <p>This continues on in this manner, however, I've opted to skip most of the math.</p>
 <p>The correction term <span class="arithmatex">\(\delta E\)</span> can be written as <span class="arithmatex">\(\delta E = (\frac{\pi s}{Tc})^2 E_0\)</span>, where <span class="arithmatex">\(T\)</span> is the period of the sinusoidal current oscillations (that is, <span class="arithmatex">\(\omega = 2\pi/T\)</span>, or <span class="arithmatex">\(T = 2\pi / \omega\)</span>). If this is much smaller than the size of the device, the correction can be neglected.</p>
 <h3 id="section-813-inductance">Section 8.1.3 - Inductance</h3>
 <p>For an inductor, the voltage drop across an inductor is directly proportional to the change in current. That is,</p>
 <div class="arithmatex">\[\Delta V_L = L \frac{d^2Q}{dt^2} = L\frac{dI}{dt}\]</div>
-<p>Consider a circular current loop with a voltage source in the <span class="arithmatex">\(x-y\)</span> plane. Then, applying Faraday's law, <span class="arithmatex">\(\int_{circle} = (\curl \vb{E}) \cdot \vu{z} dS = -\frac{\partial}{\partial t} \int_{circle} \vb{B} \cdot \vu{z} dS\)</span>.</p>
-<p>Apply Stokes' law to the left hand side to see that <span class="arithmatex">\(\int_{circumference} \vb{E} \cdot d\vb{l} = -\frac{\partial \Phi_B}{\partial t}\)</span>.</p>
-<p>With <span class="arithmatex">\(\Phi_B = LI\)</span>, we see the "back EMF" opposing the increasing current will be <span class="arithmatex">\(\vb{\mathcal{E}} = -L \frac{\partial I}{\partial t}\)</span>.</p>
+<p>Consider a circular current loop with a voltage source in the <span class="arithmatex">\(x-y\)</span> plane. Then, applying Faraday's law, <span class="arithmatex">\(\int_{circle} = (\nabla \times \mathbf{E}) \cdot \hat{\mathbf{z}} dS = -\frac{\partial}{\partial t} \int_{circle} \mathbf{B} \cdot \hat{\mathbf{z}} dS\)</span>.</p>
+<p>Apply Stokes' law to the left hand side to see that <span class="arithmatex">\(\int_{circumference} \mathbf{E} \cdot d\mathbf{l} = -\frac{\partial \Phi_B}{\partial t}\)</span>.</p>
+<p>With <span class="arithmatex">\(\Phi_B = LI\)</span>, we see the "back EMF" opposing the increasing current will be <span class="arithmatex">\(\mathbf{\mathcal{E}} = -L \frac{\partial I}{\partial t}\)</span>.</p>
 <p>Consider a circuit with a voltage source, a switch, an inductor, and a resistor in series. Then, by KVL, <span class="arithmatex">\(V_{cell} = L \frac{dI}{dt} + IR\)</span>.</p>
 <p>This is a differential equation. Assuming <span class="arithmatex">\(I(0) = 0\)</span>, we can see that</p>
 <div class="arithmatex">\[I(t) = \frac{V_{cell}}{R}(1 - e^{-\frac{R}{L}t})\]</div>
@@ -1779,36 +1781,36 @@
 <div class="arithmatex">\[\sin \phi = -\frac{X_L}{Z}; \cos \phi = \frac{R}{Z}; I_0 = \frac{V_0}{Z}\]</div>
 <p><strong>Definition</strong>. Here, <span class="arithmatex">\(X_Z = \omega L\)</span> is the <em>impedence</em> of the circuit.</p>
 <h3 id="section-814-calculation-of-inductance">Section 8.1.4 - Calculation of Inductance</h3>
-<p>Recall that the back EMF <span class="arithmatex">\(\vb{\mathcal{E}} = -L \frac{\partial I}{\partial T}\)</span>. We can calculate the work done by this force as follows.</p>
-<div class="arithmatex">\[\frac{dW}{dt} = I(\vb{\mathcal{E}}) = IL \frac{dI}{dt} = \frac{1}{2} L \frac{d}{dt}(I^2)\]</div>
+<p>Recall that the back EMF <span class="arithmatex">\(\mathbf{\mathcal{E}} = -L \frac{\partial I}{\partial T}\)</span>. We can calculate the work done by this force as follows.</p>
+<div class="arithmatex">\[\frac{dW}{dt} = I(\mathbf{\mathcal{E}}) = IL \frac{dI}{dt} = \frac{1}{2} L \frac{d}{dt}(I^2)\]</div>
 <p>Then, integrating both sides, we see that</p>
 <div class="arithmatex">\[W = \frac{1}{2}L\int_0^{I^2(t)} I^2(t') dt' = \frac{1}{2}LI^2\]</div>
 <p>We also know from Section 3.2 that the work needed to create a magnetic field is as follows.</p>
 <div class="arithmatex">\[W = \frac{1}{2} \mu_0 \int_V H^2 dV\]</div>
-<p>Now, consider a long air-filled solenoid with <span class="arithmatex">\(n\)</span> turns per unit length and cross-sectional area <span class="arithmatex">\(A\)</span>. Then, we know the flux through a cross-section of the solenoid will be <span class="arithmatex">\(\Phi = BA = \mu_0 n I A\)</span>. Then, the back-EMF for one loop of the solenoid can be given by <span class="arithmatex">\(\vb{\mathcal{E}}_{1 loop} = - \frac{d\Phi}{dt} = -\mu_0 n A \frac{dI}{dt}\)</span>. Then, the total induced EMF will be <span class="arithmatex">\(\vb{\mathcal{E}} = nl\vb{\mathcal{E}}_{1 loop}\)</span>, where <span class="arithmatex">\(l\)</span> is the length of the solenoid. Thus, by the definition of back-EMF,</p>
-<div class="arithmatex">\[\vb{\mathcal{E}} = -nl \mu_0 nA \frac{dI}{dt} = -L\frac{dI}{dt}\]</div>
+<p>Now, consider a long air-filled solenoid with <span class="arithmatex">\(n\)</span> turns per unit length and cross-sectional area <span class="arithmatex">\(A\)</span>. Then, we know the flux through a cross-section of the solenoid will be <span class="arithmatex">\(\Phi = BA = \mu_0 n I A\)</span>. Then, the back-EMF for one loop of the solenoid can be given by <span class="arithmatex">\(\mathbf{\mathcal{E}}_{1 loop} = - \frac{d\Phi}{dt} = -\mu_0 n A \frac{dI}{dt}\)</span>. Then, the total induced EMF will be <span class="arithmatex">\(\mathbf{\mathcal{E}} = nl\mathbf{\mathcal{E}}_{1 loop}\)</span>, where <span class="arithmatex">\(l\)</span> is the length of the solenoid. Thus, by the definition of back-EMF,</p>
+<div class="arithmatex">\[\mathbf{\mathcal{E}} = -nl \mu_0 nA \frac{dI}{dt} = -L\frac{dI}{dt}\]</div>
 <p>So, <span class="arithmatex">\(L = \mu_0 n^2 Al\)</span></p>
 <p>We can also compute thsi by energy. We know that <span class="arithmatex">\(W = \frac{1}{2} \mu_0 \int_V H^2 dV = \frac{1}{2} \mu_0 n^2 I^2 Al = \frac{1}{2}LI^2\)</span>. This simplifies immediately.</p>
 <p>Now, consider a coaxial cable. That is, consider a solid cylinder of radius <span class="arithmatex">\(a\)</span> that conducts current in the <span class="arithmatex">\(+z\)</span> direction. The circuit is completed by a thin cylindical shell outside of the conductor yet still with radius <span class="arithmatex">\(a\)</span>. We also assume that current density is uniform within the cylindrical conductor.</p>
-<p>Recall that from Ampere's Law, for <span class="arithmatex">\(s \in (0, a)\)</span>, we have <span class="arithmatex">\(\vb{H}(s) = \frac{I_enc}{2\pi s}\vu{\varphi}\)</span>, with <span class="arithmatex">\(I_enc = \frac{I\pi s^2}{\pi a^2}\)</span>. Thus, <span class="arithmatex">\(\vb{H} = \frac{Is}{2\pi a^2}\vu{\varphi}\)</span>. Then,</p>
+<p>Recall that from Ampere's Law, for <span class="arithmatex">\(s \in (0, a)\)</span>, we have <span class="arithmatex">\(\mathbf{H}(s) = \frac{I_enc}{2\pi s}\hat{\mathbf{\varphi}}\)</span>, with <span class="arithmatex">\(I_enc = \frac{I\pi s^2}{\pi a^2}\)</span>. Thus, <span class="arithmatex">\(\mathbf{H} = \frac{Is}{2\pi a^2}\hat{\mathbf{\varphi}}\)</span>. Then,</p>
 <div class="arithmatex">\[W = \frac{1}{2} \mu_0 \int_V H^2 dV = \frac{1}{2} \mu_0 l \int_0^a 2\pi s ds (\frac{Is}{2\pi a^2})^2 = \frac{I^2}{2} \frac{\mu_0 l}{2\pi} \frac{1}{4}\]</div>
 <p>This implies that <span class="arithmatex">\(L = \frac{\mu_0 l}{8\pi}\)</span>.</p>
-<p>We can also solve this via flux. We know that <span class="arithmatex">\(\vb{B}(s) = \frac{u_0 Is}{2\pi a^2}\vu{\varphi}\)</span>. Then,</p>
-<div class="arithmatex">\[\Phi = \int_0^a \vb{B} \vdot \vu{n} dS = \int_0^a \frac{\mu_0 Is}{2\pi a^2} l ds = \frac{\mu_0 I l}{2\pi} \frac{1}{2}\]</div>
+<p>We can also solve this via flux. We know that <span class="arithmatex">\(\mathbf{B}(s) = \frac{u_0 Is}{2\pi a^2}\hat{\mathbf{\varphi}}\)</span>. Then,</p>
+<div class="arithmatex">\[\Phi = \int_0^a \mathbf{B} \cdot \hat{\mathbf{n}} dS = \int_0^a \frac{\mu_0 Is}{2\pi a^2} l ds = \frac{\mu_0 I l}{2\pi} \frac{1}{2}\]</div>
 <p>This is off by a factor of <span class="arithmatex">\(2\)</span>. Instead, multiply by a fator of <span class="arithmatex">\(f(s) = \frac{s^2}{a^2}\)</span> to see</p>
 <div class="arithmatex">\[\Lambda = LI = \int_0^a \frac{\mu_0 I s^3}{2\pi a^4} l ds = \frac{\mu_0 I l}{2\pi} \frac{1}{4}\]</div>
 <p>Note that due to the Skin Effect, at high frequencies, back EMF must be considered even inside the conductor.</p>
 <p>This becomes complicated, and is thus omitted.</p>
 <h3 id="section-815-quasi-static-error-for-a-solenoidal-inductor">Section 8.1.5 - Quasi-static Error for a Solenoidal Inductor</h3>
-<p>In section 5.2, we learned that in a long solenoid, <span class="arithmatex">\(\vb{H} = nI \vb{z}\)</span>, where <span class="arithmatex">\(I\)</span> is the current and <span class="arithmatex">\(n\)</span> the number of turns per uniut length. This, however, was dependent of the current being constant. Now, let current be represented as <span class="arithmatex">\(I(t) = I_0 \cos (\omega t + \phi)\)</span>. Now, <span class="arithmatex">\(\vb{H}(t) = nI(t) \vu{z}\)</span>.</p>
-<p>This implies magnetic flux with a density of <span class="arithmatex">\(\vb{B} = \mu_0 n I(t) \vu{z}\)</span>. Given the inductor with radius <span class="arithmatex">\(s\)</span>, this will cause changing flux <span class="arithmatex">\(\Phi_B(t) = \vb{B} * A = \mu_0 n I(t) \pi s^2\)</span>.</p>
+<p>In section 5.2, we learned that in a long solenoid, <span class="arithmatex">\(\mathbf{H} = nI \mathbf{z}\)</span>, where <span class="arithmatex">\(I\)</span> is the current and <span class="arithmatex">\(n\)</span> the number of turns per uniut length. This, however, was dependent of the current being constant. Now, let current be represented as <span class="arithmatex">\(I(t) = I_0 \cos (\omega t + \phi)\)</span>. Now, <span class="arithmatex">\(\mathbf{H}(t) = nI(t) \hat{\mathbf{z}}\)</span>.</p>
+<p>This implies magnetic flux with a density of <span class="arithmatex">\(\mathbf{B} = \mu_0 n I(t) \hat{\mathbf{z}}\)</span>. Given the inductor with radius <span class="arithmatex">\(s\)</span>, this will cause changing flux <span class="arithmatex">\(\Phi_B(t) = \mathbf{B} * A = \mu_0 n I(t) \pi s^2\)</span>.</p>
 <p>By Faraday's Law,</p>
 <div class="arithmatex">\[E_{induced} = -N \frac{\partial \Phi_B}{\partial{t}}\]</div>
 <p>This can be rearranged to see</p>
-<div class="arithmatex">\[2\pi s \vb{E}_{induced}(t) = -\frac{\partial \Phi_b(t)}{\partial t} = -\mu_0 n \pi s^2 \frac{\partial}{\partial t} I(t)\]</div>
-<p>This can be used to find <span class="arithmatex">\(\vb{E} = -\mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \vu{\varphi}\)</span>, equivalent to a flux density <span class="arithmatex">\(\vb{D}(t) = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \vu{\varphi}\)</span>. We can then apply Ampere's law to see that</p>
-<div class="arithmatex">\[\curl \vb{H} = \frac{\partial \vb{D}(t)}{\partial t} = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial^2}{\partial t^2}I(t) \vu{\varphi}\]</div>
-<p>We can work backwards to find that <span class="arithmatex">\(\vb{H}(s, t) = (1 - \frac{\mu_0 \varepsilon_0 s^2 \omega^2}{4}) H_{z0}(t)\vu{z}\)</span>. Then, the same conditions should apply as in 8.1.2. That is, <span class="arithmatex">\(\omega\)</span> should be low enough or the d evice small enough that light can easily propagate across the device during one period of oscillation.</p>
+<div class="arithmatex">\[2\pi s \mathbf{E}_{induced}(t) = -\frac{\partial \Phi_b(t)}{\partial t} = -\mu_0 n \pi s^2 \frac{\partial}{\partial t} I(t)\]</div>
+<p>This can be used to find <span class="arithmatex">\(\mathbf{E} = -\mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \hat{\mathbf{\varphi}}\)</span>, equivalent to a flux density <span class="arithmatex">\(\mathbf{D}(t) = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial}{\partial t}I(t) \hat{\mathbf{\varphi}}\)</span>. We can then apply Ampere's law to see that</p>
+<div class="arithmatex">\[\nabla \times \mathbf{H} = \frac{\partial \mathbf{D}(t)}{\partial t} = -\varepsilon_0 \mu_0 n \frac{s}{2} \frac{\partial^2}{\partial t^2}I(t) \hat{\mathbf{\varphi}}\]</div>
+<p>We can work backwards to find that <span class="arithmatex">\(\mathbf{H}(s, t) = (1 - \frac{\mu_0 \varepsilon_0 s^2 \omega^2}{4}) H_{z0}(t)\hat{\mathbf{z}}\)</span>. Then, the same conditions should apply as in 8.1.2. That is, <span class="arithmatex">\(\omega\)</span> should be low enough or the d evice small enough that light can easily propagate across the device during one period of oscillation.</p>
 <h2 id="section-82-circuits-with-resistance-capacitance-and-inductance-and-a-sinusoidal-emf">Section 8.2 - Circuits with Resistance, Capacitance and Inductance and a Sinusoidal EMF</h2>
 <h3 id="section-821-rlc-circuits">Section 8.2.1 - RLC Circuits</h3>
 <p>Consider an AC voltage source, a resistor with resistance <span class="arithmatex">\(R\)</span>, inductor with inductance <span class="arithmatex">\(L\)</span>, and capacitor with capacitance <span class="arithmatex">\(C\)</span> all in series. Then, by KVL,</p>
@@ -1846,17 +1848,17 @@
 <p>We know the energy in an electromagnetic field is</p>
 <div class="arithmatex">\[u = \frac{1}{2}(\varepsilon_0 e^2 + \mu_u H^2)\]</div>
 <p>In a capacitor, we cannot directly state the energy. However, we can state its rate of change:</p>
-<div class="arithmatex">\[\frac{du_E}{dt} = \vb{E} \vdot \frac{d\vb{D}}{dt}\]</div>
-<p>In the case where <span class="arithmatex">\(\vb{D} = \varepsilon \vb{E}\)</span>, that is, in the presence of a simple dielectric,</p>
-<div class="arithmatex">\[u_E = \frac{1}{2} \varepsilon E^2 = \frac{1}{2}\vb{E} \vdot \vb{D}\]</div>
+<div class="arithmatex">\[\frac{du_E}{dt} = \mathbf{E} \cdot \frac{d\mathbf{D}}{dt}\]</div>
+<p>In the case where <span class="arithmatex">\(\mathbf{D} = \varepsilon \mathbf{E}\)</span>, that is, in the presence of a simple dielectric,</p>
+<div class="arithmatex">\[u_E = \frac{1}{2} \varepsilon E^2 = \frac{1}{2}\mathbf{E} \cdot \mathbf{D}\]</div>
 <p>This is mirrored in solenoids / inductors, where</p>
-<div class="arithmatex">\[\frac{du_M}{dt} = \vb{H} \vdot \frac{d\vb{B}}{dt}\]</div>
-<p>In the case where <span class="arithmatex">\(\vb{B} = \mu \vb{H}\)</span>, that is, in the presence of a simple magnetic material,</p>
-<div class="arithmatex">\[u_M = \frac{1}{2}\vb{H} \vdot \vb{B}\]</div>
+<div class="arithmatex">\[\frac{du_M}{dt} = \mathbf{H} \cdot \frac{d\mathbf{B}}{dt}\]</div>
+<p>In the case where <span class="arithmatex">\(\mathbf{B} = \mu \mathbf{H}\)</span>, that is, in the presence of a simple magnetic material,</p>
+<div class="arithmatex">\[u_M = \frac{1}{2}\mathbf{H} \cdot \mathbf{B}\]</div>
 <p>Lastly, this continues for electromagnetic fields.</p>
-<div class="arithmatex">\[\frac{du_{EM}}{dt} = \vb{E} \vdot \frac{d\vb{D}}{dt} + \vb{H} \vdot \frac{d\vb{B}}{dt}\]</div>
+<div class="arithmatex">\[\frac{du_{EM}}{dt} = \mathbf{E} \cdot \frac{d\mathbf{D}}{dt} + \mathbf{H} \cdot \frac{d\mathbf{B}}{dt}\]</div>
 <p>In simple electromagnetic materials, we see that</p>
-<div class="arithmatex">\[u_{EM} = \frac{1}{2}(\vb{E} \vdot \vb{D} + \vb{H} \vdot{B}) = \frac{1}{2}(\varepsilon E^2 + \mu H^2)\]</div>
+<div class="arithmatex">\[u_{EM} = \frac{1}{2}(\mathbf{E} \cdot \mathbf{D} + \mathbf{H} \cdot \mathbf{B}) = \frac{1}{2}(\varepsilon E^2 + \mu H^2)\]</div>
 
 
 
@@ -1879,7 +1881,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
   </span>
 
     
@@ -1997,9 +1999,11 @@
     
       <script src="../../../assets/javascripts/bundle.525ec568.min.js"></script>
       
-        <script src="../../../javascripts/mathjax.js"></script>
+        <script src="../../../javascripts/katex.js"></script>
       
-        <script src="https://unpkg.com/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script src="https://unpkg.com/katex@0/dist/katex.min.js"></script>
+      
+        <script src="https://unpkg.com/katex@0/dist/contrib/auto-render.min.js"></script>
       
     
   </body>
