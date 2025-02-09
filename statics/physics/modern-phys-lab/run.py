@@ -5,11 +5,11 @@ import scipy
 
 colors = ['blue', 'green', 'orange', 'purple', 'red']
 wavelengths = {
-  'blue': 465,
-  'green': 520,
-  'orange': 589,
-  'purple': 390,
-  'red': 622
+  'blue': 465 * 10**(-9),
+  'green': 520 * 10**(-9),
+  'orange': 589 * 10**(-9),
+  'purple': 390 * 10**(-9),
+  'red': 622 * 10**(-9)
 }
 
 u_0 = np.empty((len(colors)))
@@ -28,7 +28,7 @@ for color_index, color in enumerate(colors):
     for index, line in enumerate(lines):
       parts = line.split('\t')
       voltage[index] = float(parts[0])
-      current[index] = float(parts[1])
+      current[index] = float(parts[1]) / 1000
 
     ## Line 1
     line_1_bound = len(lines) // 3
@@ -53,18 +53,28 @@ for color_index, color in enumerate(colors):
     ax.legend()
     ax.set_title(f"Voltage v Current ({color})")
     ax.set_xlabel("Voltage (V)")
-    ax.set_ylabel("Current (mA)")
+    ax.set_ylabel("Current (A)")
 
-    u_0[color_index] = intersect_y[0]
+    u_0[color_index] = intersect_x[0]
     wavelength_inv[color_index] = 1 / wavelengths[color]
 
 plt.show()
 
-line = polynomial.Polynomial.fit(u_0, wavelength_inv, 1)
-space = np.linspace(min(u_0), max(u_0))
-plt.plot(space, line(space), color='orange', label='Trendline 2')
+line = polynomial.Polynomial.fit(wavelength_inv, u_0, 1).convert()
+line = line.convert(domain = [min(wavelength_inv), max(wavelength_inv)]).convert()
 
-plt.scatter(u_0, wavelength_inv)
-plt.xlabel("U_0")
-plt.ylabel("1/Wavelength")
+s_2 = (1 / (len(wavelength_inv) - 2)) * sum((u_0 - line.coef[1] * wavelength_inv - line.coef[0]) ** 2)
+delta_p = len(wavelength_inv) * sum(wavelength_inv ** 2) - (sum(wavelength_inv) ** 2)
+slope_error = np.sqrt(len(wavelength_inv) / delta_p) * np.sqrt(s_2)
+print(delta_p)
+print(slope_error)
+print(s_2)
+
+space = np.linspace(min(wavelength_inv), max(wavelength_inv))
+plt.plot(space, line(space), color='orange', label=f'{line.convert()}')
+
+plt.scatter(wavelength_inv,u_0)
+plt.ylabel("U_0")
+plt.xlabel("1/Wavelength")
+plt.legend()
 plt.show()
