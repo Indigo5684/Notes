@@ -82,7 +82,7 @@ Note that this is not a rigorous proof, and we have not shown that there are no 
 
 Now, consider a two-molecule system. As we only fix total kinetic energy, the momentum constraint thus becomes $p_{1x}^2 + \ldots + p_{2x}^2 + \ldots = 2mU$, assuming both molecules have the same mass. Then, we can write
 
-$$\Omega_2 = \frac{V^2}{h^6} \cross \text{area of momentum 6-dimensional sphere}$$
+$$\Omega_2 = \frac{V^2}{h^6} \times \text{area of momentum 6-dimensional sphere}$$
 
 This only holds true, however, if the two molecules are somehow distinguishable. In reality, molecules are indistinguishable and swapping the two molecules will not yield a distinct state. Thus, we have over-counted by a factor of 2.
 
