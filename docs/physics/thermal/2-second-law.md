@@ -65,3 +65,35 @@ The highest peak will be at $q = 2 q_A$, where $\Omega_max = (\frac{e}{N})^{2N} 
 Note that the multiplicity falls to $1/e$ of its maximum value when $N(\frac{2x}{q})^2 = 1$, or when $x = \frac{q}{2\sqrt{N}}$. This means that the approximate width of the peak is $q/\sqrt{N}$
 
 **Definition**. The *thermodynamic limit* is when a system becomes infinitely large, so that measurable fluctuations away from the most likely microstate never occur.
+
+## Section 2.5 - The Ideal Gas
+
+Assume we have a single atom of a monoatomic gas with kinetic energy $U$ in a container of volume $V$. By considering a container with volume $2V$, we can see that $\Omega_1 \propto V \vdot \V_p$, where $V$ is the volume of ordinary space, and $V_p$ the  volume of momentum space.
+
+**Definition**. *Momentum space* is the space of all possible momentum values with axis $p_x, p_y, p_z$.
+
+We know that since $KE = U = \frac{1}{2}m(v_x^2 + v_y^2 + v_z^2) = \frac{1}{2} \frac{1}{m} (p_x^2 + p_y^2 + p_z^2)$, we can write $2mU = p_x^2 + p_y^2 + p_z^2$, which describes the surface of a sphere with radius $\sqrt{2mU}$. As such, we can say for a given total momentum $P$, the multiplicity of momentum space is equal to the surface area of the sphere. However, this does not aid us in counting the total number of microstates as area is infinite.
+
+**Definition**. In Quantum Mechanics, the *Heisenberg Uncertainty Principle* states that $(\Delta x)(\Delta p_x) \approx h$. Under this criteria, the number of independent waveforms is thus fixed.
+
+If the number of distinct position states is $L / (\Delta x)$, and number of distinct momentum states is $L_p / (\Delta p_x)$, then we know that the number of distinct sates is $\frac{L}{\Delta x} \frac{L_p}{\Delta x}$, which becomes $\frac{L L_p}{h}$ by the uncertainty principle. Thus, when cubed, we see that $\Omega_1 = \frac{V V_p}{h^3}$.
+
+Note that this is not a rigorous proof, and we have not shown that there are no additional factors for $\Omega_1$, such as a multiplicative factor of $2$ to describe an additional dimension of freedom.
+
+Now, consider a two-molecule system. As we only fix total kinetic energy, the momentum constraint thus becomes $p_{1x}^2 + \ldots + p_{2x}^2 + \ldots = 2mU$, assuming both molecules have the same mass. Then, we can write
+
+$$\Omega_2 = \frac{V^2}{h^6} \cross \text{area of momentum 6-dimensional sphere}$$
+
+This only holds true, however, if the two molecules are somehow distinguishable. In reality, molecules are indistinguishable and swapping the two molecules will not yield a distinct state. Thus, we have over-counted by a factor of 2.
+
+If we have $N$ indistinguishable molecules, we see that $\Omega_n = \frac{1}{N!} \frac{V^N}{h^{3N}} \times \text{area of momentum N-dimensional sphere}$. We can define this area as $\frac{2\pi^(N/2)}{(\frac{N}{2} - 1)!} r^(N-1)$, where $r$ is $\sqrt{2mU}$. This derivation is left as a textbook appendix. Thus, we see that
+
+$$\Omega_N = \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2} - 1)!} (\sqrt{2mU})^{3N-1} \approx \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2})!} (\sqrt{2mU})^{3N}$$
+
+We can write this as $\Omega(U, V, N) = f(N) V^N U^{\frac{3N}{2}}$ where $f(N)$ is some function of $N$.
+
+Now, suppose we have two ideal gasses separated by a partition that allows energy (but not mass) transfer. Then, $\Omega = \Omega_1 \Omega_2$. If $N_1 = N_2 = N$, then $\Omega = (f(N))^2 (V_A V_B)^N (U_A U_B)^{3N/2}$. Following the last section, we see that the width of the peak of the probability distribution is $\frac{U_total}{\sqrt{\frac{3N}{2}}}$.
+
+If the partition is thus moveable (where one gas expands and the other compresses), allows energy exchange, and disallows mass transfer, we see that the width of the peak in distribution is $\frac{V_{total}}{\sqrt{N}}$.
+
+If we allow mass transfer, we see that while the analysis becomes difficult, we would expect a sharp peak, and that $\Omega$ is $\Omega(N_A, U_A)$.
