@@ -230,15 +230,15 @@ Then, continuity of $\mathbf{H}^\parallel$ implies that $H_i + H_r = H_t$, and c
 From this, we can solve for $H_r$ and $H_t$ to see that
 
 $$\begin{align}
-H_r &= \frac{Z_1 \cos \theta_i - Z_2 \cos \theta_t}{\Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_i \\
-H_t &= \frac{2Z_1 \cos \theta_i}{\Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_t
+H_r &= \frac{Z_1 \cos \theta_i - Z_2 \cos \theta_t}{Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_i \\
+H_t &= \frac{2Z_1 \cos \theta_i}{Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_t
 \end{align}$$
 
 Alongside $E_i = Z_1 H_i$ and $H_t = Z_2 H_t$, we can see that
 
 $$\begin{align}
-E_r &= \frac{Z_2 \cos \theta_t - Z_1 \cos \theta_i}{\Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_i \\
-E_t &= \frac{2Z_2 \cos \theta_i}{\Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_t
+E_r &= \frac{Z_2 \cos \theta_t - Z_1 \cos \theta_i}{Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_i \\
+E_t &= \frac{2Z_2 \cos \theta_i}{Z_1 \cos \theta_i + Z_2 \cos \theta_t} H_t
 \end{align}$$
 
 The relative signs of $E_r$ and $H_r$ was chosen to agree with their relationship for normal incidence.
@@ -246,8 +246,8 @@ The relative signs of $E_r$ and $H_r$ was chosen to agree with their relationshi
 Again, we can define $R$ and $T$ as
 
 $$\begin{align}
-R &= (\frac{Z_2 \cos \theta_t - Z_1 \cos \theta_i}{\Z_1 \cos \theta_i + Z_2 \cos \theta_t})^2 \\
-T &= \frac{4Z_1 Z_2 \cos \theta_i \cos \theta_t}{(\Z_1 \cos \theta_i + Z_2 \cos \theta_t)^2}
+R &= (\frac{Z_2 \cos \theta_t - Z_1 \cos \theta_i}{Z_1 \cos \theta_i + Z_2 \cos \theta_t})^2 \\
+T &= \frac{4Z_1 Z_2 \cos \theta_i \cos \theta_t}{(Z_1 \cos \theta_i + Z_2 \cos \theta_t)^2}
 \end{align}$$
 
 Interestingly, if $Z_2 \cos \theta_t = Z_1 \cos \theta_i$ for a wave with any polarization, the reflection's transverse magnetic component vanishes. If $\mu_1 \approx \mu_2$, we see that this condition becomes $n_1 \cos \theta_t = n_2 \cos \theta_i$, which using Snell's law, becomes
