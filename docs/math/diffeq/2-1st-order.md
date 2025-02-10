@@ -65,7 +65,7 @@ $$
 \frac{dy}{dt} + p(t)y = g(t)
 $$
 
-To find a solution to this differential equation, construct the **integrating factor** $\mu(t)$.
+To find a solution to this differential equation, construct the **integrating factor**. $\mu(t)$.
 
 $$\mu(t) = k \exp(\int p(t) dt)$$
 

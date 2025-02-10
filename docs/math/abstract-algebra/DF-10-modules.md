@@ -15,7 +15,7 @@
 
 **Remark**. Modules over a field $F$ and vector spaces over $F$ are identical.
 
-**Definition** An *R-submodule* is a subset$N \subseteq M$ which is closed under the action taken forall $r \in R$. That is, given $r \in R, n \in N$, then $rn \in N$. Every module has at least two submodules: itself and the trivial (empty) submodule.
+**Definition**. An *R-submodule* is a subset$N \subseteq M$ which is closed under the action taken forall $r \in R$. That is, given $r \in R, n \in N$, then $rn \in N$. Every module has at least two submodules: itself and the trivial (empty) submodule.
 
 **Remark**. If $F$ is a field, submodules are equivalent to subspaces.
 
@@ -124,7 +124,7 @@ This direct product is in itself an $R$-module.
 
 **Corollary**. If $F$ is a free $R$-module with basis $A$, then $F \cong F(A)$.
 
-**Definition** For a free module $F$ with basis $A$, if $R$ is commutative, then the *rank* of $F$ is the cardinality of $A$.
+**Definition**. For a free module $F$ with basis $A$, if $R$ is commutative, then the *rank* of $F$ is the cardinality of $A$.
 
 ## Section 10.4 - Tensor Products of Modules
 

@@ -56,7 +56,7 @@ Note that some books impose the condition that $1 \neq 0$. If $1 = 0$, we can sh
 
 ## Section 16.3 - Ring Homomorphisms and Ideals
 
-**Definition** Given rings $R$ and $S$, and a mapping $\varphi: R \rightarrow S$, we say that $\varphi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
+**Definition**. Given rings $R$ and $S$, and a mapping $\varphi: R \rightarrow S$, we say that $\varphi$ is a *ring homomorphism* if the following are satisfied for all elements of $R$:
 
 $$
 \begin{align}

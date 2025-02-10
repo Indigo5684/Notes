@@ -57,7 +57,7 @@ Additionally, $F_D$ is unique. That is, given field $E$ such that $E \supset D$,
 
 **Theorem**. 18.15: Every PID is a UFD. Note that the converse is not true.
 
-**Corollary** 18.16: Let $F$ be a field. Then, $F[x]$ is a UFD.
+**Corollary**. 18.16: Let $F$ be a field. Then, $F[x]$ is a UFD.
 
 ---
 

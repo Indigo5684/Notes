@@ -30,7 +30,7 @@ $$
 
 This is the *torsion submodule* of $M$. If $\text{Tor}(M)$ is empty, then $M$ is *torsion-free*.
 
-**Definition** Let $R$ be an integral domain and $M$ be an $R$-module. Then, given a submodule $N$,
+**Definition**. Let $R$ be an integral domain and $M$ be an $R$-module. Then, given a submodule $N$,
 
 $$
 \text{Ann}_R(N) = \{r \in R | rn = 0 \text{ for all } n \in N \}

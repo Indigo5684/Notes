@@ -21,7 +21,7 @@
 2. $\mathbb{N} \subseteq F^+$
 3. If $a \in F^+$, then $\frac{1}{a} \in F^+$
 
-**Definition** The order relation $a > b$ and $b < a$ is defined by $a - b \in F^+$.
+**Definition**. The order relation $a > b$ and $b < a$ is defined by $a - b \in F^+$.
 
 **Theorem**. If $a, b, c \in F$, then
 
@@ -76,9 +76,9 @@
 2. $|a - b| = |b - a|$
 3. $|a - c| \leq |a - b| + |b + c|$
 
-**Definition** A set together with a function satisfying these three properties is known as a *metric space*.
+**Definition**. A set together with a function satisfying these three properties is known as a *metric space*.
 
-**Definition** The $\varepsilon$-neighborhood of $a \in \mathbb{R}$, denoted $V_\varepsilon(a)$ is the set of all real numbers $x \in \mathbb{R}$ such that $|x - a| < \varepsilon$. That is,
+**Definition**. The $\varepsilon$-neighborhood of $a \in \mathbb{R}$, denoted $V_\varepsilon(a)$ is the set of all real numbers $x \in \mathbb{R}$ such that $|x - a| < \varepsilon$. That is,
 
 $$
 V_\varepsilon(a) = (a - \varepsilon, a + \varepsilon)

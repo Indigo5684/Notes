@@ -2,7 +2,7 @@
 
 ## Section 2.1 - Air Resistance
 
-**Definition**. The *drag*, or resistive force on an object due to the atmosphere, is denoted as $\mathbf{f}$. Note that this is **not** the force density, but the overall force. In most cases, this force directly opposes the direction of motion. If not, the other component is known as *lift*, however this is mostly negligible.
+**Definition**. The *drag*, or resistive force on an object due to the atmosphere, is denoted as $\mathbf{f}$. Note that this is **not**. the force density, but the overall force. In most cases, this force directly opposes the direction of motion. If not, the other component is known as *lift*, however this is mostly negligible.
 
 We define air resistance as $\mathbf{f} = -f(v) \hat{\mathbf{v}}$. We consider two types in this text: linear, where $f(v) = f_{lin} = bv$, and quadratic, where $f(v) = f_{quad} = cv^2$. Note that often times we consider both, and state that $f(v) = f_{lin} + f_{quad} = bv + cv^2$.
 
