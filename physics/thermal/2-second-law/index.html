@@ -1321,6 +1321,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-25-the-ideal-gas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.5 - The Ideal Gas
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1575,6 +1584,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-25-the-ideal-gas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.5 - The Ideal Gas
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1640,6 +1658,22 @@
 <p>The highest peak will be at <span class="arithmatex">\(q = 2 q_A\)</span>, where <span class="arithmatex">\(\Omega_max = (\frac{e}{N})^{2N} (\frac{q}{2})^{2N}\)</span>. If we instead let <span class="arithmatex">\(q_A = \frac{q}{2} + x\)</span> and <span class="arithmatex">\(q_B = \frac{q}{2} - x\)</span>, we will see that <span class="arithmatex">\(\Omega = (\frac{e}{N})^{2N}((\frac{q}{2})^2 - x^2)^N\)</span>. By taking the logarithm of the second factor and then applying simplifications, we can reduce this to <span class="arithmatex">\(\Omega = \Omega_{max} e{-N (2x/q)^2}\)</span>. This function should be familiar, as it is a <em>Gaussian</em>.</p>
 <p>Note that the multiplicity falls to <span class="arithmatex">\(1/e\)</span> of its maximum value when <span class="arithmatex">\(N(\frac{2x}{q})^2 = 1\)</span>, or when <span class="arithmatex">\(x = \frac{q}{2\sqrt{N}}\)</span>. This means that the approximate width of the peak is <span class="arithmatex">\(q/\sqrt{N}\)</span></p>
 <p><strong>Definition</strong>. The <em>thermodynamic limit</em> is when a system becomes infinitely large, so that measurable fluctuations away from the most likely microstate never occur.</p>
+<h2 id="section-25-the-ideal-gas">Section 2.5 - The Ideal Gas</h2>
+<p>Assume we have a single atom of a monoatomic gas with kinetic energy <span class="arithmatex">\(U\)</span> in a container of volume <span class="arithmatex">\(V\)</span>. By considering a container with volume <span class="arithmatex">\(2V\)</span>, we can see that <span class="arithmatex">\(\Omega_1 \propto V \vdot \V_p\)</span>, where <span class="arithmatex">\(V\)</span> is the volume of ordinary space, and <span class="arithmatex">\(V_p\)</span> the  volume of momentum space.</p>
+<p><strong>Definition</strong>. <em>Momentum space</em> is the space of all possible momentum values with axis <span class="arithmatex">\(p_x, p_y, p_z\)</span>.</p>
+<p>We know that since <span class="arithmatex">\(KE = U = \frac{1}{2}m(v_x^2 + v_y^2 + v_z^2) = \frac{1}{2} \frac{1}{m} (p_x^2 + p_y^2 + p_z^2)\)</span>, we can write <span class="arithmatex">\(2mU = p_x^2 + p_y^2 + p_z^2\)</span>, which describes the surface of a sphere with radius <span class="arithmatex">\(\sqrt{2mU}\)</span>. As such, we can say for a given total momentum <span class="arithmatex">\(P\)</span>, the multiplicity of momentum space is equal to the surface area of the sphere. However, this does not aid us in counting the total number of microstates as area is infinite.</p>
+<p><strong>Definition</strong>. In Quantum Mechanics, the <em>Heisenberg Uncertainty Principle</em> states that <span class="arithmatex">\((\Delta x)(\Delta p_x) \approx h\)</span>. Under this criteria, the number of independent waveforms is thus fixed.</p>
+<p>If the number of distinct position states is <span class="arithmatex">\(L / (\Delta x)\)</span>, and number of distinct momentum states is <span class="arithmatex">\(L_p / (\Delta p_x)\)</span>, then we know that the number of distinct sates is <span class="arithmatex">\(\frac{L}{\Delta x} \frac{L_p}{\Delta x}\)</span>, which becomes <span class="arithmatex">\(\frac{L L_p}{h}\)</span> by the uncertainty principle. Thus, when cubed, we see that <span class="arithmatex">\(\Omega_1 = \frac{V V_p}{h^3}\)</span>.</p>
+<p>Note that this is not a rigorous proof, and we have not shown that there are no additional factors for <span class="arithmatex">\(\Omega_1\)</span>, such as a multiplicative factor of <span class="arithmatex">\(2\)</span> to describe an additional dimension of freedom.</p>
+<p>Now, consider a two-molecule system. As we only fix total kinetic energy, the momentum constraint thus becomes <span class="arithmatex">\(p_{1x}^2 + \ldots + p_{2x}^2 + \ldots = 2mU\)</span>, assuming both molecules have the same mass. Then, we can write</p>
+<div class="arithmatex">\[\Omega_2 = \frac{V^2}{h^6} \times \text{area of momentum 6-dimensional sphere}\]</div>
+<p>This only holds true, however, if the two molecules are somehow distinguishable. In reality, molecules are indistinguishable and swapping the two molecules will not yield a distinct state. Thus, we have over-counted by a factor of 2.</p>
+<p>If we have <span class="arithmatex">\(N\)</span> indistinguishable molecules, we see that <span class="arithmatex">\(\Omega_n = \frac{1}{N!} \frac{V^N}{h^{3N}} \times \text{area of momentum N-dimensional sphere}\)</span>. We can define this area as <span class="arithmatex">\(\frac{2\pi^(N/2)}{(\frac{N}{2} - 1)!} r^(N-1)\)</span>, where <span class="arithmatex">\(r\)</span> is <span class="arithmatex">\(\sqrt{2mU}\)</span>. This derivation is left as a textbook appendix. Thus, we see that</p>
+<div class="arithmatex">\[\Omega_N = \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2} - 1)!} (\sqrt{2mU})^{3N-1} \approx \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2})!} (\sqrt{2mU})^{3N}\]</div>
+<p>We can write this as <span class="arithmatex">\(\Omega(U, V, N) = f(N) V^N U^{\frac{3N}{2}}\)</span> where <span class="arithmatex">\(f(N)\)</span> is some function of <span class="arithmatex">\(N\)</span>.</p>
+<p>Now, suppose we have two ideal gasses separated by a partition that allows energy (but not mass) transfer. Then, <span class="arithmatex">\(\Omega = \Omega_1 \Omega_2\)</span>. If <span class="arithmatex">\(N_1 = N_2 = N\)</span>, then <span class="arithmatex">\(\Omega = (f(N))^2 (V_A V_B)^N (U_A U_B)^{3N/2}\)</span>. Following the last section, we see that the width of the peak of the probability distribution is <span class="arithmatex">\(\frac{U_total}{\sqrt{\frac{3N}{2}}}\)</span>.</p>
+<p>If the partition is thus moveable (where one gas expands and the other compresses), allows energy exchange, and disallows mass transfer, we see that the width of the peak in distribution is <span class="arithmatex">\(\frac{V_{total}}{\sqrt{N}}\)</span>.</p>
+<p>If we allow mass transfer, we see that while the analysis becomes difficult, we would expect a sharp peak, and that <span class="arithmatex">\(\Omega\)</span> is <span class="arithmatex">\(\Omega(N_A, U_A)\)</span>.</p>
 
 
 
@@ -1662,7 +1696,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
   </span>
 
     
