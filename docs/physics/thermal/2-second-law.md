@@ -92,8 +92,54 @@ $$\Omega_N = \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3
 
 We can write this as $\Omega(U, V, N) = f(N) V^N U^{\frac{3N}{2}}$ where $f(N)$ is some function of $N$.
 
-Now, suppose we have two ideal gasses separated by a partition that allows energy (but not mass) transfer. Then, $\Omega = \Omega_1 \Omega_2$. If $N_1 = N_2 = N$, then $\Omega = (f(N))^2 (V_A V_B)^N (U_A U_B)^{3N/2}$. Following the last section, we see that the width of the peak of the probability distribution is $\frac{U_total}{\sqrt{\frac{3N}{2}}}$.
+Now, suppose we have two ideal gasses separated by a partition that allows energy (but not mass) transfer. Then, $\Omega = \Omega_1 \Omega_2$. If $N_1 = N_2 = N$, then $\Omega = (f(N))^2 (V_A V_B)^N (U_A U_B)^{3N/2}$. Following the last section, we see that the width of the peak of the probability distribution is $\frac{U_{total}}{\sqrt{\frac{3N}{2}}}$.
 
 If the partition is thus moveable (where one gas expands and the other compresses), allows energy exchange, and disallows mass transfer, we see that the width of the peak in distribution is $\frac{V_{total}}{\sqrt{N}}$.
 
 If we allow mass transfer, we see that while the analysis becomes difficult, we would expect a sharp peak, and that $\Omega$ is $\Omega(N_A, U_A)$.
+
+## Section 2.6 - Entropy
+
+We can rewrite the second law of thermodynamics as, given a system, the multiplicity of the current state tends to increase.
+
+**Definition**. We define *Entropy* as $S \cong k \ln \Omega$, where $k$ is included due to historical reasons. This takes the very large number into an ordinary large number. While $\Omega$ is unitless, due to the factor of $k$, we see that $S$ has units of energy over temperature, or $J/K$ in the SI system.
+
+Recall that in an Einstein solid with $N$ oscillators and $q$ energy units, we see that $\Omega = \binom{q + N - 1}{q}$. If we introduce the constraint $q \gg N$ and apply Stirling's approximation, we see that $\Omega \approx (eq/N)^N$, so that
+
+$$S = k \ln \Omega = Nk(\ln \frac{q}{N} + 1)$$
+
+Note that in this case, increasing either $q$ or $N$ increases the entropy of an Einstein solid.
+
+A convenient property of entropy is that the composite entropy of a total system is additive. That is,
+
+$$S = k \ln \Omega = k \ln(\Omega_A \Omega_B) = k \ln \Omega_A + k \ln \Omega_B = S_A + S_B$$
+
+We can thus use this to rewrite the second law.
+
+**Theorem**. The Second Law of Thermodynamics. Any large system in equilibrium will be found in the macrostate with the greatest entropy (with some small, unmeasurable fluctuations).
+
+### Entropy of an Ideal Gas
+
+We know that, for an ideal gas,
+
+$$\Omega \approx \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2})!} (\sqrt{2mU})^{3N}$$
+
+This is horrible, and nobody likes it. If we then apply Stirling's approximation and then discard some factors, we can see that
+
+$$S = Nk [ \ln(\frac{V}{N}(\frac{4\pi m U}{3Nh^2})^{3/2}) + \frac{5}{2}]$$
+
+This is known as the *Sackur-Tetrode Equation*.
+
+A notable consequence of this is that if $N$ and $U$ are held fixed, $\Delta S = Nk \ln \frac{V_f}{V_i}$. This applies, for example, to quasistatic isothermal expansion work, in which heat is added to maintain constant pressure while undergoing expansion.
+
+**Definition**. *Free expansion* of a gas is a gas expanding from a container into a vacuum. Note that as nothing external to the system is being moved, $W=0$, and as no heat is flowing, $Q=0$, so $\Delta U = Q + W = 0$.
+
+**Definition**. Now, consider two gasses in containers of equal volume, in which $U_1 = U_2$ and $N_1 = N_2$. The, if $V_1 = V_2$, when the containers are combined, $\Delta S = Nk \ln 2$ for gas $A$ and gas $B$, so $\Delta S_{total} = \Delta S_A + \Delta S_B = 2 Nk \ln 2$. This is known as the *entropy of mixing*. Note that this only applies if the gasses are distinguishable, as otherwise $\Delta S = 0$.
+
+Note that for distinguishable molecules, the $\Omega$ term lacks a factor of $1 / N!$, so then $S = Nk[\ln(V(\frac{4\pi m U}{3Nh^2})^{3/2}) + \frac{3}{2}]$. For this formula, dividing volume (and thus energy and number of molecules) by two results in the total entropy being larger than the sum of the partitions by a large factor. That is, by inserting a partition, the second law of thermodynamics can be violated. This is known as *Gibbs Paradox*.
+
+### Reversible and Irreversible Processes
+
+**Definition**. A process is said to be *irreversible* if it creates new entropy, as to reverse it would be to violate the second law of thermodynamics. Processes that do not generate new entropy (or only generate a negligible amount) are said to be *reversible*.
+
+Notably, any reversible expansion is quasistatic, in which $W = -P \Delta V$. Note that a quasistatic process is only reversible if $Q = 0$.

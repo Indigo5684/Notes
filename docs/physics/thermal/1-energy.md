@@ -140,11 +140,11 @@ We know that the force exerted by the piston is equal to the pressure times the 
 
 However, this assumes constant pressure. For a non-constant pressure, $P(V)$, we know that $W = \int F dx = - \int P(V) dV$.
 
-**Definition**. In *isothermal compression*, we see that $\delta T = 0$. Then, $T$ is a constant, so $nRT$ is constant meaning $PV$ is constant. Then, as $P(V) = (P_0V_0)/(V)$, we can see that $W = \int_{V_1}^{V_2} P(V) dV = nRT \ln(V_i/V_f) = PV \ln(P_f/P_i)$
+**Definition**. In *isothermal compression*, we see that $\Delta T = 0$. Then, $T$ is a constant, so $nRT$ is constant meaning $PV$ is constant. Then, as $P(V) = (P_0V_0)/(V)$, we can see that $W = \int_{V_1}^{V_2} P(V) dV = nRT \ln(V_i/V_f) = PV \ln(P_f/P_i)$
 
 **Definition**. The line formed by isothermal compression on a $PV$-diagram is called an *isotherm*.
 
-**Definition**. In *adiabatic compression*, we assume that $Q = 0$. Then, we see that $PV^\gamma$ is constant, with $\gamma$ being the adiabatic constant. Note that as $U = \frac{f}{2}NkT = W$, we can see that $V_2 T_2^{f/2} = V_1 T_1^{f/2}$, and \$gamma = (f+2)(f)$. Additionally, we see that $W$ = $\frac{P_2 V_2 - P_1 V_1}{1-\gamma}$
+**Definition**. In *adiabatic compression*, we assume that $Q = 0$. Then, we see that $PV^\gamma$ is constant, with $\gamma$ being the adiabatic constant. Note that as $U = \frac{f}{2}NkT = W$, we can see that $V_2 T_2^{f/2} = V_1 T_1^{f/2}$, and $\gamma = (f+2)(f)$. Additionally, we see that $W$ = $\frac{P_2 V_2 - P_1 V_1}{1-\gamma}$
 
 ## Section 1.6 - Heat Capacity
 
