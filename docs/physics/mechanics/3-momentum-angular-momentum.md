@@ -6,7 +6,7 @@ Consider a system of $N$ particles, indexed with $\alpha \in {1, 2, \ldots, N}$.
 
 ## Section 3.2 - Rockets
 
-Consider a rocket with mass $m$ traveling in the $\hat{\mathbf{x}}$ direction and exhausting fuel at a rate of $dm$ at speed $v_{ex}$. At time $t$, the rocket's momentum is $P(t) = mv$. Then, $P(t + dt) = (m + dm)(v + dv)$, where the fuel ejected in time $dt$ has mass $-dm$ and velocity $v - v_{ex}$ relative to the ground. Thus, the total momentum becomes $P(t + dt) = (m + dm)(v + dv) - dm(v - v_{ex}) = mv + m dv + dm v_{ex}$, as $dm dv$ becomes infinitessimally small.
+Consider a rocket with mass $m$ traveling in the $\hat{\mathbf{x}}$ direction and exhausting fuel at a rate of $dm$ at speed $v_{ex}$. At time $t$, the rocket's momentum is $P(t) = mv$. Then, $P(t + dt) = (m + dm)(v + dv)$, where the fuel ejected in time $dt$ has mass $-dm$ and velocity $v - v_{ex}$ relative to the ground. Thus, the total momentum becomes $P(t + dt) = (m + dm)(v + dv) - dm(v - v_{ex}) = mv + m dv + dm v_{ex}$, as $dm dv$ becomes infinitesimally small.
 
 Then, $dP = P(t + dt) - P(t) = m dv + dm v_{ex}$. If there is a net external force, this would equal $F^{ext}dt$. In this case, we assume $F^{ext} = 0$. Then, $m dv = -dm v_ex$, or $m \dot{v} = -\dot{m} v_ex$. This is Newton's second law, where $F = m \dot{v} = -\dot{m} v_ex$.
 
