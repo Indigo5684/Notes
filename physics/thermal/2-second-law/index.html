@@ -1167,6 +1167,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mechanics/3-momentum-angular-momentum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3 - Momentum and Angular Momentum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1327,6 +1348,39 @@
       Section 2.5 - The Ideal Gas
     </span>
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-26-entropy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.6 - Entropy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 2.6 - Entropy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entropy-of-an-ideal-gas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entropy of an Ideal Gas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reversible-and-irreversible-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reversible and Irreversible Processes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -1593,6 +1647,39 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-26-entropy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 2.6 - Entropy
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Section 2.6 - Entropy">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#entropy-of-an-ideal-gas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Entropy of an Ideal Gas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#reversible-and-irreversible-processes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Reversible and Irreversible Processes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1671,9 +1758,32 @@
 <p>If we have <span class="arithmatex">\(N\)</span> indistinguishable molecules, we see that <span class="arithmatex">\(\Omega_n = \frac{1}{N!} \frac{V^N}{h^{3N}} \times \text{area of momentum N-dimensional sphere}\)</span>. We can define this area as <span class="arithmatex">\(\frac{2\pi^(N/2)}{(\frac{N}{2} - 1)!} r^(N-1)\)</span>, where <span class="arithmatex">\(r\)</span> is <span class="arithmatex">\(\sqrt{2mU}\)</span>. This derivation is left as a textbook appendix. Thus, we see that</p>
 <div class="arithmatex">\[\Omega_N = \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2} - 1)!} (\sqrt{2mU})^{3N-1} \approx \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2})!} (\sqrt{2mU})^{3N}\]</div>
 <p>We can write this as <span class="arithmatex">\(\Omega(U, V, N) = f(N) V^N U^{\frac{3N}{2}}\)</span> where <span class="arithmatex">\(f(N)\)</span> is some function of <span class="arithmatex">\(N\)</span>.</p>
-<p>Now, suppose we have two ideal gasses separated by a partition that allows energy (but not mass) transfer. Then, <span class="arithmatex">\(\Omega = \Omega_1 \Omega_2\)</span>. If <span class="arithmatex">\(N_1 = N_2 = N\)</span>, then <span class="arithmatex">\(\Omega = (f(N))^2 (V_A V_B)^N (U_A U_B)^{3N/2}\)</span>. Following the last section, we see that the width of the peak of the probability distribution is <span class="arithmatex">\(\frac{U_total}{\sqrt{\frac{3N}{2}}}\)</span>.</p>
+<p>Now, suppose we have two ideal gasses separated by a partition that allows energy (but not mass) transfer. Then, <span class="arithmatex">\(\Omega = \Omega_1 \Omega_2\)</span>. If <span class="arithmatex">\(N_1 = N_2 = N\)</span>, then <span class="arithmatex">\(\Omega = (f(N))^2 (V_A V_B)^N (U_A U_B)^{3N/2}\)</span>. Following the last section, we see that the width of the peak of the probability distribution is <span class="arithmatex">\(\frac{U_{total}}{\sqrt{\frac{3N}{2}}}\)</span>.</p>
 <p>If the partition is thus moveable (where one gas expands and the other compresses), allows energy exchange, and disallows mass transfer, we see that the width of the peak in distribution is <span class="arithmatex">\(\frac{V_{total}}{\sqrt{N}}\)</span>.</p>
 <p>If we allow mass transfer, we see that while the analysis becomes difficult, we would expect a sharp peak, and that <span class="arithmatex">\(\Omega\)</span> is <span class="arithmatex">\(\Omega(N_A, U_A)\)</span>.</p>
+<h2 id="section-26-entropy">Section 2.6 - Entropy</h2>
+<p>We can rewrite the second law of thermodynamics as, given a system, the multiplicity of the current state tends to increase.</p>
+<p><strong>Definition</strong>. We define <em>Entropy</em> as <span class="arithmatex">\(S \cong k \ln \Omega\)</span>, where <span class="arithmatex">\(k\)</span> is included due to historical reasons. This takes the very large number into an ordinary large number. While <span class="arithmatex">\(\Omega\)</span> is unitless, due to the factor of <span class="arithmatex">\(k\)</span>, we see that <span class="arithmatex">\(S\)</span> has units of energy over temperature, or <span class="arithmatex">\(J/K\)</span> in the SI system.</p>
+<p>Recall that in an Einstein solid with <span class="arithmatex">\(N\)</span> oscillators and <span class="arithmatex">\(q\)</span> energy units, we see that <span class="arithmatex">\(\Omega = \binom{q + N - 1}{q}\)</span>. If we introduce the constraint <span class="arithmatex">\(q \gg N\)</span> and apply Stirling's approximation, we see that <span class="arithmatex">\(\Omega \approx (eq/N)^N\)</span>, so that</p>
+<div class="arithmatex">\[S = k \ln \Omega = Nk(\ln \frac{q}{N} + 1)\]</div>
+<p>Note that in this case, increasing either <span class="arithmatex">\(q\)</span> or <span class="arithmatex">\(N\)</span> increases the entropy of an Einstein solid.</p>
+<p>A convenient property of entropy is that the composite entropy of a total system is additive. That is,</p>
+<div class="arithmatex">\[S = k \ln \Omega = k \ln(\Omega_A \Omega_B) = k \ln \Omega_A + k \ln \Omega_B = S_A + S_B\]</div>
+<p>We can thus use this to rewrite the second law.</p>
+<p><strong>Theorem</strong>. The Second Law of Thermodynamics. Any large system in equilibrium will be found in the macrostate with the greatest entropy (with some small, unmeasurable fluctuations).</p>
+<h3 id="entropy-of-an-ideal-gas">Entropy of an Ideal Gas</h3>
+<p>We know that, for an ideal gas,</p>
+<div class="arithmatex">\[\Omega \approx \frac{1}{N!} \frac{V^N}{h^{3N}} \frac{2\pi^{\frac{3N}{2}}}{(\frac{3N}{2})!} (\sqrt{2mU})^{3N}\]</div>
+<p>This is horrible, and nobody likes it. If we then apply Stirling's approximation and then discard some factors, we can see that</p>
+<div class="arithmatex">\[S = Nk [ \ln(\frac{V}{N}(\frac{4\pi m U}{3Nh^2})^{3/2}) + \frac{5}{2}]\]</div>
+<p>This is known as the <em>Sackur-Tetrode Equation</em>.</p>
+<p>A notable consequence of this is that if <span class="arithmatex">\(N\)</span> and <span class="arithmatex">\(U\)</span> are held fixed, <span class="arithmatex">\(\Delta S = Nk \ln \frac{V_f}{V_i}\)</span>. This applies, for example, to quasistatic isothermal expansion work, in which heat is added to maintain constant pressure while undergoing expansion.</p>
+<p><strong>Definition</strong>. <em>Free expansion</em> of a gas is a gas expanding from a container into a vacuum. Note that as nothing external to the system is being moved, <span class="arithmatex">\(W=0\)</span>, and as no heat is flowing, <span class="arithmatex">\(Q=0\)</span>, so <span class="arithmatex">\(\Delta U = Q + W = 0\)</span>.</p>
+<p><strong>Definition</strong>. Now, consider two gasses in containers of equal volume, in which <span class="arithmatex">\(U_1 = U_2\)</span> and <span class="arithmatex">\(N_1 = N_2\)</span>. The, if <span class="arithmatex">\(V_1 = V_2\)</span>, when the containers are combined, <span class="arithmatex">\(\Delta S = Nk \ln 2\)</span> for gas <span class="arithmatex">\(A\)</span> and gas <span class="arithmatex">\(B\)</span>, so <span class="arithmatex">\(\Delta S_{total} = \Delta S_A + \Delta S_B = 2 Nk \ln 2\)</span>. This is known as the <em>entropy of mixing</em>. Note that this only applies if the gasses are distinguishable, as otherwise <span class="arithmatex">\(\Delta S = 0\)</span>.</p>
+<p>Note that for distinguishable molecules, the <span class="arithmatex">\(\Omega\)</span> term lacks a factor of <span class="arithmatex">\(1 / N!\)</span>, so then <span class="arithmatex">\(S = Nk[\ln(V(\frac{4\pi m U}{3Nh^2})^{3/2}) + \frac{3}{2}]\)</span>. For this formula, dividing volume (and thus energy and number of molecules) by two results in the total entropy being larger than the sum of the partitions by a large factor. That is, by inserting a partition, the second law of thermodynamics can be violated. This is known as <em>Gibbs Paradox</em>.</p>
+<h3 id="reversible-and-irreversible-processes">Reversible and Irreversible Processes</h3>
+<p><strong>Definition</strong>. A process is said to be <em>irreversible</em> if it creates new entropy, as to reverse it would be to violate the second law of thermodynamics. Processes that do not generate new entropy (or only generate a negligible amount) are said to be <em>reversible</em>.</p>
+<p>Notably, any reversible expansion is quasistatic, in which <span class="arithmatex">\(W = -P \Delta V\)</span>. Note that a quasistatic process is only reversible if <span class="arithmatex">\(Q = 0\)</span>.</p>
 
 
 
@@ -1696,7 +1806,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 13, 2025</span>
   </span>
 
     

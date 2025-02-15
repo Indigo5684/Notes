@@ -9,7 +9,7 @@
       
       
       
-        <link rel="prev" href="../../mechanics/2-projectiles-charged-particles/">
+        <link rel="prev" href="../../mechanics/3-momentum-angular-momentum/">
       
       
         <link rel="next" href="../2-second-law/">
@@ -1167,6 +1167,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../mechanics/3-momentum-angular-momentum/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 3 - Momentum and Angular Momentum
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -1761,9 +1782,9 @@
 <p>Consider a piston with a compressible gas. In this case, with <span class="arithmatex">\(\Delta x\)</span> positive as the piston moves inwards, we can state that <span class="arithmatex">\(W = F \Delta x\)</span>. Now, we want the gas to always maintain internal equilibrium. For this to be true, the piston must be moving relatively slowly. Note that any volume change that happens in this way is said to be <em>quasistatic</em>.</p>
 <p>We know that the force exerted by the piston is equal to the pressure times the area. Thus, <span class="arithmatex">\(W = P A \Delta  x\)</span>. But <span class="arithmatex">\(A\Delta x\)</span> is just volume (in this case, negative, as volume is decreasing). So, <span class="arithmatex">\(W = -P \Delta V\)</span>.</p>
 <p>However, this assumes constant pressure. For a non-constant pressure, <span class="arithmatex">\(P(V)\)</span>, we know that <span class="arithmatex">\(W = \int F dx = - \int P(V) dV\)</span>.</p>
-<p><strong>Definition</strong>. In <em>isothermal compression</em>, we see that <span class="arithmatex">\(\delta T = 0\)</span>. Then, <span class="arithmatex">\(T\)</span> is a constant, so <span class="arithmatex">\(nRT\)</span> is constant meaning <span class="arithmatex">\(PV\)</span> is constant. Then, as <span class="arithmatex">\(P(V) = (P_0V_0)/(V)\)</span>, we can see that <span class="arithmatex">\(W = \int_{V_1}^{V_2} P(V) dV = nRT \ln(V_i/V_f) = PV \ln(P_f/P_i)\)</span></p>
+<p><strong>Definition</strong>. In <em>isothermal compression</em>, we see that <span class="arithmatex">\(\Delta T = 0\)</span>. Then, <span class="arithmatex">\(T\)</span> is a constant, so <span class="arithmatex">\(nRT\)</span> is constant meaning <span class="arithmatex">\(PV\)</span> is constant. Then, as <span class="arithmatex">\(P(V) = (P_0V_0)/(V)\)</span>, we can see that <span class="arithmatex">\(W = \int_{V_1}^{V_2} P(V) dV = nRT \ln(V_i/V_f) = PV \ln(P_f/P_i)\)</span></p>
 <p><strong>Definition</strong>. The line formed by isothermal compression on a <span class="arithmatex">\(PV\)</span>-diagram is called an <em>isotherm</em>.</p>
-<p><strong>Definition</strong>. In <em>adiabatic compression</em>, we assume that <span class="arithmatex">\(Q = 0\)</span>. Then, we see that <span class="arithmatex">\(PV^\gamma\)</span> is constant, with <span class="arithmatex">\(\gamma\)</span> being the adiabatic constant. Note that as <span class="arithmatex">\(U = \frac{f}{2}NkT = W\)</span>, we can see that <span class="arithmatex">\(V_2 T_2^{f/2} = V_1 T_1^{f/2}\)</span>, and $gamma = (f+2)(f)$. Additionally, we see that <span class="arithmatex">\(W\)</span> = <span class="arithmatex">\(\frac{P_2 V_2 - P_1 V_1}{1-\gamma}\)</span></p>
+<p><strong>Definition</strong>. In <em>adiabatic compression</em>, we assume that <span class="arithmatex">\(Q = 0\)</span>. Then, we see that <span class="arithmatex">\(PV^\gamma\)</span> is constant, with <span class="arithmatex">\(\gamma\)</span> being the adiabatic constant. Note that as <span class="arithmatex">\(U = \frac{f}{2}NkT = W\)</span>, we can see that <span class="arithmatex">\(V_2 T_2^{f/2} = V_1 T_1^{f/2}\)</span>, and <span class="arithmatex">\(\gamma = (f+2)(f)\)</span>. Additionally, we see that <span class="arithmatex">\(W\)</span> = <span class="arithmatex">\(\frac{P_2 V_2 - P_1 V_1}{1-\gamma}\)</span></p>
 <h2 id="section-16-heat-capacity">Section 1.6 - Heat Capacity</h2>
 <p><strong>Definition</strong>. The <em>heat capacity</em> <span class="arithmatex">\(C = Q / \Delta T\)</span> of an object is the energy required to raise its temperature by one degree.</p>
 <p><strong>Definition</strong>. The <em>specific heat capacity</em> <span class="arithmatex">\(c = C / m = C / (m \Delta T)\)</span> is the energy needed to raise a substance by one degree per unit mass.</p>
@@ -1812,7 +1833,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 13, 2025</span>
   </span>
 
     
@@ -1866,7 +1887,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../../mechanics/2-projectiles-charged-particles/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter 2 - Projectiles and Charged Particles">
+          <a href="../../mechanics/3-momentum-angular-momentum/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Chapter 3 - Momentum and Angular Momentum">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -1876,7 +1897,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Chapter 2 - Projectiles and Charged Particles
+                Chapter 3 - Momentum and Angular Momentum
               </div>
             </div>
           </a>
