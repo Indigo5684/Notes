@@ -1,6 +1,7 @@
 {
     "cSpell.words": [
         "abelian",
+        "antiderivative",
         "binom",
         "Electomagnetic",
         "Equipartition",
@@ -18,6 +19,7 @@
         "mathcal",
         "monic",
         "Noetherian",
+        "nonconservative",
         "overleftrightarrow",
         "quasistatic",
         "stackrel",
@@ -27,5 +29,8 @@
         "unitless",
         "vmatrix",
         "Wronskian"
+    ],
+    "cSpell.dictionaryDefinitions": [
+        
     ]
 }
