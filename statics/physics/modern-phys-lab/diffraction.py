@@ -2,17 +2,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 # Units: V
-voltages = np.array(np.arange(5000, 2500 - 1, -500)) #-1 to include 2500
+voltages = np.array(np.arange(2500, 5000 + 1, +500)) #+1 to include 5000
 voltages_inv_sqrt = 1 / np.sqrt(voltages)
 
 # New units: m
-diameter_measured_error = 0.02
+diameter_measured_error = 0.002
 
 # Average inner and outer
 # New format: d[0 = small, 1 = large][voltage]
 diameter_measured = np.array([
-    [0.0, 0.024, 0.022, 0.019, 0.02],
-    [0.0, 0.04, 0.0385, 0.036, 0.035]
+    [0.026, 0.0235, 0.024, 0.022, 0.019, 0.02],
+    [0.049, 0.0435, 0.04, 0.0385, 0.036, 0.035]
 ])
 
 diameter_error = 100
