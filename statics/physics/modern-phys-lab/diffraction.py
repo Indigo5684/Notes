@@ -1,24 +1,23 @@
 import numpy as np
 import matplotlib.pyplot as plt
 
-# Current units: pixels
-# Format: d[0 = small, 1 = large][voltage][0 = inner, 1 = outer]
-diameter_measured = np.array([
-    [[570, 646], [567, 725], [623, 750], [730, 866], [800, 962], [861, 1051]],
-    [[968, 1090], [1034, 1147], [1036, 1183], [1311, 1461], [1405, 1624], [1476, 1600]]
-])
-diameter_error = 100
-
+# Units: V
 voltages = np.array(np.arange(5000, 2500 - 1, -500)) #-1 to include 2500
 voltages_inv_sqrt = 1 / np.sqrt(voltages)
 
 # New units: m
-diameter_measured = diameter_measured / 19440
-diameter_measured_error = 100 / 19440
+diameter_measured_error = 0.02
 
 # Average inner and outer
 # New format: d[0 = small, 1 = large][voltage]
-diameter_measured = np.average(diameter_measured, axis=2)
+diameter_measured = np.array([
+    [0.0, 0.024, 0.022, 0.019, 0.02],
+    [0.0, 0.04, 0.0385, 0.036, 0.035]
+])
+
+diameter_error = 100
+print(diameter_measured[0][4])
+
 
 # Find actual diameter
 L = 138 / 1000
@@ -40,19 +39,28 @@ for size in range(len(diameter_measured)):
 
     # Trendlines
     line = np.polynomial.Polynomial.fit(voltages_inv_sqrt, diameter_measured[size], deg=1)
-    ax.plot(voltages_inv_sqrt, line(voltages_inv_sqrt), label='Trendline', linestyle='--', color='purple')
+    ax.plot(voltages_inv_sqrt, line(voltages_inv_sqrt), label=f'Trendline', linestyle='--', color='purple')
     ax.legend()
+
+    # D_E
+    d = (0.123 if size == 1 else 0.213) * 10**(-9)
+
+    # error
+    delta = sum(1 / diameter_actual_error[size]**2) * sum((voltages_inv_sqrt ** 2) / (diameter_actual_error[size] ** 2)) - sum(voltages_inv_sqrt / (diameter_actual_error[size] ** 2))**2
+    slope_error = np.sqrt((1 / delta) * sum(1 / diameter_actual_error[size]**2))
+
+    alpha = np.sqrt(2) * L * (6.63 * 10**(-34)) / (d * np.sqrt((9.1093837 * 10**(-31)) * (1.60217663 * 10**(-19))))
 
     ax=axs[size][1]
     ax.set_xlabel(r'$1/\sqrt{U_0}$')
     ax.set_ylabel(f'$D_E$ ({size_name}) (meters)')
-    ax.set_title(r'$1/\sqrt{U_0}$ ' + f'vs $D_E$ ({size_name})')
+    ax.set_title(r'$1/\sqrt{U_0}$ ' + f'vs $D_E$ ($\\alpha = {alpha:0.6f}$), ({size_name})')
     #ax.scatter(voltages_inv_sqrt, diameter_measured[size], label='Data')
-    ax.errorbar(voltages_inv_sqrt, diameter_actual[size], fmt='o', yerr=diameter_actual_error, capsize=5)
+    ax.errorbar(voltages_inv_sqrt, diameter_actual[size], fmt='o', yerr=diameter_actual_error[size], capsize=5)
 
     # Trendlines
     line = np.polynomial.Polynomial.fit(voltages_inv_sqrt, diameter_actual[size], deg=1)
-    ax.plot(voltages_inv_sqrt, line(voltages_inv_sqrt), label='Trendline', linestyle='--', color='purple')
+    ax.plot(voltages_inv_sqrt, line(voltages_inv_sqrt), label=f'Trendline {line.convert()} (err {slope_error:0.4f})', linestyle='--', color='purple')
     ax.legend()
 
 plt.show()
