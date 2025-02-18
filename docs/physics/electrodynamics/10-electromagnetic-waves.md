@@ -123,7 +123,7 @@ $$\begin{align}
 \mathbf{H}_2(z, t) &= \mathbf{H}_t \cos(k_2 z - \omega t - \phi_t) \\
 \end{align}$$
 
-Now, break $\mathbf{E}_r$ into components such that $\mathbf{E}_r = $E_{rx} \hat{\mathbf{x}} + E_{ry} \hat{\mathbf{y}}$. Then, we see that
+Now, break $\mathbf{E}_r$ into components such that $\mathbf{E}_r = E_{rx} \hat{\mathbf{x}} + E_{ry} \hat{\mathbf{y}}$. Then, we see that
 
 $$\begin{align}
 \mathbf{E}_r(z, t) &= (E_{rx} \hat{\mathbf{x}} + E_{ry} \hat{\mathbf{y}}) \cos(k_1 z - \omega t - \phi_r) \\
@@ -215,7 +215,7 @@ All that is left is the $y$-direction, for which continuity requires that $E_i +
 
 We can again calculate $R = \frac{|I_r|}{I_{in}} = \frac{E_r^2}{E_i^2} = (\frac{Y_1 \cos \theta_i - Y_2 \cos \theta_t}{Y_1 \cos \theta_i + Y_2 \cos \theta_t})^2$. Similarly, we see that $T = \frac{4Y_1 \cos(\theta_i) \cdot Y_2 \cos(\theta_t)}{(Y_1 \cos \theta_i + Y_2 \cos \theta_t)^2}$. Once again, $I_r + I_t = I_{in}$ and $R + T = 1$.
 
-Now, consider the case of a transverse magnetic field. In this case, we know that $\mathbf{H_{i, r, t}} = H_{i, r, t}\hat{\mathbf{y}}$, and thus $\mathbf{E} = Z \mathbf{H} \times \hat{\mathbf{k}}$, where $Z = \sqrt{\frac{\mu}{\epsilon}} = Y^{-1}$.
+Now, consider the case of a transverse magnetic field. In this case, we know that $\mathbf{H_{i, r, t}} = H_{i, r, t}\hat{\mathbf{y}}$, and thus $\mathbf{E} = Z \mathbf{H} \times \hat{\mathbf{k}}$, where $Z = \sqrt{\frac{\mu}{\varepsilon}} = Y^{-1}$.
 
 Thus, we can say that
 
@@ -255,3 +255,120 @@ Interestingly, if $Z_2 \cos \theta_t = Z_1 \cos \theta_i$ for a wave with any po
 $$\sqrt{1-(\frac{n_1}{n_2})^2 \sin^2 \theta_i} = \frac{n_2}{n_1} \cos \theta_i$$
 
 **Definition**. This is satisfied when $\frac{n_2}{n_1} = \tan \theta_i$. This angle, for which there is no reflected TM wave, is *called Brewster's Angle.*
+
+### Section 10.2.4 - Reflection from Conductors
+
+We know that in a conductor, with current density $\sigma$, we can state that $\mathbf{J}_e = \sigma \mathbf{E}$. This then reintroduces the current term in Maxwell's equation, so that $\nabla \times \mathbf{H} = \sigma \mathbf{E} + \varepsilon \frac{\partial \mathbf{E}}{\partial t}$.
+
+Then, if we curl the curls, we see that
+
+$$\begin{align}
+\nabla \times \nabla \times \mathbf{E} &= -\mu \frac{\partial}{\partial t}(\nabla \times \mathbf{H}) &= -\mu \frac{\partial}{\partial t}(\sigma \mathbf{E} + \varepsilon \frac{\partial \mathbf{E}}{\partial t}) \\
+\nabla \times \nabla \times \mathbf{H} &= \sigma \nabla \times \mathbf{E} + \varepsilon \frac{\partial}{\partial t}(\nabla \times \mathbf{E}) &= -\mu\sigma \frac{\partial}{\partial t}\mathbf{H} + \varepsilon \frac{\partial}{\partial t}(-\mu \frac{\partial}{\partial t}\mathbf{H}) \\
+\end{align}$$
+
+Applying our identity for the curl of a curl and knowing the divergence of the electric and magnetic fields vanishes, we see that
+
+$$\begin{align}
+\nabla^2 \mathbf{E} &= -\mu \sigma \frac{\partial \mathbf{E}}{\partial t} - \mu \varepsilon \frac{\partial^2 \mathbf{E}}{\partial t^2} \\
+\nabla^2 \mathbf{H} &= -\mu \sigma \frac{\partial \mathbf{H}}{\partial t} - \mu \varepsilon \frac{\partial^2 \mathbf{H}}{\partial t^2} \\
+\end{align}$$
+
+We see that if $\sigma = 0$, we recover the equations for propagation in a linear material.
+
+We can solve these equations manually, but that would make us sad. Instead, we assume solutions of the form $\mathbf{E} = E_0 \hat{\mathbf{x}} \cos(kz - \omega t) e^{-\kappa z}$.
+
+Through calculation, we see that
+
+$$\begin{align}
+\nabla^2 \mathbf{E} &= -k^2 E_0 \hat{\mathbf{x}} \cos(kz - \omega t) e^{-\kappa z} + 2 k \kappa E_0 \hat{\mathbf{x}} \sin(kz - \omega t) e^{-\kappa z} + \kappa^2 E_0 \hat{\mathbf{x}} \cos(kz - \omega t) e^{-\kappa z} \\
+\mu \sigma \frac{\partial \mathbf{E}}{\partial t} &= \mu \sigma \omega E_0 \hat{\mathbf{x}} \sin(kz - \omega t)^{-\kappa z} \\
+\mu \sigma \frac{\partial^2 \mathbf{E}}{\partial^2 t} &= -\mu \sigma \omega^2 E_0 \hat{\mathbf{x}} \cos(kz - \omega t)^{-\kappa z}
+\end{align}$$
+
+We can substitute this into the wave equation. For the wave equation to hold true at all times, by matching terms of $\sin$ and $\cos$ we see that $-k^2 + \kappa^2 + \mu \varepsilon \omega^2 = 0$ and $\mu \sigma \varepsilon - 2k \kappa = 0$. We can solve the second for $\kappa$ to see that $\kappa = \frac{\mu \sigma \omega}{2k}$. This then allows us to solve the first equation for $k^2$, where we see
+
+$$k^2 = \frac{\mu \varepsilon \omega^2}{2}(1+\sqrt{1+(\frac{\sigma}{\varepsilon \omega})^2})$$
+
+This then lets us solve the first equation (again) for $\kappa^2$, where we see that
+
+$$\kappa^2 = \frac{\mu \varepsilon \omega^2}{2}(\sqrt{1+(\frac{\sigma}{\varepsilon \omega})^2} - 1)$$
+
+Our final equations them become
+
+$$\begin{align}
+\kappa = \omega \sqrt{\mu\varepsilon} \sqrt{\frac{\sqrt{1 + (\frac{\sigma}{\varepsilon \mu})^2} + 1}{2}} \\
+\kappa = \omega \sqrt{\mu\varepsilon} \sqrt{\frac{\sqrt{1 + (\frac{\sigma}{\varepsilon \mu})^2} - 1}{2}} \\
+\end{align}$$
+
+Note that when $\sigma \ll \varepsilon \omega$, the wave number collapses to $k = \frac{\omega}{v}$, and we recover propagation in a vacuum. However, when $\sigma \gg \varepsilon \omega$, we see that $k = \kappa = \sqrt{\frac{\mu \omega \sigma}{2}}$. Here, the distance the wave propagates before decreasing by a factor of $\frac{1}{e}$ is known as the skin depth $d$, where $d = \frac{1}{\kappa} = \sqrt{\frac{2}{\mu \omega \sigma}}$. This is significantly less than the wavelength $\lambda = \frac{2\pi}{k}$. Note that in this limit, the electromagnetic wave is heavily damped.
+
+The magnetic field is simpler to solve. We know that $\frac{\partial\mathbf{H}}{\partial t} = -\frac{1}{\mu}\nabla \times \mathbf{E} = \hat{\mathbf{y}} \frac{E_0 e^{-\kappa z}}{\mu}[k \sin(kz - \omega t) + \kappa \cos(kz - \omega t)]$
+
+Integrating, we see that $\mathbf{H} = \hat{\mathbf{y}} = \frac{E_0 e^{-\kappa z}}{\mu \omega}[k \cos(kz - \omega t) - \kappa \sin(kz - \omega t)]$.
+
+We can combine this to see $\mathbf{H} = \hat{\mathbf{y}} e^{-\kappa z} \frac{\sqrt{k^2 + \kappa^2}}{\mu \omega} \cos(kz - \omega t + \phi)$ where $\cos \phi = \frac{k}{\sqrt{k^2 + \kappa ^2}}$ and $\sim \phi = \frac{\kappa}{\sqrt{k^2 + \kappa^2}}$.
+
+#### Reflection of EM waves Incident from an Insulator onto a Conductor
+
+In material $1$ ($z < 0$), we know that
+
+$$\begin{align}
+\mathbf{E}_1 &= \hat{\mathbf{x}} E_i \cos (k_1 z - \omega t) + \hat{\mathbf{x}} E_r \cos (-k_1 z - \omega t + \phi_r) \\
+\mathbf{H}_1 &= Y_1\hat{\mathbf{y}} E_i \cos (k_1 z - \omega t) - Y_1 \hat{\mathbf{y}} E_r \cos (-k_1 z - \omega t + \phi_r)
+\end{align}$$
+
+We know that in material $2$ ($x > 0$),
+
+$$\begin{align}
+\mathbf{E}_1 &= \hat{\mathbf{x}} E_t \cos (k_2 z - \omega t + \phi_t) e^{-\kappa z} \\
+\mathbf{H}_1 &= \hat{\mathbf{y}} frac{\sqrt{k_2^2 + \kappa^2}}{\mu_2 \omega} \cos (k_2 z - \omega t + \phi + \phi_t) e^{-\kappa z}
+\end{align}$$
+
+Here, $\phi$ = $\tan^{-1} (\frac{\kappa}{k_2})$ os a phase shift intrinsic to the conductor.
+
+The continuity of $\mathbf{E}^\parallel$ and $\mathbf{H}^\parallel$ gives us two equations. We can then substitute in $\omega t = 0$:
+
+$$\begin{align}
+E_i + E_r \cos \phi_r &= E_t \cos \phi_t \\
+E_i - E_r \cos \phi_r &= \frac{\mu_1 v_1 \sqrt{k_2^2 + \kappa^2}}{\mu_2 \omega} E_t \cos(\phi_t + \phi) \\
+\end{align}$$
+
+Now, substitute $\omega t = \frac{\pi}{2}$:
+
+$$\begin{align}
+E_r \sin \phi_r &= E_t \sin \phi_t \\
+-E_r \sin \phi_r &= \frac{\mu_1 v_1 \sqrt{k_2^2 + \kappa^2}}{\mu_2 \omega} E_t \sin(\phi_t + \phi) \\
+\end{align}$$
+
+We can then assume $\mu_1 \approx \mu_2$. This modifies the second equations, leaving us with
+
+$$\begin{align}
+E_i - E_r \cos \phi_r &= \frac{\sqrt{k_2^2 + \kappa^2}}{k_1} E_t \cos(\phi_t + \phi) \\
+-E_r \sin \phi_r &= \frac{\sqrt{k_2^2 + \kappa^2}}{k_1} E_t \sin(\phi_t + \phi) \\
+\end{align}$$
+
+Now, apply the sine and cosine additive identities and the definitions for $\sin \phi$ and $\cos \phi$, alongside the definitions of $\sin \phi_t$ and $\cos \phi_t$.
+
+$$\begin{align}
+E_i - E_r \cos \phi_r &= E_t(\cos(\phi_t \frac{k_2}{k_1}) - \sin(\phi_t \frac{\kappa}{k_1})) \\
+-E_r &= E_t (\sin(\phi_t \frac{k_2}{k_1}) + \cos(\phi_t \frac{\kappa}{k_2}))
+\end{align}
+
+Adding these equations lets us see that $\tan(\phi_t) = -\frac{\kappa}{k_1 + k_2}$. Applying the $\sigma \rightarrow 0$, we see $\phi_t \rightarrow 0$. Applying $\sigma \gg \varepsilon \omega$, we see that $\phi_t \rightarrow -\frac{\pi}{4}$.
+
+Adding the first equations, we also wee that
+
+$$E_t = \frac{2k_1 E_i}{\sqrt{(k_1 + k_2)^2 + \kappa^2}}$$
+
+This also has the correct limits.
+
+Furthermore, we can also obtain formulae for $\tan \phi_r = \frac{-2k_1 \kappa}{k_1^2 - k_2^2 - \kappa^2}$, and $E_r = \frac{\sqrt(k_1^2 - k_2^2 - \kappa^2)^2 + (2 k_1 \kappa)^2}{(k_1 + k_2)^2 + \kappa^2} E_i$. These collapse to the reflection at normal incidence values when $\sigma \rightarrow 0$. If $\sigma \gg \varepsilon \mu$, we see that $\kappa \approx k_2 \gg k_1$, as well as $\tan \phi_r \rightarrow 0$ and $\frac{E_r}{E_i} \rightarrow 1$ (complete reflection).
+
+We can also compute energy currents. That is, $I_i = \frac{1}{2} Y_1 E_i^2 = \frac{1}{2} v_1 \varepsilon_1 E_i^2$, and $I_r = \frac{1}{2}v_1 \varepsilon_1 E_r^2$.
+
+The transmitted wave is a bit more complicated. We see $I_t = \langle \mathbf{S}_t \cdot \hat{\mathbf{z}} \rangle = \frac{\sqrt{k_2^2 + \kappa^2}}{k_1} Y_1 E_t^2 \langle \cos(\omega t + \phi_t) \cos(\omega t + \phi_t + \phi) \rangle e^{-2\kappa z} = \frac{1}{2} Y_1 E_t^2 e^{-2\kappa z}$.
+
+## Section 10.3
+
+### Section 10.3.1 - Response Functions and Fourier Transforms
