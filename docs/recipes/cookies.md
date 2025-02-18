@@ -1,17 +1,5 @@
 # Cookies
 
-## Chocolate Chip Cookies
-
-Original: [Link](https://www.allrecipes.com/recipe/10813/best-chocolate-chip-cookies/)
-
-- Preheat oven to $350 \degree$ F.
-- In a small bowl, combine $1 \frac{1}{2}$ cups flour and $\frac{1}{4}$ tsp. salt
-- In a medium bowl, mix together $\frac{1}{2}$ cup butter, $\frac{1}{2}$ cup sugar, $\frac{1}{2}$ cup brown sugar.
-- To the wet ingredients, add 1 egg and 1 tsp. vanilla.
-- To the wet ingredients, add a combination of 1 tsp. hot water and $\frac{1}{2}$ tsp. baking soda.
-- Mix the wet and dry ingredients. Stir in 1 cup chocolate chips and optionally $\frac{1}{2}$ cup walnuts.
-- Bake for 10m at $350 \degree$ F.
-
 ## Peanut Butter Cookies
 
 - Preheat oven to $350 \degree$ F.
