@@ -52,8 +52,64 @@ If we then let $dt = \frac{dx}{\dot{x}}$, so that $t = \sqrt{\frac{m}{2}} \int_{
 
 ## Section 4.7 - Curvilinear One-Dimensional Systems
 
+Consider the direction of motion $s$ such that $T = \frac{1}{2} m \dot{s}$, in which the direction of motion is not in a fixed direction. Notably, the normal force is constraining the object to a fixed path, yet doesn't move the object and thus does no work. Thus, it is the force tangential to the path that does work. We can see then that
+
+$$F_{\perp} = m \ddot{s}$$
+
+Here, we can define a potential $U(s)$ such that $F_{tang} = -dU/ds$ and the total mechanical energy $E = T + U(s)$ is constant.
+
+**Definition**. In an Atwood machine, there are two masses of mass $m_1$ and m_2$, suspended with an inextensible massless string over a pulley. The system can be constrained by a single parameter $x$, where $x$ is the vertical distance from the center of the pulley and the center of mass of $m_1$.
+
+Then, we can see that $\Delta T_1  + \Delta U_1 = W_1^{tension}$, and respectively $\Delta T_2 + \Delta U_2 = W_2^{tension}$. Then, we can see that $\W_1^{tension} = -W_2^{tension}$, so $\Delta(T_1 + U_1 + T_2 + U_2) = 0$. That is, $E = T_1 + U_1 + T_2 + U_2$, which is conserved.
+
+Notably, if all forces are conservative, we can define a potential $U_\alpha$ for each particle $\alpha$ such that
+
+$E = \sum_\alpha^N (T_\alpha U_\alpha)$
+
 ## Section 4.8 - Central Forces
+
+**Definition**. A central force is some force such that $\mathbf{F}(\mathbf{r}) = f(\mathbf{r}) \hat{\mathbf{r}}$..
+
+**Definition**. A *spherically symmetric* or *rotationally invariant* force is a force such that $f(\mathbf{r}) = f(r)$. Notably, this is equivalent to the force being conservative.
+
+This book uses spherical polar coordinates.
+
+**Definition**. $\phi$, the *azimuth*, is the angle between the $x$-axis and the projection of the vector $\mathbf{r}$ on the $x$-$y$ plane.
+
+This book uses the convention of $r$, $\theta$, and $\phi$, where $x = r \sin \theta \cos \phi$, $y = r \sin \theta \sin \phi$, and $z = r \cos \theta$. That is, $\theta$ is the only angle extending into the $z$-direction.
+
+Recall that the dot product is defined as normal.
+
+Additionally, we see that $d\mathbf{r} = dr \hat{\mathbf{r}} + r d\theta \hat{\mathbf{\theta}} + r \sin \theta d \phi$. Then, as $df = \nabla f \cdot d\mathbf{r}$, we see that $df = (\nabla f)_r dr + (\nabla f)_\theta r d\theta + (\nabla f)_\phi r \sin \theta d\phi$.
+
+Notably, $(nabla f)_r = \frac{\partial f}{\partial r}$, $(\nabla f)_\theta = \frac{1}{r} \frac{\partial f}{\partial \theta}$, and $(\nabla f)_\phi = \frac{1}{r \sin \theta} \frac{\partial f}{\partial \phi}$.
+
+An important detail is that for $\mathbf{F}(\mathbf{r}) = -\nabla U = f(r) \hat{\mathbf{r}}$, this forces $U = U(r)$.
 
 ## Section 4.9 - Energy Interaction of Two Particles
 
+Consider two particles, with forces $\mathbf{F}_{12}$ the force on particle $1$ by particle $2$ and the equal and opposite force $\mathbf{F}_{21}$. Notably, we can write $\mathbf{F}_{12} = f(r) \hat{\mathbf{r}} = \f(r) \frac{\mathbf{r}}{r}$.
+
+For two forces not at the origin, we see that $\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2$ for $\mathbf{F}_{12}$. As a consequence, we tend to write $\mathbf{F}_{12} = \mathbf{F}_{12} (\mathbf{r}_1 - \mathbf{r}_2)$.
+
+We can extend this to the potential. If we fix $\mathbf{r}_2$, we see that $\mathbf{F}_{12} = -\nabla_1 U(\mathbf{r}_1)$, and for an unfixed second particle, $\mathbf{F}_{12} = -\nabla_1 U(\mathbf{r}_1 - \mathbf{r}_2)$.
+
+An important note is that $\nabla_1 U(\mathbf{r}_1 - \mathbf{r}_2) = -\nabla_2 U(\mathbf{r}_1 - \mathbf{r}_2)$. We can then say that $\mathbf{F}_{21} - \nabla_2 U(\mathbf{r}_1 - \mathbf{r}_2)$.
+
+Now, we can generalize this to see that $W_tot = d\mathbf{r}_1 \cdot \mathbf{F}_{12} + d\mathbf{r}_2 \cdot \mathbf{F}_{21} = (d\mathbf{r}_1 - d\mathbf{r}_2) \cdot \mathbf{F}_{12} = d(\mathbf{r}_1 - \mathbf{r}_2) \cdot [-\nabla_1 U(\mathbf{r}_1 - \mathbf{r}_2)] = -dU$. We then see that $d(T + U) = 0$. That is, $E = T_1 + T_2 + U$.
+
+Recall elastic collisions, in which $T_{in} = T_{fin}$.
+
 ## Section 4.10 - The Energy of a Multiparticle System
+
+Consider a system with $N$ particles, each donated $\alpha. Then, we see that
+
+$$T = \sum_\alpha T_\alpha = \sum_\alpha \frac{1}{2}m_\alpha v_\alpha^2$$
+
+Assuming all forces are conservative, for each pair of particles $\alpha \beta$, there exists a potential energy $U_{\alpha\beta}$ between the two. Then, total potential energy can be written as
+
+$$U = U^{int}+U^{ext} = \sum_\alpha \sum_{\beta > \alpha} U_{\alpha \beta} + \sum_\alpha U_\alpha$$.
+
+With this, the net force on any particle is given by $-\nabla_\alpha U$, and total energy is conserved given no external potential energy.
+
+For a rigid body, we can they state $U^{int} = \sum_\alpha \sum_{\beta > \alpha} U_{\alpha \beta}(\mathbf{r}_\alpha - \mathbf{r}_\beta)$. In the case that the forces are central, $U^{int} = \sum_\alpha \sum_{\beta > \alpha} U_{\alpha \beta}(|\mathbf{r}_\alpha - \mathbf{r}_\beta|)$.
