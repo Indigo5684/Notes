@@ -12,7 +12,7 @@
         <link rel="prev" href="../3-2nd-order/">
       
       
-        <link rel="next" href="../../real-analysis/11-metric-spaces/">
+        <link rel="next" href="../5-systems/">
       
       
       <link rel="icon" href="../../../assets/images/favicon.png">
@@ -662,10 +662,58 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-47-ivps-with-step-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.7 - IVPs with Step Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-48-dirac-delta-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.8 - Dirac Delta Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-49-convolution-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.9 - Convolution Integrals
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../5-systems/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Section 5 - Systems of Differential Equations
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -1674,6 +1722,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-47-ivps-with-step-functions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.7 - IVPs with Step Functions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-48-dirac-delta-function" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.8 - Dirac Delta Function
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-49-convolution-integrals" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.9 - Convolution Integrals
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1713,13 +1788,11 @@
 \mathcal{L} \{f(t)\}(s) = F(s) = \int_0^{\infty} e^{-st}f(t) dt
 \]</div>
 <h2 id="section-42-properties">Section 4.2 - Properties</h2>
-<p>This section is from <a href="https://tutorial.math.lamar.edu/Classes/DE/LaplaceTransforms.aspx">Paul's Online Math Notes</a>.</p>
 <p>The Laplace Transformation is a linear transformation over functions in <span class="arithmatex">\(\mathbb{R}[t]\)</span>. That is, given <span class="arithmatex">\(a, b \in \mathbb{R}, f(t), g(t) \in \mathbb{R}[t]\)</span>, we know that</p>
 <div class="arithmatex">\[
 \mathcal{L} \{a f(t)\ + b g(t) \}(s) = a F(s) + b G(s)
 \]</div>
 <h2 id="section-43-inverse-laplace-transformation">Section 4.3 - Inverse Laplace Transformation</h2>
-<p>This section is from <a href="https://tutorial.math.lamar.edu/Classes/DE/InverseTransforms.aspx">Paul's Online Math Notes</a>.</p>
 <p>Given <span class="arithmatex">\(F(s)\)</span>, we define the Inverse Laplace Transformation as the following;</p>
 <div class="arithmatex">\[
 f(t) = \mathcal{L}^{-1} \{F(s)\}
@@ -1744,7 +1817,6 @@ f(t) = \mathcal{L}^{-1} \{F(s)\}
 \end{align}
 \]</div>
 <h2 id="section-45-laplace-transformation-applied-to-ivps">Section 4.5 - Laplace Transformation applied to IVPs</h2>
-<p>This section is from <a href="https://tutorial.math.lamar.edu/Classes/DE/IVPWithLaplace.aspx">Paul's Online Math Notes</a>.</p>
 <p><strong>Theorem</strong>. Given a function <span class="arithmatex">\(f(t)\)</span> with <span class="arithmatex">\(C^n\)</span> continuity, then</p>
 <div class="arithmatex">\[
 \mathcal{L} \{ f^{(n)} (t) \} = s^n F(s) - s^{n-1} f(0) - s^{n-2} f'(0) - \ldots - s f^{(n-2)} (0) - f^{(n-1)} (0)
@@ -1758,7 +1830,22 @@ f(t) = \mathcal{L}^{-1} \{F(s)\}
 \]</div>
 <p>We can take the Laplace transformation of an IVP, solve for <span class="arithmatex">\(Y(s)\)</span>, then take the inverse to find the solution.</p>
 <h2 id="section-46-non-constant-coefficient-ivps">Section 4.6 - Non-constant Coefficient IVPs</h2>
-<p>This section is from <a href="https://tutorial.math.lamar.edu/Classes/DE/IVPWithNonConstantCoefficient.aspx">Paul's Online Math Notes</a>.</p>
+<p>If <span class="arithmatex">\(f(t)\)</span> is piecewise continuous on <span class="arithmatex">\([0, \infty)\)</span>, then <span class="arithmatex">\(\lim_{s \rightarrow \infty} F(s) = 0\)</span>.</p>
+<p><strong>Definition</strong>. A function <span class="arithmatex">\(f(t)\)</span> is said to be of exponential order <span class="arithmatex">\(\alpha\)</span> if there exists positive constants <span class="arithmatex">\(T, M\)</span> such that for all <span class="arithmatex">\(t \geq T\)</span>, <span class="arithmatex">\(|f(t)| \leq Me^{\alpha t}\)</span>.</p>
+<p>To check this, simply compute <span class="arithmatex">\(\lim_{t \rightarrow \infty} \frac{|f(t)|}{e^{\alpha t}}\)</span>. If this is finite for some <span class="arithmatex">\(\alpha\)</span>, then the function is of exponential order <span class="arithmatex">\(\alpha\)</span>.</p>
+<h2 id="section-47-ivps-with-step-functions">Section 4.7 - IVPs with Step Functions</h2>
+<p>Recall that <span class="arithmatex">\(\mathcal{L} \{u_c(t)f(t-c)\} = e^{-cs}F(s)\)</span>. Then, we can solve IVPs involving step functions.</p>
+<h2 id="section-48-dirac-delta-function">Section 4.8 - Dirac Delta Function</h2>
+<p>The Dirac Delta function has several properties. First, <span class="arithmatex">\(\delta(t - a) = 0\)</span> when <span class="arithmatex">\(t \neq a\)</span>. Notably, though,</p>
+<div class="arithmatex">\[\int_{\mathbb{R}} f(t) \delta(t - a) dt = f(a)\]</div>
+<p>Note that this is not an actual function, buy instead a <em>generalized function</em> or <em>distribution</em>, as several functions can express this property using infinite limits.</p>
+<p>Then, we can see that <span class="arithmatex">\(\mathcal{L} \{\delta(t-a)\} = \int_0^\infty e^{-st} \delta(t-a) dt\)</span> by definition. Then, applying the properties of the Delta function, <span class="arithmatex">\(\mathcal{L} \{\delta(t-a)\} = e^{-as}\)</span>, given <span class="arithmatex">\(a &gt; 0\)</span>.</p>
+<h2 id="section-49-convolution-integrals">Section 4.9 - Convolution Integrals</h2>
+<p>Consider two functions <span class="arithmatex">\(F(s)\)</span> and <span class="arithmatex">\(G(s)\)</span> such that <span class="arithmatex">\(F(s) G(s) = H(s)\)</span>, of which we want to find an inverse Laplace transform.</p>
+<p>We define a <em>convolution integral</em> <span class="arithmatex">\((f*g)(t)\)</span> as</p>
+<div class="arithmatex">\[(f*g)(t) = \int_0^t f(t - \tau)(g - \tau) d\tau\]</div>
+<p>A unique property of this integral is that <span class="arithmatex">\((f*g) = (g*f)\)</span>.</p>
+<p>With this, we see that <span class="arithmatex">\(\mathcal{L} \{f * g\} = F(s)G(s)\)</span>, or that <span class="arithmatex">\(\mathcal{L}^{-1} \{F(s)G(s)\} = (f * g)(t)\)</span>.</p>
 
 
 
@@ -1781,7 +1868,7 @@ f(t) = \mathcal{L}^{-1} \{F(s)\}
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2024</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2025</span>
   </span>
 
     
@@ -1852,13 +1939,13 @@ f(t) = \mathcal{L}^{-1} \{F(s)\}
         
         
           
-          <a href="../../real-analysis/11-metric-spaces/" class="md-footer__link md-footer__link--next" aria-label="Next: Chapter 11 - Metric Spaces">
+          <a href="../5-systems/" class="md-footer__link md-footer__link--next" aria-label="Next: Section 5 - Systems of Differential Equations">
             <div class="md-footer__title">
               <span class="md-footer__direction">
                 Next
               </span>
               <div class="md-ellipsis">
-                Chapter 11 - Metric Spaces
+                Section 5 - Systems of Differential Equations
               </div>
             </div>
             <div class="md-footer__button md-icon">
