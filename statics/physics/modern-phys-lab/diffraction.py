@@ -6,7 +6,7 @@ voltages = np.array(np.arange(2500, 5000 + 1, +500)) #+1 to include 5000
 voltages_inv_sqrt = 1 / np.sqrt(voltages)
 
 # New units: m
-diameter_measured_error = 0.002
+diameter_measured_error = 0.001
 
 # Average inner and outer
 # New format: d[0 = small, 1 = large][voltage]
