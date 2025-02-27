@@ -82,13 +82,13 @@ Recall that the dot product is defined as normal.
 
 Additionally, we see that $d\mathbf{r} = dr \hat{\mathbf{r}} + r d\theta \hat{\mathbf{\theta}} + r \sin \theta d \phi$. Then, as $df = \nabla f \cdot d\mathbf{r}$, we see that $df = (\nabla f)_r dr + (\nabla f)_\theta r d\theta + (\nabla f)_\phi r \sin \theta d\phi$.
 
-Notably, $(nabla f)_r = \frac{\partial f}{\partial r}$, $(\nabla f)_\theta = \frac{1}{r} \frac{\partial f}{\partial \theta}$, and $(\nabla f)_\phi = \frac{1}{r \sin \theta} \frac{\partial f}{\partial \phi}$.
+Notably, $(\nabla f)_r = \frac{\partial f}{\partial r}$, $(\nabla f)_\theta = \frac{1}{r} \frac{\partial f}{\partial \theta}$, and $(\nabla f)_\phi = \frac{1}{r \sin \theta} \frac{\partial f}{\partial \phi}$.
 
 An important detail is that for $\mathbf{F}(\mathbf{r}) = -\nabla U = f(r) \hat{\mathbf{r}}$, this forces $U = U(r)$.
 
 ## Section 4.9 - Energy Interaction of Two Particles
 
-Consider two particles, with forces $\mathbf{F}_{12}$ the force on particle $1$ by particle $2$ and the equal and opposite force $\mathbf{F}_{21}$. Notably, we can write $\mathbf{F}_{12} = f(r) \hat{\mathbf{r}} = \f(r) \frac{\mathbf{r}}{r}$.
+Consider two particles, with forces $\mathbf{F}_{12}$ the force on particle $1$ by particle $2$ and the equal and opposite force $\mathbf{F}_{21}$. Notably, we can write $\mathbf{F}_{12} = f(r) \hat{\mathbf{r}} = f(r) \frac{\mathbf{r}}{r}$.
 
 For two forces not at the origin, we see that $\mathbf{r} = \mathbf{r}_1 - \mathbf{r}_2$ for $\mathbf{F}_{12}$. As a consequence, we tend to write $\mathbf{F}_{12} = \mathbf{F}_{12} (\mathbf{r}_1 - \mathbf{r}_2)$.
 
@@ -96,7 +96,7 @@ We can extend this to the potential. If we fix $\mathbf{r}_2$, we see that $\mat
 
 An important note is that $\nabla_1 U(\mathbf{r}_1 - \mathbf{r}_2) = -\nabla_2 U(\mathbf{r}_1 - \mathbf{r}_2)$. We can then say that $\mathbf{F}_{21} - \nabla_2 U(\mathbf{r}_1 - \mathbf{r}_2)$.
 
-Now, we can generalize this to see that $W_tot = d\mathbf{r}_1 \cdot \mathbf{F}_{12} + d\mathbf{r}_2 \cdot \mathbf{F}_{21} = (d\mathbf{r}_1 - d\mathbf{r}_2) \cdot \mathbf{F}_{12} = d(\mathbf{r}_1 - \mathbf{r}_2) \cdot [-\nabla_1 U(\mathbf{r}_1 - \mathbf{r}_2)] = -dU$. We then see that $d(T + U) = 0$. That is, $E = T_1 + T_2 + U$.
+Now, we can generalize this to see that $W_{tot} = d\mathbf{r}_1 \cdot \mathbf{F}_{12} + d\mathbf{r}_2 \cdot \mathbf{F}_{21} = (d\mathbf{r}_1 - d\mathbf{r}_2) \cdot \mathbf{F}_{12} = d(\mathbf{r}_1 - \mathbf{r}_2) \cdot [-\nabla_1 U(\mathbf{r}_1 - \mathbf{r}_2)] = -dU$. We then see that $d(T + U) = 0$. That is, $E = T_1 + T_2 + U$.
 
 Recall elastic collisions, in which $T_{in} = T_{fin}$.
 
@@ -108,7 +108,7 @@ $$T = \sum_\alpha T_\alpha = \sum_\alpha \frac{1}{2}m_\alpha v_\alpha^2$$
 
 Assuming all forces are conservative, for each pair of particles $\alpha \beta$, there exists a potential energy $U_{\alpha\beta}$ between the two. Then, total potential energy can be written as
 
-$$U = U^{int}+U^{ext} = \sum_\alpha \sum_{\beta > \alpha} U_{\alpha \beta} + \sum_\alpha U_\alpha$$.
+$$U = U^{int}+U^{ext} = \sum_\alpha \sum_{\beta > \alpha} U_{\alpha \beta} + \sum_\alpha U_\alpha$$
 
 With this, the net force on any particle is given by $-\nabla_\alpha U$, and total energy is conserved given no external potential energy.
 
