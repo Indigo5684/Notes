@@ -1427,6 +1427,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-33-paramagnetism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.3 - Paramagnetism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-34-mechanical-equilibrium-and-pressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.4 - Mechanical Equilibrium and Pressure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-35-diffusive-equilibrium-and-chemical-potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.5 - Diffusive Equilibrium and Chemical Potential
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-36-summary-a-look-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.6 - Summary, A Look Ahead
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1495,6 +1531,42 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-33-paramagnetism" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.3 - Paramagnetism
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-34-mechanical-equilibrium-and-pressure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.4 - Mechanical Equilibrium and Pressure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-35-diffusive-equilibrium-and-chemical-potential" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.5 - Diffusive Equilibrium and Chemical Potential
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-36-summary-a-look-ahead" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 3.6 - Summary, A Look Ahead
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1556,6 +1628,45 @@
 <p>Note that by convention, tabulated entropies include residual entropy due to molecular orientations but neglect mixing or spin entropy.</p>
 <p>Note that to force the integral to converge at absolute zero, we force <span class="arithmatex">\(\lim_{T \rightarrow 0} C_V = 0\)</span>.</p>
 <p>Historically, <span class="arithmatex">\(dS = Q/T\)</span> was the original definition of entropy. This tells us nothing about what entropy is, but is sufficient enough for use in most purposes.</p>
+<h2 id="section-33-paramagnetism">Section 3.3 - Paramagnetism</h2>
+<p>Consider a two-state paramagnet, with <span class="arithmatex">\(N\)</span> spin-<span class="arithmatex">\(1/2\)</span> particles, in a constant magnetic field <span class="arithmatex">\(\mathbf{B} = B\hat{\mathbf{z}}\)</span>. Then, with each particle acting as a dipole, and neglecting dipole-dipole interactions, we consider the two potential spin values, labeled here as up and down. Then, we can say the energy of any dipole is <span class="arithmatex">\(\pm \mu B\)</span> for the material's value of <span class="arithmatex">\(\mu\)</span>. If we let a dipole oriented with the field have a negative energy, we can then write the total energy as</p>
+<div class="arithmatex">\[U = \mu B(N_\darr - N_\uparrow) = U = \mu B((N - N_\uparrow) - N_\uparrow) = \mu B(N - 2N_\uparrow)\]</div>
+<p>This holds true as <span class="arithmatex">\(N = N_\uparrow + N_\darr\)</span>. Additionally, this energy can be negative. In this material, we know there is no internal magnetic field, so <span class="arithmatex">\(B = \mu(H + M)\)</span> (we are not working with the symmetric case) simplifies so that</p>
+<div class="arithmatex">\[M = \mu(N_\uparrow - N_\darr) = -U/B\]</div>
+<p>Now, we can also consider the multiplicity of the system <span class="arithmatex">\(\Omega\)</span> as <span class="arithmatex">\(\Omega(N_\uparrow) = \binom{N}{N_\uparrow}\)</span>.</p>
+<p>A notable consequence of this is if we plot <span class="arithmatex">\(x = U\)</span> vs <span class="arithmatex">\(y = S\)</span>, the temperature is the reciprocal of the slope (as <span class="arithmatex">\(1/T = \partial S / \partial U\)</span>). We can then normalize this by writing <span class="arithmatex">\(x = U / \mu B\)</span> (as <span class="arithmatex">\(B\)</span> is a constant external field) and <span class="arithmatex">\(y = S / k\)</span>. The resulting graph will appear to be a semicircle. Notably, we can find negative temperatures when more than half the dipoles point up.</p>
+<p>Analytically, Stirling's approximation tells us that</p>
+<div class="arithmatex">\[S = k[N \ln N - N_\uparrow \ln N_\uparrow - (N - N_\uparrow) \ln(N - N_\uparrow)]\]</div>
+<p>We then see that</p>
+<div class="arithmatex">\[\frac{1}{T} = (\frac{\partial S}{\partial U})_{N, V} = \frac{\partial N_\uparrow}{\partial U} \frac{\partial S}{\partial N_\uparrow} = -\frac{1}{2\mu B} k \ln(\frac{N - U/\mu B}{N + U / \mu B})\]</div>
+<p>We can then solve to see that</p>
+<div class="arithmatex">\[U = N \mu B \frac{1 - \exp(2 \mu B / kT)}{1 + \exp(2 \mu B / kT)} = -N \mu B \tanh(\frac{\mu B}{kT})\]</div>
+<p>Then, we see that <span class="arithmatex">\(M = N \mu \tanh(\frac{\mu B}{kT})\)</span>. Knowing that the heat capacity <span class="arithmatex">\(C_B\)</span> can be written as <span class="arithmatex">\(C_B =  (\frac{\partial U}{\partial T})_{N, B}\)</span>, we see that</p>
+<div class="arithmatex">\[C_B = Nk \frac{(\mu B / kT)^2}{\cosh(\mu B / kT)}\]</div>
+<p>Note that for an electronic two-state paramagnet, the value of <span class="arithmatex">\(\mu\)</span> is the Bohr magneton, where <span class="arithmatex">\(\mu_B = \frac{eh}{4\pi m_e}\)</span>. As <span class="arithmatex">\(x = \mu B / kT \ll 1\)</span> in most cases, we can write <span class="arithmatex">\(\tanh x \approx x\)</span>, so that <span class="arithmatex">\(M \approx \frac{N \mu^2 B}{kT}\)</span>. The fact that <span class="arithmatex">\(M \propto 1/T\)</span> is known as <em>Curie's Law</em>, and holds in the high temperature limit for all paramagnets.</p>
+<h2 id="section-34-mechanical-equilibrium-and-pressure">Section 3.4 - Mechanical Equilibrium and Pressure</h2>
+<p>Consider two systems separated by a movable partition, in which energy and volume may be exchanged, but the total energy and volume is fixed. Then, at equilibrium, we see that <span class="arithmatex">\(\frac{\partial S}{\partial U_A} = 0 = \frac{\partial S}{\partial V_A}\)</span>. Then, we know that <span class="arithmatex">\(S = S_A + S_B\)</span>, so</p>
+<div class="arithmatex">\[\0 = \frac{\partial S}{\partial V_A} = \frac{\partial S_A}{\partial V_A} + \frac{\partial S_B}{\partial V_A} = \frac{\partial S_A}{\partial V_A} - \frac{\partial S_B}{\partial V_B} \Rightarrow \frac{\partial S_A}{\partial V_A} = \frac{\partial S_B}{\partial V_B}\]</div>
+<p>We can state this as <span class="arithmatex">\(V = V_A + V_B\)</span> being fixed forces <span class="arithmatex">\(0 = \partial V_A + \partial V_B\)</span> so then <span class="arithmatex">\(\partial V_B = -\partial V_A\)</span>. Then, at equilibrium, <span class="arithmatex">\(T(\partial S / \partial V)\)</span> is the same for both systems. We then define pressure as <span class="arithmatex">\(P = T (\frac{\partial S}{\partial V})_{U, N}\)</span>. For an ideal gas, with <span class="arithmatex">\(\Omega = f(N) V^N U^{3N/2}\)</span>, we see that <span class="arithmatex">\(P = \frac{NkT}{V}\)</span> under this definition, which agrees with the ideal gas law.</p>
+<p>Now, consider a two-step process. In the first step, energy is changed by <span class="arithmatex">\(\Delta U\)</span> while volume is fixed. Then, in step two, volume is changed by <span class="arithmatex">\(\Delta V\)</span> while energy is fixed. Then, <span class="arithmatex">\(\Delta S = \Delta S_1 + \Delta S_2\)</span>. We can write this as <span class="arithmatex">\(\Delta S = (\frac{\Delta S}{\Delta U})_V \Delta U + (\frac{\Delta S}{\Delta V})_U \Delta V\)</span>. As we take the limit, we see that</p>
+<div class="arithmatex">\[dS = (\frac{\partial S}{\partial U})_V dU + (\frac{\partial S}{\partial V})_U dV = \frac{1}{T} dU + \frac{P}{T} dV\]</div>
+<p><strong>Theorem</strong>. This gives us the <em>thermodynamic identity</em>, in which <span class="arithmatex">\(dU = T dS - P dV\)</span>, which is true in any system.</p>
+<p>We can then recall that <span class="arithmatex">\(dU = Q + W\)</span>. Then if <span class="arithmatex">\(W = -P dV\)</span>, we can say <span class="arithmatex">\(Q = T dS\)</span>. However, this is only true if this is a quasistatic process, no other work is done, and many variables are held constant. Additionally, in a quasistatic process that is also adiabatic (<span class="arithmatex">\(Q = 0\)</span>), we call the process <em>isentropic</em>. Then, <span class="arithmatex">\(\Delta S = \frac{Q}{T}\)</span>.</p>
+<p>For constant pressure processes, we can then write <span class="arithmatex">\((\Delta S)_P\)</span> = \int_{T_i}^{T_f}\frac{C_P}{T} dT$.</p>
+<p>Note that in non-quasistatic processes, <span class="arithmatex">\(dS &gt; \frac{Q}{T}\)</span>, as <span class="arithmatex">\(W &gt; -P dV\)</span>.</p>
+<h2 id="section-35-diffusive-equilibrium-and-chemical-potential">Section 3.5 - Diffusive Equilibrium and Chemical Potential</h2>
+<p>Now consider two systems, <span class="arithmatex">\(A\)</span> and <span class="arithmatex">\(B\)</span>, that can also exchange particles. Then, we see that <span class="arithmatex">\(\partial S_A / \partial N_A = \partial S_B / \partial N_B\)</span> at equilibrium. Then,</p>
+<div class="arithmatex">\[ -T \frac{\partial S_A}{\partial N_A} = -T \frac{\partial S_B}{\partial N_B}\]</div>
+<p>We then define a chemical potential <span class="arithmatex">\(\mu\)</span> as</p>
+<div class="arithmatex">\[\mu = -T (\frac{\partial S}{\partial N})_{U, V}\]</div>
+<p>Then, we can say that <span class="arithmatex">\(\mu_A = \mu_B\)</span> at equilibrium. Otherwise, the system with the lesser chemical potential will tend to gain particles, as it will gain more entropy than the other loses. This makes intuitive sense, as the system with more energy tends to have more particles.</p>
+<p>Then, we know that</p>
+<div class="arithmatex">\[dS = (\frac{\partial S}{\partial U})_{N, V} dU + (\frac{\partial S}{\partial V})_{N, U} dV + (\frac{\partial S}{\partial N})_{U, V} dN\]</div>
+<p>We can then say that <span class="arithmatex">\(dS = \frac{1}{T} dU + \frac{P}{T} dV - \frac{\mu}{T} dN\)</span>, so that <span class="arithmatex">\(dU = T dS - P dV + \mu dN\)</span>. Then, we tend to associate <span class="arithmatex">\(\mu dN\)</span> with chemical work.</p>
+<p>Then, if we fix <span class="arithmatex">\(U\)</span> and <span class="arithmatex">\(V\)</span>, the system only has chemical work, so that <span class="arithmatex">\(0 = T dS + \mu dN\)</span>, which implies <span class="arithmatex">\(\mu = -T (\frac{\partial S}{\partial N})_{U, V}\)</span>. Then, if we instead fix <span class="arithmatex">\(S\)</span> and <span class="arithmatex">\(V\)</span>, we see that <span class="arithmatex">\(dU = \mu dN\)</span>, which implies that <span class="arithmatex">\(\mu = (\frac{\partial U}{\partial N})_{S, V}\)</span>. This tells us that <span class="arithmatex">\(\mu\)</span> has units of energy.</p>
+<h2 id="section-36-summary-a-look-ahead">Section 3.6 - Summary, A Look Ahead</h2>
+<p><strong>Definition</strong>. In Classic Thermodynamics, we see that <span class="arithmatex">\(dU = T dS - P dV + \mu dN\)</span>, where <span class="arithmatex">\(\frac{1}{T} = (\frac{\partial S}{\partial U})_{V, N}\)</span>, <span class="arithmatex">\(\frac{P}{T} = (\frac{\partial S}{\partial V})_{U, N}\)</span>, and <span class="arithmatex">\(-\frac{\mu}{T} = \frac{\partial S}{\partial N}_{U, V}\)</span>.</p>
+<p>Additionally, we can find info for systems such as paramagnets using statistical mechanics.</p>
 
 
 
@@ -1578,7 +1689,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 17, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 4, 2025</span>
   </span>
 
     
