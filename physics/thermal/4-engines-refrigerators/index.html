@@ -1439,6 +1439,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-42-refrigerators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.2 - Refrigerators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-43-real-heat-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.3 - Real Heat Engines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-44-real-refrigerators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.4 - Real Refrigerators
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1498,6 +1525,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#section-42-refrigerators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.2 - Refrigerators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-43-real-heat-engines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.3 - Real Heat Engines
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#section-44-real-refrigerators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Section 4.4 - Real Refrigerators
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1534,9 +1588,28 @@
 <p><strong>Definition</strong>. A <em>heat engine</em> is any machine that absorbs heat and converts part of it into work. We model heat engines as accepting heat from a <em>hot reservoir</em> with temperature <span class="arithmatex">\(T_h\)</span> and rejecting heat to a <em>cold reservoir</em> with temperature <span class="arithmatex">\(T_c\)</span>, as well as outputting work.</p>
 <p><strong>Definition</strong>. A <em>reservoir</em> is any object so large that its temperature does not change as it accepts or rejects heat</p>
 <p>For a a heat engine, we will denote <span class="arithmatex">\(Q_h\)</span> and <span class="arithmatex">\(Q_c\)</span> to represent the heat absorbed from the hot reservoir and heat rejected to the cold reservoir. Then, the net work done by the engine is <span class="arithmatex">\(W\)</span>. In this model, all signs are positive.</p>
-<p><strong>Definition</strong>. The <em>efficiency</em> <span class="arithmatex">\(e\)</span> is the benefit/cost ratio. Fora  heat engine, we see that <span class="arithmatex">\(e = \frac{W}{Q_h}\)</span>. As conservation of energy applies, we know that <span class="arithmatex">\(Q_h = W + Q_c\)</span>, so that <span class="arithmatex">\(W = Q_h - Q_c\)</span>. Then, we can write <span class="arithmatex">\(e = \frac{W}{Q_h} = \frac{Q_h - Q_c}{Q_h} = 1 - \frac{Q_c}{Q_h}\)</span>. We then see that efficiency is always in the range <span class="arithmatex">\([0, 1]\)</span>.</p>
+<p><strong>Definition</strong>. The <em>efficiency</em> <span class="arithmatex">\(e\)</span> is the benefit/cost ratio. Fora  heat engine, we see that <span class="arithmatex">\(e = \frac{W}{Q_h}\)</span>. As <span class="arithmatex">\(\Delta U = Q_h - Q_c - W\)</span> and <span class="arithmatex">\(U\)</span> is a state variable (so <span class="arithmatex">\(\Delta U = 0\)</span> as this engines are cyclic), we know that <span class="arithmatex">\(Q_h = W + Q_c\)</span>, so that <span class="arithmatex">\(W = Q_h - Q_c\)</span>. Then, we can write <span class="arithmatex">\(e = \frac{W}{Q_h} = \frac{Q_h - Q_c}{Q_h} = 1 - \frac{Q_c}{Q_h}\)</span>. We then see that efficiency is always in the range <span class="arithmatex">\([0, 1]\)</span>.</p>
 <p>By the second law of thermodynamics, <span class="arithmatex">\(S_h \geq S_c\)</span>. We know that <span class="arithmatex">\(S = \frac{Q}{T}\)</span> for a reservoir, so <span class="arithmatex">\(\frac{Q_h}{T_h} \geq \frac{Q_c}{T_c}\)</span>, which can be rewritten as <span class="arithmatex">\(\frac{T_c}{T_h} \geq \frac{Q_c}{Q_h}\)</span>. Then, substituting into the equation for efficiency, <span class="arithmatex">\(e \geq 1 - \frac{T_c}{T_h}\)</span>. Note that actual efficiency will be less than this limit as entropy will be produced within the engine as well.</p>
 <p>Let us now revisit a classic: the Carnot cycle. This cycle consists of isothermal expansion of a gas at temperature <span class="arithmatex">\(T_h\)</span>, adiabatic expansion of the gas from <span class="arithmatex">\(T = T_h\)</span> to <span class="arithmatex">\(T = T_c\)</span>, isothermal compression at <span class="arithmatex">\(T = T_c\)</span>, and adiabatic compression from <span class="arithmatex">\(T = T_c\)</span> to <span class="arithmatex">\(T = T_h\)</span>. By applying the formula of the ideal gas, we see this cycle reaches the maximum efficiency of <span class="arithmatex">\(e = 1 - \frac{T_c}{T_h}\)</span>. However, this engine is not very practical.</p>
+<h2 id="section-42-refrigerators">Section 4.2 - Refrigerators</h2>
+<p><strong>Definition</strong>. A <em>refrigerator</em> is a heat engine operated in reverse.</p>
+<p><strong>Definition</strong>. The <em>coefficient of performance</em> is a fancy name for efficiency, in which</p>
+<div class="arithmatex">\[\text{COP} = \frac{Q_c}{W} = \frac{Q_c}{Q_h - Q_c} = \frac{1}{Q_h/Q_c - 1}\]</div>
+<p>We can then apply the second law to see that</p>
+<div class="arithmatex">\[\text{COP} \leq \frac{1}{T_h/T_c - 1} = \frac{T_c}{T_h - T_c}\]</div>
+<p>This textbook does not account for heat pumps.</p>
+<h2 id="section-43-real-heat-engines">Section 4.3 - Real Heat Engines</h2>
+<p>An internal combustion engine is a classic example, in which the working substance is a gas.</p>
+<p><strong>Definition</strong>. An internal combustion engine follows an <em>Otto cycle</em>, in which gas is compressed adiabatically by a piston. Then, during ignition, the temperature and pressure are raised while volume is constant, followed by a power stroke in which the gas expands and does work. Lastly, the gas is vented as pressure is held constant and volume drops.</p>
+<p>We can then show that <span class="arithmatex">\(e = 1 - (\frac{V_2}{V_1})^{\gamma - 1}\)</span>, where <span class="arithmatex">\(V_1 / V_2\)</span> is the <em>compression ratio</em>. Unfortunately, if the compression ratio becomes too high, the gas will preignite spontaneously before compression is finished.</p>
+<p><strong>Definition</strong>. In a <em>diesel engine</em>, only air is compressed, before fuel is sprayed into the engine when air temperature is high enough for ignition. The efficiency then becomes a function of the <em>cutoff ratio</em>.</p>
+<p><strong>Definition</strong>. In a <em>steam engine</em>, a gas will follow the <em>Rankine cycle</em>, in which water is pumped to a high pressure, converted to a gas and expanded, sent through a turbine as it expands and pressure drops, and then condensed back to an initial volume. The efficiency then becomes a function of enthalpy (<span class="arithmatex">\(H = U + PV\)</span>), where <span class="arithmatex">\(e = \frac{H_4 - H_1}{H_3 - H_2} \approx 1 - \frac{H_4 - H_1}{H_3 - H_1}\)</span>.</p>
+<p>For a steam engine, we see steam tables, and everybody becomes unhappy.</p>
+<h2 id="section-44-real-refrigerators">Section 4.4 - Real Refrigerators</h2>
+<p>A refrigerator is normally the reverse of a Rankine cycle. Notably, refrigerants are used instead of water due to the lower freezing and boiling temperatures. However, many are CFCs. We then see that</p>
+<div class="arithmatex">\[\text{COP} = \frac{H_1 - H_4}{H_2 - H_3 - H_1 + H_4}\]</div>
+<p><strong>Definition</strong>. The <em>throttling</em> or <em>Joule-Thomson</em> process is used in refrigerators, and is complex. This class skips it for now.</p>
+<p>I've also skipped the Liquefaction of Gasses and Towards Absolute Zero sections.</p>
 
 
 
