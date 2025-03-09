@@ -24,7 +24,7 @@ $$\text{COP} = \frac{Q_c}{W} = \frac{Q_c}{Q_h - Q_c} = \frac{1}{Q_h/Q_c - 1}$$
 
 We can then apply the second law to see that
 
-$$\text{COP} \leq \frac{1}{T_h/T_c - 1} = \frac{T_c}{T_h - T_c}$$ 
+$$\text{COP} \leq \frac{1}{T_h/T_c - 1} = \frac{T_c}{T_h - T_c}$$
 
 This textbook does not account for heat pumps.
 
