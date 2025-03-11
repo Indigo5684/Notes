@@ -372,3 +372,116 @@ The transmitted wave is a bit more complicated. We see $I_t = \langle \mathbf{S}
 ## Section 10.3
 
 ### Section 10.3.1 - Response Functions and Fourier Transforms
+
+This section will cover the relations $\mathbf{D} = \varepsilon \mathbf{E}$, $\mathbf{B} = \mu \mathbf{H}$, and $\mathbf{J} = \sigma \mathbf{E}$. However, as the logic is the same for each, I will focus only on the equation for the electric flux density.
+
+We know that the permeability of a material is not a constant, but instead can depend on the electric field at all previous times. We then define a response function $\varepsilon_R(t - t')$ such that
+
+$$\mathbf{D}(t) = \int_{\-infty}^\infty \varepsilon_R(t - t') \mathbf{E}(t') dt'$$
+
+**Definition**. For this to make physical sense, we say that $\varepsilon_R(\tau) = 0$ when $\tau < 0$. That is, the electric flux density is only impacted by the past electric field in the material.
+
+A common response function is $\varepsilon_R(t - t') = \varepsilon \delta(t - t')$.
+
+To make this worse, we know that the fields in a material are frequency-dependent. that is, $\mathbf{D}(\mathbf{r}, t) = \varepsilon_0 \mathbf{E}(\mathbf{r}, t)$ becomes $\mathbf{D}_\omega(\mathbf{r}, t) = \varepsilon(\omega) \mathbf{E}_\omega(\mathbf{r}, t)$.
+
+**Definition**. Given some function $f(t)$, we can say that the *Fourier transform* of $f(t)$, represented by $\tilde{f}(\omega)$, is defined as
+
+$$\tilde{f}(\omega) = \int_{-\infty}^{\infty} f(t) e^{-i \omega t}$$
+
+We then can define the *inverse Fourier transform* such that
+
+$$f(t) = \frac{1}{2\pi} \int_{-\infty}{^\infty} \tilde{f}(\omega) e^{-i \omega t} d\omega$$
+
+We also know that $\delta(x - x') = \frac{1}{2\pi} \int_{-\infty}^{\infty} e^{i(x-x')t}dt$. Then, we can write
+
+$$\begin{align}
+\mathbf{D}(t) &= \int_{-\infty}^{\infty} \varepsilon_R(t - t') \mathbf{E}(t') dt' \\
+&= \int_{-\infty}^{\infty} (\frac{1}{2\pi}\int_{-\infty}^{\infty} \tilde{\varepsilon}(\omega)e^{-i \omega (t-t')} d\omega)(\frac{1}{2\pi}\int_{-\infty}^{\infty} \tilde{\mathbf{E}}(\omega')e^{-i \omega' t} d\omega') dt' \\
+&= \int_{-\infty}^{\infty} (\frac{1}{2\pi}\int_{-\infty}^{\infty} \tilde{\varepsilon}(\omega)e^{-i \omega t}e^{i \omega t'} d\omega)(\frac{1}{2\pi}\int_{-\infty}^{\infty} \tilde{\mathbf{E}}(\omega')e^{-i \omega' t} d\omega') dt' \\
+\end{align}$$
+
+We know that $\delta(\omega - \omega') = \frac{1}{2\pi} \int_{-\infty}^{\infty}e^{i(\omega - \omega') t'}dt'$, which lets us rewrite $\mathbf{J}$ as
+
+$$\mathbf{D}(t) = \frac{1}{2\pi} \int_{-\infty}^{\infty} \tilde{\varepsilon}(\omega) \tilde{\mathbf{E}}(\omega) e^{-i \omega t} d\omega$$
+
+**Theorem**. Convolution Theorem. By taking the Fourier transform of both sides, we see that $\tilde{\mathbf{D}} = \tilde{\varepsilon}(\omega) \tilde{\mathbf{E}}(\omega)$.
+
+### Section 10.3.2 - Classical Models for Permittivity and Conductivity
+
+Assuming we are in a material, we know that $\varepsilon = \varepsilon_0 (1 + \chi_e)$. If we move to a response function, we see that
+
+$$\varepsilon_R(t - t') = \epsilon_0 \delta(t - t') + \epsilon_0 \chi_{eR}(t - t')$$
+
+**Definition**. The $\epsilon_0 \chi_{eR}(t-t')$ function is the *susceptibility response function*.
+
+As we are restricted to linear relations to the electric field, we can use the constructive equation for $\mathbf{D}$ to see that
+
+$$\mathbf{D}(t) = \varepsilon_0 \mathbf{E}(t) + \varepsilon_0 \int_{-\infty}^{\infty}\chi_{eR}(t-t') \mathbf{E}(t') dt'$$
+
+This specifically excludes materials in which the flux density depends on higher powers of the electric field. In the limit where the field is time-independent, this reduces to the original constructive equations. This implies that in the static (time-independent) limit,
+
+$$\chi_e = \int_{-\infty}^{\infty} \chi_{eR}(t-t') dt$$
+
+---
+
+Consider an electron bound to its nucleus by a spring-like restoring force. We see that $F_{spring} = -Kx$ for some $K$ (uppercase, in contrast to mechanics), and damped by some force $F_{damping} = -m \gamma \dot{x}$, and driven by  some force $F_{field} = q_e E_0 e^{-i \omega t}$. Then, we see that
+
+$$F = m \ddot{x} = -Kx - m\gamma \dot{x} + q E_{x0}
+\exp(-i \omega t)$$
+
+We assume a solution of the form $x(t) = x_0(\omega) \exp(-i \omega t)$, and see that
+
+$$x_0(\omega) = \frac{\frac{q}{m}E_0}{\omega_0^2 - \omega^2 -i\omega\gamma}$$
+
+Then, we can find that there exists a dipole moment $\tilde{p}(t) = qx(t) = \frac{\frac{q^2}{m}E_0}{\omega_0^2 - \omega^2 -i\omega\gamma}$, where the real part of the expression is the physical dipole moment.
+
+If instead of being subject to an oscillatory force from a changing electric field, assume we have a delta function that imparts an impulse at $t=0$. then, we set $x(0) = 0$, and $\dot{x}(0) = \frac{qE\Delta t}{m}$. Our differential equation then becomes $\ddot{x} + \gamma \dot{x} + \omega_0^2 x=0$.
+
+We can assume a solution of the form $x(t) = A e^{-\beta t} \cos(\omega t - \phi)$. Applying initial conditions, we see that $\phi = \frac{\pi}{2}$ and $A  = \frac{qE\delta t}{\omega m}$. Substituting into the differential equation, we see that $\beta = \frac{\gamma}{2}$ and $\omega = \omega_r = \sqrt{\omega_0^2 - (\frac{\gamma}{2})^2}$.
+
+Thus, a harmonic oscillator with resonance frequency $\omega_0$, damping coefficient $\gamma$, and mass $m$, given initial momentum  $q E \delta t$, we will see a damped oscillation $x(t) = \frac{qE\Delta t}{m \omega_r} \exp(-\frac{\gamma}{2}t) \sin(\omega_r t)$, where $\omega_r$ is defined as above.
+
+Now, adjust the initial momentum for the problem to be applied at $t = t_i$ to see that
+
+$$x(t) = \frac{qE\Delta t}{m \omega_r} \exp(-\frac{\gamma}{2}(t-t_i)) \sin(\omega_r (t-t_i))$$
+
+We can then apply a summation for an arbitrary time-dependent electric field.
+
+$$x(t) = \frac{q}{m \omega_r} \sum_i E_i \Delta t_i \exp(-\frac{\gamma}{2}(t-t_i)) \sin(\omega_r (t-t_i))$$
+
+We can then tweak this to find the Green function, which is the solution to
+
+$$(\omega_0^2 + \gamma \frac{d}{dt} + \frac{d^2}{dt^2})G(t-t') = \delta(t-t')$$
+
+The Green function then becomes
+
+$$G(r-r') = \frac{1}{\omega_r}\exp(-\frac{\gamma}{2}(t-t'))\sin(\omega_r(t-t'))\Theta(t-t')$$
+
+Then, for an arbitrary electric field $E_x(t)$, the solution to $(\omega_0^2 + \gamma \frac{d}{dt} + \frac{d^2}{dt^2})x(t) = E_x(t)$ can be writteen as
+
+$$x(t) = \frac{q}{m} \int_{-\infty}^\infty G(t-t')E_x(t')dt'$$
+
+We know that $p(t) = qx(t)$ represents the dipole moment. We can then see that
+
+$$\mathbf{p}(t) = \frac{q^2}{m}\int_{-\infty}^\infty G(t-t')\mathbf{E}(t') dt'$$
+
+We can substitute the inverse Fourier transform for the electric field to see that
+
+$$\mathbf{p}(t) &= \frac{q^2}{m} \int_{-\infty}^\infty G(t-t') \frac{1}{2\pi} \int_{-\infty}^\infty \tilde{\mathbf{E}}(\omega) e^{-i\omega t'} d\omega dt'$$
+
+Applying the relation $\int_{-\infty}^{\infty} G(t-t')e^{-i\omega t'} dt' = -e^{i \omega t} \tilde{G}(\omega)$, we see that
+
+$$\mathbf{p}(t) = -\frac{q^2}{m}\frac{1}{2\pi} \int_{-\infty}^{\infty}\tilde{\mathbf{E}}(\omega) \tilde{G}(\omega) e^{-i\omega t}$$
+
+This then implies that $\tilde{\mathbf{p}}(\omega) = -\frac{q^2}{m}\tilde{G}(\omega)\mathbf{\tilde{E}}(\omega)$.
+
+We can calculate that $\tilde{G}(\omega) = \frac{1}{\omega_0^2 - \omega^2 - i \gamma \omega}$. Then, if we have $N$ molecules per unit length, each with $f_i$ electrons with resonant frequency $\omega_i$ and damping parameter $\gamma_i$, we see that
+
+$$\tilde{\mathbf{P}}(\omega) = \frac{Nq^2}{m}(\sum_i \frac{f_i}{\omega_i^2 - \omega^2 - i \omega \gamma_i})\tilde{\mathbf{E}}(\omega)$$
+
+We can use this to then calculate the Fourier transform of the electric flux density, which tells us that
+
+$$\tilde{\varepsilon}(\omega) = \epsilon + \frac{Nq^2}{m}(\sum_i \frac{f_i}{\omega_i^2 - \omega^2 - i \omega \gamma_i})$$
+
+I've skipped the effects on optics, as well as the Drude response function, for brevity.
