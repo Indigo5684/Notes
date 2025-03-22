@@ -60,7 +60,7 @@ Here, we can define a potential $U(s)$ such that $F_{tang} = -dU/ds$ and the tot
 
 **Definition**. In an Atwood machine, there are two masses of mass $m_1$ and m_2$, suspended with an inextensible massless string over a pulley. The system can be constrained by a single parameter $x$, where $x$ is the vertical distance from the center of the pulley and the center of mass of $m_1$.
 
-Then, we can see that $\Delta T_1  + \Delta U_1 = W_1^{tension}$, and respectively $\Delta T_2 + \Delta U_2 = W_2^{tension}$. Then, we can see that $\W_1^{tension} = -W_2^{tension}$, so $\Delta(T_1 + U_1 + T_2 + U_2) = 0$. That is, $E = T_1 + U_1 + T_2 + U_2$, which is conserved.
+Then, we can see that $\Delta T_1  + \Delta U_1 = W_1^{tension}$, and respectively $\Delta T_2 + \Delta U_2 = W_2^{tension}$. Then, we can see that $W_1^{tension} = -W_2^{tension}$, so $\Delta(T_1 + U_1 + T_2 + U_2) = 0$. That is, $E = T_1 + U_1 + T_2 + U_2$, which is conserved.
 
 Notably, if all forces are conservative, we can define a potential $U_\alpha$ for each particle $\alpha$ such that
 

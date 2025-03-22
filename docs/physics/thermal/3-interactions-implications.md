@@ -94,7 +94,7 @@ Note that for an electronic two-state paramagnet, the value of $\mu$ is the Bohr
 
 Consider two systems separated by a movable partition, in which energy and volume may be exchanged, but the total energy and volume is fixed. Then, at equilibrium, we see that $\frac{\partial S}{\partial U_A} = 0 = \frac{\partial S}{\partial V_A}$. Then, we know that $S = S_A + S_B$, so
 
-$$\0 = \frac{\partial S}{\partial V_A} = \frac{\partial S_A}{\partial V_A} + \frac{\partial S_B}{\partial V_A} = \frac{\partial S_A}{\partial V_A} - \frac{\partial S_B}{\partial V_B} \Rightarrow \frac{\partial S_A}{\partial V_A} = \frac{\partial S_B}{\partial V_B}$$
+$$0 = \frac{\partial S}{\partial V_A} = \frac{\partial S_A}{\partial V_A} + \frac{\partial S_B}{\partial V_A} = \frac{\partial S_A}{\partial V_A} - \frac{\partial S_B}{\partial V_B} \Rightarrow \frac{\partial S_A}{\partial V_A} = \frac{\partial S_B}{\partial V_B}$$
 
 We can state this as $V = V_A + V_B$ being fixed forces $0 = \partial V_A + \partial V_B$ so then $\partial V_B = -\partial V_A$. Then, at equilibrium, $T(\partial S / \partial V)$ is the same for both systems. We then define pressure as $P = T (\frac{\partial S}{\partial V})_{U, N}$. For an ideal gas, with $\Omega = f(N) V^N U^{3N/2}$, we see that $P = \frac{NkT}{V}$ under this definition, which agrees with the ideal gas law.
 

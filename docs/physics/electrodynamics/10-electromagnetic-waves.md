@@ -37,13 +37,13 @@ $$\begin{align}
 
 ### Section 10.1.1 - The Wave Equation and Plane Waves
 
-**Definition**. The equation $[\frac{\partial^2}{\partial x^2} - \frac{1}{v^2} \frac{\partial^2}{\partial t^2}] f(x, t) = 0$ is well-known to mathematicians (see [Differential Equations](../../todo.md)), and is known as the **wave equation**. In physics, the speed of the wave is $v = c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}$.
+**Definition**. The equation $[\frac{\partial^2}{\partial x^2} - \frac{1}{\nu^2} \frac{\partial^2}{\partial t^2}] f(x, t) = 0$ is well-known to mathematicians (see [Differential Equations](../../todo.md)), and is known as the **wave equation**. In physics, the speed of the wave is $\nu = c = \frac{1}{\sqrt{\mu_0 \varepsilon_0}}$.
 
-Consider some function $f(s)$. If $s = x - vt$ or $x + vt$, it is trivial to see that $f(x)$ satisfies the wave equation.
+Consider some function $f(s)$. If $s = x - \nu t$ or $x + \nu t$, it is trivial to see that $f(x)$ satisfies the wave equation.
 
 **Definition**. A *plane wave* is a solution to the Laplacian form of the last two Maxwell equations for empty space that also satisfy the one-dimensional wave equation. However, these solutions may not be valid electromagnetic waves as they are not guaranteed to satisfy the first two Maxwell equations.
 
-Notably, the functions for $\mathbf{E} = \mathbf{E}_0 f(s)$ and $\mathbf{H} = \mathbf{H}_0 g(s)$ do not have to be equal. However, $v = c$.
+Notably, the functions for $\mathbf{E} = \mathbf{E}_0 f(s)$ and $\mathbf{H} = \mathbf{H}_0 g(s)$ do not have to be equal. However, $\nu = c$.
 
 **Definition**. A *plane electromagnetic wave* is a plane wave which satisfies the first two Maxwell equations. The divergence equations restrict $\mathbf{E}_0$ and $\mathbf{H}_0$ to be in the plane normal to the direction of motion, as $\hat{\mathbf{K}} \cdot \mathbf{E}_0 = 0$. That is, electomagnetic plane waves are transverse, not longitudinal.
 
@@ -51,11 +51,11 @@ Additionally, the curl equations force $f(s) = g(s)$, such that $H_0 = E_0 \sqrt
 
 **Definition**. The quantity $Y_0 = \sqrt{\frac{\varepsilon_0}{\mu_0}}$ is the *vacuum admittance* and its inverse, $Z_0 = \sqrt{\frac{\mu_0}{\varepsilon_0}}$ is the *vacuum impedance*.
 
-If we assume the direction of propagation can be written as $\hat{\mathbf{k}}$, we can write $f(s) = f(\hat{\mathbf{k}} \cdot \mathbf{r} - vt)$, such that $\mathbf{E}(\mathbf{r}, t) = \mathbf{E}_0 f(\hat{\mathbf{k}}\cdot\mathbf{r} - vt)$, where $\hat{\mathbf{k}}\cdot\mathbf{E}_0 = 0$.
+If we assume the direction of propagation can be written as $\hat{\mathbf{k}}$, we can write $f(s) = f(\hat{\mathbf{k}} \cdot \mathbf{r} - \nu t)$, such that $\mathbf{E}(\mathbf{r}, t) = \mathbf{E}_0 f(\hat{\mathbf{k}}\cdot\mathbf{r} - \nu t)$, where $\hat{\mathbf{k}}\cdot\mathbf{E}_0 = 0$.
 
-From this, we can see that $\mathbf{H}(\mathbf{r}, t) = \sqrt{\frac{\varepsilon_0}{\mu_0}} \hat{\mathbf{k}} \times \mathbf{E}_0 f(\hat{\mathbf{k}} \cdot \mathbf{r} - vt)$. Similarly, $\hat{\mathbf{k}} \cdot \mathbf{H} = 0$.
+From this, we can see that $\mathbf{H}(\mathbf{r}, t) = \sqrt{\frac{\varepsilon_0}{\mu_0}} \hat{\mathbf{k}} \times \mathbf{E}_0 f(\hat{\mathbf{k}} \cdot \mathbf{r} - \nu t)$. Similarly, $\hat{\mathbf{k}} \cdot \mathbf{H} = 0$.
 
-Additionally, we can compute $\mathbf{S} = \mathbf{E} \times \mathbf{H} = c \varepsilon_0 E_0^2 f^2(\hat{\mathbf{k}} \cdot \mathbf{r} - vt) \hat{\mathbf{k}}$. We can also see that $\varepsilon_0 E^2 = \mu_0 H^2$ at any given time.
+Additionally, we can compute $\mathbf{S} = \mathbf{E} \times \mathbf{H} = c \varepsilon_0 E_0^2 f^2(\hat{\mathbf{k}} \cdot \mathbf{r} - \nu t) \hat{\mathbf{k}}$. We can also see that $\varepsilon_0 E^2 = \mu_0 H^2$ at any given time.
 
 ### Section 10.1.2 - Monochromatic Plane Waves
 
@@ -74,7 +74,7 @@ We can calculate the energy density $u$, energy current density $\mathbf{S}$, mo
 
 ### Section 10.1.3 - Monochromatic Plane Waves in a Linear Model
 
-Monochromatic plane waves with frequency $\omega$ in a simple linear material are similar to monochromatic plane waves in a vacuum, except when in a material, we know that the magnitude of the wave vector $k = \frac{\omega}{v}$, and $v = \frac{1}{\sqrt{\mu \varepsilon}}$.
+Monochromatic plane waves with frequency $\omega$ in a simple linear material are similar to monochromatic plane waves in a vacuum, except when in a material, we know that the magnitude of the wave vector $k = \frac{\omega}{\nu}$, and $\nu = \frac{1}{\sqrt{\mu \varepsilon}}$.
 
 ### Section 10.1.4 - Polarization of Monochromatic Plane Waves
 
@@ -165,7 +165,7 @@ E_t &= \frac{2Y_1}{Y_1 + Y_2} E_i \\
 E_r = \frac{Y_1 - Y_2}{Y_1 + Y_2} E_i
 \end{align}$$
 
-If we assume $\mu_1 = \mu_2$, we can rewrite the equations in terms of wave numbers $k_i$, where $k_i = \frac{\omega}{v_i} = \omega \sqrt{\mu_i \varepsilon_i}$
+If we assume $\mu_1 = \mu_2$, we can rewrite the equations in terms of wave numbers $k_i$, where $k_i = \frac{\omega}{\nu_i} = \omega \sqrt{\mu_i \varepsilon_i}$
 
 $$\begin{align}
 E_t &= \frac{2k_1}{k_1 + k_2} E_i \\
@@ -193,7 +193,7 @@ Now, we assume that the wave is incident to the interface at some angle $\theta_
 
 **Theorem**. Snell's Law. In the plane if incidence, the continuity of the electromagnetic field implies that for all times on the $z=0$ plane, the argument of the $\cos(\mathbf{k}_{i,r,t} \cdot \mathbf{r} - \omega t)$ must be equal. That is, in our example, for $\mathbf{r} = x \hat{\mathbf{x}} + y \hat{\mathbf{y}}$, we see that $\mathbf{k}_i \cdot \mathbf{r} = \mathbf{k}_t \cdot \mathbf{r} + \phi_r = \mathbf{k}_t \cdot \mathbf{r} + \phi_t$. Then, $\phi_r$ and $\phi_t$ must vanish, and the wave vectors must satisfy $k_{ix}x + k_{iy}y = k_{rx}x + k_{ry}y = k_{tx}x + k_{ty}y$. This implies that $k_{ix} = k_{rx} = k_{tx}$ and $k_{iy} = k_{ry} + k_{ty}$.
 
-More generally, the requirement of continuity on the interface implies that the three wave vectors are coplanar and that components parallel to the interface must be equal, leading to $k_i \sin \theta_i = k_r \sin \theta_r = k_t \sin \theta_t$. Note that in this case, $k_i = k_r = \frac{\omega}{v}$ as they describe propagation in the same media, so $\theta_r = \theta_i$. As $n \propto \frac{1}{v}$, we see that $n \propto k$, so we can rewrite Snell's Law as $n_i \sin \theta_i = n_t \sin \theta_t$. This gives us the following wave vectors:
+More generally, the requirement of continuity on the interface implies that the three wave vectors are coplanar and that components parallel to the interface must be equal, leading to $k_i \sin \theta_i = k_r \sin \theta_r = k_t \sin \theta_t$. Note that in this case, $k_i = k_r = \frac{\omega}{\nu}$ as they describe propagation in the same media, so $\theta_r = \theta_i$. As $n \propto \frac{1}{\nu}$, we see that $n \propto k$, so we can rewrite Snell's Law as $n_i \sin \theta_i = n_t \sin \theta_t$. This gives us the following wave vectors:
 
 $$\begin{align}
 \mathbf{k}_i &= k_i(\sin \theta_i \hat{\mathbf{x}} + \cos \theta_i \hat{\mathbf{z}}) \\
@@ -301,7 +301,7 @@ $$\begin{align}
 \kappa = \omega \sqrt{\mu\varepsilon} \sqrt{\frac{\sqrt{1 + (\frac{\sigma}{\varepsilon \mu})^2} - 1}{2}} \\
 \end{align}$$
 
-Note that when $\sigma \ll \varepsilon \omega$, the wave number collapses to $k = \frac{\omega}{v}$, and we recover propagation in a vacuum. However, when $\sigma \gg \varepsilon \omega$, we see that $k = \kappa = \sqrt{\frac{\mu \omega \sigma}{2}}$. Here, the distance the wave propagates before decreasing by a factor of $\frac{1}{e}$ is known as the skin depth $d$, where $d = \frac{1}{\kappa} = \sqrt{\frac{2}{\mu \omega \sigma}}$. This is significantly less than the wavelength $\lambda = \frac{2\pi}{k}$. Note that in this limit, the electromagnetic wave is heavily damped.
+Note that when $\sigma \ll \varepsilon \omega$, the wave number collapses to $k = \frac{\omega}{\nu}$, and we recover propagation in a vacuum. However, when $\sigma \gg \varepsilon \omega$, we see that $k = \kappa = \sqrt{\frac{\mu \omega \sigma}{2}}$. Here, the distance the wave propagates before decreasing by a factor of $\frac{1}{e}$ is known as the skin depth $d$, where $d = \frac{1}{\kappa} = \sqrt{\frac{2}{\mu \omega \sigma}}$. This is significantly less than the wavelength $\lambda = \frac{2\pi}{k}$. Note that in this limit, the electromagnetic wave is heavily damped.
 
 The magnetic field is simpler to solve. We know that $\frac{\partial\mathbf{H}}{\partial t} = -\frac{1}{\mu}\nabla \times \mathbf{E} = \hat{\mathbf{y}} \frac{E_0 e^{-\kappa z}}{\mu}[k \sin(kz - \omega t) + \kappa \cos(kz - \omega t)]$
 
@@ -369,7 +369,7 @@ We can also compute energy currents. That is, $I_i = \frac{1}{2} Y_1 E_i^2 = \fr
 
 The transmitted wave is a bit more complicated. We see $I_t = \langle \mathbf{S}_t \cdot \hat{\mathbf{z}} \rangle = \frac{\sqrt{k_2^2 + \kappa^2}}{k_1} Y_1 E_t^2 \langle \cos(\omega t + \phi_t) \cos(\omega t + \phi_t + \phi) \rangle e^{-2\kappa z} = \frac{1}{2} Y_1 E_t^2 e^{-2\kappa z}$.
 
-## Section 10.3
+## Section 10.3 - Electrodynamic Interactions between Waves and Mattter
 
 ### Section 10.3.1 - Response Functions and Fourier Transforms
 
@@ -377,7 +377,7 @@ This section will cover the relations $\mathbf{D} = \varepsilon \mathbf{E}$, $\m
 
 We know that the permeability of a material is not a constant, but instead can depend on the electric field at all previous times. We then define a response function $\varepsilon_R(t - t')$ such that
 
-$$\mathbf{D}(t) = \int_{\-infty}^\infty \varepsilon_R(t - t') \mathbf{E}(t') dt'$$
+$$\mathbf{D}(t) = \int_{-\infty}^\infty \varepsilon_R(t - t') \mathbf{E}(t') dt'$$
 
 **Definition**. For this to make physical sense, we say that $\varepsilon_R(\tau) = 0$ when $\tau < 0$. That is, the electric flux density is only impacted by the past electric field in the material.
 
@@ -468,7 +468,7 @@ $$\mathbf{p}(t) = \frac{q^2}{m}\int_{-\infty}^\infty G(t-t')\mathbf{E}(t') dt'$$
 
 We can substitute the inverse Fourier transform for the electric field to see that
 
-$$\mathbf{p}(t) &= \frac{q^2}{m} \int_{-\infty}^\infty G(t-t') \frac{1}{2\pi} \int_{-\infty}^\infty \tilde{\mathbf{E}}(\omega) e^{-i\omega t'} d\omega dt'$$
+$$\mathbf{p}(t) = \frac{q^2}{m} \int_{-\infty}^\infty G(t-t') \frac{1}{2\pi} \int_{-\infty}^\infty \tilde{\mathbf{E}}(\omega) e^{-i\omega t'} d\omega dt'$$
 
 Applying the relation $\int_{-\infty}^{\infty} G(t-t')e^{-i\omega t'} dt' = -e^{i \omega t} \tilde{G}(\omega)$, we see that
 
@@ -485,3 +485,134 @@ We can use this to then calculate the Fourier transform of the electric flux den
 $$\tilde{\varepsilon}(\omega) = \epsilon + \frac{Nq^2}{m}(\sum_i \frac{f_i}{\omega_i^2 - \omega^2 - i \omega \gamma_i})$$
 
 I've skipped the effects on optics, as well as the Drude response function, for brevity.
+
+## Section 10.4 - Guided Waves and Transmission Lines
+
+## Section 10.4.1 - Coaxial Cables
+
+We know that for a coaxial cable with radii $R_1$ and $R_2$, given that the distance between wavelengths $R_2 - R_1$ is significantly less than some arbitrary length $\Delta z$, which is less than some length scale over which the electric field changes $\lambda$, the electric field is defined as $\mathbf{E}(s) = \frac{Q'}{2\pi s \varepsilon} \hat{\mathbf{s}}$. We can then see the voltage between the two insulators is simply
+
+$$\Delta V = V(R_1) - V(R_2) = \int_{R_1}^{R_2} \mathbf{E}(\mathbf{r}) \cdot d\hat{\mathbf{s}} = \frac{Q'}{2\pi\varepsilon} \ln \frac{R_2}{R_1}$$
+
+Then, we know that capacitance is $C = Q / \Delta V$, so capacitance per unit length becomes
+
+$$C' = \frac{Q'}{\delta V} = \frac{2\pi \varepsilon}{\ln(R_2/R_1)}$$
+
+Similarly, we know that the magnetic field is given by Ampere's law as $\mathbf{H} = \frac{I}{2 \pi s}$, as we place the Ampere's loop has radius $s$ around the inner conductor. Then, we see the flux is
+
+$$\Phi = \frac{\Delta z \mu I}{2 \pi s} \int_{R_1}^{R_2} \frac{ds}{s} \ln \frac{R_2}{R_1}$$
+
+This tells us that inductance per unit length, $L' = \Phi / I \Delta Z$ can be given by
+
+$$L' = \frac{\mu}{2\pi}\ln\frac{R_2}{R_1}$$
+
+Now, for some length $\Delta z$, we know that $\Delta Q = Q' \Delta z$, and then by definition,
+
+$$\frac{\partial \Delta Q}{\partial t} = \Delta z \frac{\partial Q'(z, t)}{\partial t} = I(z, t) - I(z + \Delta z, t)$$
+
+That is, the rate at which charge in a cylinder changes is equal to the current entering minus the current leaving. This then implies that
+
+$$\frac{\partial Q'(z, t)}{\partial t} = \frac{I(z, t) - I(z + \Delta z, t)}{\delta z} = -\frac{\partial I(z, t)}{\partial z}$$
+
+Since we know that $Q' = C' V$ (as $C' = Q' / V$), we can take the time derivative to see that
+
+$$\frac{\partial Q'(z,t)}{\partial t} = C' \frac{\partial V(z, t)}{\partial t} = - \frac{\partial I(z,t)}{\partial z}$$
+
+Now, consider a cylindrical loop (a rectangle revolved around the center, excluding the conductor). Faraday's law tells us that $\mathbf{E} \cdot d\mathbf{l} = -\frac{d\Phi}{dt}$, where $\Phi = L' \Delta Z I$ is the flux through the loop. As the electric field is radial and conservative, we know that
+
+$$V(z + \Delta z, t) - V(z, t) = -L' \Delta z \frac{dI(z, t)}{dt}$$
+
+We can take the limit to see that
+
+$$\frac{\partial V(z, t)}{\partial z} = -L' \frac{\partial I{z, t}}{\partial t}$$
+
+This gives is the two telegrapher's equations:
+
+$$\begin{align}
+\frac{\partial I(z, t)}{\partial z} &= -C' \frac{\partial V(z, t)}{\partial t} \\
+\frac{\partial V(z, t)}{\partial z} &= -L' \frac{\partial I{z, t}}{\partial t}
+\end{align}$$
+
+We can then take the derivative of the first with respect to $t$ and the derivative of the second with respect to $z$, we see that
+
+$$\begin{align}
+\frac{\partial^2 I(z, t)}{\partial z^2} &= -C' \frac{\partial}{\partial z}(\frac{\partial V(z, t)}{\partial t}) \\
+\frac{\partial}{\partial t}(\frac{\partial V(z, t)}{\partial z}) &= -L' \frac{\partial^2 I{z, t}}{\partial t^2}
+\end{align}$$
+
+This tells us that
+
+$$\frac{\partial^2 I(z, t)}{\partial z^2} = -C'(-L' \frac{\partial^2 I{z, t}}{\partial t^2}) = C'L' \frac{\partial^2 I{z, t}}{\partial t^2}$$
+
+We can instead take the derivative of the first equation with respect to $z$ and the derivative of the second with respect to $t$ to see that
+
+$$\frac{\partial^2 V(z, t)}{\partial z^2} = L'C' \frac{\partial^2 V{z, t}}{\partial t^2}$$
+
+These are wave equations with velocity $\nu = \frac{1}{\sqrt{L'C'}}$. In the case of light, $\nu = \frac{1}{\sqrt{\mu \epsilon}}$.
+
+We presume solutions of the form $V(z, t) = V_0 \cos(kz - \omega t + \phi_V)$ and $I(z, t) = I_0 \cos(kz - \omega t + \phi_I)$, with a shared velocity. Applying the telegrapher's equations, we see that $\phi_I = \phi_V$ and $\frac{V_0}{I_0} = -\sqrt{\frac{L'}{C'}} = -Z$.
+
+We have a formula for $C'$ and $L'$, so we can write $Z$ as
+
+$$Z = \frac{1}{2\pi}\sqrt{\frac{\mu}{\epsilon}} \ln \frac{R_2}{R_1}$$
+
+Often, modern coaxial cables have $\ln \frac{R_2}{R_1} \approx 1$, and the permittivity of free space is $\sqrt{\frac{\mu_0}{\epsilon_0}} = 377 \Omega$. Then, the impedance of a coaxial cable is often of order $Z \approx \frac{377 \Omega}{2\pi \sqrt{\varepsilon_r}} \approx 60 \Omega$.
+
+**Definition**. The inverse of impedance is called the admittance.
+
+## Section 10.4.2 - Parallel Conductor Transmission Lines
+
+Consider a two-wire transmission line, with distance $d$ between the lines. Then, the electric field between the lines becomes
+
+$$\mathbf{E} = \frac{-Q'}{2\pi \varepsilon_0} \frac{\hat{\mathbf{x}}}{x} + \frac{Q'}{2\pi \varepsilon_0} \frac{-\hat{\mathbf{x}}}{d - x}$$
+
+Then, integrating from $x = a$ to $x = d - a$ (where $a$ is the radius of each conductor), we see that
+
+$$\Delta V = \frac{Q'}{2\pi \varepsilon_0} (\int_a^{d-a} \frac{dx}{x} + \int_a^{d-a} \frac{dx}{d-x}) = \frac{Q'}{\pi \varepsilon_0} \ln(\frac{d}{a}-1)$$
+
+Note that the integrals diverge if $a = 0$. We can then see that
+
+$$C' = \frac{\pi \varepsilon_0}{\ln(\frac{d}{a}-1)}$$
+
+We can also see that the magnetic field is given by
+
+$$\mathbf{H} = \frac{I}{2\pi} \frac{\hat{\mathbf{y}}}{x} + \frac{I}{2\pi} \frac{\hat{\mathbf{y}}}{d-x}$$
+
+This then lets us calculate flux as $\Phi_B = \mu_0 \Delta z \frac{I}{\pi} \ln{(\frac{d}{a} - 1)}$, which means unit inductance becomes
+
+$$L' = \frac{\mu_0}{\pi} \ln(\frac{d}{a} - 1)$$
+
+Again, the continuity equation tells us that $\frac{\partial Q'}{\partial t} = -\frac{\partial I}{\partial z}$, and the capacitance relation lets us derive that
+
+$$\frac{\partial I}{\partial z} = -C' \frac{\partial V}{\partial t }$$
+
+Then, we can use the back EMF to see that
+
+$$\frac{\partial V}{\partial z} = -L' \frac{\partial I}{\partial t}$$
+
+This lets us once again calculate wave equations for $V$ and $I$, with $\nu = c$
+
+## Section 10.4.3 - Transmission Lines with Dissipation
+
+Especially at high frequencies, we see that the dielectric functions become complex leading to a leakage current between insulators. We thus modify our telegrapher's equations to see that
+
+$$\begin{align}
+\frac{\partial I}{\partial z} &= -C' \frac{\partial V}{\partial t} - G'V \\
+\frac{\partial V}{\partial z} &= -L' \frac{\partial I}{\partial t} - R'I
+\end{align}$$
+
+Here, the $R'$ is the resistance per unit length.
+
+The wave equation for voltage then becomes
+
+$$\frac{\partial^2 V}{\partial z^2} = L' C' \frac{\partial^2 V}{\partial t^2} + (L'G' + R'C') \frac{\partial V}{\partial t} + R'G'V'$$
+
+We now assume a solution of the form $V(z, t) = V_0 \cos (kz - \omega t) e^{-\kappa z}$.
+
+Applying the wave equation, we see that for this solution to work, $\kappa^2 - k^2 = -\omega^2 L' C' + R' G'$ and $2 k \kappa = (L' G' + R' C') \omega$.
+
+From this, we can solve for $k$ and $\kappa$ by setting $b = \omega^2 L' C' - R' G'$ and $c = (L' G' + R' C') \omega$ so that $k = \frac{1}{\sqrt{2}} \sqrt{b + \sqrt{b^2 + c^2}}$ and $\kappa = \frac{c}{2k}$.
+
+We can then solve for $\omega = \omega(k)$, which ends up being a very sad equation.
+
+The Heaviside condition is the condition in which we change the parameters so that the parameters $\frac{G'}{C'} = \omega_C$ and $\frac{R'}{L'} = \omega_L$ are equal. Then, we see $\omega^2 = k^2 v_0^2$.

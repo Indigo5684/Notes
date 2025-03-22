@@ -68,7 +68,7 @@ Note that the multiplicity falls to $1/e$ of its maximum value when $N(\frac{2x}
 
 ## Section 2.5 - The Ideal Gas
 
-Assume we have a single atom of a monoatomic gas with kinetic energy $U$ in a container of volume $V$. By considering a container with volume $2V$, we can see that $\Omega_1 \propto V \vdot \V_p$, where $V$ is the volume of ordinary space, and $V_p$ the  volume of momentum space.
+Assume we have a single atom of a monoatomic gas with kinetic energy $U$ in a container of volume $V$. By considering a container with volume $2V$, we can see that $\Omega_1 \propto V \cdot V_p$, where $V$ is the volume of ordinary space, and $V_p$ the  volume of momentum space.
 
 **Definition**. *Momentum space* is the space of all possible momentum values with axis $p_x, p_y, p_z$.
 

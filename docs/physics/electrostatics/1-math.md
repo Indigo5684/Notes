@@ -32,7 +32,7 @@ $$
 
 **Definition**. The *identity dyadic* is $\stackrel{\leftrightarrow}{\mathbf{I}} = \hat{\mathbf{x}}\hat{\mathbf{x}} + \hat{\mathbf{y}}\hat{\mathbf{y}} + \hat{\mathbf{z}}\hat{\mathbf{z}}$.
 
-**Definition**. FOr a *tensor*, with coordinates $u^i$, we have two sets of basis vectors:
+**Definition**. For a *tensor*, with coordinates $u^i$, we have two sets of basis vectors:
 
 $$
 \mathbf{e}_i = \pdv{\mathbf{r}}{u^i}

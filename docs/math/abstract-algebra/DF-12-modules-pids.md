@@ -53,7 +53,7 @@ Additionally, if $R$ is a PID, as $\text{Ann}_R(N)$ is an ideal, $\text{Ann}(N) 
 
 **Theorem**. Fundamental Theorem, Existence: Invariant Form. Let $R$ be a PID and $M$ be a finitely generated $R$-module. THen,
 
-- $M$ is isomorphic for some $r \in \mathbb{N}\cup{0}$, $a_1, \ldots, \a_m \neq 0 \in R$ such that $a_1 | a_2 | \ldots | a_m$, with
+- $M$ is isomorphic for some $r \in \mathbb{N}\cup{0}$, $a_1, \ldots, a_m \neq 0 \in R$ such that $a_1 | a_2 | \ldots | a_m$, with
 
 $$
 M \cong R^{\oplus r} \oplus \frac{R}{(a_1)R} \oplus \frac{R}{(a_2)R} \oplus \ldots \oplus \frac{R}{(a_m)R}

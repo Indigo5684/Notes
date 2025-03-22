@@ -102,7 +102,7 @@ Notably, if we try and force the oscillator to move at a frequency $\omega$, whe
 
 Then, we can see that $\omega_2 = \sqrt{\omega_0^2 - 2 \beta^2}$ is the frequency at which the response is maximum. This then lets us see that $A_{max} \approx \frac{f_0}{2\beta \omega_0}$.
 
-We can then calculate the FWHM, or full-width at half maximum, and the HWHM, or the half width at half maximum. These are the distance between the two points in which $A^2$ is at half its maximum value. Note that $\omega \approx \omega_0 \pm \beta$, so $\text {FWHM} \approx 2\beta$ and $\txt{HWHM} \approx \beta$.
+We can then calculate the FWHM, or full-width at half maximum, and the HWHM, or the half width at half maximum. These are the distance between the two points in which $A^2$ is at half its maximum value. Note that $\omega \approx \omega_0 \pm \beta$, so $\text{FWHM} \approx 2\beta$ and $\text{HWHM} \approx \beta$.
 
 We can then calculate the sharpness of the peak as the natural frequency over the FWHM, or $Q = \frac{\omega_0}{2\beta} = \pi \frac{1 / \beta}{2\pi \omega_0} = \pi \frac{\text{decay time}}{\text{period}}$.
 
@@ -122,7 +122,7 @@ We then find that $\omega = 2\pi / \tau$.
 
 We can then set $x_n(t) = A_n \cos(n  \omega t - \delta_n)$, where
 
-$$A_n = \frac{f_n}{\sqrt{(\omega_0^2 - n^2 \omegaa^2)^2 + 4\beta^2n^2\omega^2}}$$
+$$A_n = \frac{f_n}{\sqrt{(\omega_0^2 - n^2 \omega^2)^2 + 4\beta^2n^2\omega^2}}$$
 
 We also see that
 
