@@ -878,6 +878,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../electrodynamics/11-potential-formulation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 11 - Potential Formulation of Electrodynamics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../electrodynamics/8-quasi-static-electrodynamics-ac-circuitts/" class="md-nav__link">
         
   
@@ -1176,6 +1197,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../13-hamiltonian-mechanics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 13 - Hamiltonian Mechanics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../2-projectiles-charged-particles/" class="md-nav__link">
         
   
@@ -1386,6 +1428,27 @@
   
   <span class="md-ellipsis">
     Chapter 6 - Calculus of Variations
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../7-lagranges-equations/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Chapter 7 - Lagrange's Equations
   </span>
   
 
@@ -1727,7 +1790,7 @@
 <p>When <span class="arithmatex">\(\beta\)</span> is small, we see the second term in the denominator becomes small. Then, if the driving and natural frequency are very different, the amplitude of the resulting wave becomes small. Conversely, if the driving and natural frequency are close together, the amplitude of the wave becomes large.</p>
 <p>Notably, if we try and force the oscillator to move at a frequency <span class="arithmatex">\(\omega\)</span>, when close to <span class="arithmatex">\(\omega_0\)</span>, the oscillator responds well, but fails to respond significantly otherwise. This is known as <em>resonance</em>.</p>
 <p>Then, we can see that <span class="arithmatex">\(\omega_2 = \sqrt{\omega_0^2 - 2 \beta^2}\)</span> is the frequency at which the response is maximum. This then lets us see that <span class="arithmatex">\(A_{max} \approx \frac{f_0}{2\beta \omega_0}\)</span>.</p>
-<p>We can then calculate the FWHM, or full-width at half maximum, and the HWHM, or the half width at half maximum. These are the distance between the two points in which <span class="arithmatex">\(A^2\)</span> is at half its maximum value. Note that <span class="arithmatex">\(\omega \approx \omega_0 \pm \beta\)</span>, so <span class="arithmatex">\(\text {FWHM} \approx 2\beta\)</span> and <span class="arithmatex">\(\txt{HWHM} \approx \beta\)</span>.</p>
+<p>We can then calculate the FWHM, or full-width at half maximum, and the HWHM, or the half width at half maximum. These are the distance between the two points in which <span class="arithmatex">\(A^2\)</span> is at half its maximum value. Note that <span class="arithmatex">\(\omega \approx \omega_0 \pm \beta\)</span>, so <span class="arithmatex">\(\text{FWHM} \approx 2\beta\)</span> and <span class="arithmatex">\(\text{HWHM} \approx \beta\)</span>.</p>
 <p>We can then calculate the sharpness of the peak as the natural frequency over the FWHM, or <span class="arithmatex">\(Q = \frac{\omega_0}{2\beta} = \pi \frac{1 / \beta}{2\pi \omega_0} = \pi \frac{\text{decay time}}{\text{period}}\)</span>.</p>
 <p>Additionally, we see that <span class="arithmatex">\(\delta = \arctan(\frac{2\beta \omega}{\omega_0^2 - \omega^2})\)</span>. At resonance, this implies that <span class="arithmatex">\(\delta = \pi / 2\)</span>.</p>
 <h2 id="section-57-fourier-series">Section 5.7 - Fourier Series</h2>
@@ -1737,7 +1800,7 @@
 <p>Then, we let <span class="arithmatex">\(f(t) = \sum_{n=0}^\infty f_n \cos(n \omega t)\)</span>, where <span class="arithmatex">\(f_n\)</span> is a constant.</p>
 <p>We then find that <span class="arithmatex">\(\omega = 2\pi / \tau\)</span>.</p>
 <p>We can then set <span class="arithmatex">\(x_n(t) = A_n \cos(n  \omega t - \delta_n)\)</span>, where</p>
-<div class="arithmatex">\[A_n = \frac{f_n}{\sqrt{(\omega_0^2 - n^2 \omegaa^2)^2 + 4\beta^2n^2\omega^2}}\]</div>
+<div class="arithmatex">\[A_n = \frac{f_n}{\sqrt{(\omega_0^2 - n^2 \omega^2)^2 + 4\beta^2n^2\omega^2}}\]</div>
 <p>We also see that</p>
 <div class="arithmatex">\[\delta_n = \arctan(\frac{2\beta n \omega}{\omega_0^2 - n^2 \omega^2})\]</div>
 <h2 id="section-59-the-rms-displacement-parsevals-theorem">Section 5.9 - The RMS Displacement; Parseval's Theorem</h2>
@@ -1769,7 +1832,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 27, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 22, 2025</span>
   </span>
 
     
