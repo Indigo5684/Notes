@@ -524,25 +524,25 @@ $$V(z + \Delta z, t) - V(z, t) = -L' \Delta z \frac{dI(z, t)}{dt}$$
 
 We can take the limit to see that
 
-$$\frac{\partial V(z, t)}{\partial z} = -L' \frac{\partial I{z, t}}{\partial t}$$
+$$\frac{\partial V(z, t)}{\partial z} = -L' \frac{\partial I(z, t)}{\partial t}$$
 
 This gives is the two telegrapher's equations:
 
 $$\begin{align}
 \frac{\partial I(z, t)}{\partial z} &= -C' \frac{\partial V(z, t)}{\partial t} \\
-\frac{\partial V(z, t)}{\partial z} &= -L' \frac{\partial I{z, t}}{\partial t}
+\frac{\partial V(z, t)}{\partial z} &= -L' \frac{\partial I(z, t)}{\partial t}
 \end{align}$$
 
 We can then take the derivative of the first with respect to $t$ and the derivative of the second with respect to $z$, we see that
 
 $$\begin{align}
 \frac{\partial^2 I(z, t)}{\partial z^2} &= -C' \frac{\partial}{\partial z}(\frac{\partial V(z, t)}{\partial t}) \\
-\frac{\partial}{\partial t}(\frac{\partial V(z, t)}{\partial z}) &= -L' \frac{\partial^2 I{z, t}}{\partial t^2}
+\frac{\partial}{\partial t}(\frac{\partial V(z, t)}{\partial z}) &= -L' \frac{\partial^2 I(z, t)}{\partial t^2}
 \end{align}$$
 
 This tells us that
 
-$$\frac{\partial^2 I(z, t)}{\partial z^2} = -C'(-L' \frac{\partial^2 I{z, t}}{\partial t^2}) = C'L' \frac{\partial^2 I{z, t}}{\partial t^2}$$
+$$\frac{\partial^2 I(z, t)}{\partial z^2} = -C'(-L' \frac{\partial^2 I(z, t)}{\partial t^2}) = C'L' \frac{\partial^2 I(z, t)}{\partial t^2}$$
 
 We can instead take the derivative of the first equation with respect to $z$ and the derivative of the second with respect to $t$ to see that
 
