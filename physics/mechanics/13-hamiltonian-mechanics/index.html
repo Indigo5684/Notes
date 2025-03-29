@@ -1297,9 +1297,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#section-137-liovilles-theorem" class="md-nav__link">
+  <a href="#section-137-liouvilles-theorem" class="md-nav__link">
     <span class="md-ellipsis">
-      Section 13.7 - Lioville's Theorem
+      Section 13.7 - Liouville's Theorem
     </span>
   </a>
   
@@ -1705,9 +1705,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#section-137-liovilles-theorem" class="md-nav__link">
+  <a href="#section-137-liouvilles-theorem" class="md-nav__link">
     <span class="md-ellipsis">
-      Section 13.7 - Lioville's Theorem
+      Section 13.7 - Liouville's Theorem
     </span>
   </a>
   
@@ -1753,11 +1753,37 @@
 <p><strong>Definition</strong>.  The <em>Hamiltonian</em> is defined as</p>
 <div class="arithmatex">\[\mathcal{H} = \sum_{i = 1}^n p_i \dot{q_i} - \mathcal{L}\]</div>
 <h2 id="section-132-hamiltons-equations-for-one-dimensional-systems">Section 13.2 - Hamilton's Equations for One-Dimensional Systems</h2>
+<p>We see that for a pendulum, <span class="arithmatex">\(\mathcal{L} = \frac{1}{2} m L^2 \dot{\phi}^2 - mgL(1 - \cos \phi)\)</span>. For a bead sliding on a frictionless wire of height <span class="arithmatex">\(y = f(x)\)</span>, we see <span class="arithmatex">\(\mathcal{L} = \frac{1}{2}m[1 + f'(x)^2] - mgf(x)\)</span>.</p>
+<p>Notably, using natural coordinates, <span class="arithmatex">\(\mathcal{L} = \frac{1}{2}A(q)\dot{q}^2 - U(q)\)</span>. Then, we can define <span class="arithmatex">\(\mathcal{H} = p\dot{q} - \mathcal{L}\)</span>.</p>
+<p>We know that <span class="arithmatex">\(p = \frac{\partial \mathcal{L}}{\partial \dot{q}} = A(q)\dot{q}\)</span>. Then, <span class="arithmatex">\(\mathcal{H} = p\dot{q} - \mathcal{L} = A(q)\dot{q}^2 - \frac{1}{2} A(q) \dot{q}^2 + U(q) = 2T - T + U = T + U\)</span></p>
+<p>Similarly, we can solve for <span class="arithmatex">\(\dot{q}\)</span> from the definition of the generalized momentum to see that <span class="arithmatex">\(\dot{q} = \frac{q}{A(q)}\)</span>.</p>
+<p>Deriving Hamilton's Equations is thus simple. We see that <span class="arithmatex">\(\frac{\partial \mathcal{H}}{\partial q} = p \frac{\partial \dot{q}}{\partial q} - [\frac{\partial \mathcal{L}}{\partial q} + \frac{\mathcal{L}}{\partial \dot{q}} \frac{\partial \dot{q}}{\partial q}] = p \frac{\partial \dot{q}}{\partial q} - [\frac{\partial \mathcal{L}}{\partial q} + q\frac{\partial \dot{q}}{\partial q}] = -\frac{\partial \mathcal{L}}{\partial q} = -\dot{p}\)</span></p>
+<p>Differentiating instead with respect to <span class="arithmatex">\(p\)</span>, we see that <span class="arithmatex">\(\frac{\partial \mathcal{H}}{\partial p} = [\dot{q} + p \frac{\partial \dot{q}}{\partial p}] - \frac{\partial \mathcal{L}}{\partial \dot{q}} \frac{\partial \dot{q}}{\partial p} = [\dot{q} + p \frac{\partial \dot{q}}{\partial p}] - p \frac{\partial \dot{q}}{\partial p} = \dot{q}\)</span></p>
 <h2 id="section-133-hamiltons-equations-in-several-dimensions">Section 13.3 - Hamilton's Equations in Several Dimensions</h2>
+<p>We know that</p>
+<div class="arithmatex">\[\mathcal{H} = \sum_{i = 1}^N p_i \dot{q}_i - \mathcal{L}\]</div>
+<p>Here, the generalized momenta are defined as</p>
+<div class="arithmatex">\[p_i = \frac{\partial \mathcal{L}(\mathbf{q}, \dot{\mathbf{q}}, t)},{\partial \dot{q}_i}\]</div>
+<p>This tells us that <span class="arithmatex">\(\dot{\mathbf{q}} = \dot{\mathbf{q}}(\mathbf{q}, \mathbf{p}, t)\)</span>. Then, we can define the Hamiltonian as</p>
+<div class="arithmatex">\[\mathcal{H} = \mathcal{H}(\mathbf{q}, \mathbf{p}, t) = \sum_{i = 1}^N p_i \dot{q}_i(\mathbf{q}, \mathbf{p}, t) - \mathcal{L}(\mathbf{q}, \dot{\mathbf{q}}(\mathbf{q}, \mathbf{p}, t), t)\]</div>
+<p>We can differentiate with respect to <span class="arithmatex">\(p_i\)</span> to see that</p>
+<div class="arithmatex">\[\dot{q}_i = \frac{\partial \mathcal{H}}{\partial p_i}\]</div>
+<p>We can differentiate with respect to <span class="arithmatex">\(q_i\)</span> to see that</p>
+<div class="arithmatex">\[\dot{p}_i = - \frac{\partial \mathcal{H}}{\partial q_i}\]</div>
+<p>For a system with <span class="arithmatex">\(n\)</span> coordinates, this gives us <span class="arithmatex">\(2n\)</span> first-order differential equations rather than <span class="arithmatex">\(n\)</span> second-order differential equations as seen in the Lagrange equations.</p>
+<p>We then can calculate</p>
+<div class="arithmatex">\[\frac{d \mathcal{H}}{dt} = \sum_{i=1}^N (\frac{\partial \mathcal{H}}{\partial q_i} \dot{q}_i + \frac{\partial \mathcal{H}}{\partial p_i} \dot{p}_i) + \frac{\partial \mathcal{H}}{\partial t}\]</div>
+<p>We can then substitute Hamilton's equations to see that</p>
+<div class="arithmatex">\[\frac{d \mathcal{H}}{dt} = \frac{\partial \mathcal{H}}{\partial t}\]</div>
+<p>From section 7.8, we know that if the relation from the generalized coordinates to rectangular coordinates is independent of <span class="arithmatex">\(t\)</span> (that is, our generalized coordinates are natural), than <span class="arithmatex">\(\mathcal{H} = T + U\)</span>.</p>
 <h2 id="section-134-ignorable-coordinates">Section 13.4 - Ignorable Coordinates</h2>
+<p><strong>Definition</strong>. If <span class="arithmatex">\(\mathcal{H}\)</span> is independent of a coordinate <span class="arithmatex">\(q_i\)</span>, it immediately follows that <span class="arithmatex">\(\dot{p}_i = 0\)</span> and thus <span class="arithmatex">\(p_i\)</span> is a constant. Note that this definition immediately follows from the Lagrangian definition.</p>
 <h2 id="section-135-lagranges-equations-vs-hamiltons-equations">Section 13.5 - Lagrange's Equations vs. Hamilton's Equations</h2>
+<p>Skipped.</p>
 <h2 id="section-136-phase-space-orbits">Section 13.6 - Phase-Space Orbits</h2>
-<h2 id="section-137-liovilles-theorem">Section 13.7 - Lioville's Theorem</h2>
+<p>Skipped.</p>
+<h2 id="section-137-liouvilles-theorem">Section 13.7 - Liouville's Theorem</h2>
+<p>Skipped.</p>
 
 
 
@@ -1780,7 +1806,7 @@
     <span class="md-icon" title="Last update">
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 13.1c-.1 0-.3.1-.4.2l-1 1 2.1 2.1 1-1c.2-.2.2-.6 0-.8l-1.3-1.3c-.1-.1-.2-.2-.4-.2m-1.9 1.8-6.1 6V23h2.1l6.1-6.1zM12.5 7v5.2l4 2.4-1 1L11 13V7zM11 21.9c-5.1-.5-9-4.8-9-9.9C2 6.5 6.5 2 12 2c5.3 0 9.6 4.1 10 9.3-.3-.1-.6-.2-1-.2s-.7.1-1 .2C19.6 7.2 16.2 4 12 4c-4.4 0-8 3.6-8 8 0 4.1 3.1 7.5 7.1 7.9l-.1.2z"/></svg>
     </span>
-    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 22, 2025</span>
+    <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 29, 2025</span>
   </span>
 
     
